@@ -1,32 +1,35 @@
 package Tests;
 
+import Factories.DriverFactory;
 import Pages.P01_LoginPage;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import Utilities.BrowserUtils;
+import Utilities.SoftAssertUtils;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class TC01_LoginTest {
-    WebDriver driver;
+import static Factories.DriverFactory.getDriver;
 
+public class TC01_LoginTest {
     @BeforeMethod
-    public void setup(){
-        driver = new ChromeDriver();
+    public void setup() {
+        DriverFactory.createDriver("edge");
     }
 
     @Test
     public void loginWithValidCredentialsTC() {
-        new P01_LoginPage(driver)
-            .navigateToLoginPage("https://example.com/login")
-            .enterUsername("validUser")
-            .enterPassword("validPassword")
-            .clickLoginButton()
-            .assertLoginWithValidCredentials();
+        new P01_LoginPage(getDriver())
+                .navigateToLoginPage("https://www.saucedemo.com/")
+                .enterUsername("standard_user")
+                .enterPassword("secret_sauce")
+                .clickLoginButton()
+                .assertLoginWithValidCredentials();
     }
 
     @AfterMethod
-    public void tearDown(){
-        driver.quit();
+    public void tearDown() {
+        BrowserUtils.quitBrowser(getDriver());
+        DriverFactory.removeDriver();
+        SoftAssertUtils.softAssertAll();
     }
 }

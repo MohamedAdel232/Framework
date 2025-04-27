@@ -24,7 +24,7 @@ public class BrowserUtils {
         return driver.getPageSource();
     }
 
-    public static void closeBrowser(WebDriver driver) {
+    public static void quitBrowser(WebDriver driver) {
         if (driver != null) {
             driver.quit();
         }

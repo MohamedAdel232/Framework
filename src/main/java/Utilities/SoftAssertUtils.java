@@ -1,0 +1,60 @@
+package Utilities;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+import org.testng.asserts.SoftAssert;
+
+public class SoftAssertUtils extends SoftAssert {
+    public static SoftAssertUtils softAssert = new SoftAssertUtils();
+
+    public static void softAssertAll() {
+        try {
+            softAssert.assertAll();
+        }catch (Exception e){
+            System.out.println("Soft Assert failed: " + e.getMessage());
+        }
+    }
+
+    public static void softAssertTrue(boolean condition, String message) {
+        softAssert.assertTrue(condition, message);
+    }
+
+    public static void softAssertFalse(boolean condition, String message) {
+        softAssert.assertFalse(condition, message);
+    }
+
+    public static void softAssertEquals(Object actual, Object expected, String message) {
+        softAssert.assertEquals(actual, expected, message);
+    }
+
+    public static void softAssertNotEquals(Object actual, Object expected, String message) {
+        softAssert.assertNotEquals(actual, expected, message);
+    }
+
+    public static void softAssertNull(Object object, String message) {
+        softAssert.assertNull(object, message);
+    }
+
+    public static void softAssertNotNull(Object object, String message) {
+        softAssert.assertNotNull(object, message);
+    }
+
+    public static void softAssertSame(Object actual, Object expected, String message) {
+        softAssert.assertSame(actual, expected, message);
+    }
+
+    public static void softAssertNotSame(Object actual, Object expected, String message) {
+        softAssert.assertNotSame(actual, expected, message);
+    }
+
+    public static void softAssertPageUrl(WebDriver driver, String expectedUrl, String message) {
+        String actualUrl = BrowserUtils.getCurrentUrl(driver);
+        softAssert.assertEquals(actualUrl, expectedUrl, message);
+    }
+
+    public static void softAssertPageTitle(WebDriver driver, String expectedTitle, String message) {
+        String actualTitle = BrowserUtils.getPageTitle(driver);
+        softAssert.assertEquals(actualTitle, expectedTitle, message);
+    }
+}
+

@@ -1,15 +1,15 @@
 package Pages;
 
+import Utilities.AssertUtils;
 import Utilities.BrowserUtils;
 import Utilities.ElementUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 
 public class P01_LoginPage {
-    private final By usernameFieldLocator = By.cssSelector("[formcontrolname=\"userName\"]");
-    private final By passwordFieldLocator = By.cssSelector("[formcontrolname=\"password\"]");
-    private final By loginButtonLocator = By.id("btnlogin");
+    private final By usernameFieldLocator = By.id("user-name");
+    private final By passwordFieldLocator = By.id("password");
+    private final By loginButtonLocator = By.id("login-button");
 
     private final WebDriver driver;
 
@@ -37,9 +37,8 @@ public class P01_LoginPage {
         return this;
     }
 
-    public void assertLoginWithValidCredentials(){
-        String actualUrl = driver.getCurrentUrl();
-        String expectedUrl = "https://example.com/dashboard";
-        Assert.assertEquals(actualUrl, expectedUrl, "Login with valid credentials failed.");
+    public void assertLoginWithValidCredentials() {
+        String expectedUrl = "https://www.saucedemo.com/inventory.html";
+        AssertUtils.assertPageUrl(driver, expectedUrl, "Login with valid credentials failed");
     }
 }

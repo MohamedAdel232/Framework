@@ -13,7 +13,7 @@ public class WaitUtils {
 
     public static WebElement waitForElementToBePresent(WebDriver driver, By locator) {
         return new WebDriverWait(driver, Duration.ofSeconds(5))
-                .until(driver1 -> driver1.findElement(locator));
+                .until(driver1 -> ElementUtils.findElement(driver1, locator));
     }
 
     public static WebElement waitForElementToBeVisible(WebDriver driver, By locator) {
