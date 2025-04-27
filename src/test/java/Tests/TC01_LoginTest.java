@@ -3,6 +3,7 @@ package Tests;
 import Factories.DriverFactory;
 import Pages.P01_LoginPage;
 import Utilities.BrowserUtils;
+import Utilities.LogsUtils;
 import Utilities.SoftAssertUtils;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -24,6 +25,7 @@ public class TC01_LoginTest {
                 .enterPassword("secret_sauce")
                 .clickLoginButton()
                 .assertLoginWithValidCredentials();
+        LogsUtils.info("Test");
     }
 
     @AfterMethod
