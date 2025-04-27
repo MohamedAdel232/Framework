@@ -4,6 +4,7 @@ import Utilities.BrowserUtils;
 import Utilities.ElementUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 public class P01_LoginPage {
     private final By usernameFieldLocator = By.cssSelector("[formcontrolname=\"userName\"]");
@@ -16,19 +17,29 @@ public class P01_LoginPage {
         this.driver = driver;
     }
 
-    public void navigateToLoginPage(String url) {
+    public P01_LoginPage navigateToLoginPage(String url) {
         BrowserUtils.navigateToUrl(driver, url);
+        return this;
     }
 
-    public void enterUsername(String username) {
+    public P01_LoginPage enterUsername(String username) {
         ElementUtils.sendDataToElement(driver, usernameFieldLocator, username);
+        return this;
     }
 
-    public void enterPassword(String password) {
+    public P01_LoginPage enterPassword(String password) {
         ElementUtils.sendDataToElement(driver, passwordFieldLocator, password);
+        return this;
     }
 
-    public void clickLoginButton() {
+    public P01_LoginPage clickLoginButton() {
         ElementUtils.clickOnElement(driver, loginButtonLocator);
+        return this;
+    }
+
+    public void assertLoginWithValidCredentials(){
+        String actualUrl = driver.getCurrentUrl();
+        String expectedUrl = "https://example.com/dashboard";
+        Assert.assertEquals(actualUrl, expectedUrl, "Login with valid credentials failed.");
     }
 }
