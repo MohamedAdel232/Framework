@@ -1,6 +1,7 @@
 package Factories;
 
 import Utilities.LogsUtils;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.logging.Logs;
 
@@ -12,6 +13,7 @@ public class DriverFactory {
     private DriverFactory() {
     }
 
+    @Step("Create driver for browser: {0}")
     public static void createDriver(String browser) {
         LogsUtils.info("Creating driver for browser:", browser);
         WebDriver driver = BrowserFactory.getBrowser(browser);
