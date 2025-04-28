@@ -9,14 +9,17 @@ public class WindowUtils {
     }
 
     public static String getWindowHandle(WebDriver driver) {
+        LogsUtils.info("Getting current window handle");
         return driver.getWindowHandle();
     }
 
     public static Set<String> getWindowHandles(WebDriver driver) {
+        LogsUtils.info("Getting all window handles");
         return driver.getWindowHandles();
     }
 
     public static void switchToWindow(WebDriver driver, String windowHandle) {
+        LogsUtils.info("Switching to window with handle:", windowHandle);
         driver.switchTo().window(windowHandle);
     }
 }

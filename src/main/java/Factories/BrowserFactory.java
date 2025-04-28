@@ -1,5 +1,6 @@
 package Factories;
 
+import Utilities.LogsUtils;
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -14,6 +15,7 @@ import java.util.Map;
 
 public class BrowserFactory {
     public static WebDriver getBrowser(String browser) {
+        LogsUtils.info("Getting browser:", browser);
         switch (browser.toLowerCase()) {
             case "edge":
                 EdgeOptions edgeOptions = new EdgeOptions();
