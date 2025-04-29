@@ -11,23 +11,26 @@ import static Factories.DriverFactory.getDriver;
 
 public class TC01_LoginTest {
     File allureResultsDirectory = new File("TestOutputs/allure-results");
+    JsonUtils jsonData;
 
     @BeforeSuite
     public void beforeSuite() {
+        PropertiesUtils.loadProperties();
         FilesUtils.deleteFiles(allureResultsDirectory);
+        jsonData = new JsonUtils("TestData");
     }
 
     @BeforeMethod
     public void setup() {
-        DriverFactory.createDriver("edge");
+        DriverFactory.createDriver(PropertiesUtils.getPropertyValue("browser"));
     }
 
     @Test
     public void loginWithValidCredentialsTC() {
         new P01_LoginPage(getDriver())
-                .navigateToLoginPage("https://www.saucedemo.com/")
-                .enterUsername("standard_user")
-                .enterPassword("secret_sauce")
+                .navigateToLoginPage(PropertiesUtils.getPropertyValue("LoginPageUrl"))
+                .enterUsername(jsonData.getJsonData("loginCredentials.username"))
+                .enterPassword(jsonData.getJsonData("loginCredentials.password"))
                 .clickLoginButton()
                 .assertLoginWithValidCredentials();
         ScreenshotsUtils.takeScreenshot("test");

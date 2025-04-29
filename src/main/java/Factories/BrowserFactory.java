@@ -1,6 +1,7 @@
 package Factories;
 
 import Utilities.LogsUtils;
+import Utilities.PropertiesUtils;
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -9,7 +10,6 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.safari.SafariDriver;
 
 import java.util.Map;
 
@@ -40,7 +40,9 @@ public class BrowserFactory {
         firefoxOptions.addArguments("--remote-allow-origins=*");
         firefoxOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
         firefoxOptions.setAcceptInsecureCerts(true);
-        // firefoxOptions.addArguments("--headless");
+        if (!PropertiesUtils.getPropertyValue("executionType").equalsIgnoreCase("local")) {
+            firefoxOptions.addArguments("--headless");
+        }
         return firefoxOptions;
     }
 
@@ -60,7 +62,9 @@ public class BrowserFactory {
         );
         chromeOptions.setExperimentalOption("prefs", chromePrefs);
         chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
-        // chromeOptions.addArguments("--headless");
+        if (!PropertiesUtils.getPropertyValue("executionType").equalsIgnoreCase("local")) {
+            chromeOptions.addArguments("--headless");
+        }
         return chromeOptions;
     }
 
@@ -80,7 +84,9 @@ public class BrowserFactory {
         );
         edgeOptions.setExperimentalOption("prefs", edgePrefs);
         edgeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
-        // edgeOptions.addArguments("--headless");
+        if (!PropertiesUtils.getPropertyValue("executionType").equalsIgnoreCase("local")) {
+            edgeOptions.addArguments("--headless");
+        }
         return edgeOptions;
     }
 }

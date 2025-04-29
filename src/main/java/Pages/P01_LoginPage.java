@@ -1,12 +1,8 @@
 package Pages;
 
-import Utilities.AssertUtils;
-import Utilities.BrowserUtils;
-import Utilities.ElementUtils;
-import Utilities.LogsUtils;
+import Utilities.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.bidi.log.Log;
 
 public class P01_LoginPage {
     private final By usernameFieldLocator = By.id("user-name");
@@ -44,7 +40,7 @@ public class P01_LoginPage {
     }
 
     public void assertLoginWithValidCredentials() {
-        String expectedUrl = "https://www.saucedemo.com/inventory.html";
+        String expectedUrl = PropertiesUtils.getPropertyValue("HomePageUrl");
         LogsUtils.info("Asserting login with valid credentials");
         AssertUtils.assertPageUrl(driver, expectedUrl, "Login with valid credentials failed");
     }

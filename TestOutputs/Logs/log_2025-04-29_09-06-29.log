@@ -1,0 +1,50 @@
+[DEBUG] - [29-04-2025 09:06:30] [main] [org.testng.TestNG] - suiteXmlPath: "C:\Users\mohamed.adel\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml"
+[INFO] - [29-04-2025 09:06:31] [main] [org.testng.internal.Utils] - [TestNG] Running:
+  C:\Users\mohamed.adel\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml
+
+[INFO] - [29-04-2025 09:06:31] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [29-04-2025 09:06:31] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [29-04-2025 09:06:31] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [29-04-2025 09:06:31] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [29-04-2025 09:06:31] [main] [Utilities.PropertiesUtils] - Loading properties file data
+[INFO] - [29-04-2025 09:06:31] [main] [Factories.DriverFactory] - Creating driver for browser: Chrome
+[INFO] - [29-04-2025 09:06:31] [main] [Factories.BrowserFactory] - Getting browser: Chrome
+[INFO] - [29-04-2025 09:06:33] [main] [Pages.P01_LoginPage] - Navigating to login page
+[INFO] - [29-04-2025 09:06:33] [main] [Utilities.BrowserUtils] - Navigating to URL: https://www.saucedemo.com/
+[DEBUG] - [29-04-2025 09:06:34] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['loginCredentials']['username']
+[INFO] - [29-04-2025 09:06:34] [main] [Pages.P01_LoginPage] - Entering username
+[INFO] - [29-04-2025 09:06:34] [main] [Utilities.ElementUtils] - Sending standard_user to element: By.id: user-name
+[INFO] - [29-04-2025 09:06:34] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: user-name
+[INFO] - [29-04-2025 09:06:34] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: user-name
+[INFO] - [29-04-2025 09:06:34] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: user-name
+[INFO] - [29-04-2025 09:06:34] [main] [Utilities.ScrollUtils] - Scrolling to element with locator: By.id: user-name
+[INFO] - [29-04-2025 09:06:34] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: user-name
+[INFO] - [29-04-2025 09:06:34] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: user-name
+[DEBUG] - [29-04-2025 09:06:34] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['loginCredentials']['password']
+[INFO] - [29-04-2025 09:06:34] [main] [Pages.P01_LoginPage] - Entering password
+[INFO] - [29-04-2025 09:06:34] [main] [Utilities.ElementUtils] - Sending secret_sauce to element: By.id: password
+[INFO] - [29-04-2025 09:06:34] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: password
+[INFO] - [29-04-2025 09:06:34] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: password
+[INFO] - [29-04-2025 09:06:34] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: password
+[INFO] - [29-04-2025 09:06:34] [main] [Utilities.ScrollUtils] - Scrolling to element with locator: By.id: password
+[INFO] - [29-04-2025 09:06:34] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: password
+[INFO] - [29-04-2025 09:06:34] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: password
+[INFO] - [29-04-2025 09:06:35] [main] [Pages.P01_LoginPage] - Clicking login button
+[INFO] - [29-04-2025 09:06:35] [main] [Utilities.ElementUtils] - Clicking on element: By.id: login-button
+[INFO] - [29-04-2025 09:06:35] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.id: login-button
+[INFO] - [29-04-2025 09:06:35] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: login-button
+[INFO] - [29-04-2025 09:06:35] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: login-button
+[INFO] - [29-04-2025 09:06:35] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: login-button
+[INFO] - [29-04-2025 09:06:35] [main] [Utilities.ScrollUtils] - Scrolling to element with locator: By.id: login-button
+[INFO] - [29-04-2025 09:06:35] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: login-button
+[INFO] - [29-04-2025 09:06:35] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: login-button
+[INFO] - [29-04-2025 09:06:35] [main] [Pages.P01_LoginPage] - Asserting login with valid credentials
+[INFO] - [29-04-2025 09:06:35] [main] [Utilities.BrowserUtils] - Current URL is: https://www.saucedemo.com/inventory.html
+[INFO] - [29-04-2025 09:06:35] [main] [Utilities.AssertUtils] - Asserting page URL
+[INFO] - [29-04-2025 09:06:35] [main] [Utilities.AssertUtils] - Expected URL: https://www.saucedemo.com/inventory.html
+[INFO] - [29-04-2025 09:06:35] [main] [Utilities.AssertUtils] - Actual URL: https://www.saucedemo.com/inventory.html
+[INFO] - [29-04-2025 09:06:35] [main] [Utilities.ScreenshotsUtils] - Screenshot taken: TestOutputs\Screenshots\-test-2025-04-29_09-06-35.png
+[INFO] - [29-04-2025 09:06:35] [main] [Utilities.AllureUtils] - Screenshot attached to Allure report: TestOutputs\Screenshots\-test-2025-04-29_09-06-35.png
+[INFO] - [29-04-2025 09:06:35] [main] [Utilities.BrowserUtils] - Quitting the browser
+[INFO] - [29-04-2025 09:06:35] [main] [Factories.DriverFactory] - Removing driver
+[INFO] - [29-04-2025 09:06:35] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-04-29_09-06-29.log
