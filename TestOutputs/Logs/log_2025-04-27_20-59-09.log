@@ -1,5 +1,0 @@
-[DEBUG] - [27-04-2025 20:59:09] [main] [org.testng.TestNG] - suiteXmlPath: "C:\Users\Mohamed\AppData\Local\JetBrains\IdeaIC2024.3\temp-testng-customsuite.xml"
-[INFO] - [27-04-2025 20:59:09] [main] [org.testng.internal.Utils] - [TestNG] Running:
-  C:\Users\Mohamed\AppData\Local\JetBrains\IdeaIC2024.3\temp-testng-customsuite.xml
-
-[INFO] - [27-04-2025 20:59:11] [main] [Tests.TC01_LoginTest] - Test

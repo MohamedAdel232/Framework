@@ -1,5 +1,7 @@
 package Utilities;
 
+import org.apache.commons.io.FileUtils;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -50,5 +52,11 @@ public class FilesUtils {
         return latestFile;
     }
 
-
+    public static void cleanDirectory(File file) {
+        try {
+            FileUtils.cleanDirectory(file);
+        } catch (Exception e) {
+            LogsUtils.error("Failed to clean directory: " + e.getMessage());
+        }
+    }
 }

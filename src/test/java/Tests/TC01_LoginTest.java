@@ -1,22 +1,23 @@
 package Tests;
 
 import Factories.DriverFactory;
+import Listeners.TestNGListeners;
 import Pages.P01_LoginPage;
-import Utilities.*;
+import Utilities.BrowserUtils;
+import Utilities.JsonUtils;
+import Utilities.PropertiesUtils;
+import Utilities.SoftAssertUtils;
 import org.testng.annotations.*;
-
-import java.io.File;
 
 import static Factories.DriverFactory.getDriver;
 
+@Listeners(TestNGListeners.class)
 public class TC01_LoginTest {
-    File allureResultsDirectory = new File("TestOutputs/allure-results");
+
     JsonUtils jsonData;
 
-    @BeforeSuite
-    public void beforeSuite() {
-        PropertiesUtils.loadProperties();
-        FilesUtils.deleteFiles(allureResultsDirectory);
+    @BeforeClass
+    public void beforeClass() {
         jsonData = new JsonUtils("TestData");
     }
 
@@ -33,7 +34,6 @@ public class TC01_LoginTest {
                 .enterPassword(jsonData.getJsonData("loginCredentials.password"))
                 .clickLoginButton()
                 .assertLoginWithValidCredentials();
-        ScreenshotsUtils.takeScreenshot("test");
     }
 
     @AfterMethod
@@ -41,10 +41,5 @@ public class TC01_LoginTest {
         BrowserUtils.quitBrowser(getDriver());
         DriverFactory.removeDriver();
         SoftAssertUtils.softAssertAll();
-    }
-
-    @AfterClass
-    public void afterClass() {
-        AllureUtils.attacheLogsToAllureReport();
     }
 }

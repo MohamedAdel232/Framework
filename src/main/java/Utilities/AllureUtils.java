@@ -26,7 +26,7 @@ public class AllureUtils {
         }
     }
 
-    public static void attacheScreenshotsToAllureReport(String screenshotName, String screenshotPath) {
+    public static void attacheScreenshotToAllureReport(String screenshotName, String screenshotPath) {
         try {
             Allure.addAttachment(screenshotName, Files.newInputStream(Path.of(screenshotPath)));
             LogsUtils.info("Screenshot attached to Allure report: " + screenshotPath);
