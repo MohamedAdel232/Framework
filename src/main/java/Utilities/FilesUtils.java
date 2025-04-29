@@ -54,7 +54,7 @@ public class FilesUtils {
 
     public static void cleanDirectory(File file) {
         try {
-            FileUtils.cleanDirectory(file);
+            FileUtils.deleteQuietly(file);
         } catch (Exception e) {
             LogsUtils.error("Failed to clean directory: " + e.getMessage());
         }

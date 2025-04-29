@@ -6,25 +6,13 @@ import Pages.P01_LoginPage;
 import Utilities.BrowserUtils;
 import Utilities.JsonUtils;
 import Utilities.PropertiesUtils;
-import Utilities.SoftAssertUtils;
 import org.testng.annotations.*;
 
 import static Factories.DriverFactory.getDriver;
 
 @Listeners(TestNGListeners.class)
 public class TC01_LoginTest {
-
     JsonUtils jsonData;
-
-    @BeforeClass
-    public void beforeClass() {
-        jsonData = new JsonUtils("TestData");
-    }
-
-    @BeforeMethod
-    public void setup() {
-        DriverFactory.createDriver(PropertiesUtils.getPropertyValue("browser"));
-    }
 
     @Test
     public void loginWithValidCredentialsTC() {
@@ -36,10 +24,20 @@ public class TC01_LoginTest {
                 .assertLoginWithValidCredentials();
     }
 
+    @BeforeClass
+    public void beforeClass() {
+        jsonData = new JsonUtils("TestData");
+    }
+
+    @BeforeMethod
+    public void setup() {
+        DriverFactory.createDriver(PropertiesUtils.getPropertyValue("browser"));
+    }
+
     @AfterMethod
     public void tearDown() {
         BrowserUtils.quitBrowser(getDriver());
         DriverFactory.removeDriver();
-        SoftAssertUtils.softAssertAll();
+
     }
 }
