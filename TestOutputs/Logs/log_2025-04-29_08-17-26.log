@@ -1,0 +1,41 @@
+[DEBUG] - [29-04-2025 08:17:27] [main] [org.testng.TestNG] - suiteXmlPath: "C:\Users\mohamed.adel\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml"
+[INFO] - [29-04-2025 08:17:28] [main] [org.testng.internal.Utils] - [TestNG] Running:
+  C:\Users\mohamed.adel\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml
+
+[INFO] - [29-04-2025 08:17:28] [main] [Factories.DriverFactory] - Creating driver for browser: edge
+[INFO] - [29-04-2025 08:17:28] [main] [Factories.BrowserFactory] - Getting browser: edge
+[INFO] - [29-04-2025 08:17:31] [main] [Pages.P01_LoginPage] - Navigating to login page
+[INFO] - [29-04-2025 08:17:31] [main] [Utilities.BrowserUtils] - Navigating to URL: https://www.saucedemo.com/
+[INFO] - [29-04-2025 08:17:32] [main] [Pages.P01_LoginPage] - Entering username
+[INFO] - [29-04-2025 08:17:32] [main] [Utilities.ElementUtils] - Sending standard_user to element: By.id: user-name
+[INFO] - [29-04-2025 08:17:32] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: user-name
+[INFO] - [29-04-2025 08:17:32] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: user-name
+[INFO] - [29-04-2025 08:17:32] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: user-name
+[INFO] - [29-04-2025 08:17:32] [main] [Utilities.ScrollUtils] - Scrolling to element with locator: By.id: user-name
+[INFO] - [29-04-2025 08:17:32] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: user-name
+[INFO] - [29-04-2025 08:17:32] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: user-name
+[INFO] - [29-04-2025 08:17:32] [main] [Pages.P01_LoginPage] - Entering password
+[INFO] - [29-04-2025 08:17:32] [main] [Utilities.ElementUtils] - Sending secret_sauce to element: By.id: password
+[INFO] - [29-04-2025 08:17:32] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: password
+[INFO] - [29-04-2025 08:17:32] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: password
+[INFO] - [29-04-2025 08:17:32] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: password
+[INFO] - [29-04-2025 08:17:32] [main] [Utilities.ScrollUtils] - Scrolling to element with locator: By.id: password
+[INFO] - [29-04-2025 08:17:32] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: password
+[INFO] - [29-04-2025 08:17:32] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: password
+[INFO] - [29-04-2025 08:17:33] [main] [Pages.P01_LoginPage] - Clicking login button
+[INFO] - [29-04-2025 08:17:33] [main] [Utilities.ElementUtils] - Clicking on element: By.id: login-button
+[INFO] - [29-04-2025 08:17:33] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.id: login-button
+[INFO] - [29-04-2025 08:17:33] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: login-button
+[INFO] - [29-04-2025 08:17:33] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: login-button
+[INFO] - [29-04-2025 08:17:33] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: login-button
+[INFO] - [29-04-2025 08:17:33] [main] [Utilities.ScrollUtils] - Scrolling to element with locator: By.id: login-button
+[INFO] - [29-04-2025 08:17:33] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: login-button
+[INFO] - [29-04-2025 08:17:33] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: login-button
+[INFO] - [29-04-2025 08:17:33] [main] [Pages.P01_LoginPage] - Asserting login with valid credentials
+[INFO] - [29-04-2025 08:17:33] [main] [Utilities.BrowserUtils] - Current URL is: https://www.saucedemo.com/inventory.html
+[INFO] - [29-04-2025 08:17:33] [main] [Utilities.AssertUtils] - Asserting page URL
+[INFO] - [29-04-2025 08:17:33] [main] [Utilities.AssertUtils] - Expected URL: https://www.saucedemo.com/inventory.html
+[INFO] - [29-04-2025 08:17:33] [main] [Utilities.AssertUtils] - Actual URL: https://www.saucedemo.com/inventory.html
+[INFO] - [29-04-2025 08:17:33] [main] [Tests.TC01_LoginTest] - Test
+[INFO] - [29-04-2025 08:17:33] [main] [Utilities.BrowserUtils] - Quitting the browser
+[INFO] - [29-04-2025 08:17:34] [main] [Factories.DriverFactory] - Removing driver

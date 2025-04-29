@@ -2,16 +2,21 @@ package Tests;
 
 import Factories.DriverFactory;
 import Pages.P01_LoginPage;
-import Utilities.BrowserUtils;
-import Utilities.LogsUtils;
-import Utilities.SoftAssertUtils;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+import Utilities.*;
+import org.testng.annotations.*;
+
+import java.io.File;
 
 import static Factories.DriverFactory.getDriver;
 
 public class TC01_LoginTest {
+    File allureResultsDirectory = new File("TestOutputs/allure-results");
+
+    @BeforeSuite
+    public void beforeSuite() {
+        FilesUtils.deleteFiles(allureResultsDirectory);
+    }
+
     @BeforeMethod
     public void setup() {
         DriverFactory.createDriver("edge");
@@ -25,7 +30,7 @@ public class TC01_LoginTest {
                 .enterPassword("secret_sauce")
                 .clickLoginButton()
                 .assertLoginWithValidCredentials();
-        LogsUtils.info("Test");
+        ScreenshotsUtils.takeScreenshot("test");
     }
 
     @AfterMethod
@@ -33,5 +38,10 @@ public class TC01_LoginTest {
         BrowserUtils.quitBrowser(getDriver());
         DriverFactory.removeDriver();
         SoftAssertUtils.softAssertAll();
+    }
+
+    @AfterClass
+    public void afterClass() {
+        AllureUtils.attacheLogsToAllureReport();
     }
 }
