@@ -17,6 +17,9 @@ public class TestNGListeners implements IExecutionListener, IInvokedMethodListen
         FilesUtils.deleteFiles(allureResultsDirectory);
         FilesUtils.cleanDirectory(logsDirectory);
         FilesUtils.cleanDirectory(screenshotsDirectory);
+        FilesUtils.createDirectory(allureResultsDirectory);
+        FilesUtils.createDirectory(logsDirectory);
+        FilesUtils.createDirectory(screenshotsDirectory);
     }
 
     @Override

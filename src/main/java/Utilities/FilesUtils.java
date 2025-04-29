@@ -59,4 +59,17 @@ public class FilesUtils {
             LogsUtils.error("Failed to clean directory: " + e.getMessage());
         }
     }
+
+    public static void createDirectory(File directory) {
+        if (!directory.exists()) {
+            try {
+                Files.createDirectories(directory.toPath());
+                LogsUtils.info("Directory created: " + directory);
+            } catch (IOException e) {
+                LogsUtils.error("Failed to create directory: " + directory);
+            }
+        } else {
+            LogsUtils.info("Directory already exists: " + directory);
+        }
+    }
 }
