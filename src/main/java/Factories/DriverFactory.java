@@ -1,39 +1,62 @@
 package Factories;
 
+import Utilities.AssertUtils;
+import Utilities.BrowserUtils;
+import Utilities.ElementUtils;
 import Utilities.LogsUtils;
-import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.logging.Logs;
 
 import static org.testng.Assert.fail;
 
 public class DriverFactory {
     private static final ThreadLocal<WebDriver> driverThreadLocal = new ThreadLocal<>();
 
-    private DriverFactory() {
-    }
-
-    @Step("Create driver for browser: {0}")
-    public static void createDriver(String browser) {
-        LogsUtils.info("Creating driver for browser:", browser);
-        WebDriver driver = BrowserFactory.getBrowser(browser);
+    public DriverFactory(String browser) {
+        WebDriver driver = getDriver(browser).startDriver();
         setDriver(driver);
-    }
-
-    public static WebDriver getDriver() {
-        if (driverThreadLocal.get() == null) {
-            LogsUtils.error("Driver is not initialized. Please set the driver before using it.");
-            fail("Driver is not initialized. Please set the driver before using it.");
-        }
-        return driverThreadLocal.get();
-    }
-
-    public static void setDriver(WebDriver driver) {
-        driverThreadLocal.set(driver);
     }
 
     public static void removeDriver() {
         LogsUtils.info("Removing driver");
         driverThreadLocal.remove();
+    }
+
+    public static WebDriver getInstance() {
+        return driverThreadLocal.get();
+    }
+
+    private void setDriver(WebDriver driver) {
+        driverThreadLocal.set(driver);
+    }
+
+    private AbstractDriver getDriver(String browser) {
+        return switch (browser.toLowerCase()) {
+            case "chrome" -> new ChromeFactory();
+            case "firefox" -> new FirefoxFactory();
+            case "edge" -> new EdgeFactory();
+            default -> throw new IllegalArgumentException();
+        };
+    }
+
+    public WebDriver get() {
+        if (driverThreadLocal.get() == null) {
+            LogsUtils.error("Driver is null");
+            fail("Driver is null");
+            return null;
+        } else {
+            return driverThreadLocal.get();
+        }
+    }
+
+    public ElementUtils elementUtils() {
+        return new ElementUtils(get());
+    }
+
+    public BrowserUtils browserUtils() {
+        return new BrowserUtils(get());
+    }
+
+    public AssertUtils assertUtils() {
+        return new AssertUtils(get());
     }
 }

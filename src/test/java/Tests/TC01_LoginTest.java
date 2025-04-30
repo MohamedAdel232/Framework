@@ -3,20 +3,18 @@ package Tests;
 import Factories.DriverFactory;
 import Listeners.TestNGListeners;
 import Pages.P01_LoginPage;
-import Utilities.BrowserUtils;
 import Utilities.JsonUtils;
 import Utilities.PropertiesUtils;
 import org.testng.annotations.*;
 
-import static Factories.DriverFactory.getDriver;
-
 @Listeners(TestNGListeners.class)
 public class TC01_LoginTest {
+    DriverFactory driver;
     JsonUtils jsonData;
 
     @Test
     public void loginWithValidCredentialsTC() {
-        new P01_LoginPage(getDriver())
+        new P01_LoginPage(driver)
                 .navigateToLoginPage(PropertiesUtils.getPropertyValue("LoginPageUrl"))
                 .enterUsername(jsonData.getJsonData("loginCredentials.username"))
                 .enterPassword(jsonData.getJsonData("loginCredentials.password"))
@@ -31,12 +29,12 @@ public class TC01_LoginTest {
 
     @BeforeMethod
     public void setup() {
-        DriverFactory.createDriver(PropertiesUtils.getPropertyValue("browser"));
+        driver = new DriverFactory(PropertiesUtils.getPropertyValue("browser"));
     }
 
     @AfterMethod
     public void tearDown() {
-        BrowserUtils.quitBrowser(getDriver());
+        driver.browserUtils().quitBrowser();
         DriverFactory.removeDriver();
 
     }

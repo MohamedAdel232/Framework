@@ -1,46 +1,47 @@
 package Pages;
 
-import Utilities.*;
+import Factories.DriverFactory;
+import Utilities.LogsUtils;
+import Utilities.PropertiesUtils;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 
 public class P01_LoginPage {
     private final By usernameFieldLocator = By.id("user-name");
     private final By passwordFieldLocator = By.id("password");
     private final By loginButtonLocator = By.id("login-button");
 
-    private final WebDriver driver;
+    private final DriverFactory driver;
 
-    public P01_LoginPage(WebDriver driver) {
+    public P01_LoginPage(DriverFactory driver) {
         this.driver = driver;
     }
 
     @Step("Navigate to login page")
     public P01_LoginPage navigateToLoginPage(String url) {
         LogsUtils.info("Navigating to login page");
-        BrowserUtils.navigateToUrl(driver, url);
+        driver.browserUtils().navigateToUrl(url);
         return this;
     }
 
     @Step("Enter username")
     public P01_LoginPage enterUsername(String username) {
         LogsUtils.info("Entering username");
-        ElementUtils.sendDataToElement(driver, usernameFieldLocator, username);
+        driver.elementUtils().sendDataToElement(usernameFieldLocator, username);
         return this;
     }
 
     @Step("Enter password")
     public P01_LoginPage enterPassword(String password) {
         LogsUtils.info("Entering password");
-        ElementUtils.sendDataToElement(driver, passwordFieldLocator, password);
+        driver.elementUtils().sendDataToElement(passwordFieldLocator, password);
         return this;
     }
 
     @Step("Click login button")
     public P01_LoginPage clickLoginButton() {
         LogsUtils.info("Clicking login button");
-        ElementUtils.clickOnElement(driver, loginButtonLocator);
+        driver.elementUtils().clickOnElement(loginButtonLocator);
         return this;
     }
 
@@ -48,6 +49,6 @@ public class P01_LoginPage {
     public void assertLoginWithValidCredentials() {
         String expectedUrl = PropertiesUtils.getPropertyValue("HomePageUrl");
         LogsUtils.info("Asserting login with valid credentials");
-        AssertUtils.assertPageUrl(driver, expectedUrl, "Login with valid credentials failed");
+        driver.assertUtils().assertPageUrl(expectedUrl, "Login with valid credentials failed");
     }
 }

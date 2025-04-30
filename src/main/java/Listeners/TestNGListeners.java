@@ -1,5 +1,6 @@
 package Listeners;
 
+import Factories.DriverFactory;
 import Utilities.*;
 import org.testng.*;
 
@@ -31,16 +32,19 @@ public class TestNGListeners implements IExecutionListener, IInvokedMethodListen
     public void afterInvocation(IInvokedMethod method, ITestResult testResult) {
         if (method.isTestMethod()) {
             try {
-                SoftAssertUtils.softAssertAll();
+                SoftAssertUtils.softAssertAll(testResult);
             } catch (AssertionError e) {
                 testResult.setStatus(ITestResult.FAILURE);
                 testResult.setThrowable(e);
                 LogsUtils.error("Soft Assert failed: " + e.getMessage());
             }
             switch (testResult.getStatus()) {
-                case ITestResult.SUCCESS -> ScreenshotsUtils.takeScreenshot("passed-" + testResult.getName());
-                case ITestResult.FAILURE -> ScreenshotsUtils.takeScreenshot("failed-" + testResult.getName());
-                case ITestResult.SKIP -> ScreenshotsUtils.takeScreenshot("skipped-" + testResult.getName());
+                case ITestResult.SUCCESS ->
+                        ScreenshotsUtils.takeScreenshot(DriverFactory.getInstance(), "passed-" + testResult.getName());
+                case ITestResult.FAILURE ->
+                        ScreenshotsUtils.takeScreenshot(DriverFactory.getInstance(), "failed-" + testResult.getName());
+                case ITestResult.SKIP ->
+                        ScreenshotsUtils.takeScreenshot(DriverFactory.getInstance(), "skipped-" + testResult.getName());
             }
             AllureUtils.attacheLogsToAllureReport();
         }

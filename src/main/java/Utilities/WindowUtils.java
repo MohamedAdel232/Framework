@@ -6,23 +6,26 @@ import org.openqa.selenium.WebDriver;
 import java.util.Set;
 
 public class WindowUtils {
-    private WindowUtils() {
+    private final WebDriver driver;
+
+    public WindowUtils(WebDriver driver) {
+        this.driver = driver;
     }
 
     @Step("Switch to new window")
-    public static String getWindowHandle(WebDriver driver) {
+    public String getWindowHandle() {
         LogsUtils.info("Getting current window handle");
         return driver.getWindowHandle();
     }
 
     @Step("Switch to new window")
-    public static Set<String> getWindowHandles(WebDriver driver) {
+    public Set<String> getWindowHandles() {
         LogsUtils.info("Getting all window handles");
         return driver.getWindowHandles();
     }
 
     @Step("Switch to new window")
-    public static void switchToWindow(WebDriver driver, String windowHandle) {
+    public void switchToWindow(String windowHandle) {
         LogsUtils.info("Switching to window with handle:", windowHandle);
         driver.switchTo().window(windowHandle);
     }

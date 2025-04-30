@@ -1,44 +1,58 @@
 package Utilities;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.bidi.log.Log;
 
 import java.util.List;
 
 public class ElementUtils {
-    private ElementUtils() {
+    private final WebDriver driver;
+
+    private final WaitUtils waitUtils;
+
+    public ElementUtils(WebDriver driver) {
+        this.driver = driver;
+        this.waitUtils = new WaitUtils(driver);
     }
 
-    public static WebElement findElement(WebDriver driver, By locator) {
+    public WebElement findElement(By locator) {
         LogsUtils.info("Finding element with locator:", locator.toString());
         return driver.findElement(locator);
     }
 
-    public static List<WebElement> findElements(WebDriver driver, By locator) {
+    public List<WebElement> findElements(By locator) {
         LogsUtils.info("Finding elements with locator:", locator.toString());
         return driver.findElements(locator);
     }
 
-    public static void clickOnElement(WebDriver driver, By locator) {
+    public void clickOnElement(By locator) {
         LogsUtils.info("Clicking on element:", locator.toString());
-        WaitUtils.waitForElementToBeClickable(driver, locator);
-        ScrollUtils.scrollToElement(driver, locator);
-        findElement(driver, locator).click();
+        waitUtils.waitForElementToBeClickable(locator);
+        scrollToElement(locator);
+        findElement(locator).click();
     }
 
-    public static void sendDataToElement(WebDriver driver, By locator, String data) {
+    public void sendDataToElement(By locator, String data) {
         LogsUtils.info("Sending", data, "to element:", locator.toString());
-        WaitUtils.waitForElementToBeVisible(driver, locator);
-        ScrollUtils.scrollToElement(driver, locator);
-        findElement(driver, locator).sendKeys(data);
+        waitUtils.waitForElementToBeVisible(locator);
+        scrollToElement(locator);
+        findElement(locator).sendKeys(data);
     }
 
-    public static String getDataFromElement(WebDriver driver, By locator) {
+    public String getDataFromElement(By locator) {
         LogsUtils.info("Getting data from element:", locator.toString());
-        WaitUtils.waitForElementToBeVisible(driver, locator);
-        ScrollUtils.scrollToElement(driver, locator);
-        return findElement(driver, locator).getText();
+        waitUtils.waitForElementToBeVisible(locator);
+        scrollToElement(locator);
+        return findElement(locator).getText();
+    }
+
+    @Step("Scroll to element with locator: {0}")
+    public void scrollToElement(By locator) {
+        LogsUtils.info("Scrolling to element with locator:", locator.toString());
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);",
+                findElement(locator));
     }
 }
