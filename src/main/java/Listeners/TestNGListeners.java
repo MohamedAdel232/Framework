@@ -26,6 +26,9 @@ public class TestNGListeners implements IExecutionListener, IInvokedMethodListen
     @Override
     public void onExecutionFinish() {
         LogsUtils.info("Test execution finished");
+        AllureUtils.generateAllureReport();
+        String reportName = AllureUtils.renameReport();
+        AllureUtils.openReport(reportName);
     }
 
     @Override

@@ -72,4 +72,16 @@ public class FilesUtils {
             LogsUtils.info("Directory already exists: " + directory);
         }
     }
+
+    public static void renameFile(File oldName, File newName) {
+        try {
+            File targetFile = oldName.getParentFile().getAbsoluteFile();
+            String targetDirectory = targetFile + File.separator + newName;
+            FileUtils.copyFile(oldName, new File(targetDirectory));
+            FileUtils.deleteQuietly(oldName);
+            LogsUtils.info("Target File Path: \"" + oldName.getPath() + "\", file was renamed to \"" + newName.getName() + "\".");
+        } catch (Exception e) {
+            LogsUtils.error("Failed to rename file: " + e.getMessage());
+        }
+    }
 }
