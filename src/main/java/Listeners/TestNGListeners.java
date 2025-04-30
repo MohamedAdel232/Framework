@@ -8,6 +8,7 @@ import java.io.File;
 
 public class TestNGListeners implements IExecutionListener, IInvokedMethodListener, ITestListener {
     File allureResultsDirectory = new File("TestOutputs/allure-results");
+    File allureReportDirectory = new File("TestOutputs/allure-report");
     File logsDirectory = new File("TestOutputs/Logs");
     File screenshotsDirectory = new File("TestOutputs/Screenshots");
 
@@ -15,10 +16,15 @@ public class TestNGListeners implements IExecutionListener, IInvokedMethodListen
     public void onExecutionStart() {
         LogsUtils.info("Test execution started");
         PropertiesUtils.loadProperties();
+
         FilesUtils.deleteFiles(allureResultsDirectory);
+        FilesUtils.deleteFiles(allureReportDirectory);
+
         FilesUtils.cleanDirectory(logsDirectory);
         FilesUtils.cleanDirectory(screenshotsDirectory);
+
         FilesUtils.createDirectory(allureResultsDirectory);
+        FilesUtils.createDirectory(allureReportDirectory);
         FilesUtils.createDirectory(logsDirectory);
         FilesUtils.createDirectory(screenshotsDirectory);
     }

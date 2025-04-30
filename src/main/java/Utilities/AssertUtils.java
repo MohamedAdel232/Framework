@@ -67,7 +67,7 @@ public class AssertUtils {
         LogsUtils.info("Asserting page URL");
         LogsUtils.info("Expected URL:", expectedUrl);
         LogsUtils.info("Actual URL:", actualUrl);
-        Assert.assertEquals(actualUrl, expectedUrl, message);
+        SoftAssertUtils.softAssertEquals(actualUrl, expectedUrl, message);
     }
 
     @Step("Assert page title")
@@ -76,6 +76,6 @@ public class AssertUtils {
         LogsUtils.info("Asserting page title");
         LogsUtils.info("Expected title:", expectedTitle);
         LogsUtils.info("Actual title:", actualTitle);
-        Assert.assertEquals(actualTitle, expectedTitle, message);
+        SoftAssertUtils.softAssertEquals(actualTitle, expectedTitle, message);
     }
 }

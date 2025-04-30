@@ -36,6 +36,5 @@ public class TC01_LoginTest {
     public void tearDown() {
         driver.browserUtils().quitBrowser();
         DriverFactory.removeDriver();
-
     }
 }
