@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Full Project Runner">
+    <listeners>
+        <listener class-name="Listeners.TestNGListeners"/>
+    </listeners>
+    <test name="Full Project Runner on Chrome">
+        <parameter name="browser" value="Chrome"/>
+        <classes>
+            <class name="Tests.TC01_LoginTest"/>
+        </classes>
+    </test>
+</suite>
