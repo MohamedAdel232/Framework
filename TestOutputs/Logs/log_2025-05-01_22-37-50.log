@@ -1,0 +1,66 @@
+[DEBUG] - [01-05-2025 22:37:50] [main] [org.testng.TestNG] - suiteXmlPath: "C:\Users\Mohamed\AppData\Local\JetBrains\IdeaIC2024.3\temp-testng-customsuite.xml"
+[INFO] - [01-05-2025 22:37:51] [main] [Listeners.TestNGListeners] - Test execution started
+[INFO] - [01-05-2025 22:37:51] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [01-05-2025 22:37:51] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [01-05-2025 22:37:51] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [01-05-2025 22:37:51] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [01-05-2025 22:37:51] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [01-05-2025 22:37:51] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [01-05-2025 22:37:51] [main] [Utilities.PropertiesUtils] - Loading properties file data
+[INFO] - [01-05-2025 22:37:51] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\allure-results
+[INFO] - [01-05-2025 22:37:51] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\allure-report
+[INFO] - [01-05-2025 22:37:51] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\Logs
+[INFO] - [01-05-2025 22:37:51] [main] [Utilities.FilesUtils] - Directory created: TestOutputs\Screenshots
+[INFO] - [01-05-2025 22:37:51] [main] [Utilities.FilesUtils] - Directory created: TestOutputs\ScreenRecordings
+[INFO] - [01-05-2025 22:37:51] [main] [org.testng.internal.Utils] - [TestNG] Running:
+  C:\Users\Mohamed\AppData\Local\JetBrains\IdeaIC2024.3\temp-testng-customsuite.xml
+
+[INFO] - [01-05-2025 22:37:51] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-05-01_22-37-50.log
+[INFO] - [01-05-2025 22:37:52] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-05-01_22-37-50.log
+[INFO] - [01-05-2025 22:37:53] [main] [Utilities.ScreenRecorderUtils] - Recording started
+[INFO] - [01-05-2025 22:37:53] [main] [Pages.P01_LoginPage] - Navigating to login page
+[INFO] - [01-05-2025 22:37:53] [main] [Utilities.BrowserUtils] - Navigating to URL: https://www.saucedemo.com/
+[DEBUG] - [01-05-2025 22:37:54] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['loginCredentials']['username']
+[INFO] - [01-05-2025 22:37:54] [main] [Pages.P01_LoginPage] - Entering username
+[INFO] - [01-05-2025 22:37:54] [main] [Utilities.ElementUtils] - Sending standard_user to element: By.id: user-name
+[INFO] - [01-05-2025 22:37:54] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: user-name
+[INFO] - [01-05-2025 22:37:54] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: user-name
+[INFO] - [01-05-2025 22:37:54] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.id: user-name
+[INFO] - [01-05-2025 22:37:54] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: user-name
+[INFO] - [01-05-2025 22:37:54] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: user-name
+[DEBUG] - [01-05-2025 22:37:54] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['loginCredentials']['password']
+[INFO] - [01-05-2025 22:37:54] [main] [Pages.P01_LoginPage] - Entering password
+[INFO] - [01-05-2025 22:37:54] [main] [Utilities.ElementUtils] - Sending secret_sauce to element: By.id: password
+[INFO] - [01-05-2025 22:37:54] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: password
+[INFO] - [01-05-2025 22:37:54] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: password
+[INFO] - [01-05-2025 22:37:54] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.id: password
+[INFO] - [01-05-2025 22:37:54] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: password
+[INFO] - [01-05-2025 22:37:54] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: password
+[INFO] - [01-05-2025 22:37:54] [main] [Pages.P01_LoginPage] - Clicking login button
+[INFO] - [01-05-2025 22:37:54] [main] [Utilities.ElementUtils] - Clicking on element: By.id: login-button
+[INFO] - [01-05-2025 22:37:54] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.id: login-button
+[INFO] - [01-05-2025 22:37:54] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: login-button
+[INFO] - [01-05-2025 22:37:54] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: login-button
+[INFO] - [01-05-2025 22:37:54] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.id: login-button
+[INFO] - [01-05-2025 22:37:54] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: login-button
+[INFO] - [01-05-2025 22:37:54] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: login-button
+[INFO] - [01-05-2025 22:37:54] [main] [Pages.P01_LoginPage] - Asserting login with valid credentials
+[INFO] - [01-05-2025 22:37:54] [main] [Utilities.BrowserUtils] - Current URL is: https://www.saucedemo.com/inventory.html
+[INFO] - [01-05-2025 22:37:54] [main] [Utilities.SoftAssertActionsUtils] - Asserting page URL
+[INFO] - [01-05-2025 22:37:54] [main] [Utilities.SoftAssertActionsUtils] - Expected URL: https://www.saucedemo.com/inventory.html
+[INFO] - [01-05-2025 22:37:54] [main] [Utilities.SoftAssertActionsUtils] - Actual URL: https://www.saucedemo.com/inventory.html
+[INFO] - [01-05-2025 22:37:54] [main] [Utilities.SoftAssertUtils] - Asserting equals
+[INFO] - [01-05-2025 22:37:54] [main] [Utilities.ScreenRecorderUtils] - Recording stopped
+[INFO] - [01-05-2025 22:37:55] [main] [Utilities.ScreenshotsUtils] - Screenshot taken: TestOutputs\Screenshots\passed-loginWithValidCredentialsTC-2025-05-01_22-37-55.png
+[INFO] - [01-05-2025 22:37:55] [main] [Utilities.AllureUtils] - Screenshot attached to Allure report: TestOutputs\Screenshots\passed-loginWithValidCredentialsTC-2025-05-01_22-37-55.png
+[INFO] - [01-05-2025 22:37:55] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-05-01_22-37-50.log
+[INFO] - [01-05-2025 22:37:55] [main] [Listeners.TestNGListeners] - Test loginWithValidCredentialsTC passed
+[INFO] - [01-05-2025 22:37:55] [main] [Utilities.BrowserUtils] - Quitting the browser
+[INFO] - [01-05-2025 22:37:55] [main] [Factories.DriverFactory] - Removing driver
+[INFO] - [01-05-2025 22:37:55] [main] [Utilities.ScreenRecorderUtils] - Recording stopped
+[INFO] - [01-05-2025 22:37:55] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-05-01_22-37-50.log
+[INFO] - [01-05-2025 22:37:55] [main] [Listeners.TestNGListeners] - Test execution finished
+[INFO] - [01-05-2025 22:37:57] [main] [Utilities.TerminalUtils] - Command executed: C:\Users\Mohamed\scoop\apps\allure\2.32.0\bin\allure.bat generate TestOutputs/allure-results -o TestOutputs/allure-report clean --single-file
+[INFO] - [01-05-2025 22:37:57] [main] [Utilities.AllureUtils] - Allure report generated successfully on Windows
+[INFO] - [01-05-2025 22:37:57] [main] [Utilities.FilesUtils] - Target File Path: "TestOutputs\allure-report\index.html", file was renamed to "Report_2025-05-01_22-37-57.html".
+[INFO] - [01-05-2025 22:37:57] [main] [Utilities.TerminalUtils] - Command executed: cmd.exe /c start TestOutputs/allure-report\Report_2025-05-01_22-37-57.html

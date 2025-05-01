@@ -21,7 +21,9 @@ import static org.monte.media.VideoFormatKeys.*;
 
 public class ScreenRecorderUtils extends ScreenRecorder {
     public static ScreenRecorder screenRecorder;
+    public static String screenRecordingsDirectoryPath = "TestOutputs/ScreenRecordings/";
     public String name;
+
 
     public ScreenRecorderUtils(GraphicsConfiguration cfg, Rectangle captureArea, Format fileFormat,
                                Format screenFormat, Format mouseFormat, Format audioFormat, File movieFolder, String name)
@@ -30,31 +32,42 @@ public class ScreenRecorderUtils extends ScreenRecorder {
         this.name = name;
     }
 
-    public static void startRecording(String methodName) throws Exception {
-        File file = new File("TestOutputs/ScreenRecordings");
-        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-        int width = screenSize.width;
-        int height = screenSize.height;
+    public static void startRecording(String methodName) {
+        if (PropertiesUtils.getPropertyValue("screenRecord").equalsIgnoreCase("true")
+                && PropertiesUtils.getPropertyValue("executionType").equalsIgnoreCase("local")) {
+            File file = new File(screenRecordingsDirectoryPath);
+            Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+            int width = screenSize.width;
+            int height = screenSize.height;
 
-        Rectangle captureSize = new Rectangle(0, 0, width, height);
+            Rectangle captureSize = new Rectangle(0, 0, width, height);
 
-        GraphicsConfiguration gc = GraphicsEnvironment.getLocalGraphicsEnvironment().
-                getDefaultScreenDevice()
-                .getDefaultConfiguration();
-        screenRecorder = new ScreenRecorderUtils(gc, captureSize,
-                new Format(MediaTypeKey, MediaType.FILE, MimeTypeKey, MIME_AVI),
-                new Format(MediaTypeKey, MediaType.VIDEO, EncodingKey, ENCODING_AVI_TECHSMITH_SCREEN_CAPTURE,
-                        CompressorNameKey, ENCODING_AVI_TECHSMITH_SCREEN_CAPTURE, DepthKey, 24, FrameRateKey,
-                        Rational.valueOf(15), QualityKey, 1.0f, KeyFrameIntervalKey, 15 * 60),
-                new Format(MediaTypeKey, MediaType.VIDEO, EncodingKey, "black", FrameRateKey, Rational.valueOf(30)),
-                null, file, methodName);
-        screenRecorder.start();
-        LogsUtils.info("Recording started");
+            GraphicsConfiguration gc = GraphicsEnvironment.getLocalGraphicsEnvironment().
+                    getDefaultScreenDevice()
+                    .getDefaultConfiguration();
+            try {
+                screenRecorder = new ScreenRecorderUtils(gc, captureSize,
+                        new Format(MediaTypeKey, MediaType.FILE, MimeTypeKey, MIME_AVI),
+                        new Format(MediaTypeKey, MediaType.VIDEO, EncodingKey, ENCODING_AVI_TECHSMITH_SCREEN_CAPTURE,
+                                CompressorNameKey, ENCODING_AVI_TECHSMITH_SCREEN_CAPTURE, DepthKey, 24, FrameRateKey,
+                                Rational.valueOf(15), QualityKey, 1.0f, KeyFrameIntervalKey, 15 * 60),
+                        new Format(MediaTypeKey, MediaType.VIDEO, EncodingKey, "black", FrameRateKey, Rational.valueOf(30)),
+                        null, file, methodName);
+                screenRecorder.start();
+                LogsUtils.info("Recording started");
+            } catch (Exception e) {
+                LogsUtils.error("Error starting screen recording: " + e.getMessage());
+            }
+        }
     }
 
-    public static void stopRecording() throws Exception {
-        LogsUtils.info("Recording stopped");
-        screenRecorder.stop();
+    public static void stopRecording() {
+        try {
+            LogsUtils.info("Recording stopped");
+            screenRecorder.stop();
+        } catch (Exception e) {
+            LogsUtils.error("Error stopping screen recording: " + e.getMessage());
+        }
     }
 
     @Override

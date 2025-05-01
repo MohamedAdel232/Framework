@@ -43,11 +43,7 @@ public class TestNGListeners implements IExecutionListener, IInvokedMethodListen
     @Override
     public void beforeInvocation(IInvokedMethod method, ITestResult testResult) {
         if (method.isTestMethod()) {
-            try {
-                ScreenRecorderUtils.startRecording(testResult.getName());
-            } catch (Exception e) {
-                LogsUtils.error("Error starting screen recording: " + e.getMessage());
-            }
+            ScreenRecorderUtils.startRecording(testResult.getName());
         }
     }
 
@@ -55,11 +51,8 @@ public class TestNGListeners implements IExecutionListener, IInvokedMethodListen
     public void afterInvocation(IInvokedMethod method, ITestResult testResult) {
         if (method.isTestMethod()) {
             SoftAssertUtils.softAssertAll(testResult);
-            try {
-                ScreenRecorderUtils.stopRecording();
-            } catch (Exception e) {
-                LogsUtils.error("Error stopping screen recording: " + e.getMessage());
-            }
+            ScreenRecorderUtils.stopRecording();
+
             switch (testResult.getStatus()) {
                 case ITestResult.SUCCESS ->
                         ScreenshotsUtils.takeScreenshot(DriverFactory.getInstance(), "passed-" + testResult.getName());
@@ -68,8 +61,8 @@ public class TestNGListeners implements IExecutionListener, IInvokedMethodListen
                 case ITestResult.SKIP ->
                         ScreenshotsUtils.takeScreenshot(DriverFactory.getInstance(), "skipped-" + testResult.getName());
             }
-            AllureUtils.attacheLogsToAllureReport();
         }
+        AllureUtils.attacheLogsToAllureReport();
     }
 
     @Override
