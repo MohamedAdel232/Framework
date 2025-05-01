@@ -49,7 +49,7 @@ public class P01_LoginPage {
     public P01_LoginPage assertLoginWithValidCredentials() {
         String expectedUrl = PropertiesUtils.getPropertyValue("HomePageUrl");
         LogsUtils.info("Asserting login with valid credentials");
-        driver.assertUtils().assertPageUrl(expectedUrl, "Login with valid credentials failed");
+        driver.softAssertActionsUtils().assertPageUrl(expectedUrl, "Login with valid credentials failed");
         return this;
     }
 }

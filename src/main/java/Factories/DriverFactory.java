@@ -1,9 +1,6 @@
 package Factories;
 
-import Utilities.AssertUtils;
-import Utilities.BrowserUtils;
-import Utilities.ElementUtils;
-import Utilities.LogsUtils;
+import Utilities.*;
 import org.openqa.selenium.WebDriver;
 
 import static org.testng.Assert.fail;
@@ -58,5 +55,9 @@ public class DriverFactory {
 
     public AssertUtils assertUtils() {
         return new AssertUtils(get());
+    }
+
+    public SoftAssertActionsUtils softAssertActionsUtils() {
+        return new SoftAssertActionsUtils(get());
     }
 }
