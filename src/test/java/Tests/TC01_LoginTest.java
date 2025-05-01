@@ -5,6 +5,7 @@ import Listeners.TestNGListeners;
 import Pages.P01_LoginPage;
 import Utilities.JsonUtils;
 import Utilities.PropertiesUtils;
+import Utilities.ScreenRecorderUtils;
 import org.testng.annotations.*;
 
 @Listeners(TestNGListeners.class)
@@ -23,7 +24,7 @@ public class TC01_LoginTest {
     }
 
     @BeforeClass
-    public void beforeClass() {
+    public void beforeClass() throws Exception {
         jsonData = new JsonUtils("TestData");
     }
 
@@ -33,8 +34,9 @@ public class TC01_LoginTest {
     }
 
     @AfterMethod
-    public void tearDown() {
+    public void tearDown() throws Exception {
         driver.browserUtils().quitBrowser();
         DriverFactory.removeDriver();
+        ScreenRecorderUtils.stopRecording();
     }
 }

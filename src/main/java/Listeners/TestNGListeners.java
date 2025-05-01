@@ -11,6 +11,7 @@ public class TestNGListeners implements IExecutionListener, IInvokedMethodListen
     File allureReportDirectory = new File("TestOutputs/allure-report");
     File logsDirectory = new File("TestOutputs/Logs");
     File screenshotsDirectory = new File("TestOutputs/Screenshots");
+    File screenRecordingsDirectory = new File("TestOutputs/ScreenRecordings");
 
     @Override
     public void onExecutionStart() {
@@ -22,11 +23,13 @@ public class TestNGListeners implements IExecutionListener, IInvokedMethodListen
 
         FilesUtils.cleanDirectory(logsDirectory);
         FilesUtils.cleanDirectory(screenshotsDirectory);
+        FilesUtils.cleanDirectory(screenRecordingsDirectory);
 
         FilesUtils.createDirectory(allureResultsDirectory);
         FilesUtils.createDirectory(allureReportDirectory);
         FilesUtils.createDirectory(logsDirectory);
         FilesUtils.createDirectory(screenshotsDirectory);
+        FilesUtils.createDirectory(screenRecordingsDirectory);
     }
 
     @Override
@@ -38,9 +41,25 @@ public class TestNGListeners implements IExecutionListener, IInvokedMethodListen
     }
 
     @Override
+    public void beforeInvocation(IInvokedMethod method, ITestResult testResult) {
+        if (method.isTestMethod()) {
+            try {
+                ScreenRecorderUtils.startRecording(testResult.getName());
+            } catch (Exception e) {
+                LogsUtils.error("Error starting screen recording: " + e.getMessage());
+            }
+        }
+    }
+
+    @Override
     public void afterInvocation(IInvokedMethod method, ITestResult testResult) {
         if (method.isTestMethod()) {
             SoftAssertUtils.softAssertAll(testResult);
+            try {
+                ScreenRecorderUtils.stopRecording();
+            } catch (Exception e) {
+                LogsUtils.error("Error stopping screen recording: " + e.getMessage());
+            }
             switch (testResult.getStatus()) {
                 case ITestResult.SUCCESS ->
                         ScreenshotsUtils.takeScreenshot(DriverFactory.getInstance(), "passed-" + testResult.getName());
