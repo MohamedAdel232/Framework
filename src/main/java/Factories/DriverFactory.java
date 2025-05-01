@@ -60,4 +60,8 @@ public class DriverFactory {
     public SoftAssertActionsUtils softAssertActionsUtils() {
         return new SoftAssertActionsUtils(get());
     }
+
+    public WindowUtils windowUtils() {
+        return new WindowUtils(get());
+    }
 }
