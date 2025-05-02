@@ -10,6 +10,7 @@ import java.time.Duration;
 
 public class WaitUtils {
     private final WebDriver driver;
+    private final int timeOut = Integer.parseInt(PropertiesUtils.getPropertyValue("explicitWait"));
 
     public WaitUtils(WebDriver driver) {
         this.driver = driver;
@@ -18,14 +19,14 @@ public class WaitUtils {
     @Step("Wait for element to be present with locator: {0}")
     public WebElement waitForElementToBePresent(By locator) {
         LogsUtils.info("Waiting for element to be present with locator:", locator.toString());
-        return new WebDriverWait(driver, Duration.ofSeconds(Integer.parseInt(PropertiesUtils.getPropertyValue("explicitWait"))))
+        return new WebDriverWait(driver, Duration.ofSeconds(timeOut))
                 .until(driver1 -> driver1.findElement(locator));
     }
 
     @Step("Wait for element to be visible with locator: {0}")
     public WebElement waitForElementToBeVisible(By locator) {
         LogsUtils.info("Waiting for element to be visible with locator:", locator.toString());
-        return new WebDriverWait(driver, Duration.ofSeconds(Integer.parseInt(PropertiesUtils.getPropertyValue("explicitWait"))))
+        return new WebDriverWait(driver, Duration.ofSeconds(timeOut))
                 .until(driver1 -> {
                     WebElement element = waitForElementToBePresent(locator);
                     return element.isDisplayed() ? element : null;
@@ -35,7 +36,7 @@ public class WaitUtils {
     @Step("Wait for element to be clickable with locator: {0}")
     public WebElement waitForElementToBeClickable(By locator) {
         LogsUtils.info("Waiting for element to be clickable with locator:", locator.toString());
-        return new WebDriverWait(driver, Duration.ofSeconds(Integer.parseInt(PropertiesUtils.getPropertyValue("explicitWait"))))
+        return new WebDriverWait(driver, Duration.ofSeconds(timeOut))
                 .until(driver1 -> {
                     WebElement element = waitForElementToBeVisible(locator);
                     return element.isEnabled() ? element : null;
