@@ -64,4 +64,8 @@ public class DriverFactory {
     public WindowUtils windowUtils() {
         return new WindowUtils(get());
     }
+
+    public AlertUtils alertUtils() {
+        return new AlertUtils(get());
+    }
 }

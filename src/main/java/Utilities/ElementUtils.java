@@ -1,6 +1,5 @@
 package Utilities;
 
-import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -49,7 +48,6 @@ public class ElementUtils {
         return findElement(locator).getText();
     }
 
-    @Step("Scroll to element with locator: {0}")
     public void scrollToElement(By locator) {
         LogsUtils.info("Scrolling to element with locator:", locator.toString());
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);",
