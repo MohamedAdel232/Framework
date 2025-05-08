@@ -55,4 +55,11 @@ public class ElementUtils {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);",
                 findElement(locator));
     }
+
+    public boolean verifyVisibilityOfElement(By locator) {
+        LogsUtils.info("Verifying Visibility of Element:", locator.toString());
+        waitUtils.waitForElementToBeVisible(locator);
+        scrollToElement(locator);
+        return findElement(locator).isDisplayed();
+    }
 }

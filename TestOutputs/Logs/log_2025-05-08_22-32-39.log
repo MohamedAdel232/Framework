@@ -1,0 +1,76 @@
+[DEBUG] - [08-05-2025 22:32:39] [main] [org.testng.TestNG] - suiteXmlPath: "C:\Users\mohamed.adel\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml"
+[INFO] - [08-05-2025 22:32:40] [main] [Listeners.TestNGListeners] - Test execution started
+[INFO] - [08-05-2025 22:32:40] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [08-05-2025 22:32:40] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [08-05-2025 22:32:40] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [08-05-2025 22:32:40] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [08-05-2025 22:32:40] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [08-05-2025 22:32:40] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [08-05-2025 22:32:40] [main] [Utilities.PropertiesUtils] - Loading properties file data
+[INFO] - [08-05-2025 22:32:40] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\allure-results
+[INFO] - [08-05-2025 22:32:40] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\allure-report
+[INFO] - [08-05-2025 22:32:40] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\Logs
+[INFO] - [08-05-2025 22:32:40] [main] [Utilities.FilesUtils] - Directory created: TestOutputs\Screenshots
+[INFO] - [08-05-2025 22:32:40] [main] [Utilities.FilesUtils] - Directory created: TestOutputs\ScreenRecordings
+[INFO] - [08-05-2025 22:32:40] [main] [org.testng.internal.Utils] - [TestNG] Running:
+  C:\Users\mohamed.adel\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml
+
+[INFO] - [08-05-2025 22:32:40] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-05-08_22-32-39.log
+[INFO] - [08-05-2025 22:32:42] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-05-08_22-32-39.log
+[INFO] - [08-05-2025 22:32:42] [main] [Utilities.ScreenRecorderUtils] - Recording started
+[DEBUG] - [08-05-2025 22:32:43] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewSites']['name']
+[DEBUG] - [08-05-2025 22:32:43] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewSites']['hl7SiteName']
+[DEBUG] - [08-05-2025 22:32:43] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewSites']['prefix']
+[INFO] - [08-05-2025 22:32:43] [main] [Pages.P01_LoginPage] - Navigating to login page
+[INFO] - [08-05-2025 22:32:43] [main] [Utilities.BrowserUtils] - Navigating to URL: http://192.168.2.97/iCodeTFS/login
+[DEBUG] - [08-05-2025 22:33:04] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['username']
+[INFO] - [08-05-2025 22:33:04] [main] [Pages.P01_LoginPage] - Entering username
+[INFO] - [08-05-2025 22:33:04] [main] [Utilities.ElementUtils] - Sending Automation to element: By.cssSelector: [formcontrolname="userName"]
+[INFO] - [08-05-2025 22:33:04] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="userName"]
+[INFO] - [08-05-2025 22:33:04] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="userName"]
+[INFO] - [08-05-2025 22:33:04] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="userName"]
+[INFO] - [08-05-2025 22:33:04] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="userName"]
+[INFO] - [08-05-2025 22:33:04] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="userName"]
+[DEBUG] - [08-05-2025 22:33:04] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['password']
+[INFO] - [08-05-2025 22:33:04] [main] [Pages.P01_LoginPage] - Entering password
+[INFO] - [08-05-2025 22:33:04] [main] [Utilities.ElementUtils] - Sending Automation1# to element: By.cssSelector: [formcontrolname="password"]
+[INFO] - [08-05-2025 22:33:04] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [08-05-2025 22:33:04] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [08-05-2025 22:33:04] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [08-05-2025 22:33:04] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [08-05-2025 22:33:04] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [08-05-2025 22:33:04] [main] [Pages.P01_LoginPage] - Clicking login button
+[INFO] - [08-05-2025 22:33:04] [main] [Utilities.ElementUtils] - Clicking on element: By.id: btnlogin
+[INFO] - [08-05-2025 22:33:04] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.id: btnlogin
+[INFO] - [08-05-2025 22:33:04] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: btnlogin
+[INFO] - [08-05-2025 22:33:04] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: btnlogin
+[INFO] - [08-05-2025 22:33:04] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.id: btnlogin
+[INFO] - [08-05-2025 22:33:04] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: btnlogin
+[INFO] - [08-05-2025 22:33:04] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: btnlogin
+[INFO] - [08-05-2025 22:33:04] [main] [Pages.P01_LoginPage] - Asserting login with valid credentials
+[INFO] - [08-05-2025 22:33:04] [main] [Utilities.BrowserUtils] - Current URL is: http://192.168.2.97/iCodeTFS/login
+[INFO] - [08-05-2025 22:33:04] [main] [Utilities.SoftAssertActionsUtils] - Asserting page URL
+[INFO] - [08-05-2025 22:33:04] [main] [Utilities.SoftAssertActionsUtils] - Expected URL: http://192.168.2.97/iCodeTFS/search/4c3008d7-64f9-450e-bc38-2e24ae73a633/all
+[INFO] - [08-05-2025 22:33:04] [main] [Utilities.SoftAssertActionsUtils] - Actual URL: http://192.168.2.97/iCodeTFS/login
+[INFO] - [08-05-2025 22:33:04] [main] [Utilities.WaitUtils] - Waiting for page to load with URL: http://192.168.2.97/iCodeTFS/search/4c3008d7-64f9-450e-bc38-2e24ae73a633/all
+[INFO] - [08-05-2025 22:33:07] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [08-05-2025 22:33:07] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: //span [text()="Library"]
+[INFO] - [08-05-2025 22:33:07] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: //span [text()="Library"]
+[INFO] - [08-05-2025 22:33:07] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //span [text()="Library"]
+[INFO] - [08-05-2025 22:33:07] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //span [text()="Library"]
+[INFO] - [08-05-2025 22:33:07] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //span [text()="Library"]
+[INFO] - [08-05-2025 22:33:07] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span [text()="Library"]
+[INFO] - [08-05-2025 22:33:07] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span [text()="Library"]
+[INFO] - [08-05-2025 22:33:08] [main] [Utilities.ScreenRecorderUtils] - Recording stopped
+[INFO] - [08-05-2025 22:33:08] [main] [Utilities.ScreenshotsUtils] - Screenshot taken: TestOutputs\Screenshots\failed-sitesTC-2025-05-08_22-33-08.png
+[INFO] - [08-05-2025 22:33:08] [main] [Utilities.AllureUtils] - Screenshot attached to Allure report: TestOutputs\Screenshots\failed-sitesTC-2025-05-08_22-33-08.png
+[INFO] - [08-05-2025 22:33:08] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-05-08_22-32-39.log
+[INFO] - [08-05-2025 22:33:08] [main] [Listeners.TestNGListeners] - Test sitesTC failed
+[INFO] - [08-05-2025 22:33:08] [main] [Utilities.BrowserUtils] - Quitting the browser
+[INFO] - [08-05-2025 22:33:08] [main] [Factories.DriverFactory] - Removing driver
+[INFO] - [08-05-2025 22:33:08] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-05-08_22-32-39.log
+[INFO] - [08-05-2025 22:33:08] [main] [Listeners.TestNGListeners] - Test execution finished
+[INFO] - [08-05-2025 22:33:12] [main] [Utilities.TerminalUtils] - Command executed: C:\Users\mohamed.adel\scoop\apps\allure\2.32.2\bin\allure.bat generate TestOutputs/allure-results -o TestOutputs/allure-report clean --single-file
+[INFO] - [08-05-2025 22:33:12] [main] [Utilities.AllureUtils] - Allure report generated successfully on Windows
+[INFO] - [08-05-2025 22:33:12] [main] [Utilities.FilesUtils] - Target File Path: "TestOutputs\allure-report\index.html", file was renamed to "Report_2025-05-08_22-33-12.html".
+[INFO] - [08-05-2025 22:33:13] [main] [Utilities.TerminalUtils] - Command executed: cmd.exe /c start TestOutputs/allure-report\Report_2025-05-08_22-33-12.html
