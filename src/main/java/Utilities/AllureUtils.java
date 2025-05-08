@@ -11,8 +11,9 @@ public class AllureUtils {
     public static final String allureReportDirectoryPath = "TestOutputs/allure-report";
     static String userHome = System.getProperty("user.home");
     // C:\Users\Mohamed\scoop\apps\allure\2.32.0\bin
+    // C:\Users\Mohamed\scoop\apps\allure\2.32.2\bin
     static String allurePath = userHome + File.separator + "scoop" + File.separator + "apps"
-            + File.separator + "allure" + File.separator + "2.32.0" + File.separator
+            + File.separator + "allure" + File.separator + "2.32.2" + File.separator
             + "bin" + File.separator + "allure";
 
     private AllureUtils() {

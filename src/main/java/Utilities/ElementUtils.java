@@ -11,10 +11,12 @@ public class ElementUtils {
     private final WebDriver driver;
 
     private final WaitUtils waitUtils;
+    private final BrowserUtils browserUtils;
 
     public ElementUtils(WebDriver driver) {
         this.driver = driver;
         this.waitUtils = new WaitUtils(driver);
+        this.browserUtils = new BrowserUtils(driver);
     }
 
     public WebElement findElement(By locator) {

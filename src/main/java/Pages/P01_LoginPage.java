@@ -7,9 +7,9 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
 public class P01_LoginPage {
-    private final By usernameFieldLocator = By.id("user-name");
-    private final By passwordFieldLocator = By.id("password");
-    private final By loginButtonLocator = By.id("login-button");
+    private final By usernameFieldLocator = By.cssSelector("[formcontrolname=\"userName\"]");
+    private final By passwordFieldLocator = By.cssSelector("[formcontrolname=\"password\"]");
+    private final By loginButtonLocator = By.id("btnlogin");
 
     private final DriverFactory driver;
 

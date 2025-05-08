@@ -4,6 +4,7 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
@@ -14,6 +15,18 @@ public class WaitUtils {
 
     public WaitUtils(WebDriver driver) {
         this.driver = driver;
+    }
+
+    @Step("Wait for page to load with URL: {0}")
+    public Boolean waitForPageToLoad(String url) {
+        LogsUtils.info("Waiting for page to load with URL:", url);
+        try {
+            return new WebDriverWait(driver, Duration.ofSeconds(5))
+                    .until(ExpectedConditions.urlToBe(url));
+        } catch (Exception e) {
+            LogsUtils.error("Error while waiting for page to load:", e.getMessage());
+            return false;
+        }
     }
 
     @Step("Wait for element to be present with locator: {0}")
