@@ -4,24 +4,22 @@ import Factories.DriverFactory;
 import Listeners.TestNGListeners;
 import Pages.P01_LoginPage;
 import Pages.P02_LibraryPage;
-import Pages.P03_SitesAdminPage;
+import Pages.P04_UserGroupsAdminPage;
 import Utilities.JsonUtils;
 import Utilities.PropertiesUtils;
 import Utilities.TimestampUtils;
 import org.testng.annotations.*;
 
-
 @Listeners(TestNGListeners.class)
-public class TC03_SitesAdminTest {
+public class TC04_UserGroupsAdminTest {
     DriverFactory driver;
     JsonUtils loginTestData;
-    JsonUtils sitesTestData;
+    JsonUtils userGroupsTestData;
 
     @Test
-    public void sitesTC() throws InterruptedException {
-        String name = sitesTestData.getJsonData("addNewSites.name") + "-" + TimestampUtils.getTimestamp();
-        String hL7SiteName = sitesTestData.getJsonData("addNewSites.hl7SiteName") + "-" + TimestampUtils.getTimestamp();
-        String prefix = sitesTestData.getJsonData("addNewSites.prefix") + "-" + TimestampUtils.getTimestamp();
+    public void userGroupsTC() throws InterruptedException {
+        String groupName = userGroupsTestData.getJsonData("addNewUserGroups.groupName") + "-" + TimestampUtils.getTimestamp();
+        String securityProfile = userGroupsTestData.getJsonData("addNewUserGroups.securityProfile");
 
         new P01_LoginPage(driver)
                 .navigateToLoginPage(PropertiesUtils.getPropertyValue("LoginPageUrl"))
@@ -33,30 +31,30 @@ public class TC03_SitesAdminTest {
         new P02_LibraryPage(driver)
                 .clickOnLibraryButton()
                 .clickOnICodeAdministrationButton()
-                .clickOnSitesButton()
+                .clickOnUsersManagementButton()
+                .clickOnUserGroupsButton()
                 .clickOnAddButton()
-                .enterName(name)
-                .enterHL7SiteName(hL7SiteName)
-                .enterPrefix(prefix)
-                .clickOnActiveCheckbox()
+                .enterGroupName(groupName)
+                .selectSecurityProfile(securityProfile)
                 .clickOnSaveButton()
-                .assertVisibilityOfSiteAddedAlert();
+                .assertVisibilityOfUserGroupAddedAlert();
 
-        new P03_SitesAdminPage(driver)
-                .clickOnEditButton(name)
+        new P04_UserGroupsAdminPage(driver)
+                .clickOnEditButton(groupName)
                 .clickOnSaveButton()
-                .assertVisibilityOfSiteEditedAlert();
+                .assertVisibilityOfUserGroupEditedAlert();
 
-        new P03_SitesAdminPage(driver)
-                .clickOnDeleteButton(name)
+        new P04_UserGroupsAdminPage(driver)
+                .clickOnDeleteButton(groupName)
                 .clickOnYesButton()
-                .assertVisibilityOfSiteDeletedAlert();
+                .assertVisibilityOfUserGroupDeletedAlert();
+
     }
 
     @BeforeClass
     public void beforeClass() {
         loginTestData = new JsonUtils("LoginTestData");
-        sitesTestData = new JsonUtils("SitesTestData");
+        userGroupsTestData = new JsonUtils("UserGroupsTestData");
     }
 
     @BeforeMethod

@@ -1,0 +1,6 @@
+{
+  "addNewUserGroups": {
+    "groupName": "TestGroupName",
+    "securityProfile": "Access Meetings module"
+  }
+}
