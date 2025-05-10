@@ -32,7 +32,6 @@ public class ElementUtils {
     public void clickOnElement(By locator) {
         LogsUtils.info("Clicking on element:", locator.toString());
         waitUtils.waitForElementToBeClickable(locator);
-        scrollToElement(locator);
         findElement(locator).click();
     }
 

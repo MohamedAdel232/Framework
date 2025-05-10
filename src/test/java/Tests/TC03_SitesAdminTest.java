@@ -4,6 +4,7 @@ import Factories.DriverFactory;
 import Listeners.TestNGListeners;
 import Pages.P01_LoginPage;
 import Pages.P02_LibraryPage;
+import Pages.P03_SitesAdminPage;
 import Utilities.JsonUtils;
 import Utilities.PropertiesUtils;
 import Utilities.TimestampUtils;
@@ -17,7 +18,7 @@ public class TC03_SitesAdminTest {
     JsonUtils sitesTestData;
 
     @Test
-    public void sitesTC() {
+    public void sitesTC() throws InterruptedException {
         String name = sitesTestData.getJsonData("addNewSites.name") + "-" + TimestampUtils.getTimestamp();
         String hL7SiteName = sitesTestData.getJsonData("addNewSites.hl7SiteName") + "-" + TimestampUtils.getTimestamp();
         String prefix = sitesTestData.getJsonData("addNewSites.prefix") + "-" + TimestampUtils.getTimestamp();
@@ -40,10 +41,20 @@ public class TC03_SitesAdminTest {
                 .clickOnActiveCheckbox()
                 .clickOnSaveButton()
                 .assertVisibilityOfSiteAddedAlert();
+
+        new P03_SitesAdminPage(driver)
+                .clickOnEditButton(name)
+                .clickOnSaveButton()
+                .assertVisibilityOfSiteEditedAlert();
+
+        new P03_SitesAdminPage(driver)
+                .clickOnDeleteButton(name)
+                .clickOnYesButton()
+                .assertVisibilityOfSiteEditedAlert();
     }
 
     @BeforeClass
-    public void beforeClass() throws Exception {
+    public void beforeClass() {
         loginTestData = new JsonUtils("LoginTestData");
         sitesTestData = new JsonUtils("SitesTestData");
     }

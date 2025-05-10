@@ -11,7 +11,10 @@ public class P03_SitesAdminPage {
     private final By prefixFieldLocator = By.cssSelector("[formcontrolname=\"prefix\"]");
     private final By activeCheckboxLocator = By.cssSelector("input[title=\"Active\"]");
     private final By saveButtonLocator = By.cssSelector("[title=\"Save\"]");
-    private final By siteAddedMessageLocator = By.cssSelector("[aria-label=\"Selected site has been added successfully\"]");
+    private final By yesButtonLocator = By.cssSelector("[title=\"Yes\"]");
+    private final By siteAddedMessageLocator = By.cssSelector("[aria-label=\"New site has been added successfully\"]");
+    private final By siteEditedMessageLocator = By.cssSelector("[aria-label=\"Selected site has been edited successfully\"]");
+    private final By siteDeletedMessageLocator = By.cssSelector("[aria-label=\"Selected site has been deleted successfully\"]");
 
     private final DriverFactory driver;
 
@@ -49,10 +52,42 @@ public class P03_SitesAdminPage {
         return this;
     }
 
+    public P03_SitesAdminPage clickOnEditButton(String siteName) {
+        By editButtonLocator = By.xpath("//td[.='" + siteName + "']/following-sibling::td//a[@title='Edit']");
+        driver.elementUtils().clickOnElement(editButtonLocator);
+        return this;
+    }
+
+    public P03_SitesAdminPage clickOnDeleteButton(String siteName) {
+        By deleteButtonLocator = By.xpath("//td[.='" + siteName + "']/following-sibling::td//a[@title='Delete']");
+        driver.elementUtils().clickOnElement(deleteButtonLocator);
+        return this;
+    }
+
+    public P03_SitesAdminPage clickOnYesButton() {
+        driver.elementUtils().clickOnElement(yesButtonLocator);
+        return this;
+    }
+
     public void assertVisibilityOfSiteAddedAlert() {
         SoftAssertUtils.softAssertTrue(
                 driver.elementUtils().verifyVisibilityOfElement(siteAddedMessageLocator),
                 "Site added alert not visible"
         );
     }
+
+    public void assertVisibilityOfSiteEditedAlert() {
+        SoftAssertUtils.softAssertTrue(
+                driver.elementUtils().verifyVisibilityOfElement(siteEditedMessageLocator),
+                "Site edited alert not visible"
+        );
+    }
+
+    public void assertVisibilityOfSiteDeletedAlert() {
+        SoftAssertUtils.softAssertTrue(
+                driver.elementUtils().verifyVisibilityOfElement(siteDeletedMessageLocator),
+                "Site deleted alert not visible"
+        );
+    }
+
 }
