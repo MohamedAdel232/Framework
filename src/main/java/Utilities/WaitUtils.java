@@ -21,7 +21,7 @@ public class WaitUtils {
     public Boolean waitForPageToLoad(String url) {
         LogsUtils.info("Waiting for page to load with URL:", url);
         try {
-            return new WebDriverWait(driver, Duration.ofSeconds(5))
+            return new WebDriverWait(driver, Duration.ofSeconds(timeOut))
                     .until(ExpectedConditions.urlToBe(url));
         } catch (Exception e) {
             LogsUtils.error("Error while waiting for page to load:", e.getMessage());

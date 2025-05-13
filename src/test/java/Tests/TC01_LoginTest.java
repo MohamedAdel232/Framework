@@ -19,21 +19,22 @@ public class TC01_LoginTest {
                 .enterUsername(loginTestData.getJsonData("validLoginCredentials.username"))
                 .enterPassword(loginTestData.getJsonData("validLoginCredentials.password"))
                 .clickLoginButton()
+                .terminateSession()
                 .assertLoginWithValidCredentials();
     }
 
     @BeforeClass
-    public void beforeClass() throws Exception {
+    public void beforeClass() {
         loginTestData = new JsonUtils("LoginTestData");
     }
 
     @BeforeMethod
-    public void setup() {
+    public void beforeMethod() {
         driver = new DriverFactory(PropertiesUtils.getPropertyValue("browser"));
     }
 
     @AfterMethod
-    public void tearDown() throws Exception {
+    public void afterMethod() {
         driver.browserUtils().quitBrowser();
         DriverFactory.removeDriver();
     }

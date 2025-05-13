@@ -10,11 +10,22 @@ public class P01_LoginPage {
     private final By usernameFieldLocator = By.cssSelector("[formcontrolname=\"userName\"]");
     private final By passwordFieldLocator = By.cssSelector("[formcontrolname=\"password\"]");
     private final By loginButtonLocator = By.id("btnlogin");
+    private final By continueButtonLocator = By.cssSelector("[title=\"Continue\"]");
 
     private final DriverFactory driver;
 
     public P01_LoginPage(DriverFactory driver) {
         this.driver = driver;
+    }
+
+    @Step("Terminate session if exists")
+    public P01_LoginPage terminateSession() {
+        try {
+            driver.elementUtils().clickOnElement(continueButtonLocator);
+        } catch (Exception e) {
+            LogsUtils.info("No session to terminate");
+        }
+        return this;
     }
 
     @Step("Navigate to login page")

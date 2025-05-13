@@ -58,12 +58,12 @@ public class TC04_UserGroupsAdminTest {
     }
 
     @BeforeMethod
-    public void setup() {
+    public void beforeMethod() {
         driver = new DriverFactory(PropertiesUtils.getPropertyValue("browser"));
     }
 
     @AfterMethod
-    public void tearDown() {
+    public void afterMethod() {
         driver.browserUtils().quitBrowser();
         DriverFactory.removeDriver();
     }
