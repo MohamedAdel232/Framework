@@ -1,9 +1,8 @@
 package Tests;
 
 import Factories.DriverFactory;
-import Pages.P01_LoginPage;
 import Listeners.TestNGListeners;
-
+import Pages.P01_LoginPage;
 import Pages.P02_LibraryPage;
 import Pages.P06_AnatomyAdminPage;
 import Utilities.JsonUtils;
@@ -15,12 +14,12 @@ import org.testng.annotations.*;
 public class TC06_AnatomyAdminTest {
     DriverFactory driver;
     JsonUtils loginTestData;
-    JsonUtils userGroupsTestData;
+    JsonUtils anatomyTestData;
 
     @Test
     public void anatomyTC() throws InterruptedException {
-        String anatomyName = userGroupsTestData.getJsonData("addNewAnatomy.anatomyName") + "-" + TimestampUtils.getTimestamp();
-        String acrCode = userGroupsTestData.getJsonData("addNewAnatomy.acrCode");
+        String anatomyName = anatomyTestData.getJsonData("addNewAnatomy.anatomyName") + "-" + TimestampUtils.getTimestamp();
+        String acrCode = anatomyTestData.getJsonData("addNewAnatomy.acrCode");
 
         new P01_LoginPage(driver)
                 .navigateToLoginPage(PropertiesUtils.getPropertyValue("LoginPageUrl"))
@@ -45,6 +44,7 @@ public class TC06_AnatomyAdminTest {
                 .clickOnEditButton(anatomyName)
                 .clickOnSaveButton()
                 .assertVisibilityOfAnatomyEditedAlert();
+        
         new P06_AnatomyAdminPage(driver)
                 .clickOnDeleteButton(anatomyName)
                 .clickOnYesButton()
@@ -54,7 +54,7 @@ public class TC06_AnatomyAdminTest {
     @BeforeClass
     public void beforeClass() {
         loginTestData = new JsonUtils("LoginTestData");
-        userGroupsTestData = new JsonUtils("AnatomyTestData");
+        anatomyTestData = new JsonUtils("AnatomyTestData");
     }
 
     @BeforeMethod

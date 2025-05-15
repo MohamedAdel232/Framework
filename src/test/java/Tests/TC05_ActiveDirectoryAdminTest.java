@@ -17,7 +17,7 @@ public class TC05_ActiveDirectoryAdminTest {
     JsonUtils activeDirectoryTestData;
 
     @Test
-    public void userGroupsTC() throws InterruptedException {
+    public void activeDirectoryTC() throws InterruptedException {
         String activeDirectoryName = activeDirectoryTestData.getJsonData("addNewActiveDirectory.name") + "-" + TimestampUtils.getTimestamp();
         String activeDirectoryUrl = activeDirectoryTestData.getJsonData("addNewActiveDirectory.url");
         String activeDirectoryPort = activeDirectoryTestData.getJsonData("addNewActiveDirectory.port");
@@ -40,7 +40,6 @@ public class TC05_ActiveDirectoryAdminTest {
                 .clickOnAddButton()
                 .enterName(activeDirectoryName)
                 .enterURL(activeDirectoryUrl)
-                .enterPort(activeDirectoryPort)
                 .selectSite()
                 .clickOnActiveCheckbox()
                 .clickOnSaveButton()

@@ -14,6 +14,7 @@ public class P06_AnatomyAdminPage {
     private final By anatomyEditedMessageLocator = By.cssSelector("[aria-label='Selected anatomy has been edited successfully']");
     private final By anatomyDeletedMessageLocator = By.cssSelector("[aria-label='Selected anatomy has been deleted successfully']");
     private final By yesButtonLocator = By.cssSelector("[title='Yes']");
+    
     private final DriverFactory driver;
 
     public P06_AnatomyAdminPage(DriverFactory driver) {
@@ -46,25 +47,23 @@ public class P06_AnatomyAdminPage {
 
     @Step("Click on Edit button")
     public P06_AnatomyAdminPage clickOnEditButton(String anatomy) {
-        By editButtonLocator = By.xpath("//div[text()=\""+anatomy+"\"]//../following-sibling::td//a[@title='Edit']");
+        By editButtonLocator = By.xpath("//div[text()=\"" + anatomy + "\"]//../following-sibling::td//a[@title='Edit']");
         driver.elementUtils().clickOnElement(editButtonLocator);
         return this;
     }
 
     @Step("Click on Delete button")
     public P06_AnatomyAdminPage clickOnDeleteButton(String anatomy) {
-        By deleteButtonLocator = By.xpath("//div[text()=\""+anatomy+"\"]//../following-sibling::td//a[@title='Delete']");
+        By deleteButtonLocator = By.xpath("//div[text()=\"" + anatomy + "\"]//../following-sibling::td//a[@title='Delete']");
         driver.elementUtils().clickOnElement(deleteButtonLocator);
         return this;
     }
-
 
     @Step("Click on Yes button")
     public P06_AnatomyAdminPage clickOnYesButton() {
         driver.elementUtils().clickOnElement(yesButtonLocator);
         return this;
     }
-
 
     @Step("Assert visibility of Anatomy Added Alert")
     public P06_AnatomyAdminPage assertVisibilityOfAnatomyAddedAlert() {
@@ -83,5 +82,4 @@ public class P06_AnatomyAdminPage {
         driver.elementUtils().verifyVisibilityOfElement(anatomyDeletedMessageLocator);
         return this;
     }
-
 }
