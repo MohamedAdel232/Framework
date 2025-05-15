@@ -102,5 +102,4 @@ public class P03_SitesAdminPage {
                 "Site deleted alert not visible"
         );
     }
-
 }

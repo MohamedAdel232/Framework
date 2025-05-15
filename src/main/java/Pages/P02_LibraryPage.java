@@ -10,6 +10,8 @@ public class P02_LibraryPage {
     private final By sitesButtonLocator = By.cssSelector("[href=\"/iCodeTFS/admin/sites\"]");
     private final By usersManagementButtonLocator = By.xpath("//span[text()=\"Users Management\"] /..");
     private final By userGroupsButtonLocator = By.cssSelector("[href=\"/iCodeTFS/admin/usergroups\"]");
+    private final By generalConfigButtonLocator = By.xpath("//span[text()=\"General Configuration\"] /..");
+    private final By activeDirectoriesButtonLocator = By.cssSelector("[href=\"/iCodeTFS/admin/activedirectories\"]");
 
     private final DriverFactory driver;
 
@@ -48,5 +50,17 @@ public class P02_LibraryPage {
     public P04_UserGroupsAdminPage clickOnUserGroupsButton() {
         driver.elementUtils().clickOnElement(userGroupsButtonLocator);
         return new P04_UserGroupsAdminPage(driver);
+    }
+
+    @Step("Click on General Configuration button")
+    public P02_LibraryPage clickOnGeneralConfigButton() {
+        driver.elementUtils().clickOnElement(generalConfigButtonLocator);
+        return new P02_LibraryPage(driver);
+    }
+
+    @Step("Click on Active Directories button")
+    public P05_ActiveDirectoriesAdminPage clickOnActiveDirectoriesButton() {
+        driver.elementUtils().clickOnElement(activeDirectoriesButtonLocator);
+        return new P05_ActiveDirectoriesAdminPage(driver);
     }
 }
