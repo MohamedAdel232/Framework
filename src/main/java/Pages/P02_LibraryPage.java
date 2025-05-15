@@ -13,6 +13,7 @@ public class P02_LibraryPage {
     private final By generalConfigButtonLocator = By.xpath("//span[text()=\"General Configuration\"] /..");
     private final By activeDirectoriesButtonLocator = By.cssSelector("[href=\"/iCodeTFS/admin/activedirectories\"]");
     private final By anatomyButtonLocator = By.cssSelector("[href=\"/iCodeTFS/anatomies\"]");
+    private final By pathologyButtonLocator = By.cssSelector("[href=\"/iCodeTFS/pathologies\"]");
     private final DriverFactory driver;
 
     public P02_LibraryPage(DriverFactory driver) {
@@ -68,5 +69,11 @@ public class P02_LibraryPage {
     public P06_AnatomyAdminPage clickOnAnatomyButton() {
         driver.elementUtils().clickOnElement(anatomyButtonLocator);
         return new P06_AnatomyAdminPage(driver);
+    }
+
+    @Step("Click on Pathology button")
+    public P07_PathologyAdminPage clickOnPathologyButton() {
+        driver.elementUtils().clickOnElement(pathologyButtonLocator);
+        return new P07_PathologyAdminPage(driver);
     }
 }
