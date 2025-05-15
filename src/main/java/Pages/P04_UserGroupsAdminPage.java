@@ -33,9 +33,9 @@ public class P04_UserGroupsAdminPage {
     }
 
     @Step("Select security profile")
-    public P04_UserGroupsAdminPage selectSecurityProfile(String securityProfile) {
+    public P04_UserGroupsAdminPage selectSecurityProfile() {
         driver.elementUtils().clickOnElement(securityProfileDropdownLocator);
-        By securityProfileOptionLocator = By.xpath("//span [.=\"" + securityProfile + "\"]");
+        By securityProfileOptionLocator = By.xpath("(//ul[@role=\"listbox\"] //li)[1]");
         driver.elementUtils().clickOnElement(securityProfileOptionLocator);
         return this;
     }
@@ -55,8 +55,8 @@ public class P04_UserGroupsAdminPage {
 
     @Step("Click on Delete button")
     public P04_UserGroupsAdminPage clickOnDeleteButton(String userGroups) {
-        By editButtonLocator = By.xpath("//td[.='" + userGroups + "']/following-sibling::td//a[@title='Edit']");
-        driver.elementUtils().clickOnElement(editButtonLocator);
+        By deleteButtonLocator = By.xpath("//td[.='" + userGroups + "']/following-sibling::td//a[@title='Delete']");
+        driver.elementUtils().clickOnElement(deleteButtonLocator);
         return this;
     }
 

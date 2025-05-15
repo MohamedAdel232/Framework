@@ -19,13 +19,13 @@ public class TC04_UserGroupsAdminTest {
     @Test
     public void userGroupsTC() throws InterruptedException {
         String groupName = userGroupsTestData.getJsonData("addNewUserGroups.groupName") + "-" + TimestampUtils.getTimestamp();
-        String securityProfile = userGroupsTestData.getJsonData("addNewUserGroups.securityProfile");
 
         new P01_LoginPage(driver)
                 .navigateToLoginPage(PropertiesUtils.getPropertyValue("LoginPageUrl"))
                 .enterUsername(loginTestData.getJsonData("validLoginCredentials.username"))
                 .enterPassword(loginTestData.getJsonData("validLoginCredentials.password"))
                 .clickLoginButton()
+                .terminateSession()
                 .assertLoginWithValidCredentials();
 
         new P02_LibraryPage(driver)
@@ -35,7 +35,7 @@ public class TC04_UserGroupsAdminTest {
                 .clickOnUserGroupsButton()
                 .clickOnAddButton()
                 .enterGroupName(groupName)
-                .selectSecurityProfile(securityProfile)
+                .selectSecurityProfile()
                 .clickOnSaveButton()
                 .assertVisibilityOfUserGroupAddedAlert();
 
@@ -48,7 +48,6 @@ public class TC04_UserGroupsAdminTest {
                 .clickOnDeleteButton(groupName)
                 .clickOnYesButton()
                 .assertVisibilityOfUserGroupDeletedAlert();
-
     }
 
     @BeforeClass

@@ -28,6 +28,7 @@ public class TC03_SitesAdminTest {
                 .enterUsername(loginTestData.getJsonData("validLoginCredentials.username"))
                 .enterPassword(loginTestData.getJsonData("validLoginCredentials.password"))
                 .clickLoginButton()
+                .terminateSession()
                 .assertLoginWithValidCredentials();
 
         new P02_LibraryPage(driver)
