@@ -1,0 +1,9 @@
+{
+  "addNewDICOMDestination": {
+    "name": "TestName",
+    "idAddress": "0.0.0.0",
+    "AETitle": "TestAETitle",
+    "port": "50",
+    "site": "Default Site"
+  }
+}

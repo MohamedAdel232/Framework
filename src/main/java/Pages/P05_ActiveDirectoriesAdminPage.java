@@ -1,6 +1,7 @@
 package Pages;
 
 import Factories.DriverFactory;
+import Utilities.ClipboardUtils;
 import Utilities.SoftAssertUtils;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
@@ -43,7 +44,9 @@ public class P05_ActiveDirectoriesAdminPage {
 
     @Step("Enter port")
     public P05_ActiveDirectoriesAdminPage enterPort(String port) {
-        driver.elementUtils().sendDataToElement(portFieldLocator, port);
+        driver.elementUtils().clickOnElement(portFieldLocator);
+        ClipboardUtils.copyToClipboard(port);
+        driver.clipboardUtils().pasteFromClipboard();
         return this;
     }
 

@@ -14,6 +14,10 @@ public class P02_LibraryPage {
     private final By activeDirectoriesButtonLocator = By.cssSelector("[href=\"/iCodeTFS/admin/activedirectories\"]");
     private final By anatomyButtonLocator = By.cssSelector("[href=\"/iCodeTFS/anatomies\"]");
     private final By pathologyButtonLocator = By.cssSelector("[href=\"/iCodeTFS/pathologies\"]");
+    private final By dicomConfigButtonLocator = By.xpath("//span[text()=\"DICOM Configuration\"] /..");
+    private final By dicomDestinationsButtonLocator = By.cssSelector("[href=\"/iCodeTFS/dicom/destinations\"]");
+
+
     private final DriverFactory driver;
 
     public P02_LibraryPage(DriverFactory driver) {
@@ -75,5 +79,17 @@ public class P02_LibraryPage {
     public P07_PathologyAdminPage clickOnPathologyButton() {
         driver.elementUtils().clickOnElement(pathologyButtonLocator);
         return new P07_PathologyAdminPage(driver);
+    }
+
+    @Step("Click on DICOM Configuration button")
+    public P02_LibraryPage clickOnDICOMConfigButton() {
+        driver.elementUtils().clickOnElement(dicomConfigButtonLocator);
+        return this;
+    }
+
+    @Step("Click on DICOM Destinations button")
+    public P08_DICOMDestinationsAdminPage clickOnDICOMDestinationsButton() {
+        driver.elementUtils().clickOnElement(dicomDestinationsButtonLocator);
+        return new P08_DICOMDestinationsAdminPage(driver);
     }
 }

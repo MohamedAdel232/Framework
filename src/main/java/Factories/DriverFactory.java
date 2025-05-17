@@ -68,4 +68,8 @@ public class DriverFactory {
     public AlertUtils alertUtils() {
         return new AlertUtils(get());
     }
+
+    public ClipboardUtils clipboardUtils() {
+        return new ClipboardUtils(get());
+    }
 }

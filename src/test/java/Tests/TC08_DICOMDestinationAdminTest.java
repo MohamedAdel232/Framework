@@ -4,23 +4,25 @@ import Factories.DriverFactory;
 import Listeners.TestNGListeners;
 import Pages.P01_LoginPage;
 import Pages.P02_LibraryPage;
-import Pages.P05_ActiveDirectoriesAdminPage;
+import Pages.P08_DICOMDestinationsAdminPage;
 import Utilities.JsonUtils;
 import Utilities.PropertiesUtils;
 import Utilities.TimestampUtils;
 import org.testng.annotations.*;
 
 @Listeners(TestNGListeners.class)
-public class TC05_ActiveDirectoryAdminTest {
+public class TC08_DICOMDestinationAdminTest {
     DriverFactory driver;
     JsonUtils loginTestData;
-    JsonUtils activeDirectoryTestData;
+    JsonUtils dicomDestinationTestData;
 
     @Test
-    public void activeDirectoryTC() throws InterruptedException {
-        String activeDirectoryName = activeDirectoryTestData.getJsonData("addNewActiveDirectory.name") + "-" + TimestampUtils.getTimestamp();
-        String activeDirectoryUrl = activeDirectoryTestData.getJsonData("addNewActiveDirectory.url");
-        String activeDirectoryPort = activeDirectoryTestData.getJsonData("addNewActiveDirectory.port");
+    public void dicomDestinationTC() throws InterruptedException {
+        String dicomDestinationName = dicomDestinationTestData.getJsonData("addNewDICOMDestination.name") + "-" + TimestampUtils.getTimestamp();
+        String dicomDestinationIPAddress = dicomDestinationTestData.getJsonData("addNewDICOMDestination.idAddress");
+        String dicomDestinationAETitle = dicomDestinationTestData.getJsonData("addNewDICOMDestination.AETitle");
+        String dicomDestinationPort = dicomDestinationTestData.getJsonData("addNewDICOMDestination.port");
+
 
         new P01_LoginPage(driver)
                 .navigateToLoginPage(PropertiesUtils.getPropertyValue("LoginPageUrl"))
@@ -33,33 +35,33 @@ public class TC05_ActiveDirectoryAdminTest {
         new P02_LibraryPage(driver)
                 .clickOnLibraryButton()
                 .clickOnICodeAdministrationButton()
-                .clickOnUsersManagementButton()
-                .clickOnGeneralConfigButton()
-                .clickOnActiveDirectoriesButton()
+                .clickOnDICOMConfigButton()
+                .clickOnDICOMDestinationsButton()
                 .clickOnAddButton()
-                .enterName(activeDirectoryName)
-                .enterURL(activeDirectoryUrl)
-                .enterPort(activeDirectoryPort)
+                .enterName(dicomDestinationName)
+                .enterIPAddress(dicomDestinationIPAddress)
+                .enterAETitle(dicomDestinationAETitle)
+                .enterPort(dicomDestinationPort)
                 .selectSite()
                 .clickOnActiveCheckbox()
                 .clickOnSaveButton()
-                .assertVisibilityOfActiveDirectoryAddedAlert();
+                .assertVisibilityOfDICOMDestinationAddedAlert();
 
-        new P05_ActiveDirectoriesAdminPage(driver)
-                .clickOnEditButton(activeDirectoryName)
+        new P08_DICOMDestinationsAdminPage(driver)
+                .clickOnEditButton(dicomDestinationName)
                 .clickOnSaveButton()
-                .assertVisibilityOfActiveDirectoryEditedAlert();
+                .assertVisibilityOfDICOMDestinationEditedAlert();
 
-        new P05_ActiveDirectoriesAdminPage(driver)
-                .clickOnDeleteButton(activeDirectoryName)
+        new P08_DICOMDestinationsAdminPage(driver)
+                .clickOnDeleteButton(dicomDestinationName)
                 .clickOnYesButton()
-                .assertVisibilityOfActiveDirectoryDeletedAlert();
+                .assertVisibilityOfDICOMDestinationDeletedAlert();
     }
 
     @BeforeClass
     public void beforeClass() {
         loginTestData = new JsonUtils("LoginTestData");
-        activeDirectoryTestData = new JsonUtils("ActiveDirectoryTestData");
+        dicomDestinationTestData = new JsonUtils("DICOMDestinationTestData");
     }
 
     @BeforeMethod
@@ -73,3 +75,4 @@ public class TC05_ActiveDirectoryAdminTest {
         DriverFactory.removeDriver();
     }
 }
+
