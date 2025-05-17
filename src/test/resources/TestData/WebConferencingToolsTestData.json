@@ -1,0 +1,10 @@
+{
+  "addNewWebConferencingTools": {
+    "type": "MS Teams",
+    "name": "TestName",
+    "applicationId": "TestApplicationId",
+    "directoryId": "TestDirectoryId",
+    "clientSecret": "TestClientSecret",
+    "site": "Default Site"
+  }
+}
