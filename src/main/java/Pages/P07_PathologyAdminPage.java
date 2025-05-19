@@ -15,6 +15,7 @@ public class P07_PathologyAdminPage {
     private final By pathologyEditedMessageLocator = By.cssSelector("[aria-label='Selected pathology has been edited successfully']");
     private final By pathologyDeletedMessageLocator = By.cssSelector("[aria-label='Selected pathology has been deleted successfully']");
     private final By yesButtonLocator = By.cssSelector("[title='Yes']");
+    private final By pathologyNameSearchFieldLocator = By.cssSelector("input[aria-label=\"Pathology Name Filter\"]");
 
     private final DriverFactory driver;
 
@@ -71,6 +72,12 @@ public class P07_PathologyAdminPage {
     @Step("Click on Yes button")
     public P07_PathologyAdminPage clickOnYesButton() {
         driver.elementUtils().clickOnElement(yesButtonLocator);
+        return this;
+    }
+
+    @Step("Search for Pathology")
+    public P07_PathologyAdminPage searchForPathology(String anatomy) {
+        driver.elementUtils().sendDataToElement(pathologyNameSearchFieldLocator, anatomy);
         return this;
     }
 

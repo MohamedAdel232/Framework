@@ -22,7 +22,7 @@ public class WaitUtils {
         LogsUtils.info("Waiting for page to load with URL:", url);
         try {
             return new WebDriverWait(driver, Duration.ofSeconds(timeOut))
-                    .until(ExpectedConditions.urlToBe(url));
+                    .until(ExpectedConditions.urlContains(url));
         } catch (Exception e) {
             LogsUtils.error("Error while waiting for page to load:", e.getMessage());
             return false;

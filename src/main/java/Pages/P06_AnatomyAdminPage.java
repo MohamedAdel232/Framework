@@ -14,7 +14,8 @@ public class P06_AnatomyAdminPage {
     private final By anatomyEditedMessageLocator = By.cssSelector("[aria-label='Selected anatomy has been edited successfully']");
     private final By anatomyDeletedMessageLocator = By.cssSelector("[aria-label='Selected anatomy has been deleted successfully']");
     private final By yesButtonLocator = By.cssSelector("[title='Yes']");
-    
+    private final By anatomyNameSearchFieldLocator = By.cssSelector("input[aria-label=\"Anatomy Name Filter\"]");
+
     private final DriverFactory driver;
 
     public P06_AnatomyAdminPage(DriverFactory driver) {
@@ -62,6 +63,12 @@ public class P06_AnatomyAdminPage {
     @Step("Click on Yes button")
     public P06_AnatomyAdminPage clickOnYesButton() {
         driver.elementUtils().clickOnElement(yesButtonLocator);
+        return this;
+    }
+
+    @Step("Search for Anatomy")
+    public P06_AnatomyAdminPage searchForAnatomy(String anatomy) {
+        driver.elementUtils().sendDataToElement(anatomyNameSearchFieldLocator, anatomy);
         return this;
     }
 

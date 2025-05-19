@@ -42,11 +42,13 @@ public class TC07_PathologyAdminTest {
                 .assertVisibilityOfPathologyAddedAlert();
 
         new P07_PathologyAdminPage(driver)
+                .searchForPathology(pathologyName)
                 .clickOnEditButton(pathologyName)
                 .clickOnSaveButton()
                 .assertVisibilityOfPathologyEditedAlert();
 
         new P07_PathologyAdminPage(driver)
+                .searchForPathology(pathologyName)
                 .clickOnDeleteButton(pathologyName)
                 .clickOnYesButton()
                 .assertVisibilityOfPathologyDeletedAlert();

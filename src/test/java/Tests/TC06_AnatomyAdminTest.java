@@ -41,11 +41,13 @@ public class TC06_AnatomyAdminTest {
                 .assertVisibilityOfAnatomyAddedAlert();
 
         new P06_AnatomyAdminPage(driver)
+                .searchForAnatomy(anatomyName)
                 .clickOnEditButton(anatomyName)
                 .clickOnSaveButton()
                 .assertVisibilityOfAnatomyEditedAlert();
-        
+
         new P06_AnatomyAdminPage(driver)
+                .searchForAnatomy(anatomyName)
                 .clickOnDeleteButton(anatomyName)
                 .clickOnYesButton()
                 .assertVisibilityOfAnatomyDeletedAlert();

@@ -9,6 +9,11 @@
             <class name="Tests.TC01_LoginTest"/>
             <class name="Tests.TC03_SitesAdminTest"/>
             <class name="Tests.TC04_UserGroupsAdminTest"/>
+            <class name="Tests.TC05_ActiveDirectoryAdminTest"/>
+            <class name="Tests.TC06_AnatomyAdminTest"/>
+            <class name="Tests.TC07_PathologyAdminTest"/>
+            <class name="Tests.TC08_DICOMDestinationAdminTest"/>
+            <class name="Tests.TC09_WebConferencingToolsAdminTest"/>
         </classes>
     </test>
 </suite>
