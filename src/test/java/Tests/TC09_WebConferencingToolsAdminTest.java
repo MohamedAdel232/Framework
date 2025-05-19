@@ -17,7 +17,7 @@ public class TC09_WebConferencingToolsAdminTest {
     JsonUtils webConferencingToolsTestData;
 
     @Test
-    public void dicomDestinationTC() throws InterruptedException {
+    public void webConferencingToolsTC() throws InterruptedException {
         String webConferencingToolsType = webConferencingToolsTestData.getJsonData("addNewWebConferencingTools.type");
         String webConferencingToolsName = webConferencingToolsTestData.getJsonData("addNewWebConferencingTools.name") + "-" + TimestampUtils.getTimestamp();
         String webConferencingToolsApplicationId = webConferencingToolsTestData.getJsonData("addNewWebConferencingTools.applicationId");

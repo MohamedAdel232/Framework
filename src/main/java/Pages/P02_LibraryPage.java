@@ -19,6 +19,7 @@ public class P02_LibraryPage {
     private final By webConferencingToolsButtonLocator = By.cssSelector("[href=\"/iCodeTFS/admin/webconferencingtools\"]");
     private final By hl7ConfigButtonLocator = By.xpath("//span[text()=\"HL7 Configuration\"] /..");
     private final By hl7NodesButtonLocator = By.cssSelector("[href=\"/iCodeTFS/hl7/hl7nodes\"]");
+    private final By pacsServersButtonLocator = By.cssSelector("[href=\"/iCodeTFS/pacsservers\"]");
 
 
     private final DriverFactory driver;
@@ -112,5 +113,11 @@ public class P02_LibraryPage {
     public P10_HL7NodesAdminPage clickOnHL7NodesButton() {
         driver.elementUtils().clickOnElement(hl7NodesButtonLocator);
         return new P10_HL7NodesAdminPage(driver);
+    }
+
+    @Step("Click on PACS Servers button")
+    public P11_PACSServersAdminPage clickOnPACSServersButton() {
+        driver.elementUtils().clickOnElement(pacsServersButtonLocator);
+        return new P11_PACSServersAdminPage(driver);
     }
 }
