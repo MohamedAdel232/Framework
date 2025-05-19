@@ -102,7 +102,7 @@ public class P08_DICOMDestinationsAdminPage {
     public void assertVisibilityOfDICOMDestinationAddedAlert() {
         SoftAssertUtils.softAssertTrue(
                 driver.elementUtils().verifyVisibilityOfElement(dicomDestinationAddedMessageLocator),
-                "Site added alert not visible"
+                "DICOM Destination added alert not visible"
         );
     }
 
@@ -110,7 +110,7 @@ public class P08_DICOMDestinationsAdminPage {
     public void assertVisibilityOfDICOMDestinationEditedAlert() {
         SoftAssertUtils.softAssertTrue(
                 driver.elementUtils().verifyVisibilityOfElement(dicomDestinationEditedMessageLocator),
-                "Site edited alert not visible"
+                "DICOM Destination edited alert not visible"
         );
     }
 
@@ -118,8 +118,7 @@ public class P08_DICOMDestinationsAdminPage {
     public void assertVisibilityOfDICOMDestinationDeletedAlert() {
         SoftAssertUtils.softAssertTrue(
                 driver.elementUtils().verifyVisibilityOfElement(dicomDestinationDeletedMessageLocator),
-                "Site deleted alert not visible"
+                "DICOM Destination deleted alert not visible"
         );
     }
-
 }

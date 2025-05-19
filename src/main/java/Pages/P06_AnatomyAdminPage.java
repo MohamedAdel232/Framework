@@ -1,6 +1,7 @@
 package Pages;
 
 import Factories.DriverFactory;
+import Utilities.SoftAssertUtils;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.locators.RelativeLocator;
@@ -73,20 +74,26 @@ public class P06_AnatomyAdminPage {
     }
 
     @Step("Assert visibility of Anatomy Added Alert")
-    public P06_AnatomyAdminPage assertVisibilityOfAnatomyAddedAlert() {
-        driver.elementUtils().verifyVisibilityOfElement(anatomyAddedMessageLocator);
-        return this;
+    public void assertVisibilityOfAnatomyAddedAlert() {
+        SoftAssertUtils.softAssertTrue(
+                driver.elementUtils().verifyVisibilityOfElement(anatomyAddedMessageLocator),
+                "Anatomy edited alert not visible"
+        );
     }
 
     @Step("Assert visibility of Anatomy Edited Alert")
-    public P06_AnatomyAdminPage assertVisibilityOfAnatomyEditedAlert() {
-        driver.elementUtils().verifyVisibilityOfElement(anatomyEditedMessageLocator);
-        return this;
+    public void assertVisibilityOfAnatomyEditedAlert() {
+        SoftAssertUtils.softAssertTrue(
+                driver.elementUtils().verifyVisibilityOfElement(anatomyEditedMessageLocator),
+                "Anatomy edited alert not visible"
+        );
     }
 
     @Step("Assert visibility of Anatomy Deleted Alert")
-    public P06_AnatomyAdminPage assertVisibilityOfAnatomyDeletedAlert() {
-        driver.elementUtils().verifyVisibilityOfElement(anatomyDeletedMessageLocator);
-        return this;
+    public void assertVisibilityOfAnatomyDeletedAlert() {
+        SoftAssertUtils.softAssertTrue(
+                driver.elementUtils().verifyVisibilityOfElement(anatomyDeletedMessageLocator),
+                "Anatomy edited alert not visible"
+        );
     }
 }

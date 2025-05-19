@@ -94,7 +94,7 @@ public class P05_ActiveDirectoriesAdminPage {
     public void assertVisibilityOfActiveDirectoryAddedAlert() {
         SoftAssertUtils.softAssertTrue(
                 driver.elementUtils().verifyVisibilityOfElement(activeDirectoryAddedMessageLocator),
-                "Site added alert not visible"
+                "Active Directory added alert not visible"
         );
     }
 
@@ -102,7 +102,7 @@ public class P05_ActiveDirectoriesAdminPage {
     public void assertVisibilityOfActiveDirectoryEditedAlert() {
         SoftAssertUtils.softAssertTrue(
                 driver.elementUtils().verifyVisibilityOfElement(activeDirectoryEditedMessageLocator),
-                "Site edited alert not visible"
+                "Active Directory edited alert not visible"
         );
     }
 
@@ -110,7 +110,7 @@ public class P05_ActiveDirectoriesAdminPage {
     public void assertVisibilityOfActiveDirectoryDeletedAlert() {
         SoftAssertUtils.softAssertTrue(
                 driver.elementUtils().verifyVisibilityOfElement(activeDirectoryDeletedMessageLocator),
-                "Site deleted alert not visible"
+                "Active Directory deleted alert not visible"
         );
     }
 }

@@ -1,6 +1,7 @@
 package Pages;
 
 import Factories.DriverFactory;
+import Utilities.SoftAssertUtils;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
@@ -67,20 +68,26 @@ public class P04_UserGroupsAdminPage {
     }
 
     @Step("Assert visibility of User Group Added Alert")
-    public P04_UserGroupsAdminPage assertVisibilityOfUserGroupAddedAlert() {
-        driver.elementUtils().verifyVisibilityOfElement(userGroupAddedMessageLocator);
-        return this;
+    public void assertVisibilityOfUserGroupAddedAlert() {
+        SoftAssertUtils.softAssertTrue(
+                driver.elementUtils().verifyVisibilityOfElement(userGroupAddedMessageLocator),
+                "User Group added alert not visible"
+        );
     }
 
     @Step("Assert visibility of User Group Edited Alert")
-    public P04_UserGroupsAdminPage assertVisibilityOfUserGroupEditedAlert() {
-        driver.elementUtils().verifyVisibilityOfElement(userGroupEditedMessageLocator);
-        return this;
+    public void assertVisibilityOfUserGroupEditedAlert() {
+        SoftAssertUtils.softAssertTrue(
+                driver.elementUtils().verifyVisibilityOfElement(userGroupEditedMessageLocator),
+                "User Group edited alert not visible"
+        );
     }
 
     @Step("Assert visibility of User Group Deleted Alert")
-    public P04_UserGroupsAdminPage assertVisibilityOfUserGroupDeletedAlert() {
-        driver.elementUtils().verifyVisibilityOfElement(userGroupDeletedMessageLocator);
-        return this;
+    public void assertVisibilityOfUserGroupDeletedAlert() {
+        SoftAssertUtils.softAssertTrue(
+                driver.elementUtils().verifyVisibilityOfElement(userGroupDeletedMessageLocator),
+                "User Group deleted alert not visible"
+        );
     }
 }

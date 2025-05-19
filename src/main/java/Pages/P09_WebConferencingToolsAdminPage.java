@@ -108,7 +108,7 @@ public class P09_WebConferencingToolsAdminPage {
     public void assertVisibilityOfWebConferencingToolsAddedAlert() {
         SoftAssertUtils.softAssertTrue(
                 driver.elementUtils().verifyVisibilityOfElement(webConferencingToolsAddedMessageLocator),
-                "Site added alert not visible"
+                "Web Conferencing Tools added alert not visible"
         );
     }
 
@@ -116,7 +116,7 @@ public class P09_WebConferencingToolsAdminPage {
     public void assertVisibilityOfWebConferencingToolsEditedAlert() {
         SoftAssertUtils.softAssertTrue(
                 driver.elementUtils().verifyVisibilityOfElement(webConferencingToolsEditedMessageLocator),
-                "Site edited alert not visible"
+                "Web Conferencing Tools edited alert not visible"
         );
     }
 
@@ -124,7 +124,7 @@ public class P09_WebConferencingToolsAdminPage {
     public void assertVisibilityOfWebConferencingToolsDeletedAlert() {
         SoftAssertUtils.softAssertTrue(
                 driver.elementUtils().verifyVisibilityOfElement(webConferencingToolsDeletedMessageLocator),
-                "Site deleted alert not visible"
+                "Web Conferencing Tools deleted alert not visible"
         );
     }
 

@@ -17,6 +17,8 @@ public class P02_LibraryPage {
     private final By dicomConfigButtonLocator = By.xpath("//span[text()=\"DICOM Configuration\"] /..");
     private final By dicomDestinationsButtonLocator = By.cssSelector("[href=\"/iCodeTFS/dicom/destinations\"]");
     private final By webConferencingToolsButtonLocator = By.cssSelector("[href=\"/iCodeTFS/admin/webconferencingtools\"]");
+    private final By hl7ConfigButtonLocator = By.xpath("//span[text()=\"HL7 Configuration\"] /..");
+    private final By hl7NodesButtonLocator = By.cssSelector("[href=\"/iCodeTFS/hl7/hl7nodes\"]");
 
 
     private final DriverFactory driver;
@@ -98,5 +100,17 @@ public class P02_LibraryPage {
     public P09_WebConferencingToolsAdminPage clickOnWebConferencingToolsButton() {
         driver.elementUtils().clickOnElement(webConferencingToolsButtonLocator);
         return new P09_WebConferencingToolsAdminPage(driver);
+    }
+
+    @Step("Click on HL7 Configuration button")
+    public P02_LibraryPage clickOnHL7ConfigButton() {
+        driver.elementUtils().clickOnElement(hl7ConfigButtonLocator);
+        return this;
+    }
+
+    @Step("Click on HL7 Nodes button")
+    public P10_HL7NodesAdminPage clickOnHL7NodesButton() {
+        driver.elementUtils().clickOnElement(hl7NodesButtonLocator);
+        return new P10_HL7NodesAdminPage(driver);
     }
 }

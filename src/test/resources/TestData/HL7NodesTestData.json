@@ -1,0 +1,8 @@
+{
+  "addNewHL7Node": {
+    "name": "TestName",
+    "port": "50",
+    "destination": "TestDestination",
+    "site": "Default Site"
+  }
+}

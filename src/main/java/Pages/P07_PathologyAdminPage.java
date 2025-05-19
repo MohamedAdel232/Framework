@@ -1,6 +1,7 @@
 package Pages;
 
 import Factories.DriverFactory;
+import Utilities.SoftAssertUtils;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.locators.RelativeLocator;
@@ -81,21 +82,27 @@ public class P07_PathologyAdminPage {
         return this;
     }
 
-    @Step("Assert visibility of Anatomy Added Alert")
-    public P07_PathologyAdminPage assertVisibilityOfPathologyAddedAlert() {
-        driver.elementUtils().verifyVisibilityOfElement(pathologyAddedMessageLocator);
-        return this;
+    @Step("Assert visibility of Pathology Added Alert")
+    public void assertVisibilityOfPathologyAddedAlert() {
+        SoftAssertUtils.softAssertTrue(
+                driver.elementUtils().verifyVisibilityOfElement(pathologyAddedMessageLocator),
+                "Pathology edited alert not visible"
+        );
     }
 
-    @Step("Assert visibility of Anatomy Edited Alert")
-    public P07_PathologyAdminPage assertVisibilityOfPathologyEditedAlert() {
-        driver.elementUtils().verifyVisibilityOfElement(pathologyEditedMessageLocator);
-        return this;
+    @Step("Assert visibility of Pathology Edited Alert")
+    public void assertVisibilityOfPathologyEditedAlert() {
+        SoftAssertUtils.softAssertTrue(
+                driver.elementUtils().verifyVisibilityOfElement(pathologyEditedMessageLocator),
+                "Pathology edited alert not visible"
+        );
     }
 
-    @Step("Assert visibility of Anatomy Deleted Alert")
-    public P07_PathologyAdminPage assertVisibilityOfPathologyDeletedAlert() {
-        driver.elementUtils().verifyVisibilityOfElement(pathologyDeletedMessageLocator);
-        return this;
+    @Step("Assert visibility of Pathology Deleted Alert")
+    public void assertVisibilityOfPathologyDeletedAlert() {
+        SoftAssertUtils.softAssertTrue(
+                driver.elementUtils().verifyVisibilityOfElement(pathologyDeletedMessageLocator),
+                "Pathology edited alert not visible"
+        );
     }
 }
