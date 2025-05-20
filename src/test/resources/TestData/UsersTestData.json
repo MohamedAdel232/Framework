@@ -1,0 +1,13 @@
+{
+  "addNewUser": {
+    "username": "testUser",
+    "fulName": "Test User",
+    "password": "testPassword123#",
+    "confirmPassword": "testPassword123#",
+    "email": "testUser@gmail.com",
+    "pacsUsername": "testUser",
+    "userGroup": "Rosenfield Admin",
+    "site": "Default Site",
+    "msTeamsID": "testUser"
+  }
+}

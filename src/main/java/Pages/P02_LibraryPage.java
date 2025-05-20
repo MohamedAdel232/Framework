@@ -20,6 +20,7 @@ public class P02_LibraryPage {
     private final By hl7ConfigButtonLocator = By.xpath("//span[text()=\"HL7 Configuration\"] /..");
     private final By hl7NodesButtonLocator = By.cssSelector("[href=\"/iCodeTFS/hl7/hl7nodes\"]");
     private final By pacsServersButtonLocator = By.cssSelector("[href=\"/iCodeTFS/pacsservers\"]");
+    private final By usersButtonLocator = By.cssSelector("[href=\"/iCodeTFS/admin/users\"]");
 
 
     private final DriverFactory driver;
@@ -119,5 +120,11 @@ public class P02_LibraryPage {
     public P11_PACSServersAdminPage clickOnPACSServersButton() {
         driver.elementUtils().clickOnElement(pacsServersButtonLocator);
         return new P11_PACSServersAdminPage(driver);
+    }
+
+    @Step("Click on Users button")
+    public P12_UsersAdminPage clickOnUsersButton() {
+        driver.elementUtils().clickOnElement(usersButtonLocator);
+        return new P12_UsersAdminPage(driver);
     }
 }
