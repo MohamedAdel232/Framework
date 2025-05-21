@@ -5,6 +5,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.io.File;
 import java.util.List;
 
 public class ElementUtils {
@@ -61,5 +62,11 @@ public class ElementUtils {
         waitUtils.waitForElementToBeVisible(locator);
         scrollToElement(locator);
         return findElement(locator).isDisplayed();
+    }
+
+    public void uploadFile(By locator, String filePath) {
+        LogsUtils.info("Uploading file:", filePath, "to element:", locator.toString());
+        File file = new File(filePath);
+        findElement(locator).sendKeys(file.getAbsolutePath());
     }
 }

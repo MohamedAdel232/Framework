@@ -21,7 +21,7 @@ public class P02_LibraryPage {
     private final By hl7NodesButtonLocator = By.cssSelector("[href=\"/iCodeTFS/hl7/hl7nodes\"]");
     private final By pacsServersButtonLocator = By.cssSelector("[href=\"/iCodeTFS/pacsservers\"]");
     private final By usersButtonLocator = By.cssSelector("[href=\"/iCodeTFS/admin/users\"]");
-
+    private final By referencesButtonLocator = By.cssSelector("[href=\"/iCodeTFS/references\"]");
 
     private final DriverFactory driver;
 
@@ -126,5 +126,11 @@ public class P02_LibraryPage {
     public P12_UsersAdminPage clickOnUsersButton() {
         driver.elementUtils().clickOnElement(usersButtonLocator);
         return new P12_UsersAdminPage(driver);
+    }
+
+    @Step("Click on References button")
+    public P13_ReferencesPage clickOnReferencesButton() {
+        driver.elementUtils().clickOnElement(referencesButtonLocator);
+        return new P13_ReferencesPage(driver);
     }
 }

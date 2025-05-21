@@ -148,7 +148,7 @@ public class P12_UsersAdminPage {
         );
     }
 
-    @Step("Verify PACS Server deleted message")
+    @Step("Verify User deleted message")
     public void assertVisibilityOfUserDeletedAlert() {
         SoftAssertUtils.softAssertTrue(
                 driver.elementUtils().verifyVisibilityOfElement(userDeletedMessageLocator),
