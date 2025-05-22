@@ -4,21 +4,21 @@ import Factories.DriverFactory;
 import Listeners.TestNGListeners;
 import Pages.P01_LoginPage;
 import Pages.P02_LibraryPage;
-import Pages.P14_MyLecturesPage;
-import Pages.P15_PublicLecturesPage;
+import Pages.P16_UnapprovedLecturesPage;
 import Utilities.JsonUtils;
 import Utilities.PropertiesUtils;
 import Utilities.TimestampUtils;
 import org.testng.annotations.*;
 
+
 @Listeners(TestNGListeners.class)
-public class TC15_PublicLecturesTest {
+public class TC16_UnapprovedLecturesTest {
     DriverFactory driver;
     JsonUtils loginTestData;
     JsonUtils lecturesTestData;
 
     @Test
-    public void publicLecturesTC() throws InterruptedException {
+    public void unapprovedLecturesTC() throws InterruptedException {
         String title = lecturesTestData.getJsonData("addNewLecture.title") + "-" + TimestampUtils.getTimestamp();
         String filePath = lecturesTestData.getJsonData("addNewLecture.filePath");
         String notes = lecturesTestData.getJsonData("addNewLecture.notes");
@@ -39,30 +39,37 @@ public class TC15_PublicLecturesTest {
                 .enterTitle(title)
                 .selectAnatomy()
                 .selectSubspecialty()
-                .checkPublicCheckbox()
                 .uploadFile(filePath)
                 .enterNotes(notes)
                 .clickOnSaveButton()
                 .assertVisibilityOfLectureAddedAlert();
 
-        new P02_LibraryPage(driver)
-                .clickOnPublicLecturesButton()
-                .searchForPublicLecture(title)
-                .checkLectureCheckbox(title)
-                .clickOnDeleteButton()
-                .clickOnYesButton()
-                .assertVisibilityOfPublicLectureDeletedAlert();
+        new P16_UnapprovedLecturesPage(driver)
+                .makeLectureUnapproved(title);
 
-        new P15_PublicLecturesPage(driver)
+        new P02_LibraryPage(driver)
+                .clickOnUnapprovedLecturesButton()
+                .searchForPublicLecture(title)
+                .assertVisibilityOfUnapprovedLecture(title);
+
+        new P16_UnapprovedLecturesPage(driver)
+                .checkLectureCheckbox(title)
+                .clickOnApproveButton()
+                .clickOnYesButton()
+                .assertVisibilityOfLectureApprovedAlert();
+
+        new P16_UnapprovedLecturesPage(driver)
                 .searchForPublicLecture(title)
                 .assertVisibilityOfNoDataFoundMessage();
 
         new P02_LibraryPage(driver)
+                .clickOnPublicLecturesButton()
+                .searchForPublicLecture(title)
+                .assertVisibilityOfPublicLecture(title);
+
+        new P02_LibraryPage(driver)
                 .clickOnMyLecturesButton()
                 .searchForMyLecture(title)
-                .assertVisibilityOfMyLecture(title);
-
-        new P14_MyLecturesPage(driver)
                 .checkLectureCheckbox(title)
                 .clickOnDeleteButton()
                 .clickOnYesButton()

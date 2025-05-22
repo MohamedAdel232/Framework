@@ -18,6 +18,9 @@
             <class name="Tests.TC11_PACSServersAdminTest"/>
             <class name="Tests.TC12_UsersAdminTest"/>
             <class name="Tests.TC13_ReferencesTest"/>
+            <class name="Tests.TC14_MyLecturesTest"/>
+            <class name="Tests.TC15_PublicLecturesTest"/>
+            <class name="Tests.TC16_UnapprovedLecturesTest"/>
         </classes>
     </test>
 </suite>

@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Lectures Pages Runner">
+    <listeners>
+        <listener class-name="Listeners.TestNGListeners"/>
+    </listeners>
+    <test name="Lectures Pages Runner on Chrome">
+        <parameter name="browser" value="Chrome"/>
+        <classes>
+            <class name="Tests.TC14_MyLecturesTest"/>
+            <class name="Tests.TC15_PublicLecturesTest"/>
+            <class name="Tests.TC16_UnapprovedLecturesTest"/>
+        </classes>
+    </test>
+</suite>

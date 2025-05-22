@@ -13,13 +13,13 @@ import org.testng.annotations.*;
 public class TC14_MyLecturesTest {
     DriverFactory driver;
     JsonUtils loginTestData;
-    JsonUtils myLecturesTestData;
+    JsonUtils lecturesTestData;
 
     @Test
-    public void addPublicLectureTC() throws InterruptedException {
-        String title = myLecturesTestData.getJsonData("addNewLecture.title") + "-" + TimestampUtils.getTimestamp();
-        String filePath = myLecturesTestData.getJsonData("addNewLecture.filePath");
-        String notes = myLecturesTestData.getJsonData("addNewLecture.notes");
+    public void myLecturesTC() throws InterruptedException {
+        String title = lecturesTestData.getJsonData("addNewLecture.title") + "-" + TimestampUtils.getTimestamp();
+        String filePath = lecturesTestData.getJsonData("addNewLecture.filePath");
+        String notes = lecturesTestData.getJsonData("addNewLecture.notes");
 
         new P01_LoginPage(driver)
                 .navigateToLoginPage(PropertiesUtils.getPropertyValue("LoginPageUrl"))
@@ -93,7 +93,7 @@ public class TC14_MyLecturesTest {
     @BeforeClass
     public void beforeClass() {
         loginTestData = new JsonUtils("LoginTestData");
-        myLecturesTestData = new JsonUtils("MyLecturesTestData");
+        lecturesTestData = new JsonUtils("LecturesTestData");
     }
 
     @BeforeMethod

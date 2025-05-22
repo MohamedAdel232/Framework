@@ -3,7 +3,7 @@
     "title": "testLecture",
     "anatomy": "Spine",
     "subspecialty": "S1",
-    "filePath": "src/test/resources/TestData/MyLecturesTestData.json",
+    "filePath": "src/test/resources/TestData/LecturesTestData.json",
     "notes": "testNotes"
   }
 }
