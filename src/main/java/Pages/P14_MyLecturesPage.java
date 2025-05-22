@@ -23,7 +23,7 @@ public class P14_MyLecturesPage {
     private final By lectureAddedMessageLocator = By.cssSelector("[aria-label=\"Lecture added successfully\"]");
     private final By lectureEditedMessageLocator = By.cssSelector("[aria-label=\"Selected lecture has been updated successfully\"]");
     private final By lectureDeletedMessageLocator = By.cssSelector("[aria-label=\"The selected lecture has been deleted successfully\"]");
-    
+
     private final DriverFactory driver;
 
     public P14_MyLecturesPage(DriverFactory driver) {
@@ -152,6 +152,15 @@ public class P14_MyLecturesPage {
         SoftAssertUtils.softAssertTrue(
                 driver.elementUtils().verifyVisibilityOfElement(lectureDeletedMessageLocator),
                 "Lecture deleted alert not visible"
+        );
+    }
+
+    @Step("Verify visibility of my lecture")
+    public void assertVisibilityOfPublicLecture(String lectureTitle) {
+        By publicLectureLocator = By.xpath("//div[contains(text(), \"" + lectureTitle + "\")]");
+        SoftAssertUtils.softAssertTrue(
+                driver.elementUtils().verifyVisibilityOfElement(publicLectureLocator),
+                "My lecture is not visible"
         );
     }
 }
