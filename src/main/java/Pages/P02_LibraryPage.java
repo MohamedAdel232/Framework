@@ -22,6 +22,10 @@ public class P02_LibraryPage {
     private final By pacsServersButtonLocator = By.cssSelector("[href=\"/iCodeTFS/pacsservers\"]");
     private final By usersButtonLocator = By.cssSelector("[href=\"/iCodeTFS/admin/users\"]");
     private final By referencesButtonLocator = By.cssSelector("[href=\"/iCodeTFS/references\"]");
+    private final By lecturesButtonLocator = By.xpath("//span[text()=\"Lectures\"] /..");
+    private final By myLecturesButtonLocator = By.cssSelector("[href=\"/iCodeTFS/mylecture\"]");
+    private final By publicLecturesButtonLocator = By.cssSelector("[href=\"/iCodeTFS/publiclecture\"]");
+    private final By unapprovedLecturesButtonLocator = By.cssSelector("[href=\"/iCodeTFS/unapprovedlecture\"]");
 
     private final DriverFactory driver;
 
@@ -132,5 +136,29 @@ public class P02_LibraryPage {
     public P13_ReferencesPage clickOnReferencesButton() {
         driver.elementUtils().clickOnElement(referencesButtonLocator);
         return new P13_ReferencesPage(driver);
+    }
+
+    @Step("Click on Lectures button")
+    public P02_LibraryPage clickOnLecturesButton() {
+        driver.elementUtils().clickOnElement(lecturesButtonLocator);
+        return this;
+    }
+
+    @Step("Click on My Lectures button")
+    public P14_MyLecturesPage clickOnMyLecturesButton() {
+        driver.elementUtils().clickOnElement(myLecturesButtonLocator);
+        return new P14_MyLecturesPage(driver);
+    }
+
+    @Step("Click on Public Lectures button")
+    public P15_PublicLecturesPage clickOnPublicLecturesButton() {
+        driver.elementUtils().clickOnElement(publicLecturesButtonLocator);
+        return new P15_PublicLecturesPage(driver);
+    }
+
+    @Step("Click on Unapproved Lectures button")
+    public P16_UnapprovedLecturesPage clickOnUnapprovedLecturesButton() {
+        driver.elementUtils().clickOnElement(unapprovedLecturesButtonLocator);
+        return new P16_UnapprovedLecturesPage(driver);
     }
 }
