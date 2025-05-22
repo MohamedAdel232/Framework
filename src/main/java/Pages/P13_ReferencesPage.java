@@ -15,8 +15,14 @@ public class P13_ReferencesPage {
     private final By notesTextFieldLocator = By.cssSelector("[formcontrolname=\"note\"]");
     private final By saveButtonLocator = By.cssSelector("[title=\"Save\"]");
     private final By editButtonLocator = By.cssSelector("[title=\"Edit reference\"]");
+    private final By deleteButtonLocator = By.cssSelector("[title=\"Delete the selected reference(s)\"]");
+    private final By yesButtonLocator = By.cssSelector("[title=\"Yes\"]");
+    private final By scheduleButtonLocator = By.cssSelector("[title=\"Add the selected reference(s) to a meeting\"]");
+    private final By addToMeetingButtonLocator = By.cssSelector("[title=\"Move to Meeting\"]");
+    private final By scheduledMeetingLocator = By.xpath("(//td [@class=\"k-scheduler-cell ng-star-inserted\"] /.. /.. /.. /.. /.. //div //div[@class=\"schEvent available-Meeting ng-star-inserted\"])");
     private final By referenceAddedMessageLocator = By.cssSelector("[aria-label=\"Reference has been added successfully\"]");
     private final By referenceEditedMessageLocator = By.cssSelector("[aria-label=\"Selected reference has been edited successfully\"]");
+    private final By referenceScheduledMessageLocator = By.cssSelector("[aria-label=\"The selected reference has been added successfully to the selected meeting\"]");
     private final By referenceDeletedMessageLocator = By.cssSelector("[aria-label=\"The selected reference has been deleted successfully\"]");
 
     private final DriverFactory driver;
@@ -71,14 +77,45 @@ public class P13_ReferencesPage {
         return this;
     }
 
-    @Step("Click on Edit button")
-    public P13_ReferencesPage clickOnEditButton(String referenceTitle) {
+    @Step("Check reference checkbox's")
+    public P13_ReferencesPage checkReferenceCheckbox(String referenceTitle) {
         By checkboxLocator = RelativeLocator.with(By.cssSelector("[type=\"checkbox\"]"))
                 .toLeftOf(By.xpath("//div[contains(text(), \"" + referenceTitle + "\")]"));
         driver.elementUtils().clickOnElement(checkboxLocator);
+        return this;
+    }
+
+    @Step("Click on Edit button")
+    public P13_ReferencesPage clickOnEditButton() {
         driver.elementUtils().clickOnElement(editButtonLocator);
         return this;
     }
+
+    @Step("Click on Delete button")
+    public P13_ReferencesPage clickOnDeleteButton() {
+        driver.elementUtils().clickOnElement(deleteButtonLocator);
+        return this;
+    }
+
+    @Step("Click on Yes button")
+    public P13_ReferencesPage clickOnYesButton() {
+        driver.elementUtils().clickOnElement(yesButtonLocator);
+        return this;
+    }
+
+    @Step("Click on Schedule button")
+    public P13_ReferencesPage clickOnScheduleButton() {
+        driver.elementUtils().clickOnElement(scheduleButtonLocator);
+        return this;
+    }
+
+    @Step("Select a scheduled meeting")
+    public P13_ReferencesPage selectScheduledMeeting() {
+        driver.elementUtils().clickOnElement(scheduledMeetingLocator);
+        driver.elementUtils().clickOnElement(addToMeetingButtonLocator);
+        return this;
+    }
+
 
     @Step("Verify Reference added message")
     public void assertVisibilityOfReferenceAddedAlert() {
@@ -93,6 +130,14 @@ public class P13_ReferencesPage {
         SoftAssertUtils.softAssertTrue(
                 driver.elementUtils().verifyVisibilityOfElement(referenceEditedMessageLocator),
                 "Reference edited alert not visible"
+        );
+    }
+
+    @Step("Verify Reference scheduled message")
+    public void assertVisibilityOfReferenceScheduledAlert() {
+        SoftAssertUtils.softAssertTrue(
+                driver.elementUtils().verifyVisibilityOfElement(referenceScheduledMessageLocator),
+                "Reference scheduled alert not visible"
         );
     }
 

@@ -1,0 +1,929 @@
+[DEBUG] - [22-05-2025 13:17:20] [main] [org.testng.TestNG] - suiteXmlPath: "D:\iCode\TestRunners\ProjectRunner.xml"
+[INFO] - [22-05-2025 13:17:21] [main] [Listeners.TestNGListeners] - Test execution started
+[INFO] - [22-05-2025 13:17:21] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [22-05-2025 13:17:21] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [22-05-2025 13:17:21] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [22-05-2025 13:17:21] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [22-05-2025 13:17:21] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [22-05-2025 13:17:21] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [22-05-2025 13:17:21] [main] [Utilities.PropertiesUtils] - Loading properties file data
+[INFO] - [22-05-2025 13:17:21] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\allure-results
+[INFO] - [22-05-2025 13:17:21] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\allure-report
+[INFO] - [22-05-2025 13:17:21] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\Logs
+[INFO] - [22-05-2025 13:17:21] [main] [Utilities.FilesUtils] - Directory created: TestOutputs\Screenshots
+[INFO] - [22-05-2025 13:17:21] [main] [Utilities.FilesUtils] - Directory created: TestOutputs\ScreenRecordings
+[INFO] - [22-05-2025 13:17:21] [main] [org.testng.internal.Utils] - [TestNG] Running:
+  D:\iCode\TestRunners\ProjectRunner.xml
+
+[INFO] - [22-05-2025 13:17:21] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-05-22_13-17-20.log
+[INFO] - [22-05-2025 13:17:24] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-05-22_13-17-20.log
+[INFO] - [22-05-2025 13:17:24] [main] [Pages.P01_LoginPage] - Navigating to login page
+[INFO] - [22-05-2025 13:17:24] [main] [Utilities.BrowserUtils] - Navigating to URL: http://192.168.2.97/iCodeTFS/login
+[DEBUG] - [22-05-2025 13:17:25] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['username']
+[INFO] - [22-05-2025 13:17:25] [main] [Pages.P01_LoginPage] - Entering username
+[INFO] - [22-05-2025 13:17:25] [main] [Utilities.ElementUtils] - Sending Automation to element: By.cssSelector: [formcontrolname="userName"]
+[INFO] - [22-05-2025 13:17:25] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="userName"]
+[INFO] - [22-05-2025 13:17:25] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="userName"]
+[INFO] - [22-05-2025 13:17:25] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="userName"]
+[INFO] - [22-05-2025 13:17:25] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="userName"]
+[INFO] - [22-05-2025 13:17:25] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="userName"]
+[DEBUG] - [22-05-2025 13:17:25] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['password']
+[INFO] - [22-05-2025 13:17:25] [main] [Pages.P01_LoginPage] - Entering password
+[INFO] - [22-05-2025 13:17:25] [main] [Utilities.ElementUtils] - Sending Automation1# to element: By.cssSelector: [formcontrolname="password"]
+[INFO] - [22-05-2025 13:17:25] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [22-05-2025 13:17:25] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [22-05-2025 13:17:25] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [22-05-2025 13:17:25] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [22-05-2025 13:17:25] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [22-05-2025 13:17:25] [main] [Pages.P01_LoginPage] - Clicking login button
+[INFO] - [22-05-2025 13:17:25] [main] [Utilities.ElementUtils] - Clicking on element: By.id: btnlogin
+[INFO] - [22-05-2025 13:17:25] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.id: btnlogin
+[INFO] - [22-05-2025 13:17:25] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: btnlogin
+[INFO] - [22-05-2025 13:17:25] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: btnlogin
+[INFO] - [22-05-2025 13:17:25] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.id: btnlogin
+[INFO] - [22-05-2025 13:17:25] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: btnlogin
+[INFO] - [22-05-2025 13:17:25] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: btnlogin
+[INFO] - [22-05-2025 13:17:25] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Continue"]
+[INFO] - [22-05-2025 13:17:25] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Continue"]
+[INFO] - [22-05-2025 13:17:25] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Continue"]
+[INFO] - [22-05-2025 13:17:25] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Continue"]
+[INFO] - [22-05-2025 13:17:41] [main] [Pages.P01_LoginPage] - No session to terminate
+[INFO] - [22-05-2025 13:17:41] [main] [Pages.P01_LoginPage] - Asserting login with valid credentials
+[INFO] - [22-05-2025 13:17:41] [main] [Utilities.BrowserUtils] - Current URL is: http://192.168.2.97/iCodeTFS/search/58d21c46-1cd5-4d79-ab0d-dbcb0d853153/all
+[INFO] - [22-05-2025 13:17:41] [main] [Utilities.SoftAssertActionsUtils] - Asserting page URL
+[INFO] - [22-05-2025 13:17:41] [main] [Utilities.SoftAssertActionsUtils] - Expected URL: http://192.168.2.97/iCodeTFS/search
+[INFO] - [22-05-2025 13:17:41] [main] [Utilities.SoftAssertActionsUtils] - Actual URL: http://192.168.2.97/iCodeTFS/search/58d21c46-1cd5-4d79-ab0d-dbcb0d853153/all
+[INFO] - [22-05-2025 13:17:41] [main] [Utilities.WaitUtils] - Waiting for page to load with URL: http://192.168.2.97/iCodeTFS/search
+[INFO] - [22-05-2025 13:17:41] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [22-05-2025 13:17:41] [main] [Utilities.ScreenRecorderUtils] - Recording stopped
+[ERROR] - [22-05-2025 13:17:41] [main] [Utilities.ScreenRecorderUtils] - Error stopping screen recording: Cannot invoke "org.monte.screenrecorder.ScreenRecorder.stop()" because "Utilities.ScreenRecorderUtils.screenRecorder" is null
+[INFO] - [22-05-2025 13:17:41] [main] [Utilities.ScreenshotsUtils] - Screenshot taken: TestOutputs\Screenshots\passed-loginWithValidCredentialsTC-2025-05-22_13-17-41.png
+[INFO] - [22-05-2025 13:17:41] [main] [Utilities.AllureUtils] - Screenshot attached to Allure report: TestOutputs\Screenshots\passed-loginWithValidCredentialsTC-2025-05-22_13-17-41.png
+[INFO] - [22-05-2025 13:17:41] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-05-22_13-17-20.log
+[INFO] - [22-05-2025 13:17:41] [main] [Listeners.TestNGListeners] - Test loginWithValidCredentialsTC passed
+[INFO] - [22-05-2025 13:17:41] [main] [Utilities.BrowserUtils] - Quitting the browser
+[INFO] - [22-05-2025 13:17:41] [main] [Factories.DriverFactory] - Removing driver
+[INFO] - [22-05-2025 13:17:41] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-05-22_13-17-20.log
+[INFO] - [22-05-2025 13:17:41] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-05-22_13-17-20.log
+[INFO] - [22-05-2025 13:17:42] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-05-22_13-17-20.log
+[DEBUG] - [22-05-2025 13:17:42] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewSites']['name']
+[DEBUG] - [22-05-2025 13:17:42] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewSites']['hl7SiteName']
+[DEBUG] - [22-05-2025 13:17:42] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewSites']['prefix']
+[INFO] - [22-05-2025 13:17:42] [main] [Pages.P01_LoginPage] - Navigating to login page
+[INFO] - [22-05-2025 13:17:42] [main] [Utilities.BrowserUtils] - Navigating to URL: http://192.168.2.97/iCodeTFS/login
+[DEBUG] - [22-05-2025 13:17:43] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['username']
+[INFO] - [22-05-2025 13:17:43] [main] [Pages.P01_LoginPage] - Entering username
+[INFO] - [22-05-2025 13:17:43] [main] [Utilities.ElementUtils] - Sending Automation to element: By.cssSelector: [formcontrolname="userName"]
+[INFO] - [22-05-2025 13:17:43] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="userName"]
+[INFO] - [22-05-2025 13:17:43] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="userName"]
+[INFO] - [22-05-2025 13:17:43] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="userName"]
+[INFO] - [22-05-2025 13:17:43] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="userName"]
+[INFO] - [22-05-2025 13:17:43] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="userName"]
+[DEBUG] - [22-05-2025 13:17:43] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['password']
+[INFO] - [22-05-2025 13:17:43] [main] [Pages.P01_LoginPage] - Entering password
+[INFO] - [22-05-2025 13:17:43] [main] [Utilities.ElementUtils] - Sending Automation1# to element: By.cssSelector: [formcontrolname="password"]
+[INFO] - [22-05-2025 13:17:43] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [22-05-2025 13:17:43] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [22-05-2025 13:17:43] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [22-05-2025 13:17:43] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [22-05-2025 13:17:43] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [22-05-2025 13:17:44] [main] [Pages.P01_LoginPage] - Clicking login button
+[INFO] - [22-05-2025 13:17:44] [main] [Utilities.ElementUtils] - Clicking on element: By.id: btnlogin
+[INFO] - [22-05-2025 13:17:44] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.id: btnlogin
+[INFO] - [22-05-2025 13:17:44] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: btnlogin
+[INFO] - [22-05-2025 13:17:44] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: btnlogin
+[INFO] - [22-05-2025 13:17:44] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.id: btnlogin
+[INFO] - [22-05-2025 13:17:44] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: btnlogin
+[INFO] - [22-05-2025 13:17:44] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: btnlogin
+[INFO] - [22-05-2025 13:17:44] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Continue"]
+[INFO] - [22-05-2025 13:17:44] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Continue"]
+[INFO] - [22-05-2025 13:17:44] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Continue"]
+[INFO] - [22-05-2025 13:17:44] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Continue"]
+[INFO] - [22-05-2025 13:17:59] [main] [Pages.P01_LoginPage] - No session to terminate
+[INFO] - [22-05-2025 13:17:59] [main] [Pages.P01_LoginPage] - Asserting login with valid credentials
+[INFO] - [22-05-2025 13:17:59] [main] [Utilities.BrowserUtils] - Current URL is: http://192.168.2.97/iCodeTFS/search/58d21c46-1cd5-4d79-ab0d-dbcb0d853153/all
+[INFO] - [22-05-2025 13:17:59] [main] [Utilities.SoftAssertActionsUtils] - Asserting page URL
+[INFO] - [22-05-2025 13:17:59] [main] [Utilities.SoftAssertActionsUtils] - Expected URL: http://192.168.2.97/iCodeTFS/search
+[INFO] - [22-05-2025 13:17:59] [main] [Utilities.SoftAssertActionsUtils] - Actual URL: http://192.168.2.97/iCodeTFS/search/58d21c46-1cd5-4d79-ab0d-dbcb0d853153/all
+[INFO] - [22-05-2025 13:17:59] [main] [Utilities.WaitUtils] - Waiting for page to load with URL: http://192.168.2.97/iCodeTFS/search
+[INFO] - [22-05-2025 13:17:59] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [22-05-2025 13:17:59] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: //span[text()="Library"] /..
+[INFO] - [22-05-2025 13:17:59] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: //span[text()="Library"] /..
+[INFO] - [22-05-2025 13:17:59] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //span[text()="Library"] /..
+[INFO] - [22-05-2025 13:17:59] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //span[text()="Library"] /..
+[INFO] - [22-05-2025 13:17:59] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //span[text()="Library"] /..
+[INFO] - [22-05-2025 13:17:59] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="Library"] /..
+[INFO] - [22-05-2025 13:17:59] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="Library"] /..
+[INFO] - [22-05-2025 13:17:59] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: //span[text()="iCode Administration"] /..
+[INFO] - [22-05-2025 13:17:59] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: //span[text()="iCode Administration"] /..
+[INFO] - [22-05-2025 13:17:59] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //span[text()="iCode Administration"] /..
+[INFO] - [22-05-2025 13:17:59] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //span[text()="iCode Administration"] /..
+[INFO] - [22-05-2025 13:17:59] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //span[text()="iCode Administration"] /..
+[INFO] - [22-05-2025 13:17:59] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="iCode Administration"] /..
+[INFO] - [22-05-2025 13:17:59] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="iCode Administration"] /..
+[INFO] - [22-05-2025 13:17:59] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [href="/iCodeTFS/admin/sites"]
+[INFO] - [22-05-2025 13:17:59] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [href="/iCodeTFS/admin/sites"]
+[INFO] - [22-05-2025 13:17:59] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [href="/iCodeTFS/admin/sites"]
+[INFO] - [22-05-2025 13:17:59] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [href="/iCodeTFS/admin/sites"]
+[INFO] - [22-05-2025 13:17:59] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [href="/iCodeTFS/admin/sites"]
+[INFO] - [22-05-2025 13:17:59] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [href="/iCodeTFS/admin/sites"]
+[INFO] - [22-05-2025 13:17:59] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [href="/iCodeTFS/admin/sites"]
+[INFO] - [22-05-2025 13:17:59] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Add new Site"]
+[INFO] - [22-05-2025 13:17:59] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Add new Site"]
+[INFO] - [22-05-2025 13:17:59] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Add new Site"]
+[INFO] - [22-05-2025 13:17:59] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Add new Site"]
+[INFO] - [22-05-2025 13:18:00] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Add new Site"]
+[INFO] - [22-05-2025 13:18:00] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Add new Site"]
+[INFO] - [22-05-2025 13:18:00] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Add new Site"]
+[INFO] - [22-05-2025 13:18:00] [main] [Utilities.ElementUtils] - Sending TestName-2025-05-22_13-17-42 to element: By.cssSelector: [formcontrolname="name"]
+[INFO] - [22-05-2025 13:18:00] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [22-05-2025 13:18:00] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [22-05-2025 13:18:00] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [22-05-2025 13:18:00] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [22-05-2025 13:18:00] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [22-05-2025 13:18:00] [main] [Utilities.ElementUtils] - Sending TestSite-2025-05-22_13-17-42 to element: By.cssSelector: [formcontrolname="hL7Name"]
+[INFO] - [22-05-2025 13:18:00] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="hL7Name"]
+[INFO] - [22-05-2025 13:18:00] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="hL7Name"]
+[INFO] - [22-05-2025 13:18:00] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="hL7Name"]
+[INFO] - [22-05-2025 13:18:00] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="hL7Name"]
+[INFO] - [22-05-2025 13:18:00] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="hL7Name"]
+[INFO] - [22-05-2025 13:18:00] [main] [Utilities.ElementUtils] - Sending TestPrefix-2025-05-22_13-17-42 to element: By.cssSelector: [formcontrolname="prefix"]
+[INFO] - [22-05-2025 13:18:00] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="prefix"]
+[INFO] - [22-05-2025 13:18:00] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="prefix"]
+[INFO] - [22-05-2025 13:18:00] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="prefix"]
+[INFO] - [22-05-2025 13:18:00] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="prefix"]
+[INFO] - [22-05-2025 13:18:00] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="prefix"]
+[INFO] - [22-05-2025 13:18:01] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: input[title="Active"]
+[INFO] - [22-05-2025 13:18:01] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: input[title="Active"]
+[INFO] - [22-05-2025 13:18:01] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: input[title="Active"]
+[INFO] - [22-05-2025 13:18:01] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: input[title="Active"]
+[INFO] - [22-05-2025 13:18:01] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: input[title="Active"]
+[INFO] - [22-05-2025 13:18:01] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: input[title="Active"]
+[INFO] - [22-05-2025 13:18:01] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: input[title="Active"]
+[INFO] - [22-05-2025 13:18:01] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Save"]
+[INFO] - [22-05-2025 13:18:01] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Save"]
+[INFO] - [22-05-2025 13:18:01] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Save"]
+[INFO] - [22-05-2025 13:18:01] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Save"]
+[INFO] - [22-05-2025 13:18:01] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Save"]
+[INFO] - [22-05-2025 13:18:01] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Save"]
+[INFO] - [22-05-2025 13:18:01] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Save"]
+[INFO] - [22-05-2025 13:18:01] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.cssSelector: [aria-label="New site has been added successfully"]
+[INFO] - [22-05-2025 13:18:01] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [aria-label="New site has been added successfully"]
+[INFO] - [22-05-2025 13:18:01] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [aria-label="New site has been added successfully"]
+[INFO] - [22-05-2025 13:18:01] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [aria-label="New site has been added successfully"]
+[INFO] - [22-05-2025 13:18:01] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label="New site has been added successfully"]
+[INFO] - [22-05-2025 13:18:01] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label="New site has been added successfully"]
+[INFO] - [22-05-2025 13:18:01] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [22-05-2025 13:18:01] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: //td[.='TestName-2025-05-22_13-17-42']/following-sibling::td//a[@title='Edit']
+[INFO] - [22-05-2025 13:18:01] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: //td[.='TestName-2025-05-22_13-17-42']/following-sibling::td//a[@title='Edit']
+[INFO] - [22-05-2025 13:18:01] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //td[.='TestName-2025-05-22_13-17-42']/following-sibling::td//a[@title='Edit']
+[INFO] - [22-05-2025 13:18:01] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //td[.='TestName-2025-05-22_13-17-42']/following-sibling::td//a[@title='Edit']
+[INFO] - [22-05-2025 13:18:01] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //td[.='TestName-2025-05-22_13-17-42']/following-sibling::td//a[@title='Edit']
+[INFO] - [22-05-2025 13:18:01] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //td[.='TestName-2025-05-22_13-17-42']/following-sibling::td//a[@title='Edit']
+[INFO] - [22-05-2025 13:18:01] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //td[.='TestName-2025-05-22_13-17-42']/following-sibling::td//a[@title='Edit']
+[INFO] - [22-05-2025 13:18:02] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Save"]
+[INFO] - [22-05-2025 13:18:02] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Save"]
+[INFO] - [22-05-2025 13:18:02] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Save"]
+[INFO] - [22-05-2025 13:18:02] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Save"]
+[INFO] - [22-05-2025 13:18:02] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Save"]
+[INFO] - [22-05-2025 13:18:02] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Save"]
+[INFO] - [22-05-2025 13:18:02] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Save"]
+[INFO] - [22-05-2025 13:18:02] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.cssSelector: [aria-label="Selected site has been edited successfully"]
+[INFO] - [22-05-2025 13:18:02] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [aria-label="Selected site has been edited successfully"]
+[INFO] - [22-05-2025 13:18:02] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [aria-label="Selected site has been edited successfully"]
+[INFO] - [22-05-2025 13:18:02] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [aria-label="Selected site has been edited successfully"]
+[INFO] - [22-05-2025 13:18:02] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label="Selected site has been edited successfully"]
+[INFO] - [22-05-2025 13:18:02] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label="Selected site has been edited successfully"]
+[INFO] - [22-05-2025 13:18:02] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [22-05-2025 13:18:02] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: //td[.='TestName-2025-05-22_13-17-42']/following-sibling::td//a[@title='Delete']
+[INFO] - [22-05-2025 13:18:02] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: //td[.='TestName-2025-05-22_13-17-42']/following-sibling::td//a[@title='Delete']
+[INFO] - [22-05-2025 13:18:02] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //td[.='TestName-2025-05-22_13-17-42']/following-sibling::td//a[@title='Delete']
+[INFO] - [22-05-2025 13:18:02] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //td[.='TestName-2025-05-22_13-17-42']/following-sibling::td//a[@title='Delete']
+[INFO] - [22-05-2025 13:18:02] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //td[.='TestName-2025-05-22_13-17-42']/following-sibling::td//a[@title='Delete']
+[INFO] - [22-05-2025 13:18:02] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //td[.='TestName-2025-05-22_13-17-42']/following-sibling::td//a[@title='Delete']
+[INFO] - [22-05-2025 13:18:02] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //td[.='TestName-2025-05-22_13-17-42']/following-sibling::td//a[@title='Delete']
+[INFO] - [22-05-2025 13:18:02] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Yes"]
+[INFO] - [22-05-2025 13:18:02] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Yes"]
+[INFO] - [22-05-2025 13:18:02] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Yes"]
+[INFO] - [22-05-2025 13:18:02] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Yes"]
+[INFO] - [22-05-2025 13:18:03] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Yes"]
+[INFO] - [22-05-2025 13:18:03] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Yes"]
+[INFO] - [22-05-2025 13:18:03] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Yes"]
+[INFO] - [22-05-2025 13:18:03] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.cssSelector: [aria-label="Selected site has been deleted successfully"]
+[INFO] - [22-05-2025 13:18:03] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [aria-label="Selected site has been deleted successfully"]
+[INFO] - [22-05-2025 13:18:03] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [aria-label="Selected site has been deleted successfully"]
+[INFO] - [22-05-2025 13:18:04] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [aria-label="Selected site has been deleted successfully"]
+[INFO] - [22-05-2025 13:18:04] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label="Selected site has been deleted successfully"]
+[INFO] - [22-05-2025 13:18:04] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label="Selected site has been deleted successfully"]
+[INFO] - [22-05-2025 13:18:04] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [22-05-2025 13:18:04] [main] [Utilities.ScreenRecorderUtils] - Recording stopped
+[ERROR] - [22-05-2025 13:18:04] [main] [Utilities.ScreenRecorderUtils] - Error stopping screen recording: Cannot invoke "org.monte.screenrecorder.ScreenRecorder.stop()" because "Utilities.ScreenRecorderUtils.screenRecorder" is null
+[INFO] - [22-05-2025 13:18:04] [main] [Utilities.ScreenshotsUtils] - Screenshot taken: TestOutputs\Screenshots\passed-sitesTC-2025-05-22_13-18-04.png
+[INFO] - [22-05-2025 13:18:04] [main] [Utilities.AllureUtils] - Screenshot attached to Allure report: TestOutputs\Screenshots\passed-sitesTC-2025-05-22_13-18-04.png
+[INFO] - [22-05-2025 13:18:04] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-05-22_13-17-20.log
+[INFO] - [22-05-2025 13:18:04] [main] [Listeners.TestNGListeners] - Test sitesTC passed
+[INFO] - [22-05-2025 13:18:04] [main] [Utilities.BrowserUtils] - Quitting the browser
+[INFO] - [22-05-2025 13:18:04] [main] [Factories.DriverFactory] - Removing driver
+[INFO] - [22-05-2025 13:18:04] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-05-22_13-17-20.log
+[INFO] - [22-05-2025 13:18:04] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-05-22_13-17-20.log
+[INFO] - [22-05-2025 13:18:06] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-05-22_13-17-20.log
+[DEBUG] - [22-05-2025 13:18:06] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewUserGroups']['groupName']
+[INFO] - [22-05-2025 13:18:06] [main] [Pages.P01_LoginPage] - Navigating to login page
+[INFO] - [22-05-2025 13:18:06] [main] [Utilities.BrowserUtils] - Navigating to URL: http://192.168.2.97/iCodeTFS/login
+[DEBUG] - [22-05-2025 13:18:06] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['username']
+[INFO] - [22-05-2025 13:18:06] [main] [Pages.P01_LoginPage] - Entering username
+[INFO] - [22-05-2025 13:18:06] [main] [Utilities.ElementUtils] - Sending Automation to element: By.cssSelector: [formcontrolname="userName"]
+[INFO] - [22-05-2025 13:18:06] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="userName"]
+[INFO] - [22-05-2025 13:18:06] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="userName"]
+[INFO] - [22-05-2025 13:18:06] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="userName"]
+[INFO] - [22-05-2025 13:18:06] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="userName"]
+[INFO] - [22-05-2025 13:18:06] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="userName"]
+[DEBUG] - [22-05-2025 13:18:07] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['password']
+[INFO] - [22-05-2025 13:18:07] [main] [Pages.P01_LoginPage] - Entering password
+[INFO] - [22-05-2025 13:18:07] [main] [Utilities.ElementUtils] - Sending Automation1# to element: By.cssSelector: [formcontrolname="password"]
+[INFO] - [22-05-2025 13:18:07] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [22-05-2025 13:18:07] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [22-05-2025 13:18:07] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [22-05-2025 13:18:07] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [22-05-2025 13:18:07] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [22-05-2025 13:18:07] [main] [Pages.P01_LoginPage] - Clicking login button
+[INFO] - [22-05-2025 13:18:07] [main] [Utilities.ElementUtils] - Clicking on element: By.id: btnlogin
+[INFO] - [22-05-2025 13:18:07] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.id: btnlogin
+[INFO] - [22-05-2025 13:18:07] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: btnlogin
+[INFO] - [22-05-2025 13:18:07] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: btnlogin
+[INFO] - [22-05-2025 13:18:07] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.id: btnlogin
+[INFO] - [22-05-2025 13:18:07] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: btnlogin
+[INFO] - [22-05-2025 13:18:07] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: btnlogin
+[INFO] - [22-05-2025 13:18:07] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Continue"]
+[INFO] - [22-05-2025 13:18:07] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Continue"]
+[INFO] - [22-05-2025 13:18:07] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Continue"]
+[INFO] - [22-05-2025 13:18:07] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Continue"]
+[INFO] - [22-05-2025 13:18:22] [main] [Pages.P01_LoginPage] - No session to terminate
+[INFO] - [22-05-2025 13:18:22] [main] [Pages.P01_LoginPage] - Asserting login with valid credentials
+[INFO] - [22-05-2025 13:18:22] [main] [Utilities.BrowserUtils] - Current URL is: http://192.168.2.97/iCodeTFS/search/58d21c46-1cd5-4d79-ab0d-dbcb0d853153/all
+[INFO] - [22-05-2025 13:18:22] [main] [Utilities.SoftAssertActionsUtils] - Asserting page URL
+[INFO] - [22-05-2025 13:18:22] [main] [Utilities.SoftAssertActionsUtils] - Expected URL: http://192.168.2.97/iCodeTFS/search
+[INFO] - [22-05-2025 13:18:22] [main] [Utilities.SoftAssertActionsUtils] - Actual URL: http://192.168.2.97/iCodeTFS/search/58d21c46-1cd5-4d79-ab0d-dbcb0d853153/all
+[INFO] - [22-05-2025 13:18:22] [main] [Utilities.WaitUtils] - Waiting for page to load with URL: http://192.168.2.97/iCodeTFS/search
+[INFO] - [22-05-2025 13:18:22] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [22-05-2025 13:18:22] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: //span[text()="Library"] /..
+[INFO] - [22-05-2025 13:18:22] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: //span[text()="Library"] /..
+[INFO] - [22-05-2025 13:18:22] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //span[text()="Library"] /..
+[INFO] - [22-05-2025 13:18:22] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //span[text()="Library"] /..
+[INFO] - [22-05-2025 13:18:22] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //span[text()="Library"] /..
+[INFO] - [22-05-2025 13:18:22] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="Library"] /..
+[INFO] - [22-05-2025 13:18:22] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="Library"] /..
+[INFO] - [22-05-2025 13:18:23] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: //span[text()="iCode Administration"] /..
+[INFO] - [22-05-2025 13:18:23] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: //span[text()="iCode Administration"] /..
+[INFO] - [22-05-2025 13:18:23] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //span[text()="iCode Administration"] /..
+[INFO] - [22-05-2025 13:18:23] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //span[text()="iCode Administration"] /..
+[INFO] - [22-05-2025 13:18:23] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //span[text()="iCode Administration"] /..
+[INFO] - [22-05-2025 13:18:23] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="iCode Administration"] /..
+[INFO] - [22-05-2025 13:18:23] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="iCode Administration"] /..
+[INFO] - [22-05-2025 13:18:23] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: //span[text()="Users Management"] /..
+[INFO] - [22-05-2025 13:18:23] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: //span[text()="Users Management"] /..
+[INFO] - [22-05-2025 13:18:23] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //span[text()="Users Management"] /..
+[INFO] - [22-05-2025 13:18:23] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //span[text()="Users Management"] /..
+[INFO] - [22-05-2025 13:18:23] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //span[text()="Users Management"] /..
+[INFO] - [22-05-2025 13:18:23] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //span[text()="Users Management"] /..
+[INFO] - [22-05-2025 13:18:23] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="Users Management"] /..
+[INFO] - [22-05-2025 13:18:23] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="Users Management"] /..
+[INFO] - [22-05-2025 13:18:23] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [href="/iCodeTFS/admin/usergroups"]
+[INFO] - [22-05-2025 13:18:23] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [href="/iCodeTFS/admin/usergroups"]
+[INFO] - [22-05-2025 13:18:23] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [href="/iCodeTFS/admin/usergroups"]
+[INFO] - [22-05-2025 13:18:23] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [href="/iCodeTFS/admin/usergroups"]
+[INFO] - [22-05-2025 13:18:24] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [href="/iCodeTFS/admin/usergroups"]
+[INFO] - [22-05-2025 13:18:24] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [href="/iCodeTFS/admin/usergroups"]
+[INFO] - [22-05-2025 13:18:24] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [href="/iCodeTFS/admin/usergroups"]
+[INFO] - [22-05-2025 13:18:24] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [href="/iCodeTFS/admin/usergroups"]
+[INFO] - [22-05-2025 13:18:24] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Add new user group"]
+[INFO] - [22-05-2025 13:18:24] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Add new user group"]
+[INFO] - [22-05-2025 13:18:24] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Add new user group"]
+[INFO] - [22-05-2025 13:18:24] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Add new user group"]
+[INFO] - [22-05-2025 13:18:25] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Add new user group"]
+[INFO] - [22-05-2025 13:18:25] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Add new user group"]
+[INFO] - [22-05-2025 13:18:25] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Add new user group"]
+[INFO] - [22-05-2025 13:18:25] [main] [Utilities.ElementUtils] - Sending TestGroupName-2025-05-22_13-18-06 to element: By.cssSelector: [formcontrolname="name"]
+[INFO] - [22-05-2025 13:18:25] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [22-05-2025 13:18:25] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [22-05-2025 13:18:25] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [22-05-2025 13:18:25] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [22-05-2025 13:18:25] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [22-05-2025 13:18:25] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [formcontrolname="securityProfile"]
+[INFO] - [22-05-2025 13:18:25] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [formcontrolname="securityProfile"]
+[INFO] - [22-05-2025 13:18:25] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="securityProfile"]
+[INFO] - [22-05-2025 13:18:25] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="securityProfile"]
+[INFO] - [22-05-2025 13:18:25] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="securityProfile"]
+[INFO] - [22-05-2025 13:18:25] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="securityProfile"]
+[INFO] - [22-05-2025 13:18:25] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="securityProfile"]
+[INFO] - [22-05-2025 13:18:25] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: (//ul[@role="listbox"] //li)[1]
+[INFO] - [22-05-2025 13:18:25] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: (//ul[@role="listbox"] //li)[1]
+[INFO] - [22-05-2025 13:18:25] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: (//ul[@role="listbox"] //li)[1]
+[INFO] - [22-05-2025 13:18:25] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: (//ul[@role="listbox"] //li)[1]
+[INFO] - [22-05-2025 13:18:25] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: (//ul[@role="listbox"] //li)[1]
+[INFO] - [22-05-2025 13:18:25] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: (//ul[@role="listbox"] //li)[1]
+[INFO] - [22-05-2025 13:18:25] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: (//ul[@role="listbox"] //li)[1]
+[INFO] - [22-05-2025 13:18:25] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: (//ul[@role="listbox"] //li)[1]
+[INFO] - [22-05-2025 13:18:26] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Save"]
+[INFO] - [22-05-2025 13:18:26] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Save"]
+[INFO] - [22-05-2025 13:18:26] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Save"]
+[INFO] - [22-05-2025 13:18:26] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Save"]
+[INFO] - [22-05-2025 13:18:26] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Save"]
+[INFO] - [22-05-2025 13:18:26] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Save"]
+[INFO] - [22-05-2025 13:18:26] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Save"]
+[INFO] - [22-05-2025 13:18:26] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.cssSelector: [aria-label="User group has been added successfully"]
+[INFO] - [22-05-2025 13:18:26] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [aria-label="User group has been added successfully"]
+[INFO] - [22-05-2025 13:18:26] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [aria-label="User group has been added successfully"]
+[INFO] - [22-05-2025 13:18:26] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [aria-label="User group has been added successfully"]
+[INFO] - [22-05-2025 13:18:26] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label="User group has been added successfully"]
+[INFO] - [22-05-2025 13:18:26] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label="User group has been added successfully"]
+[INFO] - [22-05-2025 13:18:26] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [22-05-2025 13:18:26] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: //td[.='TestGroupName-2025-05-22_13-18-06']/following-sibling::td//a[@title='Edit']
+[INFO] - [22-05-2025 13:18:26] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: //td[.='TestGroupName-2025-05-22_13-18-06']/following-sibling::td//a[@title='Edit']
+[INFO] - [22-05-2025 13:18:26] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //td[.='TestGroupName-2025-05-22_13-18-06']/following-sibling::td//a[@title='Edit']
+[INFO] - [22-05-2025 13:18:26] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //td[.='TestGroupName-2025-05-22_13-18-06']/following-sibling::td//a[@title='Edit']
+[INFO] - [22-05-2025 13:18:26] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //td[.='TestGroupName-2025-05-22_13-18-06']/following-sibling::td//a[@title='Edit']
+[INFO] - [22-05-2025 13:18:26] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //td[.='TestGroupName-2025-05-22_13-18-06']/following-sibling::td//a[@title='Edit']
+[INFO] - [22-05-2025 13:18:26] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //td[.='TestGroupName-2025-05-22_13-18-06']/following-sibling::td//a[@title='Edit']
+[INFO] - [22-05-2025 13:18:26] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Save"]
+[INFO] - [22-05-2025 13:18:26] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Save"]
+[INFO] - [22-05-2025 13:18:26] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Save"]
+[INFO] - [22-05-2025 13:18:26] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Save"]
+[INFO] - [22-05-2025 13:18:26] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Save"]
+[INFO] - [22-05-2025 13:18:26] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Save"]
+[INFO] - [22-05-2025 13:18:26] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Save"]
+[INFO] - [22-05-2025 13:18:27] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.cssSelector: [aria-label="User group has been edited successfully"]
+[INFO] - [22-05-2025 13:18:27] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [aria-label="User group has been edited successfully"]
+[INFO] - [22-05-2025 13:18:27] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [aria-label="User group has been edited successfully"]
+[INFO] - [22-05-2025 13:18:27] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [aria-label="User group has been edited successfully"]
+[INFO] - [22-05-2025 13:18:27] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label="User group has been edited successfully"]
+[INFO] - [22-05-2025 13:18:27] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label="User group has been edited successfully"]
+[INFO] - [22-05-2025 13:18:27] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [22-05-2025 13:18:27] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: //td[.='TestGroupName-2025-05-22_13-18-06']/following-sibling::td//a[@title='Delete']
+[INFO] - [22-05-2025 13:18:27] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: //td[.='TestGroupName-2025-05-22_13-18-06']/following-sibling::td//a[@title='Delete']
+[INFO] - [22-05-2025 13:18:27] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //td[.='TestGroupName-2025-05-22_13-18-06']/following-sibling::td//a[@title='Delete']
+[INFO] - [22-05-2025 13:18:27] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //td[.='TestGroupName-2025-05-22_13-18-06']/following-sibling::td//a[@title='Delete']
+[INFO] - [22-05-2025 13:18:27] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //td[.='TestGroupName-2025-05-22_13-18-06']/following-sibling::td//a[@title='Delete']
+[INFO] - [22-05-2025 13:18:27] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //td[.='TestGroupName-2025-05-22_13-18-06']/following-sibling::td//a[@title='Delete']
+[INFO] - [22-05-2025 13:18:27] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //td[.='TestGroupName-2025-05-22_13-18-06']/following-sibling::td//a[@title='Delete']
+[INFO] - [22-05-2025 13:18:27] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Yes"]
+[INFO] - [22-05-2025 13:18:27] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Yes"]
+[INFO] - [22-05-2025 13:18:27] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Yes"]
+[INFO] - [22-05-2025 13:18:27] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Yes"]
+[INFO] - [22-05-2025 13:18:28] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Yes"]
+[INFO] - [22-05-2025 13:18:28] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Yes"]
+[INFO] - [22-05-2025 13:18:28] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Yes"]
+[INFO] - [22-05-2025 13:18:28] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.cssSelector: [aria-label="Selected user group has been deleted successfully"]
+[INFO] - [22-05-2025 13:18:28] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [aria-label="Selected user group has been deleted successfully"]
+[INFO] - [22-05-2025 13:18:28] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [aria-label="Selected user group has been deleted successfully"]
+[INFO] - [22-05-2025 13:18:28] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [aria-label="Selected user group has been deleted successfully"]
+[INFO] - [22-05-2025 13:18:28] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label="Selected user group has been deleted successfully"]
+[INFO] - [22-05-2025 13:18:28] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label="Selected user group has been deleted successfully"]
+[INFO] - [22-05-2025 13:18:28] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [22-05-2025 13:18:28] [main] [Utilities.ScreenRecorderUtils] - Recording stopped
+[ERROR] - [22-05-2025 13:18:28] [main] [Utilities.ScreenRecorderUtils] - Error stopping screen recording: Cannot invoke "org.monte.screenrecorder.ScreenRecorder.stop()" because "Utilities.ScreenRecorderUtils.screenRecorder" is null
+[INFO] - [22-05-2025 13:18:29] [main] [Utilities.ScreenshotsUtils] - Screenshot taken: TestOutputs\Screenshots\passed-userGroupsTC-2025-05-22_13-18-29.png
+[INFO] - [22-05-2025 13:18:29] [main] [Utilities.AllureUtils] - Screenshot attached to Allure report: TestOutputs\Screenshots\passed-userGroupsTC-2025-05-22_13-18-29.png
+[INFO] - [22-05-2025 13:18:29] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-05-22_13-17-20.log
+[INFO] - [22-05-2025 13:18:29] [main] [Listeners.TestNGListeners] - Test userGroupsTC passed
+[INFO] - [22-05-2025 13:18:29] [main] [Utilities.BrowserUtils] - Quitting the browser
+[INFO] - [22-05-2025 13:18:29] [main] [Factories.DriverFactory] - Removing driver
+[INFO] - [22-05-2025 13:18:29] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-05-22_13-17-20.log
+[INFO] - [22-05-2025 13:18:29] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-05-22_13-17-20.log
+[INFO] - [22-05-2025 13:18:30] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-05-22_13-17-20.log
+[DEBUG] - [22-05-2025 13:18:30] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewActiveDirectory']['name']
+[DEBUG] - [22-05-2025 13:18:30] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewActiveDirectory']['url']
+[DEBUG] - [22-05-2025 13:18:30] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewActiveDirectory']['port']
+[INFO] - [22-05-2025 13:18:30] [main] [Pages.P01_LoginPage] - Navigating to login page
+[INFO] - [22-05-2025 13:18:30] [main] [Utilities.BrowserUtils] - Navigating to URL: http://192.168.2.97/iCodeTFS/login
+[DEBUG] - [22-05-2025 13:18:30] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['username']
+[INFO] - [22-05-2025 13:18:30] [main] [Pages.P01_LoginPage] - Entering username
+[INFO] - [22-05-2025 13:18:30] [main] [Utilities.ElementUtils] - Sending Automation to element: By.cssSelector: [formcontrolname="userName"]
+[INFO] - [22-05-2025 13:18:30] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="userName"]
+[INFO] - [22-05-2025 13:18:30] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="userName"]
+[INFO] - [22-05-2025 13:18:30] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="userName"]
+[INFO] - [22-05-2025 13:18:30] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="userName"]
+[INFO] - [22-05-2025 13:18:30] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="userName"]
+[DEBUG] - [22-05-2025 13:18:31] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['password']
+[INFO] - [22-05-2025 13:18:31] [main] [Pages.P01_LoginPage] - Entering password
+[INFO] - [22-05-2025 13:18:31] [main] [Utilities.ElementUtils] - Sending Automation1# to element: By.cssSelector: [formcontrolname="password"]
+[INFO] - [22-05-2025 13:18:31] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [22-05-2025 13:18:31] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [22-05-2025 13:18:31] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [22-05-2025 13:18:31] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [22-05-2025 13:18:31] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [22-05-2025 13:18:31] [main] [Pages.P01_LoginPage] - Clicking login button
+[INFO] - [22-05-2025 13:18:31] [main] [Utilities.ElementUtils] - Clicking on element: By.id: btnlogin
+[INFO] - [22-05-2025 13:18:31] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.id: btnlogin
+[INFO] - [22-05-2025 13:18:31] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: btnlogin
+[INFO] - [22-05-2025 13:18:31] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: btnlogin
+[INFO] - [22-05-2025 13:18:31] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.id: btnlogin
+[INFO] - [22-05-2025 13:18:31] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: btnlogin
+[INFO] - [22-05-2025 13:18:31] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: btnlogin
+[INFO] - [22-05-2025 13:18:31] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Continue"]
+[INFO] - [22-05-2025 13:18:31] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Continue"]
+[INFO] - [22-05-2025 13:18:31] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Continue"]
+[INFO] - [22-05-2025 13:18:31] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Continue"]
+[INFO] - [22-05-2025 13:18:46] [main] [Pages.P01_LoginPage] - No session to terminate
+[INFO] - [22-05-2025 13:18:46] [main] [Pages.P01_LoginPage] - Asserting login with valid credentials
+[INFO] - [22-05-2025 13:18:46] [main] [Utilities.BrowserUtils] - Current URL is: http://192.168.2.97/iCodeTFS/search/58d21c46-1cd5-4d79-ab0d-dbcb0d853153/all
+[INFO] - [22-05-2025 13:18:46] [main] [Utilities.SoftAssertActionsUtils] - Asserting page URL
+[INFO] - [22-05-2025 13:18:46] [main] [Utilities.SoftAssertActionsUtils] - Expected URL: http://192.168.2.97/iCodeTFS/search
+[INFO] - [22-05-2025 13:18:46] [main] [Utilities.SoftAssertActionsUtils] - Actual URL: http://192.168.2.97/iCodeTFS/search/58d21c46-1cd5-4d79-ab0d-dbcb0d853153/all
+[INFO] - [22-05-2025 13:18:46] [main] [Utilities.WaitUtils] - Waiting for page to load with URL: http://192.168.2.97/iCodeTFS/search
+[INFO] - [22-05-2025 13:18:46] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [22-05-2025 13:18:46] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: //span[text()="Library"] /..
+[INFO] - [22-05-2025 13:18:46] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: //span[text()="Library"] /..
+[INFO] - [22-05-2025 13:18:46] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //span[text()="Library"] /..
+[INFO] - [22-05-2025 13:18:46] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //span[text()="Library"] /..
+[INFO] - [22-05-2025 13:18:46] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //span[text()="Library"] /..
+[INFO] - [22-05-2025 13:18:46] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="Library"] /..
+[INFO] - [22-05-2025 13:18:46] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="Library"] /..
+[INFO] - [22-05-2025 13:18:46] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: //span[text()="iCode Administration"] /..
+[INFO] - [22-05-2025 13:18:46] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: //span[text()="iCode Administration"] /..
+[INFO] - [22-05-2025 13:18:46] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //span[text()="iCode Administration"] /..
+[INFO] - [22-05-2025 13:18:46] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //span[text()="iCode Administration"] /..
+[INFO] - [22-05-2025 13:18:47] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //span[text()="iCode Administration"] /..
+[INFO] - [22-05-2025 13:18:47] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="iCode Administration"] /..
+[INFO] - [22-05-2025 13:18:47] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="iCode Administration"] /..
+[INFO] - [22-05-2025 13:18:47] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: //span[text()="Users Management"] /..
+[INFO] - [22-05-2025 13:18:47] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: //span[text()="Users Management"] /..
+[INFO] - [22-05-2025 13:18:47] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //span[text()="Users Management"] /..
+[INFO] - [22-05-2025 13:18:47] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //span[text()="Users Management"] /..
+[INFO] - [22-05-2025 13:18:47] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //span[text()="Users Management"] /..
+[INFO] - [22-05-2025 13:18:47] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //span[text()="Users Management"] /..
+[INFO] - [22-05-2025 13:18:47] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="Users Management"] /..
+[INFO] - [22-05-2025 13:18:47] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="Users Management"] /..
+[INFO] - [22-05-2025 13:18:47] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [22-05-2025 13:18:47] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [22-05-2025 13:18:47] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [22-05-2025 13:18:47] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [22-05-2025 13:18:47] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [22-05-2025 13:18:47] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [22-05-2025 13:18:47] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [22-05-2025 13:18:47] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [href="/iCodeTFS/admin/activedirectories"]
+[INFO] - [22-05-2025 13:18:47] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [href="/iCodeTFS/admin/activedirectories"]
+[INFO] - [22-05-2025 13:18:47] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [href="/iCodeTFS/admin/activedirectories"]
+[INFO] - [22-05-2025 13:18:47] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [href="/iCodeTFS/admin/activedirectories"]
+[INFO] - [22-05-2025 13:18:48] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [href="/iCodeTFS/admin/activedirectories"]
+[INFO] - [22-05-2025 13:18:48] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [href="/iCodeTFS/admin/activedirectories"]
+[INFO] - [22-05-2025 13:18:48] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [href="/iCodeTFS/admin/activedirectories"]
+[INFO] - [22-05-2025 13:18:48] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [href="/iCodeTFS/admin/activedirectories"]
+[INFO] - [22-05-2025 13:18:48] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Add active directory"]
+[INFO] - [22-05-2025 13:18:48] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Add active directory"]
+[INFO] - [22-05-2025 13:18:48] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Add active directory"]
+[INFO] - [22-05-2025 13:18:48] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Add active directory"]
+[INFO] - [22-05-2025 13:18:49] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Add active directory"]
+[INFO] - [22-05-2025 13:18:49] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Add active directory"]
+[INFO] - [22-05-2025 13:18:49] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Add active directory"]
+[INFO] - [22-05-2025 13:18:49] [main] [Utilities.ElementUtils] - Sending TestName-2025-05-22_13-18-30 to element: By.cssSelector: [formcontrolname="name"]
+[INFO] - [22-05-2025 13:18:49] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [22-05-2025 13:18:49] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [22-05-2025 13:18:49] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [22-05-2025 13:18:49] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [22-05-2025 13:18:49] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [22-05-2025 13:18:49] [main] [Utilities.ElementUtils] - Sending www.example.com to element: By.cssSelector: [formcontrolname="url"]
+[INFO] - [22-05-2025 13:18:49] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="url"]
+[INFO] - [22-05-2025 13:18:49] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="url"]
+[INFO] - [22-05-2025 13:18:49] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="url"]
+[INFO] - [22-05-2025 13:18:49] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="url"]
+[INFO] - [22-05-2025 13:18:49] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="url"]
+[INFO] - [22-05-2025 13:18:49] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [formcontrolname="port"]
+[INFO] - [22-05-2025 13:18:49] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [formcontrolname="port"]
+[INFO] - [22-05-2025 13:18:49] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="port"]
+[INFO] - [22-05-2025 13:18:49] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="port"]
+[INFO] - [22-05-2025 13:18:49] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="port"]
+[INFO] - [22-05-2025 13:18:49] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="port"]
+[INFO] - [22-05-2025 13:18:49] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="port"]
+[INFO] - [22-05-2025 13:18:49] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [formcontrolname="sites"]
+[INFO] - [22-05-2025 13:18:49] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [formcontrolname="sites"]
+[INFO] - [22-05-2025 13:18:49] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="sites"]
+[INFO] - [22-05-2025 13:18:49] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="sites"]
+[INFO] - [22-05-2025 13:18:49] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="sites"]
+[INFO] - [22-05-2025 13:18:49] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="sites"]
+[INFO] - [22-05-2025 13:18:49] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="sites"]
+[INFO] - [22-05-2025 13:18:49] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: (//ul[@role="listbox"] //li)[1]
+[INFO] - [22-05-2025 13:18:49] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: (//ul[@role="listbox"] //li)[1]
+[INFO] - [22-05-2025 13:18:49] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: (//ul[@role="listbox"] //li)[1]
+[INFO] - [22-05-2025 13:18:49] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: (//ul[@role="listbox"] //li)[1]
+[INFO] - [22-05-2025 13:18:50] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: (//ul[@role="listbox"] //li)[1]
+[INFO] - [22-05-2025 13:18:50] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: (//ul[@role="listbox"] //li)[1]
+[INFO] - [22-05-2025 13:18:50] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: (//ul[@role="listbox"] //li)[1]
+[INFO] - [22-05-2025 13:18:50] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: (//ul[@role="listbox"] //li)[1]
+[INFO] - [22-05-2025 13:18:50] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: input[title="Active"]
+[INFO] - [22-05-2025 13:18:50] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: input[title="Active"]
+[INFO] - [22-05-2025 13:18:50] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: input[title="Active"]
+[INFO] - [22-05-2025 13:18:50] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: input[title="Active"]
+[INFO] - [22-05-2025 13:18:50] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: input[title="Active"]
+[INFO] - [22-05-2025 13:18:50] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: input[title="Active"]
+[INFO] - [22-05-2025 13:18:50] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: input[title="Active"]
+[INFO] - [22-05-2025 13:18:50] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Save"]
+[INFO] - [22-05-2025 13:18:50] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Save"]
+[INFO] - [22-05-2025 13:18:50] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Save"]
+[INFO] - [22-05-2025 13:18:50] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Save"]
+[INFO] - [22-05-2025 13:18:50] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Save"]
+[INFO] - [22-05-2025 13:18:50] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Save"]
+[INFO] - [22-05-2025 13:18:50] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Save"]
+[INFO] - [22-05-2025 13:18:50] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.cssSelector: [aria-label="Active directory has been added successfully"]
+[INFO] - [22-05-2025 13:18:50] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [aria-label="Active directory has been added successfully"]
+[INFO] - [22-05-2025 13:18:50] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [aria-label="Active directory has been added successfully"]
+[INFO] - [22-05-2025 13:18:51] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [aria-label="Active directory has been added successfully"]
+[INFO] - [22-05-2025 13:18:51] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label="Active directory has been added successfully"]
+[INFO] - [22-05-2025 13:18:51] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label="Active directory has been added successfully"]
+[INFO] - [22-05-2025 13:18:51] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [22-05-2025 13:18:51] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: //td[.='TestName-2025-05-22_13-18-30']/following-sibling::td//a[@title='Edit']
+[INFO] - [22-05-2025 13:18:51] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: //td[.='TestName-2025-05-22_13-18-30']/following-sibling::td//a[@title='Edit']
+[INFO] - [22-05-2025 13:18:51] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //td[.='TestName-2025-05-22_13-18-30']/following-sibling::td//a[@title='Edit']
+[INFO] - [22-05-2025 13:18:51] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //td[.='TestName-2025-05-22_13-18-30']/following-sibling::td//a[@title='Edit']
+[INFO] - [22-05-2025 13:18:51] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //td[.='TestName-2025-05-22_13-18-30']/following-sibling::td//a[@title='Edit']
+[INFO] - [22-05-2025 13:18:51] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //td[.='TestName-2025-05-22_13-18-30']/following-sibling::td//a[@title='Edit']
+[INFO] - [22-05-2025 13:18:51] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //td[.='TestName-2025-05-22_13-18-30']/following-sibling::td//a[@title='Edit']
+[INFO] - [22-05-2025 13:18:51] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Save"]
+[INFO] - [22-05-2025 13:18:51] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Save"]
+[INFO] - [22-05-2025 13:18:51] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Save"]
+[INFO] - [22-05-2025 13:18:51] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Save"]
+[INFO] - [22-05-2025 13:18:51] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Save"]
+[INFO] - [22-05-2025 13:18:51] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Save"]
+[INFO] - [22-05-2025 13:18:51] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Save"]
+[INFO] - [22-05-2025 13:18:51] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.cssSelector: [aria-label="Active directory has been edited successfully"]
+[INFO] - [22-05-2025 13:18:51] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [aria-label="Active directory has been edited successfully"]
+[INFO] - [22-05-2025 13:18:51] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [aria-label="Active directory has been edited successfully"]
+[INFO] - [22-05-2025 13:18:52] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [aria-label="Active directory has been edited successfully"]
+[INFO] - [22-05-2025 13:18:52] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label="Active directory has been edited successfully"]
+[INFO] - [22-05-2025 13:18:52] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label="Active directory has been edited successfully"]
+[INFO] - [22-05-2025 13:18:52] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [22-05-2025 13:18:52] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: //td[.='TestName-2025-05-22_13-18-30']/following-sibling::td//a[@title='Delete']
+[INFO] - [22-05-2025 13:18:52] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: //td[.='TestName-2025-05-22_13-18-30']/following-sibling::td//a[@title='Delete']
+[INFO] - [22-05-2025 13:18:52] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //td[.='TestName-2025-05-22_13-18-30']/following-sibling::td//a[@title='Delete']
+[INFO] - [22-05-2025 13:18:52] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //td[.='TestName-2025-05-22_13-18-30']/following-sibling::td//a[@title='Delete']
+[INFO] - [22-05-2025 13:18:52] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //td[.='TestName-2025-05-22_13-18-30']/following-sibling::td//a[@title='Delete']
+[INFO] - [22-05-2025 13:18:52] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //td[.='TestName-2025-05-22_13-18-30']/following-sibling::td//a[@title='Delete']
+[INFO] - [22-05-2025 13:18:52] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //td[.='TestName-2025-05-22_13-18-30']/following-sibling::td//a[@title='Delete']
+[INFO] - [22-05-2025 13:18:52] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Yes"]
+[INFO] - [22-05-2025 13:18:52] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Yes"]
+[INFO] - [22-05-2025 13:18:52] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Yes"]
+[INFO] - [22-05-2025 13:18:52] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Yes"]
+[INFO] - [22-05-2025 13:18:52] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Yes"]
+[INFO] - [22-05-2025 13:18:52] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Yes"]
+[INFO] - [22-05-2025 13:18:52] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Yes"]
+[INFO] - [22-05-2025 13:18:52] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.cssSelector: [aria-label="Selected active directory has been deleted successfully"]
+[INFO] - [22-05-2025 13:18:52] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [aria-label="Selected active directory has been deleted successfully"]
+[INFO] - [22-05-2025 13:18:52] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [aria-label="Selected active directory has been deleted successfully"]
+[INFO] - [22-05-2025 13:18:53] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [aria-label="Selected active directory has been deleted successfully"]
+[INFO] - [22-05-2025 13:18:53] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label="Selected active directory has been deleted successfully"]
+[INFO] - [22-05-2025 13:18:53] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label="Selected active directory has been deleted successfully"]
+[INFO] - [22-05-2025 13:18:53] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [22-05-2025 13:18:53] [main] [Utilities.ScreenRecorderUtils] - Recording stopped
+[ERROR] - [22-05-2025 13:18:53] [main] [Utilities.ScreenRecorderUtils] - Error stopping screen recording: Cannot invoke "org.monte.screenrecorder.ScreenRecorder.stop()" because "Utilities.ScreenRecorderUtils.screenRecorder" is null
+[INFO] - [22-05-2025 13:18:53] [main] [Utilities.ScreenshotsUtils] - Screenshot taken: TestOutputs\Screenshots\passed-activeDirectoryTC-2025-05-22_13-18-53.png
+[INFO] - [22-05-2025 13:18:53] [main] [Utilities.AllureUtils] - Screenshot attached to Allure report: TestOutputs\Screenshots\passed-activeDirectoryTC-2025-05-22_13-18-53.png
+[INFO] - [22-05-2025 13:18:53] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-05-22_13-17-20.log
+[INFO] - [22-05-2025 13:18:53] [main] [Listeners.TestNGListeners] - Test activeDirectoryTC passed
+[INFO] - [22-05-2025 13:18:53] [main] [Utilities.BrowserUtils] - Quitting the browser
+[INFO] - [22-05-2025 13:18:53] [main] [Factories.DriverFactory] - Removing driver
+[INFO] - [22-05-2025 13:18:53] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-05-22_13-17-20.log
+[INFO] - [22-05-2025 13:18:53] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-05-22_13-17-20.log
+[INFO] - [22-05-2025 13:18:54] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-05-22_13-17-20.log
+[DEBUG] - [22-05-2025 13:18:54] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewAnatomy']['anatomyName']
+[DEBUG] - [22-05-2025 13:18:54] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewAnatomy']['acrCode']
+[INFO] - [22-05-2025 13:18:54] [main] [Pages.P01_LoginPage] - Navigating to login page
+[INFO] - [22-05-2025 13:18:54] [main] [Utilities.BrowserUtils] - Navigating to URL: http://192.168.2.97/iCodeTFS/login
+[DEBUG] - [22-05-2025 13:18:55] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['username']
+[INFO] - [22-05-2025 13:18:55] [main] [Pages.P01_LoginPage] - Entering username
+[INFO] - [22-05-2025 13:18:55] [main] [Utilities.ElementUtils] - Sending Automation to element: By.cssSelector: [formcontrolname="userName"]
+[INFO] - [22-05-2025 13:18:55] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="userName"]
+[INFO] - [22-05-2025 13:18:55] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="userName"]
+[INFO] - [22-05-2025 13:18:55] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="userName"]
+[INFO] - [22-05-2025 13:18:55] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="userName"]
+[INFO] - [22-05-2025 13:18:55] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="userName"]
+[DEBUG] - [22-05-2025 13:18:55] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['password']
+[INFO] - [22-05-2025 13:18:55] [main] [Pages.P01_LoginPage] - Entering password
+[INFO] - [22-05-2025 13:18:55] [main] [Utilities.ElementUtils] - Sending Automation1# to element: By.cssSelector: [formcontrolname="password"]
+[INFO] - [22-05-2025 13:18:55] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [22-05-2025 13:18:55] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [22-05-2025 13:18:55] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [22-05-2025 13:18:55] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [22-05-2025 13:18:55] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [22-05-2025 13:18:55] [main] [Pages.P01_LoginPage] - Clicking login button
+[INFO] - [22-05-2025 13:18:55] [main] [Utilities.ElementUtils] - Clicking on element: By.id: btnlogin
+[INFO] - [22-05-2025 13:18:55] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.id: btnlogin
+[INFO] - [22-05-2025 13:18:55] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: btnlogin
+[INFO] - [22-05-2025 13:18:55] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: btnlogin
+[INFO] - [22-05-2025 13:18:55] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.id: btnlogin
+[INFO] - [22-05-2025 13:18:55] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: btnlogin
+[INFO] - [22-05-2025 13:18:55] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: btnlogin
+[INFO] - [22-05-2025 13:18:55] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Continue"]
+[INFO] - [22-05-2025 13:18:55] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Continue"]
+[INFO] - [22-05-2025 13:18:55] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Continue"]
+[INFO] - [22-05-2025 13:18:55] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Continue"]
+[INFO] - [22-05-2025 13:19:11] [main] [Pages.P01_LoginPage] - No session to terminate
+[INFO] - [22-05-2025 13:19:11] [main] [Pages.P01_LoginPage] - Asserting login with valid credentials
+[INFO] - [22-05-2025 13:19:11] [main] [Utilities.BrowserUtils] - Current URL is: http://192.168.2.97/iCodeTFS/search/58d21c46-1cd5-4d79-ab0d-dbcb0d853153/all
+[INFO] - [22-05-2025 13:19:11] [main] [Utilities.SoftAssertActionsUtils] - Asserting page URL
+[INFO] - [22-05-2025 13:19:11] [main] [Utilities.SoftAssertActionsUtils] - Expected URL: http://192.168.2.97/iCodeTFS/search
+[INFO] - [22-05-2025 13:19:11] [main] [Utilities.SoftAssertActionsUtils] - Actual URL: http://192.168.2.97/iCodeTFS/search/58d21c46-1cd5-4d79-ab0d-dbcb0d853153/all
+[INFO] - [22-05-2025 13:19:11] [main] [Utilities.WaitUtils] - Waiting for page to load with URL: http://192.168.2.97/iCodeTFS/search
+[INFO] - [22-05-2025 13:19:11] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [22-05-2025 13:19:11] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: //span[text()="Library"] /..
+[INFO] - [22-05-2025 13:19:11] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: //span[text()="Library"] /..
+[INFO] - [22-05-2025 13:19:11] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //span[text()="Library"] /..
+[INFO] - [22-05-2025 13:19:11] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //span[text()="Library"] /..
+[INFO] - [22-05-2025 13:19:11] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //span[text()="Library"] /..
+[INFO] - [22-05-2025 13:19:11] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="Library"] /..
+[INFO] - [22-05-2025 13:19:11] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="Library"] /..
+[INFO] - [22-05-2025 13:19:11] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: //span[text()="iCode Administration"] /..
+[INFO] - [22-05-2025 13:19:11] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: //span[text()="iCode Administration"] /..
+[INFO] - [22-05-2025 13:19:11] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //span[text()="iCode Administration"] /..
+[INFO] - [22-05-2025 13:19:11] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //span[text()="iCode Administration"] /..
+[INFO] - [22-05-2025 13:19:11] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //span[text()="iCode Administration"] /..
+[INFO] - [22-05-2025 13:19:11] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="iCode Administration"] /..
+[INFO] - [22-05-2025 13:19:11] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="iCode Administration"] /..
+[INFO] - [22-05-2025 13:19:11] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [22-05-2025 13:19:11] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [22-05-2025 13:19:11] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [22-05-2025 13:19:11] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [22-05-2025 13:19:11] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [22-05-2025 13:19:11] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [22-05-2025 13:19:11] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [22-05-2025 13:19:11] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [22-05-2025 13:19:12] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [href="/iCodeTFS/anatomies"]
+[INFO] - [22-05-2025 13:19:12] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [href="/iCodeTFS/anatomies"]
+[INFO] - [22-05-2025 13:19:12] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [href="/iCodeTFS/anatomies"]
+[INFO] - [22-05-2025 13:19:12] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [href="/iCodeTFS/anatomies"]
+[INFO] - [22-05-2025 13:19:12] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [href="/iCodeTFS/anatomies"]
+[INFO] - [22-05-2025 13:19:12] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [href="/iCodeTFS/anatomies"]
+[INFO] - [22-05-2025 13:19:12] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [href="/iCodeTFS/anatomies"]
+[INFO] - [22-05-2025 13:19:12] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title='Add new anatomy']
+[INFO] - [22-05-2025 13:19:12] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title='Add new anatomy']
+[INFO] - [22-05-2025 13:19:12] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title='Add new anatomy']
+[INFO] - [22-05-2025 13:19:12] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title='Add new anatomy']
+[INFO] - [22-05-2025 13:19:12] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title='Add new anatomy']
+[INFO] - [22-05-2025 13:19:12] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title='Add new anatomy']
+[INFO] - [22-05-2025 13:19:12] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title='Add new anatomy']
+[INFO] - [22-05-2025 13:19:12] [main] [Utilities.ElementUtils] - Sending sherif.anatomy-2025-05-22_13-18-54 to element: [unknown locator]
+[INFO] - [22-05-2025 13:19:12] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: [unknown locator]
+[INFO] - [22-05-2025 13:19:12] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: [unknown locator]
+[INFO] - [22-05-2025 13:19:12] [main] [Utilities.ElementUtils] - Scrolling to element with locator: [unknown locator]
+[INFO] - [22-05-2025 13:19:12] [main] [Utilities.ElementUtils] - Finding element with locator: [unknown locator]
+[INFO] - [22-05-2025 13:19:12] [main] [Utilities.ElementUtils] - Finding element with locator: [unknown locator]
+[INFO] - [22-05-2025 13:19:12] [main] [Utilities.ElementUtils] - Sending 3333 to element: By.cssSelector: [formcontrolname='acrCode']
+[INFO] - [22-05-2025 13:19:12] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname='acrCode']
+[INFO] - [22-05-2025 13:19:12] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname='acrCode']
+[INFO] - [22-05-2025 13:19:12] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname='acrCode']
+[INFO] - [22-05-2025 13:19:12] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname='acrCode']
+[INFO] - [22-05-2025 13:19:12] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname='acrCode']
+[INFO] - [22-05-2025 13:19:13] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title='Save']
+[INFO] - [22-05-2025 13:19:13] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title='Save']
+[INFO] - [22-05-2025 13:19:13] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title='Save']
+[INFO] - [22-05-2025 13:19:13] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title='Save']
+[INFO] - [22-05-2025 13:19:13] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title='Save']
+[INFO] - [22-05-2025 13:19:13] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title='Save']
+[INFO] - [22-05-2025 13:19:13] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title='Save']
+[INFO] - [22-05-2025 13:19:13] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.cssSelector: [aria-label='Anatomy has been added successfully']
+[INFO] - [22-05-2025 13:19:13] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [aria-label='Anatomy has been added successfully']
+[INFO] - [22-05-2025 13:19:13] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [aria-label='Anatomy has been added successfully']
+[INFO] - [22-05-2025 13:19:13] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [aria-label='Anatomy has been added successfully']
+[INFO] - [22-05-2025 13:19:13] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label='Anatomy has been added successfully']
+[INFO] - [22-05-2025 13:19:13] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label='Anatomy has been added successfully']
+[INFO] - [22-05-2025 13:19:13] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [22-05-2025 13:19:13] [main] [Utilities.ElementUtils] - Sending sherif.anatomy-2025-05-22_13-18-54 to element: By.cssSelector: input[aria-label="Anatomy Name Filter"]
+[INFO] - [22-05-2025 13:19:13] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: input[aria-label="Anatomy Name Filter"]
+[INFO] - [22-05-2025 13:19:13] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: input[aria-label="Anatomy Name Filter"]
+[INFO] - [22-05-2025 13:19:13] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: input[aria-label="Anatomy Name Filter"]
+[INFO] - [22-05-2025 13:19:13] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: input[aria-label="Anatomy Name Filter"]
+[INFO] - [22-05-2025 13:19:13] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: input[aria-label="Anatomy Name Filter"]
+[INFO] - [22-05-2025 13:19:14] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: //div[text()="sherif.anatomy-2025-05-22_13-18-54"]//../following-sibling::td//a[@title='Edit']
+[INFO] - [22-05-2025 13:19:14] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: //div[text()="sherif.anatomy-2025-05-22_13-18-54"]//../following-sibling::td//a[@title='Edit']
+[INFO] - [22-05-2025 13:19:14] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //div[text()="sherif.anatomy-2025-05-22_13-18-54"]//../following-sibling::td//a[@title='Edit']
+[INFO] - [22-05-2025 13:19:14] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //div[text()="sherif.anatomy-2025-05-22_13-18-54"]//../following-sibling::td//a[@title='Edit']
+[INFO] - [22-05-2025 13:19:14] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //div[text()="sherif.anatomy-2025-05-22_13-18-54"]//../following-sibling::td//a[@title='Edit']
+[INFO] - [22-05-2025 13:19:14] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //div[text()="sherif.anatomy-2025-05-22_13-18-54"]//../following-sibling::td//a[@title='Edit']
+[INFO] - [22-05-2025 13:19:14] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //div[text()="sherif.anatomy-2025-05-22_13-18-54"]//../following-sibling::td//a[@title='Edit']
+[INFO] - [22-05-2025 13:19:14] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title='Save']
+[INFO] - [22-05-2025 13:19:14] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title='Save']
+[INFO] - [22-05-2025 13:19:14] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title='Save']
+[INFO] - [22-05-2025 13:19:14] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title='Save']
+[INFO] - [22-05-2025 13:19:14] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title='Save']
+[INFO] - [22-05-2025 13:19:14] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title='Save']
+[INFO] - [22-05-2025 13:19:14] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title='Save']
+[INFO] - [22-05-2025 13:19:14] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.cssSelector: [aria-label='Selected anatomy has been edited successfully']
+[INFO] - [22-05-2025 13:19:14] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [aria-label='Selected anatomy has been edited successfully']
+[INFO] - [22-05-2025 13:19:14] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [aria-label='Selected anatomy has been edited successfully']
+[INFO] - [22-05-2025 13:19:14] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [aria-label='Selected anatomy has been edited successfully']
+[INFO] - [22-05-2025 13:19:14] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label='Selected anatomy has been edited successfully']
+[INFO] - [22-05-2025 13:19:14] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label='Selected anatomy has been edited successfully']
+[INFO] - [22-05-2025 13:19:14] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [22-05-2025 13:19:14] [main] [Utilities.ElementUtils] - Sending sherif.anatomy-2025-05-22_13-18-54 to element: By.cssSelector: input[aria-label="Anatomy Name Filter"]
+[INFO] - [22-05-2025 13:19:14] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: input[aria-label="Anatomy Name Filter"]
+[INFO] - [22-05-2025 13:19:14] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: input[aria-label="Anatomy Name Filter"]
+[INFO] - [22-05-2025 13:19:14] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: input[aria-label="Anatomy Name Filter"]
+[INFO] - [22-05-2025 13:19:14] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: input[aria-label="Anatomy Name Filter"]
+[INFO] - [22-05-2025 13:19:14] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: input[aria-label="Anatomy Name Filter"]
+[INFO] - [22-05-2025 13:19:15] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: //div[text()="sherif.anatomy-2025-05-22_13-18-54"]//../following-sibling::td//a[@title='Delete']
+[INFO] - [22-05-2025 13:19:15] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: //div[text()="sherif.anatomy-2025-05-22_13-18-54"]//../following-sibling::td//a[@title='Delete']
+[INFO] - [22-05-2025 13:19:15] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //div[text()="sherif.anatomy-2025-05-22_13-18-54"]//../following-sibling::td//a[@title='Delete']
+[INFO] - [22-05-2025 13:19:15] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //div[text()="sherif.anatomy-2025-05-22_13-18-54"]//../following-sibling::td//a[@title='Delete']
+[INFO] - [22-05-2025 13:19:15] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //div[text()="sherif.anatomy-2025-05-22_13-18-54"]//../following-sibling::td//a[@title='Delete']
+[INFO] - [22-05-2025 13:19:15] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //div[text()="sherif.anatomy-2025-05-22_13-18-54"]//../following-sibling::td//a[@title='Delete']
+[INFO] - [22-05-2025 13:19:15] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //div[text()="sherif.anatomy-2025-05-22_13-18-54"]//../following-sibling::td//a[@title='Delete']
+[INFO] - [22-05-2025 13:19:15] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title='Yes']
+[INFO] - [22-05-2025 13:19:15] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title='Yes']
+[INFO] - [22-05-2025 13:19:15] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title='Yes']
+[INFO] - [22-05-2025 13:19:15] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title='Yes']
+[INFO] - [22-05-2025 13:19:15] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title='Yes']
+[INFO] - [22-05-2025 13:19:15] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title='Yes']
+[INFO] - [22-05-2025 13:19:15] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title='Yes']
+[INFO] - [22-05-2025 13:19:15] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.cssSelector: [aria-label='Selected anatomy has been deleted successfully']
+[INFO] - [22-05-2025 13:19:15] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [aria-label='Selected anatomy has been deleted successfully']
+[INFO] - [22-05-2025 13:19:15] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [aria-label='Selected anatomy has been deleted successfully']
+[INFO] - [22-05-2025 13:19:15] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [aria-label='Selected anatomy has been deleted successfully']
+[INFO] - [22-05-2025 13:19:15] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label='Selected anatomy has been deleted successfully']
+[INFO] - [22-05-2025 13:19:15] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label='Selected anatomy has been deleted successfully']
+[INFO] - [22-05-2025 13:19:15] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [22-05-2025 13:19:15] [main] [Utilities.ScreenRecorderUtils] - Recording stopped
+[ERROR] - [22-05-2025 13:19:15] [main] [Utilities.ScreenRecorderUtils] - Error stopping screen recording: Cannot invoke "org.monte.screenrecorder.ScreenRecorder.stop()" because "Utilities.ScreenRecorderUtils.screenRecorder" is null
+[INFO] - [22-05-2025 13:19:16] [main] [Utilities.ScreenshotsUtils] - Screenshot taken: TestOutputs\Screenshots\passed-anatomyTC-2025-05-22_13-19-16.png
+[INFO] - [22-05-2025 13:19:16] [main] [Utilities.AllureUtils] - Screenshot attached to Allure report: TestOutputs\Screenshots\passed-anatomyTC-2025-05-22_13-19-16.png
+[INFO] - [22-05-2025 13:19:16] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-05-22_13-17-20.log
+[INFO] - [22-05-2025 13:19:16] [main] [Listeners.TestNGListeners] - Test anatomyTC passed
+[INFO] - [22-05-2025 13:19:16] [main] [Utilities.BrowserUtils] - Quitting the browser
+[INFO] - [22-05-2025 13:19:16] [main] [Factories.DriverFactory] - Removing driver
+[INFO] - [22-05-2025 13:19:16] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-05-22_13-17-20.log
+[INFO] - [22-05-2025 13:19:16] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-05-22_13-17-20.log
+[INFO] - [22-05-2025 13:19:18] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-05-22_13-17-20.log
+[DEBUG] - [22-05-2025 13:19:18] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewPathology']['pathologyName']
+[DEBUG] - [22-05-2025 13:19:18] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewPathology']['acrCode']
+[INFO] - [22-05-2025 13:19:18] [main] [Pages.P01_LoginPage] - Navigating to login page
+[INFO] - [22-05-2025 13:19:18] [main] [Utilities.BrowserUtils] - Navigating to URL: http://192.168.2.97/iCodeTFS/login
+[DEBUG] - [22-05-2025 13:19:18] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['username']
+[INFO] - [22-05-2025 13:19:18] [main] [Pages.P01_LoginPage] - Entering username
+[INFO] - [22-05-2025 13:19:18] [main] [Utilities.ElementUtils] - Sending Automation to element: By.cssSelector: [formcontrolname="userName"]
+[INFO] - [22-05-2025 13:19:18] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="userName"]
+[INFO] - [22-05-2025 13:19:18] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="userName"]
+[INFO] - [22-05-2025 13:19:19] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="userName"]
+[INFO] - [22-05-2025 13:19:19] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="userName"]
+[INFO] - [22-05-2025 13:19:19] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="userName"]
+[DEBUG] - [22-05-2025 13:19:19] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['password']
+[INFO] - [22-05-2025 13:19:19] [main] [Pages.P01_LoginPage] - Entering password
+[INFO] - [22-05-2025 13:19:19] [main] [Utilities.ElementUtils] - Sending Automation1# to element: By.cssSelector: [formcontrolname="password"]
+[INFO] - [22-05-2025 13:19:19] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [22-05-2025 13:19:19] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [22-05-2025 13:19:19] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [22-05-2025 13:19:19] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [22-05-2025 13:19:19] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [22-05-2025 13:19:19] [main] [Pages.P01_LoginPage] - Clicking login button
+[INFO] - [22-05-2025 13:19:19] [main] [Utilities.ElementUtils] - Clicking on element: By.id: btnlogin
+[INFO] - [22-05-2025 13:19:19] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.id: btnlogin
+[INFO] - [22-05-2025 13:19:19] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: btnlogin
+[INFO] - [22-05-2025 13:19:19] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: btnlogin
+[INFO] - [22-05-2025 13:19:19] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.id: btnlogin
+[INFO] - [22-05-2025 13:19:19] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: btnlogin
+[INFO] - [22-05-2025 13:19:19] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: btnlogin
+[INFO] - [22-05-2025 13:19:19] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Continue"]
+[INFO] - [22-05-2025 13:19:19] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Continue"]
+[INFO] - [22-05-2025 13:19:19] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Continue"]
+[INFO] - [22-05-2025 13:19:19] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Continue"]
+[INFO] - [22-05-2025 13:19:34] [main] [Pages.P01_LoginPage] - No session to terminate
+[INFO] - [22-05-2025 13:19:34] [main] [Pages.P01_LoginPage] - Asserting login with valid credentials
+[INFO] - [22-05-2025 13:19:34] [main] [Utilities.BrowserUtils] - Current URL is: http://192.168.2.97/iCodeTFS/search/58d21c46-1cd5-4d79-ab0d-dbcb0d853153/all
+[INFO] - [22-05-2025 13:19:34] [main] [Utilities.SoftAssertActionsUtils] - Asserting page URL
+[INFO] - [22-05-2025 13:19:34] [main] [Utilities.SoftAssertActionsUtils] - Expected URL: http://192.168.2.97/iCodeTFS/search
+[INFO] - [22-05-2025 13:19:34] [main] [Utilities.SoftAssertActionsUtils] - Actual URL: http://192.168.2.97/iCodeTFS/search/58d21c46-1cd5-4d79-ab0d-dbcb0d853153/all
+[INFO] - [22-05-2025 13:19:34] [main] [Utilities.WaitUtils] - Waiting for page to load with URL: http://192.168.2.97/iCodeTFS/search
+[INFO] - [22-05-2025 13:19:34] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [22-05-2025 13:19:34] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: //span[text()="Library"] /..
+[INFO] - [22-05-2025 13:19:34] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: //span[text()="Library"] /..
+[INFO] - [22-05-2025 13:19:34] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //span[text()="Library"] /..
+[INFO] - [22-05-2025 13:19:34] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //span[text()="Library"] /..
+[INFO] - [22-05-2025 13:19:34] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //span[text()="Library"] /..
+[INFO] - [22-05-2025 13:19:34] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="Library"] /..
+[INFO] - [22-05-2025 13:19:34] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="Library"] /..
+[INFO] - [22-05-2025 13:19:34] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: //span[text()="iCode Administration"] /..
+[INFO] - [22-05-2025 13:19:34] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: //span[text()="iCode Administration"] /..
+[INFO] - [22-05-2025 13:19:34] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //span[text()="iCode Administration"] /..
+[INFO] - [22-05-2025 13:19:34] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //span[text()="iCode Administration"] /..
+[INFO] - [22-05-2025 13:19:35] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //span[text()="iCode Administration"] /..
+[INFO] - [22-05-2025 13:19:35] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="iCode Administration"] /..
+[INFO] - [22-05-2025 13:19:35] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="iCode Administration"] /..
+[INFO] - [22-05-2025 13:19:35] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [22-05-2025 13:19:35] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [22-05-2025 13:19:35] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [22-05-2025 13:19:35] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [22-05-2025 13:19:35] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [22-05-2025 13:19:35] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [22-05-2025 13:19:35] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [22-05-2025 13:19:35] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [22-05-2025 13:19:35] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [href="/iCodeTFS/pathologies"]
+[INFO] - [22-05-2025 13:19:35] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [href="/iCodeTFS/pathologies"]
+[INFO] - [22-05-2025 13:19:35] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [href="/iCodeTFS/pathologies"]
+[INFO] - [22-05-2025 13:19:35] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [href="/iCodeTFS/pathologies"]
+[INFO] - [22-05-2025 13:19:36] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [href="/iCodeTFS/pathologies"]
+[INFO] - [22-05-2025 13:19:36] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [href="/iCodeTFS/pathologies"]
+[INFO] - [22-05-2025 13:19:36] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [href="/iCodeTFS/pathologies"]
+[INFO] - [22-05-2025 13:19:36] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [href="/iCodeTFS/pathologies"]
+[INFO] - [22-05-2025 13:19:36] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title='Add new pathology']
+[INFO] - [22-05-2025 13:19:36] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title='Add new pathology']
+[INFO] - [22-05-2025 13:19:36] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title='Add new pathology']
+[INFO] - [22-05-2025 13:19:36] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title='Add new pathology']
+[INFO] - [22-05-2025 13:19:36] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title='Add new pathology']
+[INFO] - [22-05-2025 13:19:36] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title='Add new pathology']
+[INFO] - [22-05-2025 13:19:36] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title='Add new pathology']
+[INFO] - [22-05-2025 13:19:37] [main] [Utilities.ElementUtils] - Sending TestPathology-2025-05-22_13-19-18 to element: [unknown locator]
+[INFO] - [22-05-2025 13:19:37] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: [unknown locator]
+[INFO] - [22-05-2025 13:19:37] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: [unknown locator]
+[INFO] - [22-05-2025 13:19:37] [main] [Utilities.ElementUtils] - Scrolling to element with locator: [unknown locator]
+[INFO] - [22-05-2025 13:19:37] [main] [Utilities.ElementUtils] - Finding element with locator: [unknown locator]
+[INFO] - [22-05-2025 13:19:37] [main] [Utilities.ElementUtils] - Finding element with locator: [unknown locator]
+[INFO] - [22-05-2025 13:19:37] [main] [Utilities.ElementUtils] - Sending 3333 to element: By.cssSelector: [formcontrolname='acrCode']
+[INFO] - [22-05-2025 13:19:37] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname='acrCode']
+[INFO] - [22-05-2025 13:19:37] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname='acrCode']
+[INFO] - [22-05-2025 13:19:37] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname='acrCode']
+[INFO] - [22-05-2025 13:19:37] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname='acrCode']
+[INFO] - [22-05-2025 13:19:37] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname='acrCode']
+[INFO] - [22-05-2025 13:19:37] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [formcontrolname='anatomyID']
+[INFO] - [22-05-2025 13:19:37] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [formcontrolname='anatomyID']
+[INFO] - [22-05-2025 13:19:37] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname='anatomyID']
+[INFO] - [22-05-2025 13:19:37] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname='anatomyID']
+[INFO] - [22-05-2025 13:19:37] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname='anatomyID']
+[INFO] - [22-05-2025 13:19:37] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname='anatomyID']
+[INFO] - [22-05-2025 13:19:37] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname='anatomyID']
+[INFO] - [22-05-2025 13:19:37] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: (//ul[@role="listbox"] //li)[1]
+[INFO] - [22-05-2025 13:19:37] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: (//ul[@role="listbox"] //li)[1]
+[INFO] - [22-05-2025 13:19:37] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: (//ul[@role="listbox"] //li)[1]
+[INFO] - [22-05-2025 13:19:37] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: (//ul[@role="listbox"] //li)[1]
+[INFO] - [22-05-2025 13:19:38] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: (//ul[@role="listbox"] //li)[1]
+[INFO] - [22-05-2025 13:19:38] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: (//ul[@role="listbox"] //li)[1]
+[INFO] - [22-05-2025 13:19:38] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: (//ul[@role="listbox"] //li)[1]
+[INFO] - [22-05-2025 13:19:38] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: (//ul[@role="listbox"] //li)[1]
+[INFO] - [22-05-2025 13:19:38] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title='Save']
+[INFO] - [22-05-2025 13:19:38] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title='Save']
+[INFO] - [22-05-2025 13:19:38] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title='Save']
+[INFO] - [22-05-2025 13:19:38] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title='Save']
+[INFO] - [22-05-2025 13:19:38] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title='Save']
+[INFO] - [22-05-2025 13:19:38] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title='Save']
+[INFO] - [22-05-2025 13:19:38] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title='Save']
+[INFO] - [22-05-2025 13:19:38] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.cssSelector: [aria-label='Pathology has been added successfully']
+[INFO] - [22-05-2025 13:19:38] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [aria-label='Pathology has been added successfully']
+[INFO] - [22-05-2025 13:19:38] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [aria-label='Pathology has been added successfully']
+[INFO] - [22-05-2025 13:19:38] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [aria-label='Pathology has been added successfully']
+[INFO] - [22-05-2025 13:19:38] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label='Pathology has been added successfully']
+[INFO] - [22-05-2025 13:19:38] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label='Pathology has been added successfully']
+[INFO] - [22-05-2025 13:19:39] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [22-05-2025 13:19:39] [main] [Utilities.ElementUtils] - Sending TestPathology-2025-05-22_13-19-18 to element: By.cssSelector: input[aria-label="Pathology Name Filter"]
+[INFO] - [22-05-2025 13:19:39] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: input[aria-label="Pathology Name Filter"]
+[INFO] - [22-05-2025 13:19:39] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: input[aria-label="Pathology Name Filter"]
+[INFO] - [22-05-2025 13:19:39] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: input[aria-label="Pathology Name Filter"]
+[INFO] - [22-05-2025 13:19:39] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: input[aria-label="Pathology Name Filter"]
+[INFO] - [22-05-2025 13:19:39] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: input[aria-label="Pathology Name Filter"]
+[INFO] - [22-05-2025 13:19:39] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: //div[text()="TestPathology-2025-05-22_13-19-18"]//../following-sibling::td//a[@title='Edit']
+[INFO] - [22-05-2025 13:19:39] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: //div[text()="TestPathology-2025-05-22_13-19-18"]//../following-sibling::td//a[@title='Edit']
+[INFO] - [22-05-2025 13:19:39] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //div[text()="TestPathology-2025-05-22_13-19-18"]//../following-sibling::td//a[@title='Edit']
+[INFO] - [22-05-2025 13:19:39] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //div[text()="TestPathology-2025-05-22_13-19-18"]//../following-sibling::td//a[@title='Edit']
+[INFO] - [22-05-2025 13:19:39] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //div[text()="TestPathology-2025-05-22_13-19-18"]//../following-sibling::td//a[@title='Edit']
+[INFO] - [22-05-2025 13:19:39] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //div[text()="TestPathology-2025-05-22_13-19-18"]//../following-sibling::td//a[@title='Edit']
+[INFO] - [22-05-2025 13:19:39] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //div[text()="TestPathology-2025-05-22_13-19-18"]//../following-sibling::td//a[@title='Edit']
+[INFO] - [22-05-2025 13:19:39] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title='Save']
+[INFO] - [22-05-2025 13:19:39] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title='Save']
+[INFO] - [22-05-2025 13:19:39] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title='Save']
+[INFO] - [22-05-2025 13:19:39] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title='Save']
+[INFO] - [22-05-2025 13:19:39] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title='Save']
+[INFO] - [22-05-2025 13:19:39] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title='Save']
+[INFO] - [22-05-2025 13:19:39] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title='Save']
+[INFO] - [22-05-2025 13:19:39] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.cssSelector: [aria-label='Selected pathology has been edited successfully']
+[INFO] - [22-05-2025 13:19:39] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [aria-label='Selected pathology has been edited successfully']
+[INFO] - [22-05-2025 13:19:39] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [aria-label='Selected pathology has been edited successfully']
+[INFO] - [22-05-2025 13:19:40] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [aria-label='Selected pathology has been edited successfully']
+[INFO] - [22-05-2025 13:19:40] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label='Selected pathology has been edited successfully']
+[INFO] - [22-05-2025 13:19:40] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label='Selected pathology has been edited successfully']
+[INFO] - [22-05-2025 13:19:40] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [22-05-2025 13:19:40] [main] [Utilities.ElementUtils] - Sending TestPathology-2025-05-22_13-19-18 to element: By.cssSelector: input[aria-label="Pathology Name Filter"]
+[INFO] - [22-05-2025 13:19:40] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: input[aria-label="Pathology Name Filter"]
+[INFO] - [22-05-2025 13:19:40] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: input[aria-label="Pathology Name Filter"]
+[INFO] - [22-05-2025 13:19:40] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: input[aria-label="Pathology Name Filter"]
+[INFO] - [22-05-2025 13:19:40] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: input[aria-label="Pathology Name Filter"]
+[INFO] - [22-05-2025 13:19:40] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: input[aria-label="Pathology Name Filter"]
+[INFO] - [22-05-2025 13:19:40] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: //div[text()="TestPathology-2025-05-22_13-19-18"]//../following-sibling::td//a[@title='Delete']
+[INFO] - [22-05-2025 13:19:40] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: //div[text()="TestPathology-2025-05-22_13-19-18"]//../following-sibling::td//a[@title='Delete']
+[INFO] - [22-05-2025 13:19:40] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //div[text()="TestPathology-2025-05-22_13-19-18"]//../following-sibling::td//a[@title='Delete']
+[INFO] - [22-05-2025 13:19:40] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //div[text()="TestPathology-2025-05-22_13-19-18"]//../following-sibling::td//a[@title='Delete']
+[INFO] - [22-05-2025 13:19:40] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //div[text()="TestPathology-2025-05-22_13-19-18"]//../following-sibling::td//a[@title='Delete']
+[INFO] - [22-05-2025 13:19:40] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //div[text()="TestPathology-2025-05-22_13-19-18"]//../following-sibling::td//a[@title='Delete']
+[INFO] - [22-05-2025 13:19:40] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //div[text()="TestPathology-2025-05-22_13-19-18"]//../following-sibling::td//a[@title='Delete']
+[INFO] - [22-05-2025 13:19:40] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title='Yes']
+[INFO] - [22-05-2025 13:19:40] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title='Yes']
+[INFO] - [22-05-2025 13:19:40] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title='Yes']
+[INFO] - [22-05-2025 13:19:40] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title='Yes']
+[INFO] - [22-05-2025 13:19:40] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title='Yes']
+[INFO] - [22-05-2025 13:19:40] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title='Yes']
+[INFO] - [22-05-2025 13:19:40] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title='Yes']
+[INFO] - [22-05-2025 13:19:40] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.cssSelector: [aria-label='Selected pathology has been deleted successfully']
+[INFO] - [22-05-2025 13:19:40] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [aria-label='Selected pathology has been deleted successfully']
+[INFO] - [22-05-2025 13:19:40] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [aria-label='Selected pathology has been deleted successfully']
+[INFO] - [22-05-2025 13:19:41] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [aria-label='Selected pathology has been deleted successfully']
+[INFO] - [22-05-2025 13:19:41] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label='Selected pathology has been deleted successfully']
+[INFO] - [22-05-2025 13:19:41] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label='Selected pathology has been deleted successfully']
+[INFO] - [22-05-2025 13:19:41] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [22-05-2025 13:19:41] [main] [Utilities.ScreenRecorderUtils] - Recording stopped
+[ERROR] - [22-05-2025 13:19:41] [main] [Utilities.ScreenRecorderUtils] - Error stopping screen recording: Cannot invoke "org.monte.screenrecorder.ScreenRecorder.stop()" because "Utilities.ScreenRecorderUtils.screenRecorder" is null
+[INFO] - [22-05-2025 13:19:41] [main] [Utilities.ScreenshotsUtils] - Screenshot taken: TestOutputs\Screenshots\passed-pathologyTC-2025-05-22_13-19-41.png
+[INFO] - [22-05-2025 13:19:41] [main] [Utilities.AllureUtils] - Screenshot attached to Allure report: TestOutputs\Screenshots\passed-pathologyTC-2025-05-22_13-19-41.png

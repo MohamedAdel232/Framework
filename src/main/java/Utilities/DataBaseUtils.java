@@ -4,9 +4,9 @@ import java.sql.*;
 
 public class DataBaseUtils {
 
-    private static final String DB_URL = "jdbc:postgresql://192.168.1.50:5432/your_database";
-    private static final String USER = "your_username";
-    private static final String PASS = "your_password";
+    private static final String DB_URL = "jdbc:postgresql://192.168.2.97:5432/icode-tfs";
+    private static final String USER = "postgres";
+    private static final String PASS = "P@ssw0rd@Lotus";
 
     private static Connection connection = null;
 
@@ -24,22 +24,22 @@ public class DataBaseUtils {
 
     // Example: Fetch test data
     public static void fetchTestData() {
-        String query = "SELECT * FROM test_data LIMIT 10";
+        String query = "SELECT id, username FROM users";
 
         try (Connection conn = getConnection();
              Statement stmt = conn.createStatement();
              ResultSet rs = stmt.executeQuery(query)) {
 
             while (rs.next()) {
-                System.out.println("ID: " + rs.getInt("id") +
-                        ", Name: " + rs.getString("name"));
+                System.out.println("ID: " + rs.getString("id") +
+                        ", Username: " + rs.getString("username"));
             }
 
         } catch (SQLException e) {
-            System.err.println("Query failed: " + e.getMessage());
+            e.printStackTrace(); // Better for debugging
         }
     }
-
+    
     // Close connection
     public static void closeConnection() {
         try {

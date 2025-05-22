@@ -17,6 +17,7 @@
             <class name="Tests.TC10_HL7NodesAdminTest"/>
             <class name="Tests.TC11_PACSServersAdminTest"/>
             <class name="Tests.TC12_UsersAdminTest"/>
+            <class name="Tests.TC13_ReferencesTest"/>
         </classes>
     </test>
 </suite>

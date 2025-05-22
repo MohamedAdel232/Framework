@@ -17,7 +17,7 @@ public class TC13_ReferencesTest {
     JsonUtils referencesTestData;
 
     @Test
-    public void usersTC() throws InterruptedException {
+    public void referencesTC() throws InterruptedException {
         String title = referencesTestData.getJsonData("addNewReference.title") + "-" + TimestampUtils.getTimestamp();
         String filePath = referencesTestData.getJsonData("addNewReference.filePath");
         String notes = referencesTestData.getJsonData("addNewReference.notes");
@@ -43,9 +43,20 @@ public class TC13_ReferencesTest {
                 .assertVisibilityOfReferenceAddedAlert();
 
         new P13_ReferencesPage(driver)
-                .clickOnEditButton(title)
+                .checkReferenceCheckbox(title)
+                .clickOnEditButton()
                 .clickOnSaveButton()
                 .assertVisibilityOfReferenceEditedAlert();
+
+        new P13_ReferencesPage(driver)
+                .clickOnScheduleButton()
+                .selectScheduledMeeting()
+                .assertVisibilityOfReferenceScheduledAlert();
+
+        new P13_ReferencesPage(driver)
+                .clickOnDeleteButton()
+                .clickOnYesButton()
+                .assertVisibilityOfReferenceDeletedAlert();
     }
 
     @BeforeClass
