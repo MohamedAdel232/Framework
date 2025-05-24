@@ -26,6 +26,7 @@ public class P02_LibraryPage {
     private final By myLecturesButtonLocator = By.cssSelector("[href=\"/iCodeTFS/mylecture\"]");
     private final By publicLecturesButtonLocator = By.cssSelector("[href=\"/iCodeTFS/publiclecture\"]");
     private final By unapprovedLecturesButtonLocator = By.cssSelector("[href=\"/iCodeTFS/unapprovedlecture\"]");
+    private final By hangingProtocolsButtonLocator = By.cssSelector("[href=\"/iCodeTFS/admin/hangingprotocols\"]");
 
     private final DriverFactory driver;
 
@@ -160,5 +161,11 @@ public class P02_LibraryPage {
     public P16_UnapprovedLecturesPage clickOnUnapprovedLecturesButton() {
         driver.elementUtils().clickOnElement(unapprovedLecturesButtonLocator);
         return new P16_UnapprovedLecturesPage(driver);
+    }
+
+    @Step("Click on Hanging Protocols button")
+    public P17_HangingProtocolsAdminPage clickOnHangingProtocolsButton() {
+        driver.elementUtils().clickOnElement(hangingProtocolsButtonLocator);
+        return new P17_HangingProtocolsAdminPage(driver);
     }
 }

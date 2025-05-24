@@ -1,0 +1,9 @@
+{
+  "addNewHangingProtocol": {
+    "name": "TestName",
+    "modality": "TestModality",
+    "site": "Default Site",
+    "rows": "1",
+    "columns": "1"
+  }
+}

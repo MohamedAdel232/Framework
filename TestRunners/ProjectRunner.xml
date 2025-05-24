@@ -21,6 +21,7 @@
             <class name="Tests.TC14_MyLecturesTest"/>
             <class name="Tests.TC15_PublicLecturesTest"/>
             <class name="Tests.TC16_UnapprovedLecturesTest"/>
+            <class name="Tests.TC17_HangingProtocolsAdminTest"/>
         </classes>
     </test>
 </suite>
