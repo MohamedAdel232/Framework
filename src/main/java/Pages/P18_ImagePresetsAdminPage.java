@@ -19,9 +19,9 @@ public class P18_ImagePresetsAdminPage {
     private final By saveButtonLocator = By.cssSelector("[title=\"Save\"]");
     private final By yesButtonLocator = By.cssSelector("[title=\"Yes\"]");
     private final By searchFieldLocator = By.cssSelector("input[aria-label=\"Presets Menu Name Filter\"]");
-    private final By imagePresetAddedMessageLocator = By.cssSelector("[aria-label=\"Image preset has been Added successfully\"]");
-    private final By imagePresetEditedMessageLocator = By.cssSelector("[aria-label=\"Image preset has been Updated successfully\"]");
-    private final By imagePresetDeletedMessageLocator = By.cssSelector("[aria-label=\"Selected image preset has been deleted successfully\"]");
+    private final By imagePresetAddedMessageLocator = By.cssSelector("[aria-label=\"Image preset has been added successfully\"]");
+    private final By imagePresetEditedMessageLocator = By.cssSelector("[aria-label=\"Image preset has been updated successfully\"]");
+    private final By imagePresetDeletedMessageLocator = By.cssSelector("[aria-label=\"Selected image preset menu has been deleted successfully\"]");
 
     private final DriverFactory driver;
 

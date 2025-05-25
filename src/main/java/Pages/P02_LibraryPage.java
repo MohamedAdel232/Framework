@@ -28,6 +28,9 @@ public class P02_LibraryPage {
     private final By unapprovedLecturesButtonLocator = By.cssSelector("[href=\"/iCodeTFS/unapprovedlecture\"]");
     private final By hangingProtocolsButtonLocator = By.cssSelector("[href=\"/iCodeTFS/admin/hangingprotocols\"]");
     private final By imagePresetsButtonLocator = By.cssSelector("[href=\"/iCodeTFS/admin/imagepresets\"]");
+    private final By meetingsButtonLocator = By.xpath("//span[text()=\"Meetings\"] /..");
+    private final By schedulerButtonLocator = By.cssSelector("[href=\"/iCodeTFS/meetings\"]");
+    private final By oruProfilesButtonLocator = By.cssSelector("[href=\"/iCodeTFS/hl7/oruprofiles\"]");
 
     private final DriverFactory driver;
 
@@ -174,5 +177,23 @@ public class P02_LibraryPage {
     public P18_ImagePresetsAdminPage clickOnImagePresetsButton() {
         driver.elementUtils().clickOnElement(imagePresetsButtonLocator);
         return new P18_ImagePresetsAdminPage(driver);
+    }
+
+    @Step("Click on Meetings button")
+    public P02_LibraryPage clickOnMeetingsButton() {
+        driver.elementUtils().clickOnElement(meetingsButtonLocator);
+        return this;
+    }
+
+    @Step("Click on Scheduler button")
+    public P19_SchedulerPage clickOnSchedulerButton() {
+        driver.elementUtils().clickOnElement(schedulerButtonLocator);
+        return new P19_SchedulerPage(driver);
+    }
+
+    @Step("Click on ORU Profiles button")
+    public P20_ORUProfilesAdminPage clickOnORUProfilesButton() {
+        driver.elementUtils().clickOnElement(oruProfilesButtonLocator);
+        return new P20_ORUProfilesAdminPage(driver);
     }
 }

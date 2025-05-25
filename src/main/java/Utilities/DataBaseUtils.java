@@ -14,11 +14,12 @@ public class DataBaseUtils {
 
     // Set DB connection parameters dynamically
     public static void configure(String dbUrl, String user, String password) {
+        LogsUtils.info("Configuring database connection.");
         DB_URL = dbUrl;
         USER = user;
         PASS = password;
     }
-    
+
     public static Connection getConnection() {
         try {
             if (connection == null || connection.isClosed()) {
@@ -32,6 +33,7 @@ public class DataBaseUtils {
 
     // SELECT query - returns list of rows (each row is a list of column values)
     public static List<List<Object>> executeSelect(String query) {
+        LogsUtils.info("Executing select query: " + query);
         List<List<Object>> results = new ArrayList<>();
 
         try (Connection conn = getConnection();
@@ -56,6 +58,7 @@ public class DataBaseUtils {
 
     // INSERT, UPDATE, DELETE queries
     public static int executeUpdate(String query) {
+        LogsUtils.info("Executing query: " + query);
         try (Connection conn = getConnection();
              Statement stmt = conn.createStatement()) {
             return stmt.executeUpdate(query);
@@ -64,7 +67,6 @@ public class DataBaseUtils {
             return -1;
         }
     }
-
 
     public static void closeConnection() {
         try {

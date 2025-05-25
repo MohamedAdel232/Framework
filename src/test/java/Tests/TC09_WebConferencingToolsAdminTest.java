@@ -18,12 +18,10 @@ public class TC09_WebConferencingToolsAdminTest {
 
     @Test
     public void webConferencingToolsTC() throws InterruptedException {
-        String webConferencingToolsType = webConferencingToolsTestData.getJsonData("addNewWebConferencingTools.type");
         String webConferencingToolsName = webConferencingToolsTestData.getJsonData("addNewWebConferencingTools.name") + "-" + TimestampUtils.getTimestamp();
         String webConferencingToolsApplicationId = webConferencingToolsTestData.getJsonData("addNewWebConferencingTools.applicationId");
         String webConferencingToolsDirectoryId = webConferencingToolsTestData.getJsonData("addNewWebConferencingTools.directoryId");
         String webConferencingToolsClientSecret = webConferencingToolsTestData.getJsonData("addNewWebConferencingTools.clientSecret");
-        String webConferencingToolsSite = webConferencingToolsTestData.getJsonData("addNewWebConferencingTools.applicationId");
 
         new P01_LoginPage(driver)
                 .navigateToLoginPage(PropertiesUtils.getPropertyValue("LoginPageUrl"))

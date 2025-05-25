@@ -69,4 +69,13 @@ public class ElementUtils {
         File file = new File(filePath);
         findElement(locator).sendKeys(file.getAbsolutePath());
     }
+
+    public void rightClickOnElement(By locator) {
+        LogsUtils.info("Right clicking on element:", locator.toString());
+        WebElement element = findElement(locator);
+        String script = "var evt = document.createEvent('MouseEvents');" +
+                "evt.initMouseEvent('contextmenu', true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 2, null);" +
+                "arguments[0].dispatchEvent(evt);";
+        ((JavascriptExecutor) driver).executeScript(script, element);
+    }
 }

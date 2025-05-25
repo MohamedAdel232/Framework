@@ -49,14 +49,14 @@ public class TC18_ImagePresetsAdminTest {
                 .assertVisibilityOfImagePresetAddedAlert();
 
         new P18_ImagePresetsAdminPage(driver)
-                .searchForImagePreset(presetName)
-                .clickOnEditButton(presetName)
+                .searchForImagePreset(presetMenuName)
+                .clickOnEditButton(presetMenuName)
                 .clickOnSaveButton()
                 .assertVisibilityOfImagePresetEditedAlert();
 
         new P18_ImagePresetsAdminPage(driver)
-                .searchForImagePreset(presetName)
-                .clickOnDeleteButton(presetName)
+                .searchForImagePreset(presetMenuName)
+                .clickOnDeleteButton(presetMenuName)
                 .clickOnYesButton()
                 .assertVisibilityOfImagePresetDeletedAlert();
     }

@@ -1,0 +1,17 @@
+{
+  "addNewORUProfiles": {
+    "name": "TestName",
+    "preliminary": "TestPreliminary",
+    "final": "TestFinal",
+    "addendum": "TestAddendum",
+    "risSendingApp": "TestRisSendingApp",
+    "accessionNumber": "Accession No.",
+    "reportDate": "Report Date",
+    "reportStatus": "Report Status",
+    "segment": "ABS",
+    "fieldNo": "1",
+    "repeat": "1",
+    "component": "1",
+    "subComponent": "1"
+  }
+}
