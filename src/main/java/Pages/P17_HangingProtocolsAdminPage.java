@@ -76,7 +76,8 @@ public class P17_HangingProtocolsAdminPage {
     }
 
     @Step("Click on Save button")
-    public P17_HangingProtocolsAdminPage clickOnSaveButton() {
+    public P17_HangingProtocolsAdminPage clickOnSaveButton() throws InterruptedException {
+        Thread.sleep(1000);
         driver.elementUtils().clickOnElement(saveButtonLocator);
         return this;
     }

@@ -45,13 +45,11 @@ public class TC17_HangingProtocolsAdminTest {
                 .enterRows(rows)
                 .enterColumns(columns)
                 .clickOnSaveButton()
-                .clickOnSaveButton()
                 .assertVisibilityOfHangingProtocolAddedAlert();
 
         new P17_HangingProtocolsAdminPage(driver)
                 .searchForHangingProtocol(name)
                 .clickOnEditButton(name)
-                .clickOnSaveButton()
                 .clickOnSaveButton()
                 .assertVisibilityOfHangingProtocolEditedAlert();
 
