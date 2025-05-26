@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 import java.io.File;
 import java.util.List;
@@ -77,5 +78,11 @@ public class ElementUtils {
                 "evt.initMouseEvent('contextmenu', true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 2, null);" +
                 "arguments[0].dispatchEvent(evt);";
         ((JavascriptExecutor) driver).executeScript(script, element);
+    }
+
+    public void doubleClickOnElement(By locator) {
+        LogsUtils.info("Double clicking on element:", locator.toString());
+        Actions actions = new Actions(driver);
+        actions.doubleClick(findElement(locator));
     }
 }

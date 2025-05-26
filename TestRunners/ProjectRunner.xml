@@ -25,6 +25,7 @@
             <class name="Tests.TC18_ImagePresetsAdminTest"/>
             <class name="Tests.TC19_SchedulerTest"/>
             <class name="Tests.TC20_ORUProfilesAdminTest"/>
+            <class name="Tests.TC21_SecurityProfilesAdminTest"/>
         </classes>
     </test>
 </suite>

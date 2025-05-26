@@ -31,6 +31,9 @@ public class P02_LibraryPage {
     private final By meetingsButtonLocator = By.xpath("//span[text()=\"Meetings\"] /..");
     private final By schedulerButtonLocator = By.cssSelector("[href=\"/iCodeTFS/meetings\"]");
     private final By oruProfilesButtonLocator = By.cssSelector("[href=\"/iCodeTFS/hl7/oruprofiles\"]");
+    private final By allBodyButtonLocator = By.cssSelector("[title=\"All Body\"]");
+    private final By studyButtonLocator = By.xpath("(//tr [@kendogridlogicalrow])[2]");
+    private final By securityProfilesButtonLocator = By.cssSelector("[href=\"/iCodeTFS/admin/securityprofiles\"]");
 
     private final DriverFactory driver;
 
@@ -195,5 +198,24 @@ public class P02_LibraryPage {
     public P20_ORUProfilesAdminPage clickOnORUProfilesButton() {
         driver.elementUtils().clickOnElement(oruProfilesButtonLocator);
         return new P20_ORUProfilesAdminPage(driver);
+    }
+
+    @Step("Click on All Body button")
+    public P02_LibraryPage clickOnAllBodyButton() throws InterruptedException {
+        driver.elementUtils().clickOnElement(allBodyButtonLocator);
+        return this;
+    }
+
+    @Step("Click on Study button")
+    public P02_LibraryPage clickOnStudyButton() throws InterruptedException {
+        driver.elementUtils().clickOnElement(studyButtonLocator);
+        driver.elementUtils().doubleClickOnElement(studyButtonLocator);
+        return this;
+    }
+
+    @Step("Click on Security Profiles button")
+    public P21_SecurityProfilesAdminPage clickOnSecurityProfilesButton() {
+        driver.elementUtils().clickOnElement(securityProfilesButtonLocator);
+        return new P21_SecurityProfilesAdminPage(driver);
     }
 }
