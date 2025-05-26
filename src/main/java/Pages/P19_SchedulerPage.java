@@ -55,6 +55,8 @@ public class P19_SchedulerPage {
     private final By meetingEditedMessageLocator = By.cssSelector("[aria-label=\"Meeting has been edited successfully\"]");
     private final By meetingDeletedMessageLocator = By.cssSelector("[aria-label=\"Selected meeting has been deleted successfully\"]");
     private final By scheduledMeetingLocator = By.xpath("//div[@class=\"schEvent ng-star-inserted scheduled-Meeting\"]");
+    private final By selectedMeetingCellLocator = By.xpath("//td [@class=\"k-scheduler-cell k-selected ng-star-inserted\"]");
+    private final By addMeetingButtonFromContextMenuLocator = By.xpath("//span [text()=\"New\"]");
     private final By editMeetingButtonLocator = By.cssSelector("[aria-label=\"Edit\"]");
     private final By deleteMeetingButtonLocator = By.cssSelector("[aria-label=\"Delete\"]");
     private final By yesButtonLocator = By.cssSelector("[title=\"Yes\"]");
@@ -74,6 +76,11 @@ public class P19_SchedulerPage {
                 ");\n" +
                 "\n" +
                 "DELETE FROM meetingstudies\n" +
+                "WHERE meetingid IN (\n" +
+                "    SELECT id FROM meetings WHERE createdby = '620b6939-179b-4a16-9e1e-04b7a09dad6d'\n" +
+                ");\n" +
+                "\n" +
+                "DELETE FROM meetingdocuments\n" +
                 "WHERE meetingid IN (\n" +
                 "    SELECT id FROM meetings WHERE createdby = '620b6939-179b-4a16-9e1e-04b7a09dad6d'\n" +
                 ");\n" +
@@ -165,6 +172,13 @@ public class P19_SchedulerPage {
     public P19_SchedulerPage clickOnEditMeetingButton() {
         driver.elementUtils().rightClickOnElement(scheduledMeetingLocator);
         driver.elementUtils().clickOnElement(editMeetingButtonLocator);
+        return this;
+    }
+
+    @Step("Click on Add Meeting button")
+    public P19_SchedulerPage clickOnAddMeetingButtonFromContextMenu() {
+        driver.elementUtils().rightClickOnElement(selectedMeetingCellLocator);
+        driver.elementUtils().clickOnElement(addMeetingButtonFromContextMenuLocator);
         return this;
     }
 
