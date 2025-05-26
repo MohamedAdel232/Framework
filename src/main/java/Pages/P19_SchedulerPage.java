@@ -2,9 +2,13 @@ package Pages;
 
 import Factories.DriverFactory;
 import Utilities.DataBaseUtils;
+import Utilities.LogsUtils;
+import Utilities.PropertiesUtils;
 import Utilities.SoftAssertUtils;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
+
+import java.util.Set;
 
 public class P19_SchedulerPage {
     private final By myMeetingsButtonLocator = By.cssSelector("[title=\"My Meetings\"]");
@@ -51,15 +55,18 @@ public class P19_SchedulerPage {
     private final By addMeetingStudyButtonLocator = By.cssSelector("[title=\"Add\"]");
     private final By cancelMeetingStudyButtonLocator = By.xpath("button[title=\"Cancel\"]");
     private final By saveMeetingButtonLocator = By.cssSelector("[title=\"Save\"]");
-    private final By meetingAddedMessageLocator = By.cssSelector("[aria-label=\"Meeting has been added successfully\"]");
-    private final By meetingEditedMessageLocator = By.cssSelector("[aria-label=\"Meeting has been edited successfully\"]");
-    private final By meetingDeletedMessageLocator = By.cssSelector("[aria-label=\"Selected meeting has been deleted successfully\"]");
     private final By scheduledMeetingLocator = By.xpath("//div[@class=\"schEvent ng-star-inserted scheduled-Meeting\"]");
     private final By selectedMeetingCellLocator = By.xpath("//td [@class=\"k-scheduler-cell k-selected ng-star-inserted\"]");
     private final By addMeetingButtonFromContextMenuLocator = By.xpath("//span [text()=\"New\"]");
     private final By editMeetingButtonLocator = By.cssSelector("[aria-label=\"Edit\"]");
     private final By deleteMeetingButtonLocator = By.cssSelector("[aria-label=\"Delete\"]");
+    private final By runMeetingButtonLocator = By.cssSelector("[aria-label=\"Run\"]");
     private final By yesButtonLocator = By.cssSelector("[title=\"Yes\"]");
+    private final By meetingAddedMessageLocator = By.cssSelector("[aria-label=\"Meeting has been added successfully\"]");
+    private final By meetingEditedMessageLocator = By.cssSelector("[aria-label=\"Meeting has been edited successfully\"]");
+    private final By meetingDeletedMessageLocator = By.cssSelector("[aria-label=\"Selected meeting has been deleted successfully\"]");
+    private final By meetingRunMessageLocator = By.cssSelector("[aria-label=\"Selected meeting has been running successfully\"]");
+
 
     private final DriverFactory driver;
 
@@ -175,6 +182,13 @@ public class P19_SchedulerPage {
         return this;
     }
 
+    @Step("Click on Run Meeting button")
+    public P19_SchedulerPage clickOnRunMeetingButton() {
+        driver.elementUtils().rightClickOnElement(scheduledMeetingLocator);
+        driver.elementUtils().clickOnElement(runMeetingButtonLocator);
+        return this;
+    }
+
     @Step("Click on Add Meeting button")
     public P19_SchedulerPage clickOnAddMeetingButtonFromContextMenu() {
         driver.elementUtils().rightClickOnElement(selectedMeetingCellLocator);
@@ -203,6 +217,23 @@ public class P19_SchedulerPage {
         );
     }
 
+    @Step("Get Meeting Page Window Handle")
+    public String getMeetingPageWindowHandle() {
+        return driver.windowUtils().getWindowHandle();
+    }
+
+    @Step("Switch to Meeting Run Page Window")
+    public P19_SchedulerPage switchToMeetingRunPageWindow(String meetingPageWindowHandle) {
+        Set<String> windowHandles = driver.windowUtils().getWindowHandles();
+        for (String handle : windowHandles) {
+            if (!handle.equals(meetingPageWindowHandle)) {
+                driver.windowUtils().switchToWindow(handle);
+                break;
+            }
+        }
+        return this;
+    }
+
     @Step("Verify Meeting edited message")
     public void assertVisibilityOfMeetingEditedAlert() {
         SoftAssertUtils.softAssertTrue(
@@ -217,5 +248,20 @@ public class P19_SchedulerPage {
                 driver.elementUtils().verifyVisibilityOfElement(meetingDeletedMessageLocator),
                 "Meeting deleted alert not visible"
         );
+    }
+
+    @Step("Verify Meeting run message")
+    public void assertVisibilityOfMeetingRunAlert() {
+        SoftAssertUtils.softAssertTrue(
+                driver.elementUtils().verifyVisibilityOfElement(meetingRunMessageLocator),
+                "Meeting run alert not visible"
+        );
+    }
+
+    @Step("Assert Meeting Run Page URL")
+    public void assertMeetingRunPageUrl() {
+        String expectedUrl = PropertiesUtils.getPropertyValue("MeetingRunPageUrl");
+        LogsUtils.info("Assert Meeting Run Page URL");
+        driver.softAssertActionsUtils().assertPageUrl(expectedUrl, "Expected URL does not match the actual URL");
     }
 }
