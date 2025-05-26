@@ -4,6 +4,7 @@ import Factories.DriverFactory;
 import Listeners.TestNGListeners;
 import Pages.P01_LoginPage;
 import Pages.P02_LibraryPage;
+import Pages.P20_ORUProfilesAdminPage;
 import Utilities.JsonUtils;
 import Utilities.PropertiesUtils;
 import Utilities.TimestampUtils;
@@ -58,38 +59,22 @@ public class TC20_ORUProfilesAdminTest {
                 .checkReportDateCheckbox()
                 .enterRISSendingApp(risSendingApp)
                 .clickOnAddNewAttributeButton()
-                .selectNameAttribute(accessionNumber)
-                .checkMultipleSegmentsCheckbox()
-                .checkRequiredCheckbox()
-                .selectSegment()
-                .enterFieldNo(fieldNo)
-                .enterRepeat(repeat)
-                .enterComponent(component)
-                .enterSubComponent(subComponent)
-                .clickOnSaveORUAttributeButton()
-                .clickOnAddNewAttributeButton()
-                .selectNameAttribute(reportDate)
-                .checkMultipleSegmentsCheckbox()
-                .checkRequiredCheckbox()
-                .selectSegment()
-                .enterFieldNo(fieldNo)
-                .enterRepeat(repeat)
-                .enterComponent(component)
-                .enterSubComponent(subComponent)
-                .clickOnSaveORUAttributeButton()
-                .clickOnAddNewAttributeButton()
-                .selectNameAttribute(reportStatus)
-                .checkMultipleSegmentsCheckbox()
-                .checkRequiredCheckbox()
-                .selectSegment()
-                .enterFieldNo(fieldNo)
-                .enterRepeat(repeat)
-                .enterComponent(component)
-                .enterSubComponent(subComponent)
+                .addORUAttribute(accessionNumber, reportDate, reportStatus, fieldNo, repeat, component, subComponent)
                 .clickOnSaveORUAttributeButton()
                 .clickOnSaveButton()
                 .assertVisibilityOfORUProfileAddedAlert();
 
+        new P20_ORUProfilesAdminPage(driver)
+                .searchForORUProfile(oruProfileName)
+                .clickOnEditButton(oruProfileName)
+                .clickOnSaveButton()
+                .assertVisibilityOfORUProfileEditedAlert();
+
+        new P20_ORUProfilesAdminPage(driver)
+                .searchForORUProfile(oruProfileName)
+                .clickOnDeleteButton(oruProfileName)
+                .clickOnYesButton()
+                .assertVisibilityOfORUProfileDeletedAlert(oruProfileName);
     }
 
     @BeforeClass

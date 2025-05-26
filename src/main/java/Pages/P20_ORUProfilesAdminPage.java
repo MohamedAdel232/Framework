@@ -22,6 +22,7 @@ public class P20_ORUProfilesAdminPage {
     private final By reportDateCheckboxLocator = By.cssSelector("input[title=\"Report Date\"]");
     private final By risSendingAppTextFieldLocator = By.cssSelector("[formcontrolname=\"risSendingApp\"]");
     private final By addNewAttributeButtonLocator = By.cssSelector("[title=\"Add new attribute\"]");
+    private final By attributeNameSearchFieldLocator = By.cssSelector("input[role=\"searchbox\"]");
     private final By nameAttributeDropdownLocator = By.xpath("//kendo-dropdownlist [@formcontrolname=\"name\"]");
     private final By multipleSegmentsCheckboxLocator = By.cssSelector("input[title=\"Multiple Segments\"]");
     private final By requiredCheckboxLocator = By.cssSelector("input[title=\"Required\"]");
@@ -32,9 +33,11 @@ public class P20_ORUProfilesAdminPage {
     private final By subComponentTextFieldLocator = By.cssSelector("[formcontrolname=\"subComponent\"]");
     private final By saveORUAttributeButtonLocator = By.xpath("(//button [@title=\"Save\"])[1]");
     private final By saveButtonLocator = By.cssSelector("[title=\"Save\"]");
+    private final By yesButtonLocator = By.cssSelector("[title=\"Yes\"]");
+    private final By searchForORUProfileTextFieldLocator = By.cssSelector("input[aria-label=\"Name Filter\"]");
     private final By oruProfileAddedMessageLocator = By.cssSelector("[aria-label=\"ORU profile has been added successfully\"]");
     private final By oruProfileEditedMessageLocator = By.cssSelector("[aria-label=\"ORU profile has been edited successfully\"]");
-    private final By oruProfileDeletedMessageLocator = By.cssSelector("[aria-label=\"Selected ORU profile has been deleted successfully\"]");
+    private final By oruProfileDeletedMessageLocator = By.xpath("//div[contains(text(), \"ORU profile has been deleted successfully\")]");
 
     private final DriverFactory driver;
 
@@ -137,6 +140,7 @@ public class P20_ORUProfilesAdminPage {
     @Step("Select Name Attribute")
     public P20_ORUProfilesAdminPage selectNameAttribute(String nameAttribute) {
         driver.elementUtils().clickOnElement(nameAttributeDropdownLocator);
+        searchAttributeByName(nameAttribute);
         By nameAttributeOptionLocator = By.xpath("//span [text()=\"" + nameAttribute + "\"]");
         driver.elementUtils().clickOnElement(nameAttributeOptionLocator);
         return this;
@@ -206,6 +210,71 @@ public class P20_ORUProfilesAdminPage {
         return this;
     }
 
+    @Step("Search for Attribute by name")
+    public P20_ORUProfilesAdminPage searchAttributeByName(String attributeName) {
+        driver.elementUtils().sendDataToElement(attributeNameSearchFieldLocator, attributeName);
+        return this;
+    }
+
+    @Step("Add ORU Attribute")
+    public P20_ORUProfilesAdminPage addORUAttribute(String accessionNumber, String reportDate, String reportStatus, String fieldNo, String repeat, String component, String subComponent) {
+        return this
+                .selectNameAttribute(accessionNumber)
+                .checkMultipleSegmentsCheckbox()
+                .checkRequiredCheckbox()
+                .selectSegment()
+                .enterFieldNo(fieldNo)
+                .enterRepeat(repeat)
+                .enterComponent(component)
+                .enterSubComponent(subComponent)
+                .clickOnSaveORUAttributeButton()
+                .clickOnAddNewAttributeButton()
+                .selectNameAttribute(reportDate)
+                .checkMultipleSegmentsCheckbox()
+                .checkRequiredCheckbox()
+                .selectSegment()
+                .enterFieldNo(fieldNo)
+                .enterRepeat(repeat)
+                .enterComponent(component)
+                .enterSubComponent(subComponent)
+                .clickOnSaveORUAttributeButton()
+                .clickOnAddNewAttributeButton()
+                .selectNameAttribute(reportStatus)
+                .checkMultipleSegmentsCheckbox()
+                .checkRequiredCheckbox()
+                .selectSegment()
+                .enterFieldNo(fieldNo)
+                .enterRepeat(repeat)
+                .enterComponent(component)
+                .enterSubComponent(subComponent);
+    }
+
+    @Step("Search for ORU Profile by name")
+    public P20_ORUProfilesAdminPage searchForORUProfile(String oruProfileName) {
+        driver.elementUtils().sendDataToElement(searchForORUProfileTextFieldLocator, oruProfileName);
+        return this;
+    }
+
+    @Step("Click on Edit button")
+    public P20_ORUProfilesAdminPage clickOnEditButton(String oruProfileName) {
+        By editButtonLocator = By.xpath("//td[.='" + oruProfileName + "']/following-sibling::td//a[@title='Edit']");
+        driver.elementUtils().clickOnElement(editButtonLocator);
+        return this;
+    }
+
+    @Step("Click on Delete button")
+    public P20_ORUProfilesAdminPage clickOnDeleteButton(String oruProfileName) {
+        By deleteButtonLocator = By.xpath("//td[.='" + oruProfileName + "']/following-sibling::td//a[@title='Delete']");
+        driver.elementUtils().clickOnElement(deleteButtonLocator);
+        return this;
+    }
+
+    @Step("Click on Yes button")
+    public P20_ORUProfilesAdminPage clickOnYesButton() {
+        driver.elementUtils().clickOnElement(yesButtonLocator);
+        return this;
+    }
+
     @Step("Verify ORU Profile added message")
     public void assertVisibilityOfORUProfileAddedAlert() {
         SoftAssertUtils.softAssertTrue(
@@ -223,7 +292,7 @@ public class P20_ORUProfilesAdminPage {
     }
 
     @Step("Verify ORU Profile deleted message")
-    public void assertVisibilityOfORUProfileDeletedAlert() {
+    public void assertVisibilityOfORUProfileDeletedAlert(String oruProfileName) {
         SoftAssertUtils.softAssertTrue(
                 driver.elementUtils().verifyVisibilityOfElement(oruProfileDeletedMessageLocator),
                 "ORU Profile deleted alert not visible"
