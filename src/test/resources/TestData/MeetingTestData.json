@@ -1,8 +1,0 @@
-{
-  "addNewMeeting": {
-    "name": "TestName",
-    "location": "TestLocation",
-    "subspecialty": "TestSpecialty",
-    "acrCode": "1"
-  }
-}

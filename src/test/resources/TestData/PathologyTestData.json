@@ -1,7 +1,0 @@
-{
-  "addNewPathology": {
-    "pathologyName": "TestPathology",
-    "acrCode": "3333",
-    "anatomyName": "TestAnatomy"
-  }
-}

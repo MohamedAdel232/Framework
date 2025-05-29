@@ -1,9 +1,0 @@
-{
-  "addNewReference": {
-    "title": "testReference",
-    "anatomy": "Spine",
-    "subspecialty": "S1",
-    "filePath": "src/test/resources/TestData/ReferencesTestData.json",
-    "notes": "testNotes"
-  }
-}

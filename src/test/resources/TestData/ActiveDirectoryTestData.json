@@ -1,8 +1,0 @@
-{
-  "addNewActiveDirectory": {
-    "name": "TestName",
-    "url": "www.example.com",
-    "port": "50",
-    "site": "Default Site"
-  }
-}
