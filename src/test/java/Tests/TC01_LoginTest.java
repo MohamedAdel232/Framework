@@ -16,7 +16,7 @@ public class TC01_LoginTest {
     public void loginWithValidCredentialsTC() {
         new P01_LoginPage(driver)
                 .navigateToLoginPage(PropertiesUtils.getPropertyValue("LoginPageUrl"))
-                .enterUsername(loginTestData.getJsonData("validLoginCredentials.username"))
+                .enterUsername(loginTestData.getJsonData("validLoginCredentials.radiologistUsername"))
                 .enterPassword(loginTestData.getJsonData("validLoginCredentials.password"))
                 .clickLoginButton()
                 .terminateSession()
