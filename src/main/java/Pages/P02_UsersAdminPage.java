@@ -66,6 +66,7 @@ public class P02_UsersAdminPage {
     @Step("Click on Sites")
     public P02_SitesPage clickOnSitesButton() {
         LogsUtils.info("Clicking on General Configuration button");
-        driver.elementUtils().clickOnElement(generalConfigButtonLocator);
+        driver.elementUtils().clickOnElement(sitesAdminButtonLocator);
         return new P02_SitesPage(driver);
+    }
 }
