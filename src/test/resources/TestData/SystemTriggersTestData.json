@@ -1,0 +1,10 @@
+{
+  "addNewSystemTrigger": {
+    "systemTriggerName": "TestName",
+    "messageType": "TestMessageType",
+    "orderStatus": "TestOrderStatus",
+    "orderControl": "TestOrderControl",
+    "systemAction": "TestSystemAction",
+    "availableActions": "TestAvailableActions"
+  }
+} 

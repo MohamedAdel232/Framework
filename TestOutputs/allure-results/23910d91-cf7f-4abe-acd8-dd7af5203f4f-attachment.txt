@@ -1,0 +1,761 @@
+[DEBUG] - [02-06-2025 15:36:16] [main] [org.testng.TestNG] - suiteXmlPath: "D:\iCodeVettPro\TestRunners\ProjectRunner.xml"
+[INFO] - [02-06-2025 15:36:16] [main] [Listeners.TestNGListeners] - Test execution started
+[INFO] - [02-06-2025 15:36:16] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [02-06-2025 15:36:16] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [02-06-2025 15:36:16] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [02-06-2025 15:36:16] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [02-06-2025 15:36:16] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [02-06-2025 15:36:16] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [02-06-2025 15:36:16] [main] [Utilities.PropertiesUtils] - Loading properties file data
+[INFO] - [02-06-2025 15:36:16] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\allure-results
+[INFO] - [02-06-2025 15:36:16] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\allure-report
+[INFO] - [02-06-2025 15:36:16] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\Logs
+[INFO] - [02-06-2025 15:36:16] [main] [Utilities.FilesUtils] - Directory created: TestOutputs\Screenshots
+[INFO] - [02-06-2025 15:36:16] [main] [Utilities.FilesUtils] - Directory created: TestOutputs\ScreenRecordings
+[INFO] - [02-06-2025 15:36:17] [main] [org.testng.internal.Utils] - [TestNG] Running:
+  D:\iCodeVettPro\TestRunners\ProjectRunner.xml
+
+[INFO] - [02-06-2025 15:36:17] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-06-02_15-36-15.log
+[INFO] - [02-06-2025 15:36:18] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-06-02_15-36-15.log
+[INFO] - [02-06-2025 15:36:19] [main] [Pages.P01_LoginPage] - Navigating to login page
+[INFO] - [02-06-2025 15:36:19] [main] [Utilities.BrowserUtils] - Navigating to URL: http://192.168.2.97/iCodeVettPro/login
+[DEBUG] - [02-06-2025 15:36:36] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['radiologistUsername']
+[INFO] - [02-06-2025 15:36:36] [main] [Pages.P01_LoginPage] - Entering username
+[INFO] - [02-06-2025 15:36:36] [main] [Utilities.ElementUtils] - Sending AutomationRadiologist to element: By.cssSelector: [formcontrolname="username"]
+[INFO] - [02-06-2025 15:36:36] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [02-06-2025 15:36:36] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [02-06-2025 15:36:36] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [02-06-2025 15:36:36] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [02-06-2025 15:36:36] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="username"]
+[DEBUG] - [02-06-2025 15:36:36] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['password']
+[INFO] - [02-06-2025 15:36:36] [main] [Pages.P01_LoginPage] - Entering password
+[INFO] - [02-06-2025 15:36:36] [main] [Utilities.ElementUtils] - Sending Automation1# to element: By.cssSelector: [formcontrolname="password"]
+[INFO] - [02-06-2025 15:36:36] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [02-06-2025 15:36:36] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [02-06-2025 15:36:36] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [02-06-2025 15:36:36] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [02-06-2025 15:36:36] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [02-06-2025 15:36:36] [main] [Pages.P01_LoginPage] - Clicking login button
+[INFO] - [02-06-2025 15:36:36] [main] [Utilities.ElementUtils] - Clicking on element: By.id: btnlogin
+[INFO] - [02-06-2025 15:36:36] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.id: btnlogin
+[INFO] - [02-06-2025 15:36:36] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: btnlogin
+[INFO] - [02-06-2025 15:36:36] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: btnlogin
+[INFO] - [02-06-2025 15:36:36] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.id: btnlogin
+[INFO] - [02-06-2025 15:36:36] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: btnlogin
+[INFO] - [02-06-2025 15:36:36] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: btnlogin
+[INFO] - [02-06-2025 15:36:36] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Continue"]
+[INFO] - [02-06-2025 15:36:36] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Continue"]
+[INFO] - [02-06-2025 15:36:36] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Continue"]
+[INFO] - [02-06-2025 15:36:36] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Continue"]
+[INFO] - [02-06-2025 15:36:46] [main] [Pages.P01_LoginPage] - No session to terminate
+[INFO] - [02-06-2025 15:36:46] [main] [Pages.P01_LoginPage] - Asserting login with valid credentials
+[INFO] - [02-06-2025 15:36:46] [main] [Utilities.BrowserUtils] - Current URL is: http://192.168.2.97/iCodeVettPro/radiologist/worklist/15
+[INFO] - [02-06-2025 15:36:46] [main] [Utilities.SoftAssertActionsUtils] - Asserting page URL
+[INFO] - [02-06-2025 15:36:46] [main] [Utilities.SoftAssertActionsUtils] - Expected URL: http://192.168.2.97/iCodeVettPro/radiologist/worklist/15
+[INFO] - [02-06-2025 15:36:46] [main] [Utilities.SoftAssertActionsUtils] - Actual URL: http://192.168.2.97/iCodeVettPro/radiologist/worklist/15
+[INFO] - [02-06-2025 15:36:46] [main] [Utilities.WaitUtils] - Waiting for page to load with URL: http://192.168.2.97/iCodeVettPro/radiologist/worklist/15
+[INFO] - [02-06-2025 15:36:46] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [02-06-2025 15:36:46] [main] [Utilities.ScreenRecorderUtils] - Recording stopped
+[ERROR] - [02-06-2025 15:36:46] [main] [Utilities.ScreenRecorderUtils] - Error stopping screen recording: Cannot invoke "org.monte.screenrecorder.ScreenRecorder.stop()" because "Utilities.ScreenRecorderUtils.screenRecorder" is null
+[INFO] - [02-06-2025 15:36:47] [main] [Utilities.ScreenshotsUtils] - Screenshot taken: TestOutputs\Screenshots\passed-loginWithValidCredentialsTC-2025-06-02_15-36-47.png
+[INFO] - [02-06-2025 15:36:47] [main] [Utilities.AllureUtils] - Screenshot attached to Allure report: TestOutputs\Screenshots\passed-loginWithValidCredentialsTC-2025-06-02_15-36-47.png
+[INFO] - [02-06-2025 15:36:47] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-06-02_15-36-15.log
+[INFO] - [02-06-2025 15:36:47] [main] [Listeners.TestNGListeners] - Test loginWithValidCredentialsTC passed
+[INFO] - [02-06-2025 15:36:47] [main] [Utilities.BrowserUtils] - Quitting the browser
+[INFO] - [02-06-2025 15:36:48] [main] [Factories.DriverFactory] - Removing driver
+[INFO] - [02-06-2025 15:36:48] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-06-02_15-36-15.log
+[INFO] - [02-06-2025 15:36:48] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-06-02_15-36-15.log
+[INFO] - [02-06-2025 15:36:48] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-06-02_15-36-15.log
+[DEBUG] - [02-06-2025 15:36:48] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewPatientType']['patientTypeName']
+[DEBUG] - [02-06-2025 15:36:48] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewPatientType']['patientTypeHL7Value']
+[INFO] - [02-06-2025 15:36:48] [main] [Pages.P01_LoginPage] - Navigating to login page
+[INFO] - [02-06-2025 15:36:48] [main] [Utilities.BrowserUtils] - Navigating to URL: http://192.168.2.97/iCodeVettPro/login
+[DEBUG] - [02-06-2025 15:37:02] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['powerAdminUsername']
+[INFO] - [02-06-2025 15:37:02] [main] [Pages.P01_LoginPage] - Entering username
+[INFO] - [02-06-2025 15:37:02] [main] [Utilities.ElementUtils] - Sending AutomationPowerAdmin1 to element: By.cssSelector: [formcontrolname="username"]
+[INFO] - [02-06-2025 15:37:02] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [02-06-2025 15:37:02] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [02-06-2025 15:37:02] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [02-06-2025 15:37:02] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [02-06-2025 15:37:02] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="username"]
+[DEBUG] - [02-06-2025 15:37:02] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['password']
+[INFO] - [02-06-2025 15:37:02] [main] [Pages.P01_LoginPage] - Entering password
+[INFO] - [02-06-2025 15:37:02] [main] [Utilities.ElementUtils] - Sending Automation1# to element: By.cssSelector: [formcontrolname="password"]
+[INFO] - [02-06-2025 15:37:02] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [02-06-2025 15:37:02] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [02-06-2025 15:37:02] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [02-06-2025 15:37:02] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [02-06-2025 15:37:02] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [02-06-2025 15:37:02] [main] [Pages.P01_LoginPage] - Clicking login button
+[INFO] - [02-06-2025 15:37:02] [main] [Utilities.ElementUtils] - Clicking on element: By.id: btnlogin
+[INFO] - [02-06-2025 15:37:02] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.id: btnlogin
+[INFO] - [02-06-2025 15:37:02] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: btnlogin
+[INFO] - [02-06-2025 15:37:02] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: btnlogin
+[INFO] - [02-06-2025 15:37:02] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.id: btnlogin
+[INFO] - [02-06-2025 15:37:02] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: btnlogin
+[INFO] - [02-06-2025 15:37:02] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: btnlogin
+[INFO] - [02-06-2025 15:37:02] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Continue"]
+[INFO] - [02-06-2025 15:37:02] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Continue"]
+[INFO] - [02-06-2025 15:37:02] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Continue"]
+[INFO] - [02-06-2025 15:37:02] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Continue"]
+[INFO] - [02-06-2025 15:37:13] [main] [Pages.P01_LoginPage] - No session to terminate
+[INFO] - [02-06-2025 15:37:13] [main] [Pages.P01_LoginPage] - Asserting login with valid admin credentials
+[INFO] - [02-06-2025 15:37:13] [main] [Utilities.BrowserUtils] - Current URL is: http://192.168.2.97/iCodeVettPro/admin/users
+[INFO] - [02-06-2025 15:37:13] [main] [Utilities.SoftAssertActionsUtils] - Asserting page URL
+[INFO] - [02-06-2025 15:37:13] [main] [Utilities.SoftAssertActionsUtils] - Expected URL: http://192.168.2.97/iCodeVettPro/admin/users
+[INFO] - [02-06-2025 15:37:13] [main] [Utilities.SoftAssertActionsUtils] - Actual URL: http://192.168.2.97/iCodeVettPro/admin/users
+[INFO] - [02-06-2025 15:37:13] [main] [Utilities.WaitUtils] - Waiting for page to load with URL: http://192.168.2.97/iCodeVettPro/admin/users
+[INFO] - [02-06-2025 15:37:13] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [02-06-2025 15:37:13] [main] [Pages.P02_UsersAdminPage] - Clicking on General Configuration button
+[INFO] - [02-06-2025 15:37:13] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [02-06-2025 15:37:13] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [02-06-2025 15:37:13] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [02-06-2025 15:37:13] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [02-06-2025 15:37:13] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [02-06-2025 15:37:13] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [02-06-2025 15:37:13] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [02-06-2025 15:37:13] [main] [Pages.P02_UsersAdminPage] - Clicking on Worklist Mapping button
+[INFO] - [02-06-2025 15:37:13] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: //span[text()="Worklist Mapping"] /..
+[INFO] - [02-06-2025 15:37:13] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: //span[text()="Worklist Mapping"] /..
+[INFO] - [02-06-2025 15:37:13] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //span[text()="Worklist Mapping"] /..
+[INFO] - [02-06-2025 15:37:13] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //span[text()="Worklist Mapping"] /..
+[INFO] - [02-06-2025 15:37:13] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //span[text()="Worklist Mapping"] /..
+[INFO] - [02-06-2025 15:37:13] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="Worklist Mapping"] /..
+[INFO] - [02-06-2025 15:37:13] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="Worklist Mapping"] /..
+[INFO] - [02-06-2025 15:37:13] [main] [Pages.P02_UsersAdminPage] - Clicking on Patient Type Admin button
+[INFO] - [02-06-2025 15:37:13] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [href="/iCodeVettPro/admin/patienttype"]
+[INFO] - [02-06-2025 15:37:13] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [href="/iCodeVettPro/admin/patienttype"]
+[INFO] - [02-06-2025 15:37:13] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [href="/iCodeVettPro/admin/patienttype"]
+[INFO] - [02-06-2025 15:37:13] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [href="/iCodeVettPro/admin/patienttype"]
+[INFO] - [02-06-2025 15:37:13] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [href="/iCodeVettPro/admin/patienttype"]
+[INFO] - [02-06-2025 15:37:13] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [href="/iCodeVettPro/admin/patienttype"]
+[INFO] - [02-06-2025 15:37:13] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [href="/iCodeVettPro/admin/patienttype"]
+[INFO] - [02-06-2025 15:37:13] [main] [Pages.P03_PatientTypeAdminPage] - Clicking on Add button
+[INFO] - [02-06-2025 15:37:13] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Add new patient type"]
+[INFO] - [02-06-2025 15:37:13] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Add new patient type"]
+[INFO] - [02-06-2025 15:37:13] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Add new patient type"]
+[INFO] - [02-06-2025 15:37:13] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Add new patient type"]
+[INFO] - [02-06-2025 15:37:14] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Add new patient type"]
+[INFO] - [02-06-2025 15:37:14] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Add new patient type"]
+[INFO] - [02-06-2025 15:37:14] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Add new patient type"]
+[INFO] - [02-06-2025 15:37:14] [main] [Pages.P03_PatientTypeAdminPage] - Entering Patient Type HL7 Value: TestHL7Value
+[INFO] - [02-06-2025 15:37:14] [main] [Utilities.ElementUtils] - Sending TestHL7Value to element: By.cssSelector: [formcontrolname="hl7Value"]
+[INFO] - [02-06-2025 15:37:14] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="hl7Value"]
+[INFO] - [02-06-2025 15:37:14] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="hl7Value"]
+[INFO] - [02-06-2025 15:37:14] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="hl7Value"]
+[INFO] - [02-06-2025 15:37:14] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="hl7Value"]
+[INFO] - [02-06-2025 15:37:14] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="hl7Value"]
+[INFO] - [02-06-2025 15:37:14] [main] [Pages.P03_PatientTypeAdminPage] - Clicking on Save button
+[INFO] - [02-06-2025 15:37:14] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:37:14] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:37:14] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:37:14] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:37:14] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:37:14] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:37:14] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:37:14] [main] [Pages.P03_PatientTypeAdminPage] - Asserting visibility of empty name field message
+[INFO] - [02-06-2025 15:37:14] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.cssSelector: [aria-label='Patient type name cannot be empty or contain spaces only, please enter a valid name']
+[INFO] - [02-06-2025 15:37:14] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [aria-label='Patient type name cannot be empty or contain spaces only, please enter a valid name']
+[INFO] - [02-06-2025 15:37:14] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [aria-label='Patient type name cannot be empty or contain spaces only, please enter a valid name']
+[INFO] - [02-06-2025 15:37:14] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [aria-label='Patient type name cannot be empty or contain spaces only, please enter a valid name']
+[INFO] - [02-06-2025 15:37:15] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label='Patient type name cannot be empty or contain spaces only, please enter a valid name']
+[INFO] - [02-06-2025 15:37:15] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label='Patient type name cannot be empty or contain spaces only, please enter a valid name']
+[INFO] - [02-06-2025 15:37:15] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [02-06-2025 15:37:15] [main] [Pages.P03_PatientTypeAdminPage] - Clicking on Cancel button
+[INFO] - [02-06-2025 15:37:15] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Cancel"]
+[INFO] - [02-06-2025 15:37:15] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Cancel"]
+[INFO] - [02-06-2025 15:37:15] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Cancel"]
+[INFO] - [02-06-2025 15:37:15] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Cancel"]
+[INFO] - [02-06-2025 15:37:15] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Cancel"]
+[INFO] - [02-06-2025 15:37:15] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Cancel"]
+[INFO] - [02-06-2025 15:37:15] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Cancel"]
+[INFO] - [02-06-2025 15:37:15] [main] [Pages.P03_PatientTypeAdminPage] - Clicking on Add button
+[INFO] - [02-06-2025 15:37:15] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Add new patient type"]
+[INFO] - [02-06-2025 15:37:15] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Add new patient type"]
+[INFO] - [02-06-2025 15:37:15] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Add new patient type"]
+[INFO] - [02-06-2025 15:37:15] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Add new patient type"]
+[INFO] - [02-06-2025 15:37:15] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Add new patient type"]
+[INFO] - [02-06-2025 15:37:15] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Add new patient type"]
+[INFO] - [02-06-2025 15:37:15] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Add new patient type"]
+[INFO] - [02-06-2025 15:37:15] [main] [Pages.P03_PatientTypeAdminPage] - Entering Patient Type name: TestName2025-06-02_15-36-48
+[INFO] - [02-06-2025 15:37:15] [main] [Utilities.ElementUtils] - Sending TestName2025-06-02_15-36-48 to element: By.cssSelector: [formcontrolname="name"]
+[INFO] - [02-06-2025 15:37:15] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [02-06-2025 15:37:15] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [02-06-2025 15:37:15] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [02-06-2025 15:37:15] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [02-06-2025 15:37:15] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [02-06-2025 15:37:15] [main] [Pages.P03_PatientTypeAdminPage] - Clicking on Save button
+[INFO] - [02-06-2025 15:37:15] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:37:15] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:37:15] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:37:15] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:37:15] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:37:15] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:37:15] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:37:15] [main] [Pages.P03_PatientTypeAdminPage] - Asserting visibility of empty HL7 value field message
+[INFO] - [02-06-2025 15:37:15] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.cssSelector: [aria-label='Patient type HL7 value cannot be empty or contain spaces only, please enter a valid HL7 value']
+[INFO] - [02-06-2025 15:37:15] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [aria-label='Patient type HL7 value cannot be empty or contain spaces only, please enter a valid HL7 value']
+[INFO] - [02-06-2025 15:37:15] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [aria-label='Patient type HL7 value cannot be empty or contain spaces only, please enter a valid HL7 value']
+[INFO] - [02-06-2025 15:37:16] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [aria-label='Patient type HL7 value cannot be empty or contain spaces only, please enter a valid HL7 value']
+[INFO] - [02-06-2025 15:37:16] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label='Patient type HL7 value cannot be empty or contain spaces only, please enter a valid HL7 value']
+[INFO] - [02-06-2025 15:37:16] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label='Patient type HL7 value cannot be empty or contain spaces only, please enter a valid HL7 value']
+[INFO] - [02-06-2025 15:37:16] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [02-06-2025 15:37:16] [main] [Utilities.ScreenRecorderUtils] - Recording stopped
+[ERROR] - [02-06-2025 15:37:16] [main] [Utilities.ScreenRecorderUtils] - Error stopping screen recording: Cannot invoke "org.monte.screenrecorder.ScreenRecorder.stop()" because "Utilities.ScreenRecorderUtils.screenRecorder" is null
+[INFO] - [02-06-2025 15:37:16] [main] [Utilities.ScreenshotsUtils] - Screenshot taken: TestOutputs\Screenshots\passed-invalidPatientTypeTC-2025-06-02_15-37-16.png
+[INFO] - [02-06-2025 15:37:16] [main] [Utilities.AllureUtils] - Screenshot attached to Allure report: TestOutputs\Screenshots\passed-invalidPatientTypeTC-2025-06-02_15-37-16.png
+[INFO] - [02-06-2025 15:37:16] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-06-02_15-36-15.log
+[INFO] - [02-06-2025 15:37:16] [main] [Listeners.TestNGListeners] - Test invalidPatientTypeTC passed
+[INFO] - [02-06-2025 15:37:16] [main] [Utilities.BrowserUtils] - Quitting the browser
+[INFO] - [02-06-2025 15:37:16] [main] [Factories.DriverFactory] - Removing driver
+[INFO] - [02-06-2025 15:37:16] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-06-02_15-36-15.log
+[INFO] - [02-06-2025 15:37:17] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-06-02_15-36-15.log
+[DEBUG] - [02-06-2025 15:37:17] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewPatientType']['patientTypeName']
+[DEBUG] - [02-06-2025 15:37:17] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewPatientType']['patientTypeHL7Value']
+[INFO] - [02-06-2025 15:37:17] [main] [Pages.P01_LoginPage] - Navigating to login page
+[INFO] - [02-06-2025 15:37:17] [main] [Utilities.BrowserUtils] - Navigating to URL: http://192.168.2.97/iCodeVettPro/login
+[DEBUG] - [02-06-2025 15:37:32] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['powerAdminUsername']
+[INFO] - [02-06-2025 15:37:32] [main] [Pages.P01_LoginPage] - Entering username
+[INFO] - [02-06-2025 15:37:32] [main] [Utilities.ElementUtils] - Sending AutomationPowerAdmin1 to element: By.cssSelector: [formcontrolname="username"]
+[INFO] - [02-06-2025 15:37:32] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [02-06-2025 15:37:32] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [02-06-2025 15:37:32] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [02-06-2025 15:37:32] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [02-06-2025 15:37:32] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="username"]
+[DEBUG] - [02-06-2025 15:37:32] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['password']
+[INFO] - [02-06-2025 15:37:32] [main] [Pages.P01_LoginPage] - Entering password
+[INFO] - [02-06-2025 15:37:32] [main] [Utilities.ElementUtils] - Sending Automation1# to element: By.cssSelector: [formcontrolname="password"]
+[INFO] - [02-06-2025 15:37:32] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [02-06-2025 15:37:32] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [02-06-2025 15:37:32] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [02-06-2025 15:37:32] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [02-06-2025 15:37:32] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [02-06-2025 15:37:32] [main] [Pages.P01_LoginPage] - Clicking login button
+[INFO] - [02-06-2025 15:37:32] [main] [Utilities.ElementUtils] - Clicking on element: By.id: btnlogin
+[INFO] - [02-06-2025 15:37:32] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.id: btnlogin
+[INFO] - [02-06-2025 15:37:32] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: btnlogin
+[INFO] - [02-06-2025 15:37:32] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: btnlogin
+[INFO] - [02-06-2025 15:37:32] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.id: btnlogin
+[INFO] - [02-06-2025 15:37:32] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: btnlogin
+[INFO] - [02-06-2025 15:37:32] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: btnlogin
+[INFO] - [02-06-2025 15:37:33] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Continue"]
+[INFO] - [02-06-2025 15:37:33] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Continue"]
+[INFO] - [02-06-2025 15:37:33] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Continue"]
+[INFO] - [02-06-2025 15:37:33] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Continue"]
+[INFO] - [02-06-2025 15:37:43] [main] [Pages.P01_LoginPage] - No session to terminate
+[INFO] - [02-06-2025 15:37:43] [main] [Pages.P01_LoginPage] - Asserting login with valid admin credentials
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.BrowserUtils] - Current URL is: http://192.168.2.97/iCodeVettPro/admin/users
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.SoftAssertActionsUtils] - Asserting page URL
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.SoftAssertActionsUtils] - Expected URL: http://192.168.2.97/iCodeVettPro/admin/users
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.SoftAssertActionsUtils] - Actual URL: http://192.168.2.97/iCodeVettPro/admin/users
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.WaitUtils] - Waiting for page to load with URL: http://192.168.2.97/iCodeVettPro/admin/users
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [02-06-2025 15:37:43] [main] [Pages.P02_UsersAdminPage] - Clicking on General Configuration button
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [02-06-2025 15:37:43] [main] [Pages.P02_UsersAdminPage] - Clicking on Worklist Mapping button
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: //span[text()="Worklist Mapping"] /..
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: //span[text()="Worklist Mapping"] /..
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //span[text()="Worklist Mapping"] /..
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //span[text()="Worklist Mapping"] /..
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //span[text()="Worklist Mapping"] /..
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="Worklist Mapping"] /..
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="Worklist Mapping"] /..
+[INFO] - [02-06-2025 15:37:43] [main] [Pages.P02_UsersAdminPage] - Clicking on Patient Type Admin button
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [href="/iCodeVettPro/admin/patienttype"]
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [href="/iCodeVettPro/admin/patienttype"]
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [href="/iCodeVettPro/admin/patienttype"]
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [href="/iCodeVettPro/admin/patienttype"]
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [href="/iCodeVettPro/admin/patienttype"]
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [href="/iCodeVettPro/admin/patienttype"]
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [href="/iCodeVettPro/admin/patienttype"]
+[INFO] - [02-06-2025 15:37:43] [main] [Pages.P03_PatientTypeAdminPage] - Clicking on Add button
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Add new patient type"]
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Add new patient type"]
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Add new patient type"]
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Add new patient type"]
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Add new patient type"]
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Add new patient type"]
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Add new patient type"]
+[INFO] - [02-06-2025 15:37:43] [main] [Pages.P03_PatientTypeAdminPage] - Entering Patient Type name: TestName2025-06-02_15-37-17
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.ElementUtils] - Sending TestName2025-06-02_15-37-17 to element: By.cssSelector: [formcontrolname="name"]
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [02-06-2025 15:37:43] [main] [Pages.P03_PatientTypeAdminPage] - Entering Patient Type HL7 Value: TestHL7Value
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.ElementUtils] - Sending TestHL7Value to element: By.cssSelector: [formcontrolname="hl7Value"]
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="hl7Value"]
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="hl7Value"]
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="hl7Value"]
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="hl7Value"]
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="hl7Value"]
+[INFO] - [02-06-2025 15:37:43] [main] [Pages.P03_PatientTypeAdminPage] - Clicking on Save button
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:37:43] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:37:44] [main] [Pages.P03_PatientTypeAdminPage] - Asserting visibility of Patient Type Added Alert
+[INFO] - [02-06-2025 15:37:44] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.cssSelector: [aria-label="New patient type has been added successfully"]
+[INFO] - [02-06-2025 15:37:44] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [aria-label="New patient type has been added successfully"]
+[INFO] - [02-06-2025 15:37:44] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [aria-label="New patient type has been added successfully"]
+[INFO] - [02-06-2025 15:37:44] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [aria-label="New patient type has been added successfully"]
+[INFO] - [02-06-2025 15:37:44] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label="New patient type has been added successfully"]
+[INFO] - [02-06-2025 15:37:44] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label="New patient type has been added successfully"]
+[INFO] - [02-06-2025 15:37:44] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [02-06-2025 15:37:44] [main] [Pages.P03_PatientTypeAdminPage] - Searching for Patient Type by name: TestName2025-06-02_15-37-17
+[INFO] - [02-06-2025 15:37:44] [main] [Utilities.ElementUtils] - Sending TestName2025-06-02_15-37-17 to element: By.cssSelector: input[aria-label="Name Filter"]
+[INFO] - [02-06-2025 15:37:44] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: input[aria-label="Name Filter"]
+[INFO] - [02-06-2025 15:37:44] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: input[aria-label="Name Filter"]
+[INFO] - [02-06-2025 15:37:44] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: input[aria-label="Name Filter"]
+[INFO] - [02-06-2025 15:37:44] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: input[aria-label="Name Filter"]
+[INFO] - [02-06-2025 15:37:44] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: input[aria-label="Name Filter"]
+[INFO] - [02-06-2025 15:37:44] [main] [Pages.P03_PatientTypeAdminPage] - Clicking on Edit button for Active Directory: TestName2025-06-02_15-37-17
+[INFO] - [02-06-2025 15:37:44] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: //td[.='TestName2025-06-02_15-37-17']/following-sibling::td//a[@title='Edit']
+[INFO] - [02-06-2025 15:37:44] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: //td[.='TestName2025-06-02_15-37-17']/following-sibling::td//a[@title='Edit']
+[INFO] - [02-06-2025 15:37:44] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //td[.='TestName2025-06-02_15-37-17']/following-sibling::td//a[@title='Edit']
+[INFO] - [02-06-2025 15:37:44] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //td[.='TestName2025-06-02_15-37-17']/following-sibling::td//a[@title='Edit']
+[INFO] - [02-06-2025 15:37:44] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //td[.='TestName2025-06-02_15-37-17']/following-sibling::td//a[@title='Edit']
+[INFO] - [02-06-2025 15:37:44] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //td[.='TestName2025-06-02_15-37-17']/following-sibling::td//a[@title='Edit']
+[INFO] - [02-06-2025 15:37:44] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //td[.='TestName2025-06-02_15-37-17']/following-sibling::td//a[@title='Edit']
+[INFO] - [02-06-2025 15:37:44] [main] [Pages.P03_PatientTypeAdminPage] - Clicking on Save button
+[INFO] - [02-06-2025 15:37:44] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:37:44] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:37:44] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:37:44] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:37:45] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:37:45] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:37:45] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:37:45] [main] [Pages.P03_PatientTypeAdminPage] - Asserting visibility of Patient Type Edited Alert
+[INFO] - [02-06-2025 15:37:45] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.cssSelector: [aria-label="Selected patient type has been updated successfully"]
+[INFO] - [02-06-2025 15:37:45] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [aria-label="Selected patient type has been updated successfully"]
+[INFO] - [02-06-2025 15:37:45] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [aria-label="Selected patient type has been updated successfully"]
+[INFO] - [02-06-2025 15:37:45] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [aria-label="Selected patient type has been updated successfully"]
+[INFO] - [02-06-2025 15:37:45] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label="Selected patient type has been updated successfully"]
+[INFO] - [02-06-2025 15:37:45] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label="Selected patient type has been updated successfully"]
+[INFO] - [02-06-2025 15:37:45] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [02-06-2025 15:37:45] [main] [Pages.P03_PatientTypeAdminPage] - Searching for Patient Type by name: TestName2025-06-02_15-37-17
+[INFO] - [02-06-2025 15:37:45] [main] [Utilities.ElementUtils] - Sending TestName2025-06-02_15-37-17 to element: By.cssSelector: input[aria-label="Name Filter"]
+[INFO] - [02-06-2025 15:37:45] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: input[aria-label="Name Filter"]
+[INFO] - [02-06-2025 15:37:45] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: input[aria-label="Name Filter"]
+[INFO] - [02-06-2025 15:37:45] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: input[aria-label="Name Filter"]
+[INFO] - [02-06-2025 15:37:45] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: input[aria-label="Name Filter"]
+[INFO] - [02-06-2025 15:37:45] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: input[aria-label="Name Filter"]
+[INFO] - [02-06-2025 15:37:45] [main] [Pages.P03_PatientTypeAdminPage] - Clicking on Delete button for Active Directory: TestName2025-06-02_15-37-17
+[INFO] - [02-06-2025 15:37:45] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: //td[.='TestName2025-06-02_15-37-17']/following-sibling::td//a[@title='Delete']
+[INFO] - [02-06-2025 15:37:45] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: //td[.='TestName2025-06-02_15-37-17']/following-sibling::td//a[@title='Delete']
+[INFO] - [02-06-2025 15:37:45] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //td[.='TestName2025-06-02_15-37-17']/following-sibling::td//a[@title='Delete']
+[INFO] - [02-06-2025 15:37:45] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //td[.='TestName2025-06-02_15-37-17']/following-sibling::td//a[@title='Delete']
+[INFO] - [02-06-2025 15:37:45] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //td[.='TestName2025-06-02_15-37-17']/following-sibling::td//a[@title='Delete']
+[INFO] - [02-06-2025 15:37:45] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //td[.='TestName2025-06-02_15-37-17']/following-sibling::td//a[@title='Delete']
+[INFO] - [02-06-2025 15:37:45] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //td[.='TestName2025-06-02_15-37-17']/following-sibling::td//a[@title='Delete']
+[INFO] - [02-06-2025 15:37:45] [main] [Pages.P03_PatientTypeAdminPage] - Clicking on Yes button
+[INFO] - [02-06-2025 15:37:45] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Yes"]
+[INFO] - [02-06-2025 15:37:45] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Yes"]
+[INFO] - [02-06-2025 15:37:45] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Yes"]
+[INFO] - [02-06-2025 15:37:45] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Yes"]
+[INFO] - [02-06-2025 15:37:46] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Yes"]
+[INFO] - [02-06-2025 15:37:46] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Yes"]
+[INFO] - [02-06-2025 15:37:46] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Yes"]
+[INFO] - [02-06-2025 15:37:46] [main] [Pages.P03_PatientTypeAdminPage] - Asserting visibility of Patient Type Deleted Alert
+[INFO] - [02-06-2025 15:37:46] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.cssSelector: [aria-label="Selected patient type has been deleted successfully"]
+[INFO] - [02-06-2025 15:37:46] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [aria-label="Selected patient type has been deleted successfully"]
+[INFO] - [02-06-2025 15:37:46] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [aria-label="Selected patient type has been deleted successfully"]
+[INFO] - [02-06-2025 15:37:46] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [aria-label="Selected patient type has been deleted successfully"]
+[INFO] - [02-06-2025 15:37:46] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label="Selected patient type has been deleted successfully"]
+[INFO] - [02-06-2025 15:37:46] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label="Selected patient type has been deleted successfully"]
+[INFO] - [02-06-2025 15:37:46] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [02-06-2025 15:37:46] [main] [Utilities.ScreenRecorderUtils] - Recording stopped
+[ERROR] - [02-06-2025 15:37:46] [main] [Utilities.ScreenRecorderUtils] - Error stopping screen recording: Cannot invoke "org.monte.screenrecorder.ScreenRecorder.stop()" because "Utilities.ScreenRecorderUtils.screenRecorder" is null
+[INFO] - [02-06-2025 15:37:46] [main] [Utilities.ScreenshotsUtils] - Screenshot taken: TestOutputs\Screenshots\passed-validPatientTypeTC-2025-06-02_15-37-46.png
+[INFO] - [02-06-2025 15:37:46] [main] [Utilities.AllureUtils] - Screenshot attached to Allure report: TestOutputs\Screenshots\passed-validPatientTypeTC-2025-06-02_15-37-46.png
+[INFO] - [02-06-2025 15:37:46] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-06-02_15-36-15.log
+[INFO] - [02-06-2025 15:37:46] [main] [Listeners.TestNGListeners] - Test validPatientTypeTC passed
+[INFO] - [02-06-2025 15:37:46] [main] [Utilities.BrowserUtils] - Quitting the browser
+[INFO] - [02-06-2025 15:37:47] [main] [Factories.DriverFactory] - Removing driver
+[INFO] - [02-06-2025 15:37:47] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-06-02_15-36-15.log
+[INFO] - [02-06-2025 15:37:47] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-06-02_15-36-15.log
+[INFO] - [02-06-2025 15:37:48] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-06-02_15-36-15.log
+[DEBUG] - [02-06-2025 15:37:48] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewStudyPriority']['studyPriorityName']
+[DEBUG] - [02-06-2025 15:37:48] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewStudyPriority']['studyPriorityHL7Value']
+[INFO] - [02-06-2025 15:37:48] [main] [Pages.P01_LoginPage] - Navigating to login page
+[INFO] - [02-06-2025 15:37:48] [main] [Utilities.BrowserUtils] - Navigating to URL: http://192.168.2.97/iCodeVettPro/login
+[DEBUG] - [02-06-2025 15:38:04] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['powerAdminUsername']
+[INFO] - [02-06-2025 15:38:04] [main] [Pages.P01_LoginPage] - Entering username
+[INFO] - [02-06-2025 15:38:04] [main] [Utilities.ElementUtils] - Sending AutomationPowerAdmin1 to element: By.cssSelector: [formcontrolname="username"]
+[INFO] - [02-06-2025 15:38:04] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [02-06-2025 15:38:04] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [02-06-2025 15:38:04] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [02-06-2025 15:38:04] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [02-06-2025 15:38:04] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="username"]
+[DEBUG] - [02-06-2025 15:38:04] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['password']
+[INFO] - [02-06-2025 15:38:04] [main] [Pages.P01_LoginPage] - Entering password
+[INFO] - [02-06-2025 15:38:04] [main] [Utilities.ElementUtils] - Sending Automation1# to element: By.cssSelector: [formcontrolname="password"]
+[INFO] - [02-06-2025 15:38:04] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [02-06-2025 15:38:04] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [02-06-2025 15:38:04] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [02-06-2025 15:38:04] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [02-06-2025 15:38:04] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [02-06-2025 15:38:04] [main] [Pages.P01_LoginPage] - Clicking login button
+[INFO] - [02-06-2025 15:38:04] [main] [Utilities.ElementUtils] - Clicking on element: By.id: btnlogin
+[INFO] - [02-06-2025 15:38:04] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.id: btnlogin
+[INFO] - [02-06-2025 15:38:04] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: btnlogin
+[INFO] - [02-06-2025 15:38:04] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: btnlogin
+[INFO] - [02-06-2025 15:38:04] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.id: btnlogin
+[INFO] - [02-06-2025 15:38:04] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: btnlogin
+[INFO] - [02-06-2025 15:38:04] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: btnlogin
+[INFO] - [02-06-2025 15:38:04] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Continue"]
+[INFO] - [02-06-2025 15:38:04] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Continue"]
+[INFO] - [02-06-2025 15:38:04] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Continue"]
+[INFO] - [02-06-2025 15:38:04] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Continue"]
+[INFO] - [02-06-2025 15:38:15] [main] [Pages.P01_LoginPage] - No session to terminate
+[INFO] - [02-06-2025 15:38:15] [main] [Pages.P01_LoginPage] - Asserting login with valid admin credentials
+[INFO] - [02-06-2025 15:38:15] [main] [Utilities.BrowserUtils] - Current URL is: http://192.168.2.97/iCodeVettPro/admin/users
+[INFO] - [02-06-2025 15:38:15] [main] [Utilities.SoftAssertActionsUtils] - Asserting page URL
+[INFO] - [02-06-2025 15:38:15] [main] [Utilities.SoftAssertActionsUtils] - Expected URL: http://192.168.2.97/iCodeVettPro/admin/users
+[INFO] - [02-06-2025 15:38:15] [main] [Utilities.SoftAssertActionsUtils] - Actual URL: http://192.168.2.97/iCodeVettPro/admin/users
+[INFO] - [02-06-2025 15:38:15] [main] [Utilities.WaitUtils] - Waiting for page to load with URL: http://192.168.2.97/iCodeVettPro/admin/users
+[INFO] - [02-06-2025 15:38:15] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [02-06-2025 15:38:15] [main] [Pages.P02_UsersAdminPage] - Clicking on General Configuration button
+[INFO] - [02-06-2025 15:38:15] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [02-06-2025 15:38:15] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [02-06-2025 15:38:15] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [02-06-2025 15:38:15] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [02-06-2025 15:38:15] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [02-06-2025 15:38:15] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [02-06-2025 15:38:15] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [02-06-2025 15:38:15] [main] [Pages.P02_UsersAdminPage] - Clicking on Worklist Mapping button
+[INFO] - [02-06-2025 15:38:15] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: //span[text()="Worklist Mapping"] /..
+[INFO] - [02-06-2025 15:38:15] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: //span[text()="Worklist Mapping"] /..
+[INFO] - [02-06-2025 15:38:15] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //span[text()="Worklist Mapping"] /..
+[INFO] - [02-06-2025 15:38:15] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //span[text()="Worklist Mapping"] /..
+[INFO] - [02-06-2025 15:38:15] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //span[text()="Worklist Mapping"] /..
+[INFO] - [02-06-2025 15:38:15] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="Worklist Mapping"] /..
+[INFO] - [02-06-2025 15:38:15] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="Worklist Mapping"] /..
+[INFO] - [02-06-2025 15:38:15] [main] [Pages.P02_UsersAdminPage] - Clicking on Study Priority Admin button
+[INFO] - [02-06-2025 15:38:15] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [href="/iCodeVettPro/admin/studypriority"]
+[INFO] - [02-06-2025 15:38:15] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [href="/iCodeVettPro/admin/studypriority"]
+[INFO] - [02-06-2025 15:38:15] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [href="/iCodeVettPro/admin/studypriority"]
+[INFO] - [02-06-2025 15:38:15] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [href="/iCodeVettPro/admin/studypriority"]
+[INFO] - [02-06-2025 15:38:15] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [href="/iCodeVettPro/admin/studypriority"]
+[INFO] - [02-06-2025 15:38:15] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [href="/iCodeVettPro/admin/studypriority"]
+[INFO] - [02-06-2025 15:38:15] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [href="/iCodeVettPro/admin/studypriority"]
+[INFO] - [02-06-2025 15:38:15] [main] [Pages.P04_StudyPriorityAdminPage] - Clicking on Add button
+[INFO] - [02-06-2025 15:38:15] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Add new study priority"]
+[INFO] - [02-06-2025 15:38:15] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Add new study priority"]
+[INFO] - [02-06-2025 15:38:15] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Add new study priority"]
+[INFO] - [02-06-2025 15:38:15] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Add new study priority"]
+[INFO] - [02-06-2025 15:38:15] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Add new study priority"]
+[INFO] - [02-06-2025 15:38:15] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Add new study priority"]
+[INFO] - [02-06-2025 15:38:15] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Add new study priority"]
+[INFO] - [02-06-2025 15:38:15] [main] [Pages.P04_StudyPriorityAdminPage] - Entering Study Priority HL7 Value: TestHL7Value
+[INFO] - [02-06-2025 15:38:15] [main] [Utilities.ElementUtils] - Sending TestHL7Value to element: By.cssSelector: [formcontrolname="hl7Value"]
+[INFO] - [02-06-2025 15:38:15] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="hl7Value"]
+[INFO] - [02-06-2025 15:38:15] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="hl7Value"]
+[INFO] - [02-06-2025 15:38:16] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="hl7Value"]
+[INFO] - [02-06-2025 15:38:16] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="hl7Value"]
+[INFO] - [02-06-2025 15:38:16] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="hl7Value"]
+[INFO] - [02-06-2025 15:38:16] [main] [Pages.P04_StudyPriorityAdminPage] - Clicking on Save button
+[INFO] - [02-06-2025 15:38:16] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:38:16] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:38:16] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:38:16] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:38:16] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:38:16] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:38:16] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:38:16] [main] [Pages.P04_StudyPriorityAdminPage] - Asserting visibility of empty name field message
+[INFO] - [02-06-2025 15:38:16] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.cssSelector: [aria-label='Study priority name cannot be empty or contain spaces only, please enter a valid name']
+[INFO] - [02-06-2025 15:38:16] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [aria-label='Study priority name cannot be empty or contain spaces only, please enter a valid name']
+[INFO] - [02-06-2025 15:38:16] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [aria-label='Study priority name cannot be empty or contain spaces only, please enter a valid name']
+[INFO] - [02-06-2025 15:38:16] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [aria-label='Study priority name cannot be empty or contain spaces only, please enter a valid name']
+[INFO] - [02-06-2025 15:38:16] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label='Study priority name cannot be empty or contain spaces only, please enter a valid name']
+[INFO] - [02-06-2025 15:38:16] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label='Study priority name cannot be empty or contain spaces only, please enter a valid name']
+[INFO] - [02-06-2025 15:38:16] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [02-06-2025 15:38:16] [main] [Pages.P04_StudyPriorityAdminPage] - Clicking on Cancel button
+[INFO] - [02-06-2025 15:38:16] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Cancel"]
+[INFO] - [02-06-2025 15:38:16] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Cancel"]
+[INFO] - [02-06-2025 15:38:16] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Cancel"]
+[INFO] - [02-06-2025 15:38:16] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Cancel"]
+[INFO] - [02-06-2025 15:38:16] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Cancel"]
+[INFO] - [02-06-2025 15:38:16] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Cancel"]
+[INFO] - [02-06-2025 15:38:16] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Cancel"]
+[INFO] - [02-06-2025 15:38:16] [main] [Pages.P04_StudyPriorityAdminPage] - Clicking on Add button
+[INFO] - [02-06-2025 15:38:16] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Add new study priority"]
+[INFO] - [02-06-2025 15:38:16] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Add new study priority"]
+[INFO] - [02-06-2025 15:38:16] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Add new study priority"]
+[INFO] - [02-06-2025 15:38:16] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Add new study priority"]
+[INFO] - [02-06-2025 15:38:16] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Add new study priority"]
+[INFO] - [02-06-2025 15:38:16] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Add new study priority"]
+[INFO] - [02-06-2025 15:38:16] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Add new study priority"]
+[INFO] - [02-06-2025 15:38:16] [main] [Pages.P04_StudyPriorityAdminPage] - Entering Study Priority name: TestName2025-06-02_15-37-48
+[INFO] - [02-06-2025 15:38:16] [main] [Utilities.ElementUtils] - Sending TestName2025-06-02_15-37-48 to element: By.cssSelector: [formcontrolname="name"]
+[INFO] - [02-06-2025 15:38:16] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [02-06-2025 15:38:16] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [02-06-2025 15:38:17] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [02-06-2025 15:38:17] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [02-06-2025 15:38:17] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [02-06-2025 15:38:17] [main] [Pages.P04_StudyPriorityAdminPage] - Clicking on Save button
+[INFO] - [02-06-2025 15:38:17] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:38:17] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:38:17] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:38:17] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:38:17] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:38:17] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:38:17] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:38:17] [main] [Pages.P04_StudyPriorityAdminPage] - Asserting visibility of empty HL7 value field message
+[INFO] - [02-06-2025 15:38:17] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.cssSelector: [aria-label='Study priority HL7 value cannot be empty or contain spaces only, please enter a valid HL7 value']
+[INFO] - [02-06-2025 15:38:17] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [aria-label='Study priority HL7 value cannot be empty or contain spaces only, please enter a valid HL7 value']
+[INFO] - [02-06-2025 15:38:17] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [aria-label='Study priority HL7 value cannot be empty or contain spaces only, please enter a valid HL7 value']
+[INFO] - [02-06-2025 15:38:17] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [aria-label='Study priority HL7 value cannot be empty or contain spaces only, please enter a valid HL7 value']
+[INFO] - [02-06-2025 15:38:17] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label='Study priority HL7 value cannot be empty or contain spaces only, please enter a valid HL7 value']
+[INFO] - [02-06-2025 15:38:17] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label='Study priority HL7 value cannot be empty or contain spaces only, please enter a valid HL7 value']
+[INFO] - [02-06-2025 15:38:17] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [02-06-2025 15:38:17] [main] [Utilities.ScreenRecorderUtils] - Recording stopped
+[ERROR] - [02-06-2025 15:38:17] [main] [Utilities.ScreenRecorderUtils] - Error stopping screen recording: Cannot invoke "org.monte.screenrecorder.ScreenRecorder.stop()" because "Utilities.ScreenRecorderUtils.screenRecorder" is null
+[INFO] - [02-06-2025 15:38:18] [main] [Utilities.ScreenshotsUtils] - Screenshot taken: TestOutputs\Screenshots\passed-invalidStudyPriorityTC-2025-06-02_15-38-18.png
+[INFO] - [02-06-2025 15:38:18] [main] [Utilities.AllureUtils] - Screenshot attached to Allure report: TestOutputs\Screenshots\passed-invalidStudyPriorityTC-2025-06-02_15-38-18.png
+[INFO] - [02-06-2025 15:38:18] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-06-02_15-36-15.log
+[INFO] - [02-06-2025 15:38:18] [main] [Listeners.TestNGListeners] - Test invalidStudyPriorityTC passed
+[INFO] - [02-06-2025 15:38:18] [main] [Utilities.BrowserUtils] - Quitting the browser
+[INFO] - [02-06-2025 15:38:18] [main] [Factories.DriverFactory] - Removing driver
+[INFO] - [02-06-2025 15:38:18] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-06-02_15-36-15.log
+[INFO] - [02-06-2025 15:38:19] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-06-02_15-36-15.log
+[DEBUG] - [02-06-2025 15:38:19] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewStudyPriority']['studyPriorityName']
+[DEBUG] - [02-06-2025 15:38:19] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewStudyPriority']['studyPriorityHL7Value']
+[INFO] - [02-06-2025 15:38:19] [main] [Pages.P01_LoginPage] - Navigating to login page
+[INFO] - [02-06-2025 15:38:19] [main] [Utilities.BrowserUtils] - Navigating to URL: http://192.168.2.97/iCodeVettPro/login
+[DEBUG] - [02-06-2025 15:38:35] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['powerAdminUsername']
+[INFO] - [02-06-2025 15:38:35] [main] [Pages.P01_LoginPage] - Entering username
+[INFO] - [02-06-2025 15:38:35] [main] [Utilities.ElementUtils] - Sending AutomationPowerAdmin1 to element: By.cssSelector: [formcontrolname="username"]
+[INFO] - [02-06-2025 15:38:35] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [02-06-2025 15:38:35] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [02-06-2025 15:38:35] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [02-06-2025 15:38:35] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [02-06-2025 15:38:35] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="username"]
+[DEBUG] - [02-06-2025 15:38:36] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['password']
+[INFO] - [02-06-2025 15:38:36] [main] [Pages.P01_LoginPage] - Entering password
+[INFO] - [02-06-2025 15:38:36] [main] [Utilities.ElementUtils] - Sending Automation1# to element: By.cssSelector: [formcontrolname="password"]
+[INFO] - [02-06-2025 15:38:36] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [02-06-2025 15:38:36] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [02-06-2025 15:38:36] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [02-06-2025 15:38:36] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [02-06-2025 15:38:36] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [02-06-2025 15:38:36] [main] [Pages.P01_LoginPage] - Clicking login button
+[INFO] - [02-06-2025 15:38:36] [main] [Utilities.ElementUtils] - Clicking on element: By.id: btnlogin
+[INFO] - [02-06-2025 15:38:36] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.id: btnlogin
+[INFO] - [02-06-2025 15:38:36] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: btnlogin
+[INFO] - [02-06-2025 15:38:36] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: btnlogin
+[INFO] - [02-06-2025 15:38:36] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.id: btnlogin
+[INFO] - [02-06-2025 15:38:36] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: btnlogin
+[INFO] - [02-06-2025 15:38:36] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: btnlogin
+[INFO] - [02-06-2025 15:38:36] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Continue"]
+[INFO] - [02-06-2025 15:38:36] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Continue"]
+[INFO] - [02-06-2025 15:38:36] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Continue"]
+[INFO] - [02-06-2025 15:38:36] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Continue"]
+[INFO] - [02-06-2025 15:38:46] [main] [Pages.P01_LoginPage] - No session to terminate
+[INFO] - [02-06-2025 15:38:46] [main] [Pages.P01_LoginPage] - Asserting login with valid admin credentials
+[INFO] - [02-06-2025 15:38:46] [main] [Utilities.BrowserUtils] - Current URL is: http://192.168.2.97/iCodeVettPro/admin/users
+[INFO] - [02-06-2025 15:38:46] [main] [Utilities.SoftAssertActionsUtils] - Asserting page URL
+[INFO] - [02-06-2025 15:38:46] [main] [Utilities.SoftAssertActionsUtils] - Expected URL: http://192.168.2.97/iCodeVettPro/admin/users
+[INFO] - [02-06-2025 15:38:46] [main] [Utilities.SoftAssertActionsUtils] - Actual URL: http://192.168.2.97/iCodeVettPro/admin/users
+[INFO] - [02-06-2025 15:38:46] [main] [Utilities.WaitUtils] - Waiting for page to load with URL: http://192.168.2.97/iCodeVettPro/admin/users
+[INFO] - [02-06-2025 15:38:46] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [02-06-2025 15:38:46] [main] [Pages.P02_UsersAdminPage] - Clicking on General Configuration button
+[INFO] - [02-06-2025 15:38:46] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [02-06-2025 15:38:46] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [02-06-2025 15:38:46] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [02-06-2025 15:38:46] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [02-06-2025 15:38:46] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [02-06-2025 15:38:46] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [02-06-2025 15:38:46] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="General Configuration"] /..
+[INFO] - [02-06-2025 15:38:46] [main] [Pages.P02_UsersAdminPage] - Clicking on Worklist Mapping button
+[INFO] - [02-06-2025 15:38:46] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: //span[text()="Worklist Mapping"] /..
+[INFO] - [02-06-2025 15:38:46] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: //span[text()="Worklist Mapping"] /..
+[INFO] - [02-06-2025 15:38:46] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //span[text()="Worklist Mapping"] /..
+[INFO] - [02-06-2025 15:38:46] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //span[text()="Worklist Mapping"] /..
+[INFO] - [02-06-2025 15:38:46] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //span[text()="Worklist Mapping"] /..
+[INFO] - [02-06-2025 15:38:46] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="Worklist Mapping"] /..
+[INFO] - [02-06-2025 15:38:46] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[text()="Worklist Mapping"] /..
+[INFO] - [02-06-2025 15:38:46] [main] [Pages.P02_UsersAdminPage] - Clicking on Study Priority Admin button
+[INFO] - [02-06-2025 15:38:46] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [href="/iCodeVettPro/admin/studypriority"]
+[INFO] - [02-06-2025 15:38:46] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [href="/iCodeVettPro/admin/studypriority"]
+[INFO] - [02-06-2025 15:38:46] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [href="/iCodeVettPro/admin/studypriority"]
+[INFO] - [02-06-2025 15:38:46] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [href="/iCodeVettPro/admin/studypriority"]
+[INFO] - [02-06-2025 15:38:46] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [href="/iCodeVettPro/admin/studypriority"]
+[INFO] - [02-06-2025 15:38:46] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [href="/iCodeVettPro/admin/studypriority"]
+[INFO] - [02-06-2025 15:38:46] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [href="/iCodeVettPro/admin/studypriority"]
+[INFO] - [02-06-2025 15:38:46] [main] [Pages.P04_StudyPriorityAdminPage] - Clicking on Add button
+[INFO] - [02-06-2025 15:38:46] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Add new study priority"]
+[INFO] - [02-06-2025 15:38:46] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Add new study priority"]
+[INFO] - [02-06-2025 15:38:46] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Add new study priority"]
+[INFO] - [02-06-2025 15:38:46] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Add new study priority"]
+[INFO] - [02-06-2025 15:38:46] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Add new study priority"]
+[INFO] - [02-06-2025 15:38:46] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Add new study priority"]
+[INFO] - [02-06-2025 15:38:46] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Add new study priority"]
+[INFO] - [02-06-2025 15:38:46] [main] [Pages.P04_StudyPriorityAdminPage] - Entering Study Priority name: TestName2025-06-02_15-38-19
+[INFO] - [02-06-2025 15:38:46] [main] [Utilities.ElementUtils] - Sending TestName2025-06-02_15-38-19 to element: By.cssSelector: [formcontrolname="name"]
+[INFO] - [02-06-2025 15:38:46] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [02-06-2025 15:38:46] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [02-06-2025 15:38:47] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [02-06-2025 15:38:47] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [02-06-2025 15:38:47] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [02-06-2025 15:38:47] [main] [Pages.P04_StudyPriorityAdminPage] - Entering Study Priority HL7 Value: TestHL7Value
+[INFO] - [02-06-2025 15:38:47] [main] [Utilities.ElementUtils] - Sending TestHL7Value to element: By.cssSelector: [formcontrolname="hl7Value"]
+[INFO] - [02-06-2025 15:38:47] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="hl7Value"]
+[INFO] - [02-06-2025 15:38:47] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="hl7Value"]
+[INFO] - [02-06-2025 15:38:47] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="hl7Value"]
+[INFO] - [02-06-2025 15:38:47] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="hl7Value"]
+[INFO] - [02-06-2025 15:38:47] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="hl7Value"]
+[INFO] - [02-06-2025 15:38:47] [main] [Pages.P04_StudyPriorityAdminPage] - Clicking on Save button
+[INFO] - [02-06-2025 15:38:47] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:38:47] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:38:47] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:38:47] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:38:47] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:38:47] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:38:47] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:38:47] [main] [Pages.P04_StudyPriorityAdminPage] - Asserting visibility of Study Priority Added Alert
+[INFO] - [02-06-2025 15:38:47] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.cssSelector: [aria-label="New study priority has been added successfully"]
+[INFO] - [02-06-2025 15:38:47] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [aria-label="New study priority has been added successfully"]
+[INFO] - [02-06-2025 15:38:47] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [aria-label="New study priority has been added successfully"]
+[INFO] - [02-06-2025 15:38:48] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [aria-label="New study priority has been added successfully"]
+[INFO] - [02-06-2025 15:38:48] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label="New study priority has been added successfully"]
+[INFO] - [02-06-2025 15:38:48] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label="New study priority has been added successfully"]
+[INFO] - [02-06-2025 15:38:48] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [02-06-2025 15:38:48] [main] [Pages.P04_StudyPriorityAdminPage] - Searching for Study Priority by name: TestName2025-06-02_15-38-19
+[INFO] - [02-06-2025 15:38:48] [main] [Utilities.ElementUtils] - Sending TestName2025-06-02_15-38-19 to element: By.cssSelector: input[aria-label="Name Filter"]
+[INFO] - [02-06-2025 15:38:48] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: input[aria-label="Name Filter"]
+[INFO] - [02-06-2025 15:38:48] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: input[aria-label="Name Filter"]
+[INFO] - [02-06-2025 15:38:48] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: input[aria-label="Name Filter"]
+[INFO] - [02-06-2025 15:38:48] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: input[aria-label="Name Filter"]
+[INFO] - [02-06-2025 15:38:48] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: input[aria-label="Name Filter"]
+[INFO] - [02-06-2025 15:38:48] [main] [Pages.P04_StudyPriorityAdminPage] - Clicking on Edit button for Study Priority: TestName2025-06-02_15-38-19
+[INFO] - [02-06-2025 15:38:48] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: //td[.='TestName2025-06-02_15-38-19']/following-sibling::td//a[@title='Edit']
+[INFO] - [02-06-2025 15:38:48] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: //td[.='TestName2025-06-02_15-38-19']/following-sibling::td//a[@title='Edit']
+[INFO] - [02-06-2025 15:38:48] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //td[.='TestName2025-06-02_15-38-19']/following-sibling::td//a[@title='Edit']
+[INFO] - [02-06-2025 15:38:48] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //td[.='TestName2025-06-02_15-38-19']/following-sibling::td//a[@title='Edit']
+[INFO] - [02-06-2025 15:38:48] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //td[.='TestName2025-06-02_15-38-19']/following-sibling::td//a[@title='Edit']
+[INFO] - [02-06-2025 15:38:48] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //td[.='TestName2025-06-02_15-38-19']/following-sibling::td//a[@title='Edit']
+[INFO] - [02-06-2025 15:38:48] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //td[.='TestName2025-06-02_15-38-19']/following-sibling::td//a[@title='Edit']
+[INFO] - [02-06-2025 15:38:48] [main] [Pages.P04_StudyPriorityAdminPage] - Clicking on Save button
+[INFO] - [02-06-2025 15:38:48] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:38:48] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:38:48] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:38:48] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:38:48] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:38:48] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:38:48] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Save"]
+[INFO] - [02-06-2025 15:38:48] [main] [Pages.P04_StudyPriorityAdminPage] - Asserting visibility of Study Priority Edited Alert
+[INFO] - [02-06-2025 15:38:48] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.cssSelector: [aria-label="Selected study priority has been updated successfully"]
+[INFO] - [02-06-2025 15:38:48] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [aria-label="Selected study priority has been updated successfully"]
+[INFO] - [02-06-2025 15:38:48] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [aria-label="Selected study priority has been updated successfully"]
+[INFO] - [02-06-2025 15:38:49] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [aria-label="Selected study priority has been updated successfully"]
+[INFO] - [02-06-2025 15:38:49] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label="Selected study priority has been updated successfully"]
+[INFO] - [02-06-2025 15:38:49] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label="Selected study priority has been updated successfully"]
+[INFO] - [02-06-2025 15:38:49] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [02-06-2025 15:38:49] [main] [Pages.P04_StudyPriorityAdminPage] - Searching for Study Priority by name: TestName2025-06-02_15-38-19
+[INFO] - [02-06-2025 15:38:49] [main] [Utilities.ElementUtils] - Sending TestName2025-06-02_15-38-19 to element: By.cssSelector: input[aria-label="Name Filter"]
+[INFO] - [02-06-2025 15:38:49] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: input[aria-label="Name Filter"]
+[INFO] - [02-06-2025 15:38:49] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: input[aria-label="Name Filter"]
+[INFO] - [02-06-2025 15:38:49] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: input[aria-label="Name Filter"]
+[INFO] - [02-06-2025 15:38:49] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: input[aria-label="Name Filter"]
+[INFO] - [02-06-2025 15:38:49] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: input[aria-label="Name Filter"]
+[INFO] - [02-06-2025 15:38:49] [main] [Pages.P04_StudyPriorityAdminPage] - Clicking on Delete button for Study Priority: TestName2025-06-02_15-38-19
+[INFO] - [02-06-2025 15:38:49] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: //td[.='TestName2025-06-02_15-38-19']/following-sibling::td//a[@title='Delete']
+[INFO] - [02-06-2025 15:38:49] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: //td[.='TestName2025-06-02_15-38-19']/following-sibling::td//a[@title='Delete']
+[INFO] - [02-06-2025 15:38:49] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //td[.='TestName2025-06-02_15-38-19']/following-sibling::td//a[@title='Delete']
+[INFO] - [02-06-2025 15:38:49] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //td[.='TestName2025-06-02_15-38-19']/following-sibling::td//a[@title='Delete']
+[INFO] - [02-06-2025 15:38:49] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //td[.='TestName2025-06-02_15-38-19']/following-sibling::td//a[@title='Delete']
+[INFO] - [02-06-2025 15:38:49] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //td[.='TestName2025-06-02_15-38-19']/following-sibling::td//a[@title='Delete']
+[INFO] - [02-06-2025 15:38:49] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //td[.='TestName2025-06-02_15-38-19']/following-sibling::td//a[@title='Delete']
+[INFO] - [02-06-2025 15:38:49] [main] [Pages.P04_StudyPriorityAdminPage] - Clicking on Yes button
+[INFO] - [02-06-2025 15:38:49] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Yes"]
+[INFO] - [02-06-2025 15:38:49] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Yes"]
+[INFO] - [02-06-2025 15:38:49] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Yes"]
+[INFO] - [02-06-2025 15:38:49] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Yes"]
+[INFO] - [02-06-2025 15:38:49] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Yes"]
+[INFO] - [02-06-2025 15:38:49] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Yes"]
+[INFO] - [02-06-2025 15:38:49] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Yes"]
+[INFO] - [02-06-2025 15:38:49] [main] [Pages.P04_StudyPriorityAdminPage] - Asserting visibility of Study Priority Deleted Alert
+[INFO] - [02-06-2025 15:38:49] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.cssSelector: [aria-label="Selected study priority has been deleted successfully"]
+[INFO] - [02-06-2025 15:38:49] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [aria-label="Selected study priority has been deleted successfully"]
+[INFO] - [02-06-2025 15:38:49] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [aria-label="Selected study priority has been deleted successfully"]
+[INFO] - [02-06-2025 15:38:50] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [aria-label="Selected study priority has been deleted successfully"]
+[INFO] - [02-06-2025 15:38:50] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label="Selected study priority has been deleted successfully"]
+[INFO] - [02-06-2025 15:38:50] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [aria-label="Selected study priority has been deleted successfully"]
+[INFO] - [02-06-2025 15:38:50] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [02-06-2025 15:38:50] [main] [Utilities.ScreenRecorderUtils] - Recording stopped
+[ERROR] - [02-06-2025 15:38:50] [main] [Utilities.ScreenRecorderUtils] - Error stopping screen recording: Cannot invoke "org.monte.screenrecorder.ScreenRecorder.stop()" because "Utilities.ScreenRecorderUtils.screenRecorder" is null
+[INFO] - [02-06-2025 15:38:50] [main] [Utilities.ScreenshotsUtils] - Screenshot taken: TestOutputs\Screenshots\passed-validStudyPriorityTC-2025-06-02_15-38-50.png
+[INFO] - [02-06-2025 15:38:50] [main] [Utilities.AllureUtils] - Screenshot attached to Allure report: TestOutputs\Screenshots\passed-validStudyPriorityTC-2025-06-02_15-38-50.png
+[INFO] - [02-06-2025 15:38:50] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-06-02_15-36-15.log
+[INFO] - [02-06-2025 15:38:50] [main] [Listeners.TestNGListeners] - Test validStudyPriorityTC passed
+[INFO] - [02-06-2025 15:38:50] [main] [Utilities.BrowserUtils] - Quitting the browser
+[INFO] - [02-06-2025 15:38:50] [main] [Factories.DriverFactory] - Removing driver
+[INFO] - [02-06-2025 15:38:50] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-06-02_15-36-15.log
+[INFO] - [02-06-2025 15:38:50] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-06-02_15-36-15.log
+[INFO] - [02-06-2025 15:38:51] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-06-02_15-36-15.log
+[DEBUG] - [02-06-2025 15:38:51] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewOrderingLocation']['orderingLocationName']
+[DEBUG] - [02-06-2025 15:38:51] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewOrderingLocation']['orderingLocationHL7Value']
+[INFO] - [02-06-2025 15:38:51] [main] [Pages.P01_LoginPage] - Navigating to login page
+[INFO] - [02-06-2025 15:38:51] [main] [Utilities.BrowserUtils] - Navigating to URL: http://192.168.2.97/iCodeVettPro/login
+[DEBUG] - [02-06-2025 15:39:29] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['powerAdminUsername']
+[INFO] - [02-06-2025 15:39:29] [main] [Pages.P01_LoginPage] - Entering username
+[INFO] - [02-06-2025 15:39:29] [main] [Utilities.ElementUtils] - Sending AutomationPowerAdmin1 to element: By.cssSelector: [formcontrolname="username"]
+[INFO] - [02-06-2025 15:39:29] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [02-06-2025 15:39:29] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [02-06-2025 15:39:29] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [02-06-2025 15:39:29] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [02-06-2025 15:39:29] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="username"]
+[DEBUG] - [02-06-2025 15:39:30] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['password']
+[INFO] - [02-06-2025 15:39:30] [main] [Pages.P01_LoginPage] - Entering password
+[INFO] - [02-06-2025 15:39:30] [main] [Utilities.ElementUtils] - Sending Automation1# to element: By.cssSelector: [formcontrolname="password"]
+[INFO] - [02-06-2025 15:39:30] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [02-06-2025 15:39:30] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [02-06-2025 15:39:30] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [02-06-2025 15:39:30] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [02-06-2025 15:39:30] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [02-06-2025 15:39:30] [main] [Pages.P01_LoginPage] - Clicking login button
+[INFO] - [02-06-2025 15:39:30] [main] [Utilities.ElementUtils] - Clicking on element: By.id: btnlogin
+[INFO] - [02-06-2025 15:39:30] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.id: btnlogin
+[INFO] - [02-06-2025 15:39:30] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: btnlogin
+[INFO] - [02-06-2025 15:39:30] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: btnlogin
+[INFO] - [02-06-2025 15:39:30] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.id: btnlogin
+[INFO] - [02-06-2025 15:39:30] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: btnlogin
+[INFO] - [02-06-2025 15:39:30] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: btnlogin
+[INFO] - [02-06-2025 15:39:30] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Continue"]
+[INFO] - [02-06-2025 15:39:30] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Continue"]
+[INFO] - [02-06-2025 15:39:30] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Continue"]
+[INFO] - [02-06-2025 15:39:30] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Continue"]
+[INFO] - [02-06-2025 15:39:40] [main] [Pages.P01_LoginPage] - No session to terminate
+[INFO] - [02-06-2025 15:39:40] [main] [Pages.P01_LoginPage] - Asserting login with valid admin credentials
+[INFO] - [02-06-2025 15:39:40] [main] [Utilities.BrowserUtils] - Current URL is: http://192.168.2.97/iCodeVettPro/login
+[INFO] - [02-06-2025 15:39:40] [main] [Utilities.SoftAssertActionsUtils] - Asserting page URL
+[INFO] - [02-06-2025 15:39:40] [main] [Utilities.SoftAssertActionsUtils] - Expected URL: http://192.168.2.97/iCodeVettPro/admin/users
+[INFO] - [02-06-2025 15:39:40] [main] [Utilities.SoftAssertActionsUtils] - Actual URL: http://192.168.2.97/iCodeVettPro/login
+[INFO] - [02-06-2025 15:39:40] [main] [Utilities.WaitUtils] - Waiting for page to load with URL: http://192.168.2.97/iCodeVettPro/admin/users
+[ERROR] - [02-06-2025 15:39:51] [main] [Utilities.WaitUtils] - Error while waiting for page to load: Expected condition failed: waiting for url to contain "http://192.168.2.97/iCodeVettPro/admin/users". Current url: "http://192.168.2.97/iCodeVettPro/login" (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.56, chrome: {chromedriverVersion: 137.0.7151.55 (254bc711794d..., userDataDir: C:\Users\MOHAME~1.ADE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54809}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54809/devtoo..., se:cdpVersion: 137.0.7151.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 56949d5adfc463cf8e5c35093b13c9cd
+[INFO] - [02-06-2025 15:39:51] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [02-06-2025 15:39:51] [main] [Utilities.ScreenRecorderUtils] - Recording stopped
+[ERROR] - [02-06-2025 15:39:51] [main] [Utilities.ScreenRecorderUtils] - Error stopping screen recording: Cannot invoke "org.monte.screenrecorder.ScreenRecorder.stop()" because "Utilities.ScreenRecorderUtils.screenRecorder" is null
+[INFO] - [02-06-2025 15:39:51] [main] [Utilities.ScreenshotsUtils] - Screenshot taken: TestOutputs\Screenshots\failed-invalidOrderingLocationTC-2025-06-02_15-39-51.png
+[INFO] - [02-06-2025 15:39:51] [main] [Utilities.AllureUtils] - Screenshot attached to Allure report: TestOutputs\Screenshots\failed-invalidOrderingLocationTC-2025-06-02_15-39-51.png
+[INFO] - [02-06-2025 15:39:51] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-06-02_15-36-15.log
+[INFO] - [02-06-2025 15:39:51] [main] [Listeners.TestNGListeners] - Test invalidOrderingLocationTC failed
+[INFO] - [02-06-2025 15:39:51] [main] [Utilities.BrowserUtils] - Quitting the browser
+[INFO] - [02-06-2025 15:39:51] [main] [Factories.DriverFactory] - Removing driver
+[INFO] - [02-06-2025 15:39:51] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-06-02_15-36-15.log
