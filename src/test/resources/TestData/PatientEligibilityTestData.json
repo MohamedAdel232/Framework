@@ -1,0 +1,6 @@
+{
+  "addNewPatientEligibility": {
+    "patientEligibilityName": "TestName",
+    "patientEligibilityHL7Value": "TestHL7Value"
+  }
+} 
