@@ -6,7 +6,6 @@ import Pages.P01_LoginPage;
 import Pages.P02_UsersAdminPage;
 import Utilities.JsonUtils;
 import Utilities.TimestampUtils;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 @Listeners(TestNGListeners.class)

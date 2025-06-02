@@ -67,6 +67,7 @@ public class P02_UsersAdminPage {
         return new P06_PatientEligibilityAdminPage(driver);
     }
 
+
     @Step("Click on HL7 Configuration button")
     public P02_UsersAdminPage clickOnHL7ConfigurationButton() {
         LogsUtils.info("Clicking on HL7 Configuration button");
@@ -93,8 +94,8 @@ public class P02_UsersAdminPage {
         LogsUtils.info("Clicking on System Triggers button");
         driver.elementUtils().clickOnElement(systemTriggersButtonLocator);
         return new P08_SystemTriggersAdminPage(driver);
-    }
 
+    }
     @Step("Click on Sites")
     public P02_SitesPage clickOnSitesButton() {
         LogsUtils.info("Clicking on General Configuration button");
