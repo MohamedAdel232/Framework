@@ -12,10 +12,14 @@ public class P02_UsersAdminPage {
     private final By studyPriorityAdminButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/studypriority\"]");
     private final By orderingLocationsAdminButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/orderinglocations\"]");
     private final By patientEligibilityAdminButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/patienteligibility\"]");
+<<<<<<< HEAD
     private final By hl7ConfigurationButtonLocator = By.xpath("//span[text()=\" HL7 Configuration\"] /..");
     private final By systemSettingsButtonLocator = By.xpath("//span[text()=\"System Settings\"] /..");
     private final By hl7TriggersButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/hl7/triggers\"]");
     private final By systemTriggersButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/systemtriggers\"]");
+=======
+    private final By sitesAdminButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/sites\"]");
+>>>>>>> 33809f8e76ac7d6d70da94fab47e1bedb396c535
 
     private final DriverFactory driver;
 
@@ -51,6 +55,7 @@ public class P02_UsersAdminPage {
         return new P04_StudyPriorityAdminPage(driver);
     }
 
+
     @Step("Click on Ordering Locations Admin button")
     public P05_OrderingLocationsAdminPage clickOnOrderingLocationsAdminButton() {
         LogsUtils.info("Clicking on Ordering Locations Admin button");
@@ -65,6 +70,7 @@ public class P02_UsersAdminPage {
         return new P06_PatientEligibilityAdminPage(driver);
     }
 
+<<<<<<< HEAD
     @Step("Click on HL7 Configuration button")
     public P02_UsersAdminPage clickOnHL7ConfigurationButton() {
         LogsUtils.info("Clicking on HL7 Configuration button");
@@ -91,5 +97,12 @@ public class P02_UsersAdminPage {
         LogsUtils.info("Clicking on System Triggers button");
         driver.elementUtils().clickOnElement(systemTriggersButtonLocator);
         return new P08_SystemTriggersAdminPage(driver);
+=======
+    @Step("Click on Sites")
+    public P02_SitesPage clickOnSitesButton() {
+        LogsUtils.info("Clicking on General Configuration button");
+        driver.elementUtils().clickOnElement(sitesAdminButtonLocator);
+        return new P02_SitesPage(driver);
+>>>>>>> 33809f8e76ac7d6d70da94fab47e1bedb396c535
     }
 }
