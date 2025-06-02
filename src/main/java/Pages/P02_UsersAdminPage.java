@@ -10,6 +10,8 @@ public class P02_UsersAdminPage {
     private final By worklistMappingButtonLocator = By.xpath("//span[text()=\"Worklist Mapping\"] /..");
     private final By patientTypeAdminButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/patienttype\"]");
     private final By studyPriorityAdminButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/studypriority\"]");
+    private final By orderingLocationsAdminButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/orderinglocations\"]");
+    private final By patientEligibilityAdminButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/patienteligibility\"]");
 
     private final DriverFactory driver;
 
@@ -43,5 +45,19 @@ public class P02_UsersAdminPage {
         LogsUtils.info("Clicking on Study Priority Admin button");
         driver.elementUtils().clickOnElement(studyPriorityAdminButtonLocator);
         return new P04_StudyPriorityAdminPage(driver);
+    }
+
+    @Step("Click on Ordering Locations Admin button")
+    public P05_OrderingLocationsAdminPage clickOnOrderingLocationsAdminButton() {
+        LogsUtils.info("Clicking on Ordering Locations Admin button");
+        driver.elementUtils().clickOnElement(orderingLocationsAdminButtonLocator);
+        return new P05_OrderingLocationsAdminPage(driver);
+    }
+
+    @Step("Click on Patient Eligibility Admin button")
+    public P06_PatientEligibilityAdminPage clickOnPatientEligibilityAdminButton() {
+        LogsUtils.info("Clicking on Patient Eligibility Admin button");
+        driver.elementUtils().clickOnElement(patientEligibilityAdminButtonLocator);
+        return new P06_PatientEligibilityAdminPage(driver);
     }
 }
