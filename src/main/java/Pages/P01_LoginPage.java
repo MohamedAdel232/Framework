@@ -63,4 +63,12 @@ public class P01_LoginPage {
         driver.softAssertActionsUtils().assertPageUrl(expectedUrl, "Login with valid credentials failed");
         return this;
     }
+
+    @Step("Assert login with valid admin credentials")
+    public P01_LoginPage assertLoginWithValidAdminCredentials() {
+        String expectedUrl = PropertiesUtils.getPropertyValue("AdminHomePageUrl");
+        LogsUtils.info("Asserting login with valid admin credentials");
+        driver.softAssertActionsUtils().assertPageUrl(expectedUrl, "Login with valid admin credentials failed");
+        return this;
+    }
 }

@@ -1,0 +1,6 @@
+{
+  "addNewPatientType": {
+    "patientTypeName": "TestName",
+    "patientTypeHL7Value": "TestHL7Value"
+  }
+}

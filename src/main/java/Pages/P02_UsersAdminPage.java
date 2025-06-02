@@ -1,0 +1,41 @@
+package Pages;
+
+import Factories.DriverFactory;
+import Utilities.LogsUtils;
+import io.qameta.allure.Step;
+import org.openqa.selenium.By;
+
+public class P02_UsersAdminPage {
+    private final By generalConfigButtonLocator = By.xpath("//span[text()=\"General Configuration\"] /..");
+    private final By worklistMappingButtonLocator = By.xpath("//span[text()=\"Worklist Mapping\"] /..");
+    private final By patientTypeAdminButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/patienttype\"]");
+
+
+    private final DriverFactory driver;
+
+    public P02_UsersAdminPage(DriverFactory driver){
+        this.driver = driver;
+    }
+
+    @Step("Click on General Configuration button")
+    public P02_UsersAdminPage clickOnGeneralConfigButton() {
+        LogsUtils.info("Clicking on General Configuration button");
+        driver.elementUtils().clickOnElement(generalConfigButtonLocator);
+        return new P02_UsersAdminPage(driver);
+    }
+
+    @Step("Click on Worklist Mapping button")
+    public P02_UsersAdminPage clickOnWorklistMappingButton() {
+        LogsUtils.info("Clicking on Worklist Mapping button");
+        driver.elementUtils().clickOnElement(worklistMappingButtonLocator);
+        return new P02_UsersAdminPage(driver);
+    }
+
+    @Step("Click on Patient Type Admin button")
+    public P03_PatientTypeAdminPage clickOnPatientTypeAdminButton() {
+        LogsUtils.info("Clicking on Patient Type Admin button");
+        driver.elementUtils().clickOnElement(patientTypeAdminButtonLocator);
+        return new P03_PatientTypeAdminPage(driver);
+    }
+
+}
