@@ -13,7 +13,6 @@ public class P03_PatientTypeAdminPage {
     private final By saveButtonLocator = By.cssSelector("[title=\"Save\"]");
     private final By cancelButtonLocator = By.cssSelector("[title=\"Cancel\"]");
     private final By patientTypeNameSearchFieldLocator = By.cssSelector("input[aria-label=\"Name Filter\"]");
-
     private final By yesButtonLocator = By.cssSelector("[title=\"Yes\"]");
     private final By patientTypeAddedMessageLocator = By.cssSelector("[aria-label=\"New patient type has been added successfully\"]");
     private final By patientTypeEditedMessageLocator = By.cssSelector("[aria-label=\"Selected patient type has been updated successfully\"]");

@@ -1,0 +1,6 @@
+{
+  "addNewStudyPriority": {
+    "studyPriorityName": "TestName",
+    "studyPriorityHL7Value": "TestHL7Value"
+  }
+} 
