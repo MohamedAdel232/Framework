@@ -13,7 +13,6 @@ public class P05_OrderingLocationsAdminPage {
     private final By saveButtonLocator = By.cssSelector("[title=\"Save\"]");
     private final By cancelButtonLocator = By.cssSelector("[title=\"Cancel\"]");
     private final By orderingLocationNameSearchFieldLocator = By.cssSelector("input[aria-label=\"Name Filter\"]");
-
     private final By yesButtonLocator = By.cssSelector("[title=\"Yes\"]");
     private final By orderingLocationAddedMessageLocator = By.cssSelector("[aria-label=\"New ordering location has been added successfully\"]");
     private final By orderingLocationEditedMessageLocator = By.cssSelector("[aria-label=\"Selected ordering location has been updated successfully\"]");

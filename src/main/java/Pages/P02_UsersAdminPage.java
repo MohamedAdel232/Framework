@@ -12,6 +12,10 @@ public class P02_UsersAdminPage {
     private final By studyPriorityAdminButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/studypriority\"]");
     private final By orderingLocationsAdminButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/orderinglocations\"]");
     private final By patientEligibilityAdminButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/patienteligibility\"]");
+    private final By hl7ConfigurationButtonLocator = By.xpath("//span[text()=\" HL7 Configuration\"] /..");
+    private final By systemSettingsButtonLocator = By.xpath("//span[text()=\"System Settings\"] /..");
+    private final By hl7TriggersButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/hl7/triggers\"]");
+    private final By systemTriggersButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/systemtriggers\"]");
 
     private final DriverFactory driver;
 
@@ -59,5 +63,33 @@ public class P02_UsersAdminPage {
         LogsUtils.info("Clicking on Patient Eligibility Admin button");
         driver.elementUtils().clickOnElement(patientEligibilityAdminButtonLocator);
         return new P06_PatientEligibilityAdminPage(driver);
+    }
+
+    @Step("Click on HL7 Configuration button")
+    public P02_UsersAdminPage clickOnHL7ConfigurationButton() {
+        LogsUtils.info("Clicking on HL7 Configuration button");
+        driver.elementUtils().clickOnElement(hl7ConfigurationButtonLocator);
+        return new P02_UsersAdminPage(driver);
+    }
+
+    @Step("Click on System Settings button")
+    public P02_UsersAdminPage clickOnSystemSettingsButton() {
+        LogsUtils.info("Clicking on System Settings button");
+        driver.elementUtils().clickOnElement(systemSettingsButtonLocator);
+        return new P02_UsersAdminPage(driver);
+    }
+
+    @Step("Click on HL7 Triggers button")
+    public P07_HL7TriggersAdminPage clickOnHL7TriggersButton() {
+        LogsUtils.info("Clicking on HL7 Triggers button");
+        driver.elementUtils().clickOnElement(hl7TriggersButtonLocator);
+        return new P07_HL7TriggersAdminPage(driver);
+    }
+
+    @Step("Click on System Triggers button")
+    public P08_SystemTriggersAdminPage clickOnSystemTriggersButton() {
+        LogsUtils.info("Clicking on System Triggers button");
+        driver.elementUtils().clickOnElement(systemTriggersButtonLocator);
+        return new P08_SystemTriggersAdminPage(driver);
     }
 }

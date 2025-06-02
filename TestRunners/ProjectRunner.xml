@@ -11,6 +11,7 @@
             <class name="Tests.TC04_StudyPriorityAdminTest"/>
             <class name="Tests.TC05_OrderingLocationsAdminTest"/>
             <class name="Tests.TC06_PatientEligibilityAdminTest"/>
+            <class name="Tests.TC07_HL7TriggersAdminTest"/>
         </classes>
     </test>
 </suite>

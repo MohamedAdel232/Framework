@@ -1,0 +1,7 @@
+{
+  "addNewHL7Trigger": {
+    "hl7TriggerName": "TestName",
+    "hl7TriggerEvent": "TestEvent",
+    "hl7TriggerDestination": "TestDestination"
+  }
+}
