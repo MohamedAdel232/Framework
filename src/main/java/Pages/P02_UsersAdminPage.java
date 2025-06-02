@@ -10,6 +10,8 @@ public class P02_UsersAdminPage {
     private final By worklistMappingButtonLocator = By.xpath("//span[text()=\"Worklist Mapping\"] /..");
     private final By patientTypeAdminButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/patienttype\"]");
     private final By studyPriorityAdminButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/studypriority\"]");
+    private final By sitesAdminButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/sites\"]");
+
 
     private final DriverFactory driver;
 
@@ -43,5 +45,12 @@ public class P02_UsersAdminPage {
         LogsUtils.info("Clicking on Study Priority Admin button");
         driver.elementUtils().clickOnElement(studyPriorityAdminButtonLocator);
         return new P04_StudyPriorityAdminPage(driver);
+    }
+
+    @Step("Click on Sites")
+    public P02_SitesPage clickOnSitesButton() {
+        LogsUtils.info("Clicking on General Configuration button");
+        driver.elementUtils().clickOnElement(generalConfigButtonLocator);
+        return new P02_SitesPage(driver);
     }
 }
