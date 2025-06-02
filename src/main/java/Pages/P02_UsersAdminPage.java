@@ -67,7 +67,7 @@ public class P02_UsersAdminPage {
         return new P06_PatientEligibilityAdminPage(driver);
     }
 
-<<<<<<< HEAD
+
     @Step("Click on HL7 Configuration button")
     public P02_UsersAdminPage clickOnHL7ConfigurationButton() {
         LogsUtils.info("Clicking on HL7 Configuration button");
