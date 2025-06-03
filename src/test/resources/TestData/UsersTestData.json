@@ -1,0 +1,17 @@
+{
+  "addNewUsers": {
+    "powerAdmin": "Power Admin",
+    "admin": "Admin",
+    "radiologist": "Radiologist",
+    "technologist": "Technologist",
+    "unitAssistant": "Unit Assistant",
+    "nurse": "Nurse",
+    "username": "testUser",
+    "fullName": "Test User",
+    "password": "TestPassword1#",
+    "confirmPassword": "TestPassword1#",
+    "email": "test@mail.com",
+    "pacsUsername": "testPacsUser",
+    "risUserID": "testRisUser",
+  }
+}

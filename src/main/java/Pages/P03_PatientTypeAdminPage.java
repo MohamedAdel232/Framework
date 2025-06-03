@@ -70,7 +70,7 @@ public class P03_PatientTypeAdminPage {
 
     @Step("Click on Edit button")
     public P03_PatientTypeAdminPage clickOnEditButton(String patientTypeName) {
-        LogsUtils.info("Clicking on Edit button for Active Directory: " + patientTypeName);
+        LogsUtils.info("Clicking on Edit button for Patient Type: " + patientTypeName);
         By editButtonLocator = By.xpath("//td[.='" + patientTypeName + "']/following-sibling::td//a[@title='Edit']");
         driver.elementUtils().clickOnElement(editButtonLocator);
         return this;
@@ -78,7 +78,7 @@ public class P03_PatientTypeAdminPage {
 
     @Step("Click on Delete button")
     public P03_PatientTypeAdminPage clickOnDeleteButton(String patientTypeName) {
-        LogsUtils.info("Clicking on Delete button for Active Directory: " + patientTypeName);
+        LogsUtils.info("Clicking on Delete button for Patient Type: " + patientTypeName);
         By deleteButtonLocator = By.xpath("//td[.='" + patientTypeName + "']/following-sibling::td//a[@title='Delete']");
         driver.elementUtils().clickOnElement(deleteButtonLocator);
         return this;
