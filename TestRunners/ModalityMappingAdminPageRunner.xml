@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Modality Mapping Admin Page Runner">
+    <listeners>
+        <listener class-name="Listeners.TestNGListeners"/>
+    </listeners>
+    <test name="Modality Mapping Admin Page Runner on Chrome">
+        <parameter name="browser" value="Chrome"/>
+        <classes>
+            <class name="Tests.TC09_ModalityMappingAdminTest"/>
+        </classes>
+    </test>
+</suite> 

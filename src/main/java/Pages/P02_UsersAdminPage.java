@@ -16,6 +16,7 @@ public class P02_UsersAdminPage {
     private final By systemSettingsButtonLocator = By.xpath("//span[text()=\"System Settings\"] /..");
     private final By hl7TriggersButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/hl7/triggers\"]");
     private final By systemTriggersButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/systemtriggers\"]");
+    private final By modalityMappingButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/modalitymapping\"]");
     private final By sitesAdminButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/sites\"]");
 
     private final DriverFactory driver;
@@ -94,8 +95,15 @@ public class P02_UsersAdminPage {
         LogsUtils.info("Clicking on System Triggers button");
         driver.elementUtils().clickOnElement(systemTriggersButtonLocator);
         return new P08_SystemTriggersAdminPage(driver);
-
     }
+
+    @Step("Click on Modality Mapping button")
+    public P09_ModalityMappingAdminPage clickOnModalityMappingButton() {
+        LogsUtils.info("Clicking on Modality Mapping button");
+        driver.elementUtils().clickOnElement(modalityMappingButtonLocator);
+        return new P09_ModalityMappingAdminPage(driver);
+    }
+
     @Step("Click on Sites")
     public P02_SitesPage clickOnSitesButton() {
         LogsUtils.info("Clicking on General Configuration button");

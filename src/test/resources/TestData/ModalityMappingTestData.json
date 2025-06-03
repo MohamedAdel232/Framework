@@ -1,0 +1,7 @@
+{
+  "addNewModalityMapping": {
+    "procedureCode": "TestProcedureCode",
+    "procedureDescription": "Test Procedure Description",
+    "modality": "TestModality"
+  }
+} 

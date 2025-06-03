@@ -13,6 +13,7 @@
             <class name="Tests.TC06_PatientEligibilityAdminTest"/>
             <class name="Tests.TC07_HL7TriggersAdminTest"/>
             <class name="Tests.TC08_SystemTriggersAdminTest"/>
+            <class name="Tests.TC09_ModalityMappingAdminTest"/>
         </classes>
     </test>
 </suite>
