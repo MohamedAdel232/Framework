@@ -50,8 +50,8 @@ public class P09_ModalityMappingAdminPage {
     }
 
     @Step("Select Modality")
-    public P09_ModalityMappingAdminPage selectModality(String modality) {
-        LogsUtils.info("Selecting Modality: " + modality);
+    public P09_ModalityMappingAdminPage selectModality() {
+        LogsUtils.info("Selecting Modality");
         driver.elementUtils().clickOnElement(modalityDropdownLocator);
         By modalityOptionLocator = By.xpath("(//ul[@role=\"listbox\"] //li)[1]");
         driver.elementUtils().clickOnElement(modalityOptionLocator);

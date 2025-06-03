@@ -20,6 +20,8 @@ public class P02_UsersAdminPage {
     private final By cancellationReasonsButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/cancellationreasons\"]");
     private final By schedulingSuggestionsButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/schedulingsuggestions\"]");
     private final By sitesAdminButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/sites\"]");
+    private final By protocolsButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/protocols\"]");
+    private final By protocolGroupsButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/protocolgroups\"]");
 
     private final DriverFactory driver;
 
@@ -125,5 +127,19 @@ public class P02_UsersAdminPage {
         LogsUtils.info("Clicking on General Configuration button");
         driver.elementUtils().clickOnElement(sitesAdminButtonLocator);
         return new P02_SitesPage(driver);
+    }
+
+    @Step("Click on Protocols button")
+    public P12_ProtocolsAdminPage clickOnProtocolsButton() {
+        LogsUtils.info("Clicking on Protocols button");
+        driver.elementUtils().clickOnElement(protocolsButtonLocator);
+        return new P12_ProtocolsAdminPage(driver);
+    }
+
+    @Step("Click on Protocol Groups button")
+    public P13_ProtocolGroupsAdminPage clickOnProtocolGroupsButton() {
+        LogsUtils.info("Clicking on Protocol Groups button");
+        driver.elementUtils().clickOnElement(protocolGroupsButtonLocator);
+        return new P13_ProtocolGroupsAdminPage(driver);
     }
 }

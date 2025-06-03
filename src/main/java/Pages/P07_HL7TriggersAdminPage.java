@@ -43,8 +43,8 @@ public class P07_HL7TriggersAdminPage {
     }
 
     @Step("Select HL7 Trigger event")
-    public P07_HL7TriggersAdminPage selectHL7TriggerEvent(String event) {
-        LogsUtils.info("Selecting HL7 Trigger event: " + event);
+    public P07_HL7TriggersAdminPage selectHL7TriggerEvent() {
+        LogsUtils.info("Selecting HL7 Trigger event");
         driver.elementUtils().clickOnElement(eventDropdownLocator);
         By eventOptionLocator = By.xpath("(//ul[@role=\"listbox\"] //li)[1]");
         driver.elementUtils().clickOnElement(eventOptionLocator);
@@ -52,8 +52,8 @@ public class P07_HL7TriggersAdminPage {
     }
 
     @Step("Select HL7 Trigger destination")
-    public P07_HL7TriggersAdminPage selectHL7TriggerDestination(String destination) {
-        LogsUtils.info("Selecting HL7 Trigger destination: " + destination);
+    public P07_HL7TriggersAdminPage selectHL7TriggerDestination() {
+        LogsUtils.info("Selecting HL7 Trigger destination");
         driver.elementUtils().clickOnElement(destinationDropdownLocator);
         By destinationOptionLocator = By.xpath("(//ul[@role=\"listbox\"] //li)[1]");
         driver.elementUtils().clickOnElement(destinationOptionLocator);

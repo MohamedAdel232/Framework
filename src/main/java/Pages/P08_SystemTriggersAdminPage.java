@@ -49,8 +49,8 @@ public class P08_SystemTriggersAdminPage {
     }
 
     @Step("Select Message Type")
-    public P08_SystemTriggersAdminPage selectMessageType(String messageType) {
-        LogsUtils.info("Selecting Message Type: " + messageType);
+    public P08_SystemTriggersAdminPage selectMessageType() {
+        LogsUtils.info("Selecting Message Type");
         driver.elementUtils().clickOnElement(messageTypeDropdownLocator);
         By messageTypeOptionLocator = By.xpath("(//ul[@role=\"listbox\"] //li)[1]");
         driver.elementUtils().clickOnElement(messageTypeOptionLocator);
@@ -72,8 +72,8 @@ public class P08_SystemTriggersAdminPage {
     }
 
     @Step("Select System Action")
-    public P08_SystemTriggersAdminPage selectSystemAction(String systemAction) {
-        LogsUtils.info("Selecting System Action: " + systemAction);
+    public P08_SystemTriggersAdminPage selectSystemAction() {
+        LogsUtils.info("Selecting System Action");
         driver.elementUtils().clickOnElement(systemActionDropdownLocator);
         By systemActionOptionLocator = By.xpath("(//ul[@role=\"listbox\"] //li)[1]");
         driver.elementUtils().clickOnElement(systemActionOptionLocator);
@@ -81,8 +81,8 @@ public class P08_SystemTriggersAdminPage {
     }
 
     @Step("Select Available Actions")
-    public P08_SystemTriggersAdminPage selectAvailableActions(String availableActions) {
-        LogsUtils.info("Selecting Available Actions: " + availableActions);
+    public P08_SystemTriggersAdminPage selectAvailableActions() {
+        LogsUtils.info("Selecting Available Actions");
         driver.elementUtils().clickOnElement(availableActionsDropdownLocator);
         By availableActionsOptionLocator = By.xpath("(//ul[@role=\"listbox\"] //li)[1]");
         driver.elementUtils().clickOnElement(availableActionsOptionLocator);

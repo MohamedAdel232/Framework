@@ -16,6 +16,8 @@
             <class name="Tests.TC09_ModalityMappingAdminTest"/>
             <class name="Tests.TC10_CancellationReasonsAdminTest"/>
             <class name="Tests.TC11_SchedulingSuggestionsAdminTest"/>
+            <class name="Tests.TC12_ProtocolsAdminTest"/>
+            <class name="Tests.TC13_ProtocolGroupsAdminTest"/>
         </classes>
     </test>
 </suite>

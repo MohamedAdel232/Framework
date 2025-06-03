@@ -20,8 +20,6 @@ public class TC07_HL7TriggersAdminTest {
     @Test
     public void validHL7TriggersTC() {
         String hl7TriggerName = hl7TriggersTestData.getJsonData("addNewHL7Trigger.hl7TriggerName") + TimestampUtils.getTimestamp();
-        String hl7TriggerEvent = hl7TriggersTestData.getJsonData("addNewHL7Trigger.hl7TriggerEvent");
-        String hl7TriggerDestination = hl7TriggersTestData.getJsonData("addNewHL7Trigger.hl7TriggerDestination");
 
         new P01_LoginPage(driver)
                 .navigateToLoginPage(PropertiesUtils.getPropertyValue("LoginPageUrl"))
@@ -36,8 +34,8 @@ public class TC07_HL7TriggersAdminTest {
                 .clickOnHL7TriggersButton()
                 .clickOnAddHL7TriggersButton()
                 .enterHL7TriggerName(hl7TriggerName)
-                .selectHL7TriggerEvent(hl7TriggerEvent)
-                .selectHL7TriggerDestination(hl7TriggerDestination)
+                .selectHL7TriggerEvent()
+                .selectHL7TriggerDestination()
                 .clickOnSaveButton()
                 .assertVisibilityOfHL7TriggerAddedAlert();
 
@@ -57,8 +55,6 @@ public class TC07_HL7TriggersAdminTest {
     @Test
     public void invalidHL7TriggersTC() {
         String hl7TriggerName = hl7TriggersTestData.getJsonData("addNewHL7Trigger.hl7TriggerName") + TimestampUtils.getTimestamp();
-        String hl7TriggerEvent = hl7TriggersTestData.getJsonData("addNewHL7Trigger.hl7TriggerEvent");
-        String hl7TriggerDestination = hl7TriggersTestData.getJsonData("addNewHL7Trigger.hl7TriggerDestination");
 
         new P01_LoginPage(driver)
                 .navigateToLoginPage(PropertiesUtils.getPropertyValue("LoginPageUrl"))
@@ -72,8 +68,8 @@ public class TC07_HL7TriggersAdminTest {
                 .clickOnHL7ConfigurationButton()
                 .clickOnHL7TriggersButton()
                 .clickOnAddHL7TriggersButton()
-                .selectHL7TriggerEvent(hl7TriggerEvent)
-                .selectHL7TriggerDestination(hl7TriggerDestination)
+                .selectHL7TriggerEvent()
+                .selectHL7TriggerDestination()
                 .clickOnSaveButton()
                 .assertVisibilityOfEmptyNameFieldMessage();
 
@@ -81,7 +77,7 @@ public class TC07_HL7TriggersAdminTest {
                 .clickOnCancelButton()
                 .clickOnAddHL7TriggersButton()
                 .enterHL7TriggerName(hl7TriggerName)
-                .selectHL7TriggerDestination(hl7TriggerDestination)
+                .selectHL7TriggerDestination()
                 .clickOnSaveButton()
                 .assertVisibilityOfEmptyEventFieldMessage();
 
@@ -89,7 +85,7 @@ public class TC07_HL7TriggersAdminTest {
                 .clickOnCancelButton()
                 .clickOnAddHL7TriggersButton()
                 .enterHL7TriggerName(hl7TriggerName)
-                .selectHL7TriggerEvent(hl7TriggerEvent)
+                .selectHL7TriggerEvent()
                 .clickOnSaveButton()
                 .assertVisibilityOfEmptyDestinationFieldMessage();
     }

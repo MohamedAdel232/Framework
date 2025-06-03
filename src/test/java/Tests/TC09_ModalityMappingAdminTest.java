@@ -20,7 +20,6 @@ public class TC09_ModalityMappingAdminTest {
     public void validModalityMappingTC() {
         String procedureCode = modalityMappingTestData.getJsonData("addNewModalityMapping.procedureCode") + TimestampUtils.getTimestamp();
         String procedureDescription = modalityMappingTestData.getJsonData("addNewModalityMapping.procedureDescription");
-        String modality = modalityMappingTestData.getJsonData("addNewModalityMapping.modality");
 
         new P01_LoginPage(driver)
                 .navigateToLoginPage(PropertiesUtils.getPropertyValue("LoginPageUrl"))
@@ -36,7 +35,7 @@ public class TC09_ModalityMappingAdminTest {
                 .clickOnAddModalityMappingButton()
                 .enterProcedureCode(procedureCode)
                 .enterProcedureDescription(procedureDescription)
-                .selectModality(modality)
+                .selectModality()
                 .clickOnSaveButton()
                 .assertVisibilityOfModalityMappingAddedAlert();
 
@@ -57,7 +56,6 @@ public class TC09_ModalityMappingAdminTest {
     public void invalidModalityMappingTC() {
         String procedureCode = modalityMappingTestData.getJsonData("addNewModalityMapping.procedureCode") + TimestampUtils.getTimestamp();
         String procedureDescription = modalityMappingTestData.getJsonData("addNewModalityMapping.procedureDescription");
-        String modality = modalityMappingTestData.getJsonData("addNewModalityMapping.modality");
 
         new P01_LoginPage(driver)
                 .navigateToLoginPage(PropertiesUtils.getPropertyValue("LoginPageUrl"))
@@ -72,7 +70,7 @@ public class TC09_ModalityMappingAdminTest {
                 .clickOnModalityMappingButton()
                 .clickOnAddModalityMappingButton()
                 .enterProcedureDescription(procedureDescription)
-                .selectModality(modality)
+                .selectModality()
                 .clickOnSaveButton()
                 .assertVisibilityOfEmptyProcedureCodeFieldMessage();
 
@@ -80,7 +78,7 @@ public class TC09_ModalityMappingAdminTest {
                 .clickOnCancelButton()
                 .clickOnAddModalityMappingButton()
                 .enterProcedureCode(procedureCode)
-                .selectModality(modality)
+                .selectModality()
                 .clickOnSaveButton()
                 .assertVisibilityOfEmptyProcedureDescriptionFieldMessage();
 

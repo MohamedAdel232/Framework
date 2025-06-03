@@ -19,11 +19,8 @@ public class TC08_SystemTriggersAdminTest {
     @Test
     public void validSystemTriggersTC() {
         String systemTriggerName = systemTriggersTestData.getJsonData("addNewSystemTrigger.systemTriggerName") + TimestampUtils.getTimestamp();
-        String messageType = systemTriggersTestData.getJsonData("addNewSystemTrigger.messageType");
         String orderStatus = systemTriggersTestData.getJsonData("addNewSystemTrigger.orderStatus");
         String orderControl = systemTriggersTestData.getJsonData("addNewSystemTrigger.orderControl");
-        String systemAction = systemTriggersTestData.getJsonData("addNewSystemTrigger.systemAction");
-        String availableActions = systemTriggersTestData.getJsonData("addNewSystemTrigger.availableActions");
 
         new P01_LoginPage(driver)
                 .navigateToLoginPage(PropertiesUtils.getPropertyValue("LoginPageUrl"))
@@ -38,11 +35,11 @@ public class TC08_SystemTriggersAdminTest {
                 .clickOnSystemTriggersButton()
                 .clickOnAddSystemTriggersButton()
                 .enterSystemTriggerName(systemTriggerName)
-                .selectMessageType(messageType)
+                .selectMessageType()
                 .enterOrderStatus(orderStatus)
                 .enterOrderControl(orderControl)
-                .selectSystemAction(systemAction)
-                .selectAvailableActions(availableActions)
+                .selectSystemAction()
+                .selectAvailableActions()
                 .clickOnSaveButton()
                 .assertVisibilityOfSystemTriggerAddedAlert();
 
@@ -62,11 +59,8 @@ public class TC08_SystemTriggersAdminTest {
     @Test
     public void invalidSystemTriggersTC() {
         String systemTriggerName = systemTriggersTestData.getJsonData("addNewSystemTrigger.systemTriggerName") + TimestampUtils.getTimestamp();
-        String messageType = systemTriggersTestData.getJsonData("addNewSystemTrigger.messageType");
         String orderStatus = systemTriggersTestData.getJsonData("addNewSystemTrigger.orderStatus");
         String orderControl = systemTriggersTestData.getJsonData("addNewSystemTrigger.orderControl");
-        String systemAction = systemTriggersTestData.getJsonData("addNewSystemTrigger.systemAction");
-        String availableActions = systemTriggersTestData.getJsonData("addNewSystemTrigger.availableActions");
 
         new P01_LoginPage(driver)
                 .navigateToLoginPage(PropertiesUtils.getPropertyValue("LoginPageUrl"))
@@ -80,11 +74,11 @@ public class TC08_SystemTriggersAdminTest {
                 .clickOnSystemSettingsButton()
                 .clickOnSystemTriggersButton()
                 .clickOnAddSystemTriggersButton()
-                .selectMessageType(messageType)
+                .selectMessageType()
                 .enterOrderStatus(orderStatus)
                 .enterOrderControl(orderControl)
-                .selectSystemAction(systemAction)
-                .selectAvailableActions(availableActions)
+                .selectSystemAction()
+                .selectAvailableActions()
                 .clickOnSaveButton()
                 .assertVisibilityOfEmptyNameFieldMessage();
 
@@ -94,8 +88,8 @@ public class TC08_SystemTriggersAdminTest {
                 .enterSystemTriggerName(systemTriggerName)
                 .enterOrderStatus(orderStatus)
                 .enterOrderControl(orderControl)
-                .selectSystemAction(systemAction)
-                .selectAvailableActions(availableActions)
+                .selectSystemAction()
+                .selectAvailableActions()
                 .clickOnSaveButton()
                 .assertVisibilityOfEmptyMessageTypeFieldMessage();
 
@@ -103,10 +97,10 @@ public class TC08_SystemTriggersAdminTest {
                 .clickOnCancelButton()
                 .clickOnAddSystemTriggersButton()
                 .enterSystemTriggerName(systemTriggerName)
-                .selectMessageType(messageType)
+                .selectMessageType()
                 .enterOrderControl(orderControl)
-                .selectSystemAction(systemAction)
-                .selectAvailableActions(availableActions)
+                .selectSystemAction()
+                .selectAvailableActions()
                 .clickOnSaveButton()
                 .assertVisibilityOfEmptyOrderStatusFieldMessage();
 
@@ -114,10 +108,10 @@ public class TC08_SystemTriggersAdminTest {
                 .clickOnCancelButton()
                 .clickOnAddSystemTriggersButton()
                 .enterSystemTriggerName(systemTriggerName)
-                .selectMessageType(messageType)
+                .selectMessageType()
                 .enterOrderStatus(orderStatus)
-                .selectSystemAction(systemAction)
-                .selectAvailableActions(availableActions)
+                .selectSystemAction()
+                .selectAvailableActions()
                 .clickOnSaveButton()
                 .assertVisibilityOfEmptyOrderControlFieldMessage();
 
@@ -125,10 +119,10 @@ public class TC08_SystemTriggersAdminTest {
                 .clickOnCancelButton()
                 .clickOnAddSystemTriggersButton()
                 .enterSystemTriggerName(systemTriggerName)
-                .selectMessageType(messageType)
+                .selectMessageType()
                 .enterOrderStatus(orderStatus)
                 .enterOrderControl(orderControl)
-                .selectAvailableActions(availableActions)
+                .selectAvailableActions()
                 .clickOnSaveButton()
                 .assertVisibilityOfEmptySystemActionFieldMessage();
 
@@ -136,10 +130,10 @@ public class TC08_SystemTriggersAdminTest {
                 .clickOnCancelButton()
                 .clickOnAddSystemTriggersButton()
                 .enterSystemTriggerName(systemTriggerName)
-                .selectMessageType(messageType)
+                .selectMessageType()
                 .enterOrderStatus(orderStatus)
                 .enterOrderControl(orderControl)
-                .selectSystemAction(systemAction)
+                .selectSystemAction()
                 .clickOnSaveButton()
                 .assertVisibilityOfEmptyAvailableActionsFieldMessage();
     }
