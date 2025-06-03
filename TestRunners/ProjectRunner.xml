@@ -19,6 +19,7 @@
             <class name="Tests.TC12_ProtocolsAdminTest"/>
             <class name="Tests.TC13_ProtocolGroupsAdminTest"/>
             <class name="Tests.TC14_FoldersAdminTest"/>
+            <class name="Tests.TC15_SubspecialtyAdminTest"/>
         </classes>
     </test>
 </suite>

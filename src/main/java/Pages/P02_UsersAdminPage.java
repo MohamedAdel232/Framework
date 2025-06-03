@@ -23,6 +23,7 @@ public class P02_UsersAdminPage {
     private final By protocolsButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/protocols\"]");
     private final By protocolGroupsButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/protocolgroups\"]");
     private final By foldersButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/folders\"]");
+    private final By subspecialtyButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/subspecialty\"]");
 
     private final DriverFactory driver;
 
@@ -149,5 +150,12 @@ public class P02_UsersAdminPage {
         LogsUtils.info("Clicking on Folders button");
         driver.elementUtils().clickOnElement(foldersButtonLocator);
         return new P14_FoldersAdminPage(driver);
+    }
+
+    @Step("Click on Subspecialty button")
+    public P15_SubspecialtyAdminPage clickOnSubspecialtyButton() {
+        LogsUtils.info("Clicking on Subspecialty button");
+        driver.elementUtils().clickOnElement(subspecialtyButtonLocator);
+        return new P15_SubspecialtyAdminPage(driver);
     }
 }

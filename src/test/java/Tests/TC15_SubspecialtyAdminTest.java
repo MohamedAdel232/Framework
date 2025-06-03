@@ -4,21 +4,21 @@ import Factories.DriverFactory;
 import Pages.P01_LoginPage;
 import Listeners.TestNGListeners;
 import Pages.P02_UsersAdminPage;
-import Pages.P12_ProtocolsAdminPage;
+import Pages.P15_SubspecialtyAdminPage;
 import Utilities.JsonUtils;
 import Utilities.PropertiesUtils;
 import Utilities.TimestampUtils;
 import org.testng.annotations.*;
 
 @Listeners(TestNGListeners.class)
-public class TC12_ProtocolsAdminTest {
+public class TC15_SubspecialtyAdminTest {
     DriverFactory driver;
     JsonUtils loginTestData;
-    JsonUtils protocolsTestData;
+    JsonUtils subspecialtyTestData;
 
     @Test
-    public void validProtocolTC() throws InterruptedException {
-        String protocolName = protocolsTestData.getJsonData("addNewProtocol.name") + TimestampUtils.getTimestamp();
+    public void validSubspecialtyTC() throws InterruptedException {
+        String subspecialtyName = subspecialtyTestData.getJsonData("addNewSubspecialty.name") + TimestampUtils.getTimestamp();
 
         new P01_LoginPage(driver)
                 .navigateToLoginPage(PropertiesUtils.getPropertyValue("LoginPageUrl"))
@@ -29,35 +29,31 @@ public class TC12_ProtocolsAdminTest {
                 .assertLoginWithValidAdminCredentials();
 
         new P02_UsersAdminPage(driver)
-                .clickOnProtocolsButton()
-                .clickOnAddProtocolButton()
-                .enterProtocolName(protocolName)
-                .selectProtocolGroup()
-                .checkRequiresCommentCheckbox()
-                .checkActiveCheckbox()
+                .clickOnSubspecialtyButton()
+                .clickOnAddSubspecialtyButton()
+                .enterSubspecialtyName(subspecialtyName)
                 .selectFilterRowSettings()
                 .selectOperator()
                 .selectCode()
                 .clickOnSaveButton()
-                .assertVisibilityOfProtocolAddedAlert();
+                .assertVisibilityOfSubspecialtyAddedAlert();
 
-        new P12_ProtocolsAdminPage(driver)
-                .searchForProtocol(protocolName)
-                .clickOnEditButton(protocolName)
+        new P15_SubspecialtyAdminPage(driver)
+                .searchForSubspecialty(subspecialtyName)
+                .clickOnEditButton(subspecialtyName)
                 .clickOnSaveButton()
-                .assertVisibilityOfProtocolEditedAlert();
+                .assertVisibilityOfSubspecialtyEditedAlert();
 
-        new P12_ProtocolsAdminPage(driver)
-                .clickOnCancelButton()
-                .searchForProtocol(protocolName)
-                .clickOnDeleteButton(protocolName)
+        new P15_SubspecialtyAdminPage(driver)
+                .searchForSubspecialty(subspecialtyName)
+                .clickOnDeleteButton(subspecialtyName)
                 .clickOnYesButton()
-                .assertVisibilityOfProtocolDeletedAlert();
+                .assertVisibilityOfSubspecialtyDeletedAlert();
     }
 
     @Test
-    public void invalidProtocolTC() {
-        String protocolName = protocolsTestData.getJsonData("addNewProtocol.name") + TimestampUtils.getTimestamp();
+    public void invalidSubspecialtyTC() {
+        String subspecialtyName = subspecialtyTestData.getJsonData("addNewSubspecialty.name") + TimestampUtils.getTimestamp();
 
         new P01_LoginPage(driver)
                 .navigateToLoginPage(PropertiesUtils.getPropertyValue("LoginPageUrl"))
@@ -68,24 +64,26 @@ public class TC12_ProtocolsAdminTest {
                 .assertLoginWithValidAdminCredentials();
 
         new P02_UsersAdminPage(driver)
-                .clickOnProtocolsButton()
-                .clickOnAddProtocolButton()
-                .selectProtocolGroup()
+                .clickOnSubspecialtyButton()
+                .clickOnAddSubspecialtyButton()
+                .selectFilterRowSettings()
+                .selectOperator()
+                .selectCode()
                 .clickOnSaveButton()
                 .assertVisibilityOfEmptyNameFieldMessage();
 
-        new P12_ProtocolsAdminPage(driver)
+        new P15_SubspecialtyAdminPage(driver)
                 .clickOnCancelButton()
-                .clickOnAddProtocolButton()
-                .enterProtocolName(protocolName)
+                .clickOnAddSubspecialtyButton()
+                .enterSubspecialtyName(subspecialtyName)
                 .clickOnSaveButton()
-                .assertVisibilityOfEmptyProtocolGroupMessage();
+                .assertVisibilityOfEmptyParameterMessage();
     }
 
     @BeforeClass
     public void beforeClass() {
         loginTestData = new JsonUtils("LoginTestData");
-        protocolsTestData = new JsonUtils("ProtocolsTestData");
+        subspecialtyTestData = new JsonUtils("SubspecialtyTestData");
     }
 
     @BeforeMethod

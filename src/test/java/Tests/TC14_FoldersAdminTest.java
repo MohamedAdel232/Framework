@@ -75,8 +75,8 @@ public class TC14_FoldersAdminTest {
                 .clickOnSaveButton()
                 .assertVisibilityOfEmptyNameFieldMessage();
 
-        new P02_UsersAdminPage(driver)
-                .clickOnFoldersButton()
+        new P14_FoldersAdminPage(driver)
+                .clickOnCancelButton()
                 .clickOnAddFolderButton()
                 .enterFolderName(folderName)
                 .selectFilterRowSettings()
@@ -85,8 +85,8 @@ public class TC14_FoldersAdminTest {
                 .clickOnSaveButton()
                 .assertVisibilityOfEmptySubspecialtyMessage();
 
-        new P02_UsersAdminPage(driver)
-                .clickOnFoldersButton()
+        new P14_FoldersAdminPage(driver)
+                .clickOnCancelButton()
                 .clickOnAddFolderButton()
                 .enterFolderName(folderName)
                 .selectSubspecialty()

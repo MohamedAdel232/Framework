@@ -17,7 +17,7 @@ public class P14_FoldersAdminPage {
     private final By operatorDropdownLocator = By.cssSelector("[aria-label=\"operator\"]");
     private final By codeDropdownLocator = By.cssSelector("[valuefield=\"code\"]");
     private final By saveButtonLocator = By.cssSelector("[title=\"Save\"]");
-    private final By cancelButtonLocator = By.cssSelector("[title=\"Cancel\"]");
+    private final By cancelButtonLocator = By.cssSelector("[title=\"Back\"]");
     private final By nameSearchFieldLocator = By.cssSelector("input[aria-label=\"Name Filter\"]");
     private final By yesButtonLocator = By.cssSelector("[title=\"Yes\"]");
     private final By folderAddedMessageLocator = By.cssSelector("[aria-label=\"New Folder has been added successfully\"]");
