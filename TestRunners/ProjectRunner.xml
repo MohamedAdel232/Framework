@@ -20,6 +20,7 @@
             <class name="Tests.TC13_ProtocolGroupsAdminTest"/>
             <class name="Tests.TC14_FoldersAdminTest"/>
             <class name="Tests.TC15_SubspecialtyAdminTest"/>
+            <class name="Tests.TC16_ProcedureGroupsAdminTest"/>
         </classes>
     </test>
 </suite>

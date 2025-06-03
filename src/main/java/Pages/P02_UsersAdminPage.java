@@ -24,6 +24,7 @@ public class P02_UsersAdminPage {
     private final By protocolGroupsButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/protocolgroups\"]");
     private final By foldersButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/folders\"]");
     private final By subspecialtyButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/subspecialty\"]");
+    private final By procedureGroupsButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/proceduregroup\"]");
 
     private final DriverFactory driver;
 
@@ -157,5 +158,12 @@ public class P02_UsersAdminPage {
         LogsUtils.info("Clicking on Subspecialty button");
         driver.elementUtils().clickOnElement(subspecialtyButtonLocator);
         return new P15_SubspecialtyAdminPage(driver);
+    }
+
+    @Step("Click on Procedure Groups button")
+    public P16_ProcedureGroupsAdminPage clickOnProcedureGroupsButton() {
+        LogsUtils.info("Clicking on Procedure Groups button");
+        driver.elementUtils().clickOnElement(procedureGroupsButtonLocator);
+        return new P16_ProcedureGroupsAdminPage(driver);
     }
 }
