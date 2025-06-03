@@ -22,6 +22,7 @@ public class P02_UsersAdminPage {
     private final By sitesAdminButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/sites\"]");
     private final By protocolsButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/protocols\"]");
     private final By protocolGroupsButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/protocolgroups\"]");
+    private final By foldersButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/folders\"]");
 
     private final DriverFactory driver;
 
@@ -141,5 +142,12 @@ public class P02_UsersAdminPage {
         LogsUtils.info("Clicking on Protocol Groups button");
         driver.elementUtils().clickOnElement(protocolGroupsButtonLocator);
         return new P13_ProtocolGroupsAdminPage(driver);
+    }
+
+    @Step("Click on Folders button")
+    public P14_FoldersAdminPage clickOnFoldersButton() {
+        LogsUtils.info("Clicking on Folders button");
+        driver.elementUtils().clickOnElement(foldersButtonLocator);
+        return new P14_FoldersAdminPage(driver);
     }
 }

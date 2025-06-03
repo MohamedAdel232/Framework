@@ -18,6 +18,7 @@
             <class name="Tests.TC11_SchedulingSuggestionsAdminTest"/>
             <class name="Tests.TC12_ProtocolsAdminTest"/>
             <class name="Tests.TC13_ProtocolGroupsAdminTest"/>
+            <class name="Tests.TC14_FoldersAdminTest"/>
         </classes>
     </test>
 </suite>
