@@ -17,6 +17,7 @@ public class P02_UsersAdminPage {
     private final By hl7TriggersButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/hl7/triggers\"]");
     private final By systemTriggersButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/systemtriggers\"]");
     private final By modalityMappingButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/modalitymapping\"]");
+    private final By cancellationReasonsButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/cancellationreasons\"]");
     private final By sitesAdminButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/sites\"]");
 
     private final DriverFactory driver;
@@ -102,6 +103,13 @@ public class P02_UsersAdminPage {
         LogsUtils.info("Clicking on Modality Mapping button");
         driver.elementUtils().clickOnElement(modalityMappingButtonLocator);
         return new P09_ModalityMappingAdminPage(driver);
+    }
+
+    @Step("Click on Cancellation Reasons button")
+    public P10_CancellationReasonsAdminPage clickOnCancellationReasonsButton() {
+        LogsUtils.info("Clicking on Cancellation Reasons button");
+        driver.elementUtils().clickOnElement(cancellationReasonsButtonLocator);
+        return new P10_CancellationReasonsAdminPage(driver);
     }
 
     @Step("Click on Sites")
