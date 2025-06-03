@@ -48,7 +48,6 @@ public class TC12_ProtocolsAdminTest {
                 .assertVisibilityOfProtocolEditedAlert();
 
         new P12_ProtocolsAdminPage(driver)
-                .clickOnCancelButton()
                 .searchForProtocol(protocolName)
                 .clickOnDeleteButton(protocolName)
                 .clickOnYesButton()

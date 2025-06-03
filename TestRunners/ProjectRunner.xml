@@ -7,6 +7,7 @@
         <parameter name="browser" value="Chrome"/>
         <classes>
             <class name="Tests.TC01_LoginTest"/>
+            <class name="Tests.TC02_UsersAdminTest"/>
             <class name="Tests.TC03_PatientTypeAdminTest"/>
             <class name="Tests.TC04_StudyPriorityAdminTest"/>
             <class name="Tests.TC05_OrderingLocationsAdminTest"/>
@@ -21,6 +22,7 @@
             <class name="Tests.TC14_FoldersAdminTest"/>
             <class name="Tests.TC15_SubspecialtyAdminTest"/>
             <class name="Tests.TC16_ProcedureGroupsAdminTest"/>
+            <class name="Tests.TC17_SitesAdminTest"/>
         </classes>
     </test>
 </suite>

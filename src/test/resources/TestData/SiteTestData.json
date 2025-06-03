@@ -1,0 +1,6 @@
+{
+  "addNewSite": {
+    "name": "TestSite",
+    "hl7SiteName": "TestHL7Site"
+  }
+} 
