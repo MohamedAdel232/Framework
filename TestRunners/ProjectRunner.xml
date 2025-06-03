@@ -15,6 +15,7 @@
             <class name="Tests.TC08_SystemTriggersAdminTest"/>
             <class name="Tests.TC09_ModalityMappingAdminTest"/>
             <class name="Tests.TC10_CancellationReasonsAdminTest"/>
+            <class name="Tests.TC11_SchedulingSuggestionsAdminTest"/>
         </classes>
     </test>
 </suite>

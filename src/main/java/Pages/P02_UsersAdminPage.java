@@ -18,6 +18,7 @@ public class P02_UsersAdminPage {
     private final By systemTriggersButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/systemtriggers\"]");
     private final By modalityMappingButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/modalitymapping\"]");
     private final By cancellationReasonsButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/cancellationreasons\"]");
+    private final By schedulingSuggestionsButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/schedulingsuggestions\"]");
     private final By sitesAdminButtonLocator = By.cssSelector("[href=\"/iCodeVettPro/admin/sites\"]");
 
     private final DriverFactory driver;
@@ -110,6 +111,13 @@ public class P02_UsersAdminPage {
         LogsUtils.info("Clicking on Cancellation Reasons button");
         driver.elementUtils().clickOnElement(cancellationReasonsButtonLocator);
         return new P10_CancellationReasonsAdminPage(driver);
+    }
+
+    @Step("Click on Scheduling Suggestions button")
+    public P11_SchedulingSuggestionsAdminPage clickOnSchedulingSuggestionsButton() {
+        LogsUtils.info("Clicking on Scheduling Suggestions button");
+        driver.elementUtils().clickOnElement(schedulingSuggestionsButtonLocator);
+        return new P11_SchedulingSuggestionsAdminPage(driver);
     }
 
     @Step("Click on Sites")
