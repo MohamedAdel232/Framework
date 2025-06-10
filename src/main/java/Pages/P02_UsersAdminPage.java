@@ -8,6 +8,8 @@ import org.openqa.selenium.By;
 public class P02_UsersAdminPage {
     private final By sitesButtonLocator = By.cssSelector("[routerlink=\"/admin/sites\"]");
     private final By groupsButtonLocator = By.cssSelector("[routerlink=\"/admin/groups\"]");
+    private final By specialtiesButtonLocator = By.cssSelector("[routerlink=\"/admin/specialties\"]");
+    private final By configurationsButtonLocator = By.xpath("//span[.=\"Configurations\"] /..");
 
     private final DriverFactory driver;
 
@@ -27,5 +29,19 @@ public class P02_UsersAdminPage {
         LogsUtils.info("Clicking on Groups button");
         driver.elementUtils().clickOnElement(groupsButtonLocator);
         return new P04_GroupsAdminPage(driver);
+    }
+
+    @Step("Click on Specialties button")
+    public P05_SpecialtiesAdminPage clickOnSpecialtiesButton() {
+        LogsUtils.info("Clicking on Specialties button");
+        driver.elementUtils().clickOnElement(specialtiesButtonLocator);
+        return new P05_SpecialtiesAdminPage(driver);
+    }
+
+    @Step("Click on Configurations button")
+    public P02_UsersAdminPage clickOnConfigurationsButton() {
+        LogsUtils.info("Clicking on Configurations button");
+        driver.elementUtils().clickOnElement(configurationsButtonLocator);
+        return new P02_UsersAdminPage(driver);
     }
 }
