@@ -6,7 +6,8 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
 public class P02_UsersAdminPage {
-    private final By institutionsButtonLocator = By.cssSelector("[routerlink=\"/admin/institutions\"]");
+    private final By sitesButtonLocator = By.cssSelector("[routerlink=\"/admin/sites\"]");
+    private final By groupsButtonLocator = By.cssSelector("[routerlink=\"/admin/groups\"]");
 
     private final DriverFactory driver;
 
@@ -14,10 +15,17 @@ public class P02_UsersAdminPage {
         this.driver = driver;
     }
 
-    @Step("Click on Institutions button")
-    public P03_InstitutionsAdminPage clickOnInstitutionsButton() {
-        LogsUtils.info("Clicking on Institutions button");
-        driver.elementUtils().clickOnElement(institutionsButtonLocator);
-        return new P03_InstitutionsAdminPage(driver);
+    @Step("Click on Sites button")
+    public P03_SitesAdminPage clickOnSitesButton() {
+        LogsUtils.info("Clicking on Sites button");
+        driver.elementUtils().clickOnElement(sitesButtonLocator);
+        return new P03_SitesAdminPage(driver);
+    }
+
+    @Step("Click on Groups button")
+    public P04_GroupsAdminPage clickOnGroupsButton() {
+        LogsUtils.info("Clicking on Groups button");
+        driver.elementUtils().clickOnElement(groupsButtonLocator);
+        return new P04_GroupsAdminPage(driver);
     }
 }

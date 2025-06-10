@@ -1,0 +1,8 @@
+{
+  "addNewSite": {
+    "siteName": "TestSiteName",
+    "hl7SiteName": "TestHL7Site",
+    "pacsCallingAETitle": "TestPACSCallingAETitle",
+    "mdtKeywords": "TestKeywords"
+  }
+}
