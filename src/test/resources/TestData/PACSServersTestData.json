@@ -1,0 +1,10 @@
+{
+  "addNewPACSServer": {
+    "name": "TestName",
+    "idAddress": "0.0.0.0",
+    "AETitle": "TestAETitle",
+    "port": "50",
+    "issuerOfPatientID": "TestIssuer",
+    "site": "Default Site"
+  }
+}

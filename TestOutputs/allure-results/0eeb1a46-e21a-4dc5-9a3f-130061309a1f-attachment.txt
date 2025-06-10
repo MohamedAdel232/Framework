@@ -1,0 +1,162 @@
+[DEBUG] - [10-06-2025 15:51:53] [main] [org.testng.TestNG] - suiteXmlPath: "C:\Users\mohamed.adel\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml"
+[INFO] - [10-06-2025 15:51:54] [main] [Listeners.TestNGListeners] - Test execution started
+[INFO] - [10-06-2025 15:51:54] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [10-06-2025 15:51:54] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [10-06-2025 15:51:54] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [10-06-2025 15:51:54] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [10-06-2025 15:51:54] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [10-06-2025 15:51:54] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [10-06-2025 15:51:54] [main] [Utilities.PropertiesUtils] - Loading properties file data
+[INFO] - [10-06-2025 15:51:54] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\allure-results
+[INFO] - [10-06-2025 15:51:54] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\allure-report
+[INFO] - [10-06-2025 15:51:54] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\Logs
+[INFO] - [10-06-2025 15:51:54] [main] [Utilities.FilesUtils] - Directory created: TestOutputs\Screenshots
+[INFO] - [10-06-2025 15:51:54] [main] [Utilities.FilesUtils] - Directory created: TestOutputs\ScreenRecordings
+[INFO] - [10-06-2025 15:51:54] [main] [org.testng.internal.Utils] - [TestNG] Running:
+  C:\Users\mohamed.adel\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml
+
+[INFO] - [10-06-2025 15:51:54] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-06-10_15-51-53.log
+[INFO] - [10-06-2025 15:51:56] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-06-10_15-51-53.log
+[DEBUG] - [10-06-2025 15:51:56] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewPACSServer']['name']
+[DEBUG] - [10-06-2025 15:51:56] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewPACSServer']['idAddress']
+[DEBUG] - [10-06-2025 15:51:56] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewPACSServer']['AETitle']
+[DEBUG] - [10-06-2025 15:51:56] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewPACSServer']['port']
+[DEBUG] - [10-06-2025 15:51:56] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewPACSServer']['issuerOfPatientID']
+[INFO] - [10-06-2025 15:51:56] [main] [Pages.P01_LoginPage] - Navigating to login page
+[INFO] - [10-06-2025 15:51:56] [main] [Utilities.BrowserUtils] - Navigating to URL: http://192.168.2.91/iCodeMDT/login
+[DEBUG] - [10-06-2025 15:51:57] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['powerAdminUsername']
+[INFO] - [10-06-2025 15:51:57] [main] [Pages.P01_LoginPage] - Entering username
+[INFO] - [10-06-2025 15:51:57] [main] [Utilities.ElementUtils] - Sending AutomationPowerAdmin to element: By.cssSelector: [formcontrolname="username"]
+[INFO] - [10-06-2025 15:51:57] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [10-06-2025 15:51:57] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [10-06-2025 15:51:58] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [10-06-2025 15:51:58] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [10-06-2025 15:51:58] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="username"]
+[DEBUG] - [10-06-2025 15:51:58] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['password']
+[INFO] - [10-06-2025 15:51:58] [main] [Pages.P01_LoginPage] - Entering password
+[INFO] - [10-06-2025 15:51:58] [main] [Utilities.ElementUtils] - Sending Automation1# to element: By.cssSelector: [formcontrolname="password"]
+[INFO] - [10-06-2025 15:51:58] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [10-06-2025 15:51:58] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [10-06-2025 15:51:58] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [10-06-2025 15:51:58] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [10-06-2025 15:51:58] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [10-06-2025 15:51:58] [main] [Pages.P01_LoginPage] - Clicking login button
+[INFO] - [10-06-2025 15:51:58] [main] [Utilities.ElementUtils] - Clicking on element: By.id: btnlogin
+[INFO] - [10-06-2025 15:51:58] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.id: btnlogin
+[INFO] - [10-06-2025 15:51:58] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: btnlogin
+[INFO] - [10-06-2025 15:51:58] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: btnlogin
+[INFO] - [10-06-2025 15:51:58] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.id: btnlogin
+[INFO] - [10-06-2025 15:51:58] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: btnlogin
+[INFO] - [10-06-2025 15:51:58] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: btnlogin
+[INFO] - [10-06-2025 15:51:58] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Continue"]
+[INFO] - [10-06-2025 15:51:58] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Continue"]
+[INFO] - [10-06-2025 15:51:58] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Continue"]
+[INFO] - [10-06-2025 15:51:58] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Continue"]
+[INFO] - [10-06-2025 15:52:03] [main] [Pages.P01_LoginPage] - No session to terminate
+[INFO] - [10-06-2025 15:52:03] [main] [Pages.P01_LoginPage] - Asserting login with valid admin credentials
+[INFO] - [10-06-2025 15:52:03] [main] [Utilities.BrowserUtils] - Current URL is: http://192.168.2.91/iCodeMDT/admin/users
+[INFO] - [10-06-2025 15:52:03] [main] [Utilities.SoftAssertActionsUtils] - Asserting page URL
+[INFO] - [10-06-2025 15:52:03] [main] [Utilities.SoftAssertActionsUtils] - Expected URL: http://192.168.2.91/iCodeMDT/admin/users
+[INFO] - [10-06-2025 15:52:03] [main] [Utilities.SoftAssertActionsUtils] - Actual URL: http://192.168.2.91/iCodeMDT/admin/users
+[INFO] - [10-06-2025 15:52:03] [main] [Utilities.WaitUtils] - Waiting for page to load with URL: http://192.168.2.91/iCodeMDT/admin/users
+[INFO] - [10-06-2025 15:52:03] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [10-06-2025 15:52:03] [main] [Pages.P02_UsersAdminPage] - Clicking on Configurations button
+[INFO] - [10-06-2025 15:52:03] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: //span[.="Configurations"] /..
+[INFO] - [10-06-2025 15:52:03] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: //span[.="Configurations"] /..
+[INFO] - [10-06-2025 15:52:03] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //span[.="Configurations"] /..
+[INFO] - [10-06-2025 15:52:03] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //span[.="Configurations"] /..
+[INFO] - [10-06-2025 15:52:03] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //span[.="Configurations"] /..
+[INFO] - [10-06-2025 15:52:03] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[.="Configurations"] /..
+[INFO] - [10-06-2025 15:52:03] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[.="Configurations"] /..
+[INFO] - [10-06-2025 15:52:04] [main] [Pages.P02_UsersAdminPage] - Clicking on PACS Servers button
+[INFO] - [10-06-2025 15:52:04] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [routerlink="/admin/pacsservers"]
+[INFO] - [10-06-2025 15:52:04] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [routerlink="/admin/pacsservers"]
+[INFO] - [10-06-2025 15:52:04] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [routerlink="/admin/pacsservers"]
+[INFO] - [10-06-2025 15:52:04] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [routerlink="/admin/pacsservers"]
+[INFO] - [10-06-2025 15:52:04] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [routerlink="/admin/pacsservers"]
+[INFO] - [10-06-2025 15:52:04] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [routerlink="/admin/pacsservers"]
+[INFO] - [10-06-2025 15:52:04] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [routerlink="/admin/pacsservers"]
+[INFO] - [10-06-2025 15:52:04] [main] [Pages.P06_PACSServersAdminPage] - Clicking on Add button
+[INFO] - [10-06-2025 15:52:04] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="New PACS Server"]
+[INFO] - [10-06-2025 15:52:04] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="New PACS Server"]
+[INFO] - [10-06-2025 15:52:04] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="New PACS Server"]
+[INFO] - [10-06-2025 15:52:04] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="New PACS Server"]
+[INFO] - [10-06-2025 15:52:04] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="New PACS Server"]
+[INFO] - [10-06-2025 15:52:04] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="New PACS Server"]
+[INFO] - [10-06-2025 15:52:04] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="New PACS Server"]
+[INFO] - [10-06-2025 15:52:04] [main] [Pages.P06_PACSServersAdminPage] - Entering PACS server name: TestName-2025-06-10_15-51-56
+[INFO] - [10-06-2025 15:52:04] [main] [Utilities.ElementUtils] - Sending TestName-2025-06-10_15-51-56 to element: By.cssSelector: [formcontrolname='name']
+[INFO] - [10-06-2025 15:52:04] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname='name']
+[INFO] - [10-06-2025 15:52:04] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname='name']
+[INFO] - [10-06-2025 15:52:04] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname='name']
+[INFO] - [10-06-2025 15:52:04] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname='name']
+[INFO] - [10-06-2025 15:52:04] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname='name']
+[INFO] - [10-06-2025 15:52:04] [main] [Pages.P06_PACSServersAdminPage] - Entering PACS server IP address: 0.0.0.0
+[INFO] - [10-06-2025 15:52:04] [main] [Utilities.ElementUtils] - Sending 0.0.0.0 to element: By.cssSelector: [formcontrolname='ip']
+[INFO] - [10-06-2025 15:52:04] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname='ip']
+[INFO] - [10-06-2025 15:52:04] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname='ip']
+[INFO] - [10-06-2025 15:52:04] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname='ip']
+[INFO] - [10-06-2025 15:52:04] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname='ip']
+[INFO] - [10-06-2025 15:52:04] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname='ip']
+[INFO] - [10-06-2025 15:52:04] [main] [Pages.P06_PACSServersAdminPage] - Entering AE Title: TestAETitle
+[INFO] - [10-06-2025 15:52:04] [main] [Utilities.ElementUtils] - Sending TestAETitle to element: By.cssSelector: [formcontrolname='aeTitle']
+[INFO] - [10-06-2025 15:52:04] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname='aeTitle']
+[INFO] - [10-06-2025 15:52:04] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname='aeTitle']
+[INFO] - [10-06-2025 15:52:05] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname='aeTitle']
+[INFO] - [10-06-2025 15:52:05] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname='aeTitle']
+[INFO] - [10-06-2025 15:52:05] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname='aeTitle']
+[INFO] - [10-06-2025 15:52:05] [main] [Pages.P06_PACSServersAdminPage] - Entering port: 50
+[INFO] - [10-06-2025 15:52:05] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [formcontrolname="port"]
+[INFO] - [10-06-2025 15:52:05] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [formcontrolname="port"]
+[INFO] - [10-06-2025 15:52:05] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="port"]
+[INFO] - [10-06-2025 15:52:05] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="port"]
+[INFO] - [10-06-2025 15:52:05] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="port"]
+[INFO] - [10-06-2025 15:52:05] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="port"]
+[INFO] - [10-06-2025 15:52:05] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="port"]
+[INFO] - [10-06-2025 15:52:05] [main] [Pages.P06_PACSServersAdminPage] - Entering issuer of patient ID: TestIssuer
+[INFO] - [10-06-2025 15:52:05] [main] [Utilities.ElementUtils] - Sending TestIssuer to element: By.cssSelector: [formcontrolname="patientIDIssuer"]
+[INFO] - [10-06-2025 15:52:05] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="patientIDIssuer"]
+[INFO] - [10-06-2025 15:52:05] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="patientIDIssuer"]
+[INFO] - [10-06-2025 15:52:05] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="patientIDIssuer"]
+[INFO] - [10-06-2025 15:52:05] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="patientIDIssuer"]
+[INFO] - [10-06-2025 15:52:05] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="patientIDIssuer"]
+[INFO] - [10-06-2025 15:52:05] [main] [Pages.P06_PACSServersAdminPage] - Selecting site
+[INFO] - [10-06-2025 15:52:05] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [formcontrolname="sites"]
+[INFO] - [10-06-2025 15:52:05] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [formcontrolname="sites"]
+[INFO] - [10-06-2025 15:52:05] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="sites"]
+[INFO] - [10-06-2025 15:52:05] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="sites"]
+[INFO] - [10-06-2025 15:52:05] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="sites"]
+[INFO] - [10-06-2025 15:52:05] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="sites"]
+[INFO] - [10-06-2025 15:52:05] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="sites"]
+[INFO] - [10-06-2025 15:52:05] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: (//ul[@role="listbox"] //li)[2]
+[INFO] - [10-06-2025 15:52:05] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: (//ul[@role="listbox"] //li)[2]
+[INFO] - [10-06-2025 15:52:05] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: (//ul[@role="listbox"] //li)[2]
+[INFO] - [10-06-2025 15:52:05] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: (//ul[@role="listbox"] //li)[2]
+[INFO] - [10-06-2025 15:52:06] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: (//ul[@role="listbox"] //li)[2]
+[INFO] - [10-06-2025 15:52:06] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: (//ul[@role="listbox"] //li)[2]
+[INFO] - [10-06-2025 15:52:06] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: (//ul[@role="listbox"] //li)[2]
+[INFO] - [10-06-2025 15:52:06] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: (//ul[@role="listbox"] //li)[2]
+[INFO] - [10-06-2025 15:52:06] [main] [Pages.P06_PACSServersAdminPage] - Clicking on Active checkbox
+[INFO] - [10-06-2025 15:52:06] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Active PACS Server"]
+[INFO] - [10-06-2025 15:52:06] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Active PACS Server"]
+[INFO] - [10-06-2025 15:52:06] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Active PACS Server"]
+[INFO] - [10-06-2025 15:52:06] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Active PACS Server"]
+[INFO] - [10-06-2025 15:52:06] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Active PACS Server"]
+[INFO] - [10-06-2025 15:52:06] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Active PACS Server"]
+[INFO] - [10-06-2025 15:52:06] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Active PACS Server"]
+[INFO] - [10-06-2025 15:52:06] [main] [Pages.P06_PACSServersAdminPage] - Clicking on Save button
+[INFO] - [10-06-2025 15:52:06] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Save"]
+[INFO] - [10-06-2025 15:52:06] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Save"]
+[INFO] - [10-06-2025 15:52:06] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Save"]
+[INFO] - [10-06-2025 15:52:06] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Save"]
+[INFO] - [10-06-2025 15:52:06] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Save"]
+[INFO] - [10-06-2025 15:52:06] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Save"]
+[INFO] - [10-06-2025 15:52:06] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Save"]
+[INFO] - [10-06-2025 15:52:06] [main] [Pages.P06_PACSServersAdminPage] - Asserting visibility of PACS Server Added Alert
+[INFO] - [10-06-2025 15:52:06] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.cssSelector: [aria-label="PACS server has been added successfully"]
+[INFO] - [10-06-2025 15:52:06] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [aria-label="PACS server has been added successfully"]
+[INFO] - [10-06-2025 15:52:06] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [aria-label="PACS server has been added successfully"]
+[INFO] - [10-06-2025 15:52:11] [main] [Utilities.ScreenRecorderUtils] - Recording stopped
+[ERROR] - [10-06-2025 15:52:11] [main] [Utilities.ScreenRecorderUtils] - Error stopping screen recording: Cannot invoke "org.monte.screenrecorder.ScreenRecorder.stop()" because "Utilities.ScreenRecorderUtils.screenRecorder" is null
+[INFO] - [10-06-2025 15:52:12] [main] [Utilities.ScreenshotsUtils] - Screenshot taken: TestOutputs\Screenshots\failed-validPacsServersTC-2025-06-10_15-52-12.png
+[INFO] - [10-06-2025 15:52:12] [main] [Utilities.AllureUtils] - Screenshot attached to Allure report: TestOutputs\Screenshots\failed-validPacsServersTC-2025-06-10_15-52-12.png
