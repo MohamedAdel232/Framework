@@ -1,7 +1,0 @@
-{
-  "addNewSystemTrigger": {
-    "systemTriggerName": "TestName",
-    "orderStatus": "TestOrderStatus",
-    "orderControl": "TestOrderControl"
-  }
-} 

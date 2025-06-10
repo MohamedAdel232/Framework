@@ -13,14 +13,14 @@ public class TC01_LoginTest {
     JsonUtils loginTestData;
 
     @Test
-    public void loginWithValidCredentialsTC() {
+    public void loginWithValidAdminCredentialsTC() {
         new P01_LoginPage(driver)
                 .navigateToLoginPage(PropertiesUtils.getPropertyValue("LoginPageUrl"))
-                .enterUsername(loginTestData.getJsonData("validLoginCredentials.radiologistUsername"))
+                .enterUsername(loginTestData.getJsonData("validLoginCredentials.powerAdminUsername"))
                 .enterPassword(loginTestData.getJsonData("validLoginCredentials.password"))
                 .clickLoginButton()
                 .terminateSession()
-                .assertLoginWithValidCredentials();
+                .assertLoginWithValidAdminCredentials();
     }
 
     @BeforeClass

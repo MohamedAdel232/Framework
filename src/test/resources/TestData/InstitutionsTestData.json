@@ -1,0 +1,10 @@
+{
+  "addNewInstitutions": {
+    "institutionName": "TestName",
+    "studyExpiration": "1",
+    "expiration": "1",
+    "attempts": "1",
+    "resendLimit": "1",
+    "otpMessage": "Test OTP Message"
+  }
+}

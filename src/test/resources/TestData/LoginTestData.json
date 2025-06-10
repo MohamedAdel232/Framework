@@ -1,10 +1,6 @@
 {
   "validLoginCredentials": {
-    "powerAdminUsername": "AutomationPowerAdmin",
-    "radiologistUsername": "AutomationRadiologist",
-    "technologistUsername": "AutomationTechnologist",
-    "unitAssistantUsername": "AutomationUnitAssistant",
-    "nurseUsername": "AutomationNurse",
+    "powerAdminUsername": "AutomationPowerAdmin@mail.com",
     "password": "Automation1#"
   }
 }

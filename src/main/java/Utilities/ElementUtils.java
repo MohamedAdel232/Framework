@@ -45,6 +45,13 @@ public class ElementUtils {
         findElement(locator).sendKeys(data);
     }
 
+    public void clearElement(By locator) {
+        LogsUtils.info("Clearing element:", locator.toString());
+        waitUtils.waitForElementToBeVisible(locator);
+        scrollToElement(locator);
+        findElement(locator).clear();
+    }
+
     public String getDataFromElement(By locator) {
         LogsUtils.info("Getting data from element:", locator.toString());
         waitUtils.waitForElementToBeVisible(locator);
