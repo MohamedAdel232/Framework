@@ -14,11 +14,12 @@ public class P06_PACSServersAdminPage {
     private final By aeTitleFieldLocator = By.cssSelector("[formcontrolname='aeTitle']");
     private final By portFieldLocator = By.cssSelector("[formcontrolname=\"port\"]");
     private final By issuerOfPatientIdFieldLocator = By.cssSelector("[formcontrolname=\"patientIDIssuer\"]");
-    private final By siteFieldLocator = By.cssSelector("[formcontrolname=\"sites\"]");
+    private final By siteDropdownLocator = By.cssSelector("[formcontrolname=\"sites\"]");
     private final By activeCheckboxLocator = By.cssSelector("[title=\"Active PACS Server\"]");
     private final By saveButtonLocator = By.cssSelector("[title=\"Save\"]");
-    private final By yesButtonLocator = By.cssSelector("[title=\"Yes\"]");
-    private final By cancelButtonLocator = By.cssSelector("[aria-label=\"Close\"]");
+    private final By okButtonLocator = By.xpath("//button[.=\"OK\"]");
+    private final By yesButtonLocator = By.xpath("//button [.=\"Yes\"]");
+    private final By cancelButtonLocator = By.cssSelector("[title=\"Close\"]");
     private final By pacsServerNameSearchFieldLocator = By.cssSelector("input[aria-label=\"Name Filter\"]");
 
     private final By pacsServerAddedMessageLocator = By.xpath("//p [.=\"PACS server has been added successfully\"]");
@@ -84,9 +85,16 @@ public class P06_PACSServersAdminPage {
     @Step("Select site")
     public P06_PACSServersAdminPage selectSite() {
         LogsUtils.info("Selecting site");
-        driver.elementUtils().clickOnElement(siteFieldLocator);
+        driver.elementUtils().clickOnElement(siteDropdownLocator);
         By siteOptionLocator = By.xpath("(//ul[@role=\"listbox\"] //li)[2]");
         driver.elementUtils().clickOnElement(siteOptionLocator);
+        return this;
+    }
+
+    @Step("Click on Site Dropdown")
+    public P06_PACSServersAdminPage clickOnSiteDropdown() {
+        LogsUtils.info("Clicking on Site Dropdown");
+        driver.elementUtils().clickOnElement(siteDropdownLocator);
         return this;
     }
 
@@ -138,6 +146,13 @@ public class P06_PACSServersAdminPage {
         LogsUtils.info("Clicking on Delete button for PACS server: " + pacsServerName);
         By deleteButtonLocator = By.xpath("//td[.='" + pacsServerName + "']/following-sibling::td//a[@title='Delete']");
         driver.elementUtils().clickOnElement(deleteButtonLocator);
+        return this;
+    }
+
+    @Step("Click on OK Button")
+    public P06_PACSServersAdminPage clickOnOkButton() {
+        LogsUtils.info("Clicking on OK Button");
+        driver.elementUtils().clickOnElement(okButtonLocator);
         return this;
     }
 

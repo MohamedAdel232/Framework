@@ -48,12 +48,14 @@ public class TC06_PACSServersAdminTest {
         ;
 
         new P06_PACSServersAdminPage(driver)
+                //.clickOnOkButton()
                 .searchForPacsServer(pacsServerName)
                 .clickOnEditButton(pacsServerName)
                 .clickOnSaveButton()
                 .assertVisibilityOfPacsServerEditedAlert();
 
         new P06_PACSServersAdminPage(driver)
+                .clickOnOkButton()
                 .searchForPacsServer(pacsServerName)
                 .clickOnDeleteButton(pacsServerName)
                 .clickOnYesButton()
@@ -61,7 +63,7 @@ public class TC06_PACSServersAdminTest {
     }
 
     @Test
-    public void invalidPacsServersTC() throws InterruptedException {
+    public void invalidPacsServersTC() {
         String pacsServerName = pacsServersTestData.getJsonData("addNewPACSServer.name") + "-" + TimestampUtils.getTimestamp();
         String ipAddress = pacsServersTestData.getJsonData("addNewPACSServer.idAddress");
         String aeTitle = pacsServersTestData.getJsonData("addNewPACSServer.AETitle");
@@ -80,25 +82,25 @@ public class TC06_PACSServersAdminTest {
                 .clickOnConfigurationsButton()
                 .clickOnPACSServersButton()
                 .clickOnAddButton()
+                .enterName("")
                 .enterIPAddress(ipAddress)
                 .enterAETitle(aeTitle)
                 .enterPort(port)
                 .enterIssuerOfPatientId(issuerOfPatientID)
                 .selectSite()
                 .clickOnActiveCheckbox()
-                .clickOnSaveButton()
                 .assertVisibilityOfEmptyNameFieldMessage();
 
         new P06_PACSServersAdminPage(driver)
                 .clickOnCancelButton()
                 .clickOnAddButton()
                 .enterName(pacsServerName)
+                .enterIPAddress("")
                 .enterAETitle(aeTitle)
                 .enterPort(port)
                 .enterIssuerOfPatientId(issuerOfPatientID)
                 .selectSite()
                 .clickOnActiveCheckbox()
-                .clickOnSaveButton()
                 .assertVisibilityOfEmptyIPAddressFieldMessage();
 
         new P06_PACSServersAdminPage(driver)
@@ -106,11 +108,11 @@ public class TC06_PACSServersAdminTest {
                 .clickOnAddButton()
                 .enterName(pacsServerName)
                 .enterIPAddress(ipAddress)
+                .enterAETitle("")
                 .enterPort(port)
                 .enterIssuerOfPatientId(issuerOfPatientID)
                 .selectSite()
                 .clickOnActiveCheckbox()
-                .clickOnSaveButton()
                 .assertVisibilityOfEmptyAETitleFieldMessage();
 
         new P06_PACSServersAdminPage(driver)
@@ -119,22 +121,22 @@ public class TC06_PACSServersAdminTest {
                 .enterName(pacsServerName)
                 .enterIPAddress(ipAddress)
                 .enterAETitle(aeTitle)
+                .enterPort("")
                 .enterIssuerOfPatientId(issuerOfPatientID)
                 .selectSite()
                 .clickOnActiveCheckbox()
-                .clickOnSaveButton()
                 .assertVisibilityOfEmptyPortFieldMessage();
 
         new P06_PACSServersAdminPage(driver)
                 .clickOnCancelButton()
                 .clickOnAddButton()
+                .clickOnSiteDropdown()
                 .enterName(pacsServerName)
                 .enterIPAddress(ipAddress)
                 .enterAETitle(aeTitle)
                 .enterPort(port)
                 .enterIssuerOfPatientId(issuerOfPatientID)
                 .clickOnActiveCheckbox()
-                .clickOnSaveButton()
                 .assertVisibilityOfEmptySiteFieldMessage();
     }
 
