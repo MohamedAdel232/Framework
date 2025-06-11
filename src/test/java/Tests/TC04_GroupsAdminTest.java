@@ -82,7 +82,7 @@ public class TC04_GroupsAdminTest {
                 .clickOnAddNewGroupButton()
                 .enterGroupName(" ")
                 .clickOnSiteDropdown()
-                .assertVisibilityOfSpacesOnlySiteNameMessage();
+                .assertVisibilityOfSpacesOnlyGroupNameMessage();
     }
 
     @BeforeClass

@@ -158,12 +158,12 @@ public class P04_GroupsAdminPage {
         );
     }
 
-    @Step("Assert visibility of Spaces Only Site Name Message")
-    public void assertVisibilityOfSpacesOnlySiteNameMessage() {
-        LogsUtils.info("Asserting visibility of Spaces Only Site Name Message");
+    @Step("Assert visibility of Spaces Only Group Name Message")
+    public void assertVisibilityOfSpacesOnlyGroupNameMessage() {
+        LogsUtils.info("Asserting visibility of Spaces Only Group Name Message");
         SoftAssertUtils.softAssertTrue(
                 driver.elementUtils().verifyVisibilityOfElement(spacesOnlyGroupNameMessageLocator),
-                "Spaces only site name message not visible"
+                "Spaces only group name message not visible"
         );
     }
 } 

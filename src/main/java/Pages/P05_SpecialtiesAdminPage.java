@@ -8,7 +8,7 @@ import org.openqa.selenium.By;
 
 public class P05_SpecialtiesAdminPage {
     private final By addNewSpecialtyButtonLocator = By.cssSelector("[title=\"Add new specialty\"]");
-    private final By specialtyNameTextFieldLocator = By.cssSelector("[formcontrolname=\"name\"]");
+    private final By nameTextFieldLocator = By.cssSelector("[formcontrolname=\"name\"]");
     private final By siteDropdownLocator = By.cssSelector("[formcontrolname=\"sites\"]");
     private final By saveButtonLocator = By.cssSelector("[title=\"Save\"]");
     private final By specialtyNameSearchFieldLocator = By.cssSelector("input[aria-label=\"Name Filter\"]");
@@ -22,6 +22,8 @@ public class P05_SpecialtiesAdminPage {
 
     private final By emptySpecialtyNameMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" Name is required \"]");
     private final By emptySiteMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" Please select at least one site \"]");
+
+    private final By spacesOnlySpecialtyNameMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" Name can't contain only white space \"]");
 
     private final DriverFactory driver;
 
@@ -39,7 +41,7 @@ public class P05_SpecialtiesAdminPage {
     @Step("Enter Specialty Name: {specialtyName}")
     public P05_SpecialtiesAdminPage enterSpecialtyName(String specialtyName) {
         LogsUtils.info("Entering Specialty Name: " + specialtyName);
-        driver.elementUtils().sendDataToElement(specialtyNameTextFieldLocator, specialtyName);
+        driver.elementUtils().sendDataToElement(nameTextFieldLocator, specialtyName);
         return this;
     }
 
@@ -152,6 +154,15 @@ public class P05_SpecialtiesAdminPage {
         SoftAssertUtils.softAssertTrue(
                 driver.elementUtils().verifyVisibilityOfElement(emptySiteMessageLocator),
                 "Empty site message not visible"
+        );
+    }
+
+    @Step("Assert visibility of Spaces Only Specialties Name Message")
+    public void assertVisibilityOfSpacesOnlySiteNameMessage() {
+        LogsUtils.info("Asserting visibility of Spaces Only Specialties Name Message");
+        SoftAssertUtils.softAssertTrue(
+                driver.elementUtils().verifyVisibilityOfElement(spacesOnlySpecialtyNameMessageLocator),
+                "Spaces only specialties name message not visible"
         );
     }
 } 

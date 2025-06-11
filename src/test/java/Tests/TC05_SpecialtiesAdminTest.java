@@ -78,6 +78,13 @@ public class TC05_SpecialtiesAdminTest {
                 .clickOnSiteDropdown()
                 .enterSpecialtyName(specialtyName)
                 .assertVisibilityOfEmptySiteMessage();
+
+        new P05_SpecialtiesAdminPage(driver)
+                .clickOnCloseButton()
+                .clickOnAddNewSpecialtyButton()
+                .enterSpecialtyName(" ")
+                .clickOnSiteDropdown()
+                .assertVisibilityOfSpacesOnlySiteNameMessage();
     }
 
     @BeforeClass
