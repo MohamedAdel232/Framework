@@ -32,6 +32,11 @@ public class P06_PACSServersAdminPage {
     private final By emptyPortFieldMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" Port no. is required \"]");
     private final By emptySiteFieldMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" Please select at least one site \"]");
 
+    private final By spacesOnlyNameFieldMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" Name cannot contain spaces \"]");
+    private final By spacesOnlyIPAddressFieldMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" IP address cannot contain spaces \"]");
+    private final By spacesOnlyAETitleFieldMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" AE title cannot contain spaces \"]");
+    private final By spacesOnlyIssuerOfPatientIDFieldMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" Issuer of patient ID cannot contain spaces \"]");
+
     private final DriverFactory driver;
 
     public P06_PACSServersAdminPage(DriverFactory driver) {
@@ -225,6 +230,42 @@ public class P06_PACSServersAdminPage {
         SoftAssertUtils.softAssertTrue(
                 driver.elementUtils().verifyVisibilityOfElement(emptySiteFieldMessageLocator),
                 "Empty site field message not visible"
+        );
+    }
+
+    @Step("Assert visibility of spaces only name field message")
+    public void assertVisibilityOfSpacesOnlyNameFieldMessage() {
+        LogsUtils.info("Asserting visibility of spaces only name field message");
+        SoftAssertUtils.softAssertTrue(
+                driver.elementUtils().verifyVisibilityOfElement(spacesOnlyNameFieldMessageLocator),
+                "Spaces only name field message not visible"
+        );
+    }
+
+    @Step("Assert visibility of spaces only IP address field message")
+    public void assertVisibilityOfSpacesOnlyIPAddressFieldMessage() {
+        LogsUtils.info("Asserting visibility of spaces only IP address field message");
+        SoftAssertUtils.softAssertTrue(
+                driver.elementUtils().verifyVisibilityOfElement(spacesOnlyIPAddressFieldMessageLocator),
+                "Spaces only IP address field message not visible"
+        );
+    }
+
+    @Step("Assert visibility of spaces only AE Title field message")
+    public void assertVisibilityOfSpacesOnlyAETitleFieldMessage() {
+        LogsUtils.info("Asserting visibility of spaces only AE Title field message");
+        SoftAssertUtils.softAssertTrue(
+                driver.elementUtils().verifyVisibilityOfElement(spacesOnlyAETitleFieldMessageLocator),
+                "Spaces only AE Title field message not visible"
+        );
+    }
+
+    @Step("Assert visibility of spaces only issuer of patient ID field message")
+    public void assertVisibilityOfSpacesOnlyIssuerOfPatientIDFieldMessage() {
+        LogsUtils.info("Asserting visibility of spaces only issuer of patient ID field message");
+        SoftAssertUtils.softAssertTrue(
+                driver.elementUtils().verifyVisibilityOfElement(spacesOnlyIssuerOfPatientIDFieldMessageLocator),
+                "Spaces only issuer of patient ID field message not visible"
         );
     }
 }

@@ -138,6 +138,54 @@ public class TC06_PACSServersAdminTest {
                 .enterIssuerOfPatientId(issuerOfPatientID)
                 .clickOnActiveCheckbox()
                 .assertVisibilityOfEmptySiteFieldMessage();
+
+        new P06_PACSServersAdminPage(driver)
+                .clickOnCancelButton()
+                .clickOnAddButton()
+                .enterName(" ")
+                .enterIPAddress(ipAddress)
+                .enterAETitle(aeTitle)
+                .enterPort(port)
+                .enterIssuerOfPatientId(issuerOfPatientID)
+                .selectSite()
+                .clickOnActiveCheckbox()
+                .assertVisibilityOfSpacesOnlyNameFieldMessage();
+
+        new P06_PACSServersAdminPage(driver)
+                .clickOnCancelButton()
+                .clickOnAddButton()
+                .enterName(pacsServerName)
+                .enterIPAddress(" ")
+                .enterAETitle(aeTitle)
+                .enterPort(port)
+                .enterIssuerOfPatientId(issuerOfPatientID)
+                .selectSite()
+                .clickOnActiveCheckbox()
+                .assertVisibilityOfSpacesOnlyIPAddressFieldMessage();
+
+        new P06_PACSServersAdminPage(driver)
+                .clickOnCancelButton()
+                .clickOnAddButton()
+                .enterName(pacsServerName)
+                .enterIPAddress(ipAddress)
+                .enterAETitle(" ")
+                .enterPort(port)
+                .enterIssuerOfPatientId(issuerOfPatientID)
+                .selectSite()
+                .clickOnActiveCheckbox()
+                .assertVisibilityOfSpacesOnlyAETitleFieldMessage();
+
+        new P06_PACSServersAdminPage(driver)
+                .clickOnCancelButton()
+                .clickOnAddButton()
+                .enterName(pacsServerName)
+                .enterIPAddress(ipAddress)
+                .enterAETitle(aeTitle)
+                .enterPort(port)
+                .enterIssuerOfPatientId(" ")
+                .selectSite()
+                .clickOnActiveCheckbox()
+                .assertVisibilityOfSpacesOnlyIssuerOfPatientIDFieldMessage();
     }
 
     @BeforeClass
