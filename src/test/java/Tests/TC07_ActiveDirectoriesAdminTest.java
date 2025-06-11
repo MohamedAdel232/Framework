@@ -105,6 +105,15 @@ public class TC07_ActiveDirectoriesAdminTest {
                 .enterUrl(url)
                 .checkActiveCheckbox()
                 .assertVisibilityOfEmptySiteMessage();
+
+        new P07_ActiveDirectoriesAdminPage(driver)
+                .clickOnCloseButton()
+                .clickOnAddNewActiveDirectoryButton()
+                .clickOnSiteDropdown()
+                .enterName(" ")
+                .enterUrl(url)
+                .checkActiveCheckbox()
+                .assertVisibilityOfSpacesOnlyNameFieldMessage();
     }
 
     @BeforeClass

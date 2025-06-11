@@ -26,6 +26,7 @@ public class P07_ActiveDirectoriesAdminPage {
     private final By emptyUrlMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" URL is required \"]");
     private final By invalidUrlMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" Invalid URL \"]");
     private final By emptySiteMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" Select at least one site \"]");
+    private final By spacesOnlyNameFieldMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" Name cannot contain spaces only \"]");
 
     private final DriverFactory driver;
 
@@ -188,6 +189,15 @@ public class P07_ActiveDirectoriesAdminPage {
         SoftAssertUtils.softAssertTrue(
                 driver.elementUtils().verifyVisibilityOfElement(emptySiteMessageLocator),
                 "Empty site message not visible"
+        );
+    }
+
+    @Step("Assert visibility of spaces only name field message")
+    public void assertVisibilityOfSpacesOnlyNameFieldMessage() {
+        LogsUtils.info("Asserting visibility of spaces only name field message");
+        SoftAssertUtils.softAssertTrue(
+                driver.elementUtils().verifyVisibilityOfElement(spacesOnlyNameFieldMessageLocator),
+                "Spaces only name field message not visible"
         );
     }
 } 
