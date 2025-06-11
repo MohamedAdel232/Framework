@@ -1,0 +1,192 @@
+[DEBUG] - [11-06-2025 11:14:22] [main] [org.testng.TestNG] - suiteXmlPath: "C:\Users\mohamed.adel\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml"
+[INFO] - [11-06-2025 11:14:23] [main] [Listeners.TestNGListeners] - Test execution started
+[INFO] - [11-06-2025 11:14:23] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [11-06-2025 11:14:23] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [11-06-2025 11:14:23] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [11-06-2025 11:14:23] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [11-06-2025 11:14:23] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [11-06-2025 11:14:23] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [11-06-2025 11:14:23] [main] [Utilities.PropertiesUtils] - Loading properties file data
+[INFO] - [11-06-2025 11:14:24] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\allure-results
+[INFO] - [11-06-2025 11:14:24] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\allure-report
+[INFO] - [11-06-2025 11:14:24] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\Logs
+[INFO] - [11-06-2025 11:14:24] [main] [Utilities.FilesUtils] - Directory created: TestOutputs\Screenshots
+[INFO] - [11-06-2025 11:14:24] [main] [Utilities.FilesUtils] - Directory created: TestOutputs\ScreenRecordings
+[INFO] - [11-06-2025 11:14:24] [main] [org.testng.internal.Utils] - [TestNG] Running:
+  C:\Users\mohamed.adel\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml
+
+[INFO] - [11-06-2025 11:14:24] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-06-11_11-14-21.log
+[INFO] - [11-06-2025 11:14:27] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-06-11_11-14-21.log
+[DEBUG] - [11-06-2025 11:14:28] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewGroup']['groupName']
+[INFO] - [11-06-2025 11:14:28] [main] [Pages.P01_LoginPage] - Navigating to login page
+[INFO] - [11-06-2025 11:14:28] [main] [Utilities.BrowserUtils] - Navigating to URL: http://192.168.2.91/iCodeMDT/login
+[DEBUG] - [11-06-2025 11:14:29] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['powerAdminUsername']
+[INFO] - [11-06-2025 11:14:29] [main] [Pages.P01_LoginPage] - Entering username
+[INFO] - [11-06-2025 11:14:29] [main] [Utilities.ElementUtils] - Sending AutomationPowerAdmin to element: By.cssSelector: [formcontrolname="username"]
+[INFO] - [11-06-2025 11:14:29] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [11-06-2025 11:14:29] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [11-06-2025 11:14:29] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [11-06-2025 11:14:29] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [11-06-2025 11:14:29] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="username"]
+[DEBUG] - [11-06-2025 11:14:29] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['password']
+[INFO] - [11-06-2025 11:14:29] [main] [Pages.P01_LoginPage] - Entering password
+[INFO] - [11-06-2025 11:14:29] [main] [Utilities.ElementUtils] - Sending Automation1# to element: By.cssSelector: [formcontrolname="password"]
+[INFO] - [11-06-2025 11:14:29] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [11-06-2025 11:14:29] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [11-06-2025 11:14:29] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [11-06-2025 11:14:29] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [11-06-2025 11:14:29] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [11-06-2025 11:14:30] [main] [Pages.P01_LoginPage] - Clicking login button
+[INFO] - [11-06-2025 11:14:30] [main] [Utilities.ElementUtils] - Clicking on element: By.id: btnlogin
+[INFO] - [11-06-2025 11:14:30] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.id: btnlogin
+[INFO] - [11-06-2025 11:14:30] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: btnlogin
+[INFO] - [11-06-2025 11:14:30] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: btnlogin
+[INFO] - [11-06-2025 11:14:30] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.id: btnlogin
+[INFO] - [11-06-2025 11:14:30] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: btnlogin
+[INFO] - [11-06-2025 11:14:30] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: btnlogin
+[INFO] - [11-06-2025 11:14:30] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Continue"]
+[INFO] - [11-06-2025 11:14:30] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Continue"]
+[INFO] - [11-06-2025 11:14:30] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Continue"]
+[INFO] - [11-06-2025 11:14:30] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Continue"]
+[INFO] - [11-06-2025 11:14:35] [main] [Pages.P01_LoginPage] - No session to terminate
+[INFO] - [11-06-2025 11:14:35] [main] [Pages.P01_LoginPage] - Asserting login with valid admin credentials
+[INFO] - [11-06-2025 11:14:35] [main] [Utilities.BrowserUtils] - Current URL is: http://192.168.2.91/iCodeMDT/admin/users
+[INFO] - [11-06-2025 11:14:35] [main] [Utilities.SoftAssertActionsUtils] - Asserting page URL
+[INFO] - [11-06-2025 11:14:35] [main] [Utilities.SoftAssertActionsUtils] - Expected URL: http://192.168.2.91/iCodeMDT/admin/users
+[INFO] - [11-06-2025 11:14:35] [main] [Utilities.SoftAssertActionsUtils] - Actual URL: http://192.168.2.91/iCodeMDT/admin/users
+[INFO] - [11-06-2025 11:14:35] [main] [Utilities.WaitUtils] - Waiting for page to load with URL: http://192.168.2.91/iCodeMDT/admin/users
+[INFO] - [11-06-2025 11:14:35] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [11-06-2025 11:14:36] [main] [Pages.P02_UsersAdminPage] - Clicking on Groups button
+[INFO] - [11-06-2025 11:14:36] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [routerlink="/admin/groups"]
+[INFO] - [11-06-2025 11:14:36] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [routerlink="/admin/groups"]
+[INFO] - [11-06-2025 11:14:36] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [routerlink="/admin/groups"]
+[INFO] - [11-06-2025 11:14:36] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [routerlink="/admin/groups"]
+[INFO] - [11-06-2025 11:14:37] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [routerlink="/admin/groups"]
+[INFO] - [11-06-2025 11:14:37] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [routerlink="/admin/groups"]
+[INFO] - [11-06-2025 11:14:37] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [routerlink="/admin/groups"]
+[INFO] - [11-06-2025 11:14:38] [main] [Pages.P04_GroupsAdminPage] - Clicking on Add New Group Button
+[INFO] - [11-06-2025 11:14:38] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Add new group"]
+[INFO] - [11-06-2025 11:14:38] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Add new group"]
+[INFO] - [11-06-2025 11:14:38] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Add new group"]
+[INFO] - [11-06-2025 11:14:38] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Add new group"]
+[INFO] - [11-06-2025 11:14:38] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Add new group"]
+[INFO] - [11-06-2025 11:14:38] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Add new group"]
+[INFO] - [11-06-2025 11:14:38] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Add new group"]
+[INFO] - [11-06-2025 11:14:38] [main] [Pages.P04_GroupsAdminPage] - Entering Group Name: 
+[INFO] - [11-06-2025 11:14:38] [main] [Utilities.ElementUtils] - Sending  to element: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:14:38] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:14:38] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:14:39] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:14:39] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:14:39] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[ERROR] - [11-06-2025 11:14:39] [main] [io.qameta.allure.util.NamingUtils] - Could not find parameter site
+[INFO] - [11-06-2025 11:14:39] [main] [Pages.P04_GroupsAdminPage] - Entering Site
+[INFO] - [11-06-2025 11:14:39] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [formcontrolname="sites"]
+[INFO] - [11-06-2025 11:14:39] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [formcontrolname="sites"]
+[INFO] - [11-06-2025 11:14:39] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="sites"]
+[INFO] - [11-06-2025 11:14:39] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="sites"]
+[INFO] - [11-06-2025 11:14:39] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="sites"]
+[INFO] - [11-06-2025 11:14:39] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="sites"]
+[INFO] - [11-06-2025 11:14:39] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="sites"]
+[INFO] - [11-06-2025 11:14:39] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: (//ul[@role="listbox"] //li)[2]
+[INFO] - [11-06-2025 11:14:39] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: (//ul[@role="listbox"] //li)[2]
+[INFO] - [11-06-2025 11:14:39] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: (//ul[@role="listbox"] //li)[2]
+[INFO] - [11-06-2025 11:14:39] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: (//ul[@role="listbox"] //li)[2]
+[INFO] - [11-06-2025 11:14:40] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: (//ul[@role="listbox"] //li)[2]
+[INFO] - [11-06-2025 11:14:40] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: (//ul[@role="listbox"] //li)[2]
+[INFO] - [11-06-2025 11:14:40] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: (//ul[@role="listbox"] //li)[2]
+[INFO] - [11-06-2025 11:14:40] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: (//ul[@role="listbox"] //li)[2]
+[INFO] - [11-06-2025 11:14:40] [main] [Pages.P04_GroupsAdminPage] - Asserting visibility of Empty Group Name Message
+[INFO] - [11-06-2025 11:14:40] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" Name is required "]
+[INFO] - [11-06-2025 11:14:40] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" Name is required "]
+[INFO] - [11-06-2025 11:14:40] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" Name is required "]
+[INFO] - [11-06-2025 11:14:40] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" Name is required "]
+[INFO] - [11-06-2025 11:14:40] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" Name is required "]
+[INFO] - [11-06-2025 11:14:40] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" Name is required "]
+[INFO] - [11-06-2025 11:14:40] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [11-06-2025 11:14:40] [main] [Pages.P04_GroupsAdminPage] - Clicking on Close Button
+[INFO] - [11-06-2025 11:14:40] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:14:40] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:14:40] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:14:40] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:14:40] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:14:40] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:14:40] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:14:40] [main] [Pages.P04_GroupsAdminPage] - Clicking on Add New Group Button
+[INFO] - [11-06-2025 11:14:40] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Add new group"]
+[INFO] - [11-06-2025 11:14:40] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Add new group"]
+[INFO] - [11-06-2025 11:14:40] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Add new group"]
+[INFO] - [11-06-2025 11:14:40] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Add new group"]
+[INFO] - [11-06-2025 11:14:40] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Add new group"]
+[INFO] - [11-06-2025 11:14:40] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Add new group"]
+[INFO] - [11-06-2025 11:14:40] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Add new group"]
+[INFO] - [11-06-2025 11:14:40] [main] [Pages.P04_GroupsAdminPage] - Clicking on Site Dropdown
+[INFO] - [11-06-2025 11:14:40] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [formcontrolname="sites"]
+[INFO] - [11-06-2025 11:14:40] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [formcontrolname="sites"]
+[INFO] - [11-06-2025 11:14:40] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="sites"]
+[INFO] - [11-06-2025 11:14:40] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="sites"]
+[INFO] - [11-06-2025 11:14:40] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="sites"]
+[INFO] - [11-06-2025 11:14:40] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="sites"]
+[INFO] - [11-06-2025 11:14:40] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="sites"]
+[INFO] - [11-06-2025 11:14:40] [main] [Pages.P04_GroupsAdminPage] - Entering Group Name: TestGroupName2025-06-11_11-14-28
+[INFO] - [11-06-2025 11:14:40] [main] [Utilities.ElementUtils] - Sending TestGroupName2025-06-11_11-14-28 to element: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:14:40] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:14:40] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:14:40] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:14:40] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:14:40] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:14:41] [main] [Pages.P04_GroupsAdminPage] - Asserting visibility of Empty Site Message
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" Please select at least one site "]
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" Please select at least one site "]
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" Please select at least one site "]
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" Please select at least one site "]
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" Please select at least one site "]
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" Please select at least one site "]
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [11-06-2025 11:14:41] [main] [Pages.P04_GroupsAdminPage] - Clicking on Close Button
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:14:41] [main] [Pages.P04_GroupsAdminPage] - Clicking on Add New Group Button
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Add new group"]
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Add new group"]
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Add new group"]
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Add new group"]
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Add new group"]
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Add new group"]
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Add new group"]
+[INFO] - [11-06-2025 11:14:41] [main] [Pages.P04_GroupsAdminPage] - Entering Group Name:  
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.ElementUtils] - Sending   to element: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:14:41] [main] [Pages.P04_GroupsAdminPage] - Clicking on Site Dropdown
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [formcontrolname="sites"]
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [formcontrolname="sites"]
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="sites"]
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="sites"]
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="sites"]
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="sites"]
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="sites"]
+[INFO] - [11-06-2025 11:14:41] [main] [Pages.P04_GroupsAdminPage] - Asserting visibility of Spaces Only Site Name Message
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" Name can't contain only white space "]
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" Name can't contain only white space "]
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" Name can't contain only white space "]
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" Name can't contain only white space "]
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" Name can't contain only white space "]
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" Name can't contain only white space "]
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.ScreenRecorderUtils] - Recording stopped
+[ERROR] - [11-06-2025 11:14:41] [main] [Utilities.ScreenRecorderUtils] - Error stopping screen recording: Cannot invoke "org.monte.screenrecorder.ScreenRecorder.stop()" because "Utilities.ScreenRecorderUtils.screenRecorder" is null
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.ScreenshotsUtils] - Screenshot taken: TestOutputs\Screenshots\passed-invalidGroupsTC-2025-06-11_11-14-41.png
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.AllureUtils] - Screenshot attached to Allure report: TestOutputs\Screenshots\passed-invalidGroupsTC-2025-06-11_11-14-41.png
+[INFO] - [11-06-2025 11:14:41] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-06-11_11-14-21.log
+[INFO] - [11-06-2025 11:14:41] [main] [Listeners.TestNGListeners] - Test invalidGroupsTC passed
+[INFO] - [11-06-2025 11:14:42] [main] [Utilities.BrowserUtils] - Quitting the browser
+[INFO] - [11-06-2025 11:14:42] [main] [Factories.DriverFactory] - Removing driver

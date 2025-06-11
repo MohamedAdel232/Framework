@@ -76,6 +76,13 @@ public class TC04_GroupsAdminTest {
                 .clickOnSiteDropdown()
                 .enterGroupName(groupName)
                 .assertVisibilityOfEmptySiteMessage();
+
+        new P04_GroupsAdminPage(driver)
+                .clickOnCloseButton()
+                .clickOnAddNewGroupButton()
+                .enterGroupName(" ")
+                .clickOnSiteDropdown()
+                .assertVisibilityOfSpacesOnlySiteNameMessage();
     }
 
     @BeforeClass

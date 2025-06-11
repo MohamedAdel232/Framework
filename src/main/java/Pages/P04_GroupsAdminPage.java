@@ -8,7 +8,7 @@ import org.openqa.selenium.By;
 
 public class P04_GroupsAdminPage {
     private final By addNewGroupButtonLocator = By.cssSelector("[title=\"Add new group\"]");
-    private final By groupNameTextFieldLocator = By.cssSelector("[formcontrolname=\"name\"]");
+    private final By nameTextFieldLocator = By.cssSelector("[formcontrolname=\"name\"]");
     private final By siteDropdownLocator = By.cssSelector("[formcontrolname=\"sites\"]");
     private final By saveButtonLocator = By.cssSelector("[title=\"Save\"]");
     private final By groupNameSearchFieldLocator = By.cssSelector("input[aria-label=\"Name Filter\"]");
@@ -22,6 +22,9 @@ public class P04_GroupsAdminPage {
 
     private final By emptyGroupNameMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" Name is required \"]");
     private final By emptySiteMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" Please select at least one site \"]");
+
+    private final By spacesOnlyGroupNameMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" Name can't contain only white space \"]");
+
 
     private final DriverFactory driver;
 
@@ -39,7 +42,7 @@ public class P04_GroupsAdminPage {
     @Step("Enter Group Name: {groupName}")
     public P04_GroupsAdminPage enterGroupName(String groupName) {
         LogsUtils.info("Entering Group Name: " + groupName);
-        driver.elementUtils().sendDataToElement(groupNameTextFieldLocator, groupName);
+        driver.elementUtils().sendDataToElement(nameTextFieldLocator, groupName);
         return this;
     }
 
@@ -152,6 +155,15 @@ public class P04_GroupsAdminPage {
         SoftAssertUtils.softAssertTrue(
                 driver.elementUtils().verifyVisibilityOfElement(emptySiteMessageLocator),
                 "Empty site message not visible"
+        );
+    }
+
+    @Step("Assert visibility of Spaces Only Site Name Message")
+    public void assertVisibilityOfSpacesOnlySiteNameMessage() {
+        LogsUtils.info("Asserting visibility of Spaces Only Site Name Message");
+        SoftAssertUtils.softAssertTrue(
+                driver.elementUtils().verifyVisibilityOfElement(spacesOnlyGroupNameMessageLocator),
+                "Spaces only site name message not visible"
         );
     }
 } 
