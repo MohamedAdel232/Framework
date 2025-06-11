@@ -8,14 +8,14 @@ import org.openqa.selenium.By;
 
 public class P03_SitesAdminPage {
     private final By addNewSiteButtonLocator = By.cssSelector("[title=\"Add new site\"]");
-    private final By siteNameTextFieldLocator = By.cssSelector("[formcontrolname=\"name\"]");
+    private final By nameTextFieldLocator = By.cssSelector("[formcontrolname=\"name\"]");
     private final By hl7SiteNameTextFieldLocator = By.cssSelector("[formcontrolname=\"hl7SiteName\"]");
     private final By pacsCallingAETitleTextFieldLocator = By.cssSelector("[formcontrolname=\"callingAEtitle\"]");
     private final By mdtKeywordsTextFieldLocator = By.cssSelector("[formcontrolname=\"item\"]");
     private final By activeCheckboxLocator = By.cssSelector("[formcontrolname=\"active\"]");
     private final By enableTwoFactorAuthenticationCheckboxLocator = By.cssSelector("[formcontrolname=\"enableTwoFactor\"]");
     private final By saveButtonLocator = By.cssSelector("[title=\"Save\"]");
-    private final By siteNameSearchFieldLocator = By.cssSelector("input[aria-label=\"Name Filter\"]");
+    private final By nameSearchFieldLocator = By.cssSelector("input[aria-label=\"Name Filter\"]");
     private final By yesButtonLocator = By.xpath("//button[.=\"Yes\"]");
     private final By okButtonLocator = By.xpath("//button[.=\"OK\"]");
     private final By closeButtonLocator = By.cssSelector("[title=\"Close\"]");
@@ -27,6 +27,10 @@ public class P03_SitesAdminPage {
     private final By emptySiteNameMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" Name is required \"]");
     private final By emptyHL7SiteNameMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" HL7 site name is required \"]");
     private final By emptyPacsCallingAETitleMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" AE Title is required \"]");
+
+    private final By spacesOnlySiteNameMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" Name cannot contain white spaces \"]");
+    private final By spacesOnlyHL7SiteNameMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" HL7 site name cannot contain white spaces only \"]");
+    private final By spacesOnlyPacsCallingAETitleMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" PACS calling AE title cannot contain white spaces only \"]");
 
     private final DriverFactory driver;
 
@@ -44,7 +48,7 @@ public class P03_SitesAdminPage {
     @Step("Enter Site Name: {siteName}")
     public P03_SitesAdminPage enterSiteName(String siteName) {
         LogsUtils.info("Entering Site Name: " + siteName);
-        driver.elementUtils().sendDataToElement(siteNameTextFieldLocator, siteName);
+        driver.elementUtils().sendDataToElement(nameTextFieldLocator, siteName);
         return this;
     }
 
@@ -93,7 +97,7 @@ public class P03_SitesAdminPage {
     @Step("Search Site by Name: {siteName}")
     public P03_SitesAdminPage searchSiteByName(String siteName) {
         LogsUtils.info("Searching Site by Name: " + siteName);
-        driver.elementUtils().sendDataToElement(siteNameSearchFieldLocator, siteName);
+        driver.elementUtils().sendDataToElement(nameSearchFieldLocator, siteName);
         return this;
     }
 
@@ -185,6 +189,33 @@ public class P03_SitesAdminPage {
         SoftAssertUtils.softAssertTrue(
                 driver.elementUtils().verifyVisibilityOfElement(emptyPacsCallingAETitleMessageLocator),
                 "Empty PACS calling AE title message not visible"
+        );
+    }
+
+    @Step("Assert visibility of Spaces Only Site Name Message")
+    public void assertVisibilityOfSpacesOnlySiteNameMessage() {
+        LogsUtils.info("Asserting visibility of Spaces Only Site Name Message");
+        SoftAssertUtils.softAssertTrue(
+                driver.elementUtils().verifyVisibilityOfElement(spacesOnlySiteNameMessageLocator),
+                "Spaces only site name message not visible"
+        );
+    }
+
+    @Step("Assert visibility of Spaces Only HL7 Site Name Message")
+    public void assertVisibilityOfSpacesOnlyHL7SiteNameMessage() {
+        LogsUtils.info("Asserting visibility of Spaces Only HL7 Site Name Message");
+        SoftAssertUtils.softAssertTrue(
+                driver.elementUtils().verifyVisibilityOfElement(spacesOnlyHL7SiteNameMessageLocator),
+                "Spaces only HL7 site name message not visible"
+        );
+    }
+
+    @Step("Assert visibility of Spaces Only PACS Calling AE Title Message")
+    public void assertVisibilityOfSpacesOnlyPacsCallingAETitleMessage() {
+        LogsUtils.info("Asserting visibility of Spaces Only PACS Calling AE Title Message");
+        SoftAssertUtils.softAssertTrue(
+                driver.elementUtils().verifyVisibilityOfElement(spacesOnlyPacsCallingAETitleMessageLocator),
+                "Spaces only PACS calling AE title message not visible"
         );
     }
 }

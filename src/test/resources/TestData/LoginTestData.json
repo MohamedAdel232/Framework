@@ -2,5 +2,9 @@
   "validLoginCredentials": {
     "powerAdminUsername": "AutomationPowerAdmin",
     "password": "Automation1#"
+  },
+  "invalidLoginCredentials": {
+    "powerAdminUsername": "Test",
+    "password": "Test"
   }
 }

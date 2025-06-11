@@ -104,6 +104,40 @@ public class TC03_SitesAdminTest {
                 .checkActiveCheckbox()
                 .checkEnableTwoFactorAuthenticationCheckbox()
                 .assertVisibilityOfEmptyPacsCallingAETitleMessage();
+
+        new P03_SitesAdminPage(driver)
+                .clickOnCloseButton()
+                .clickOnAddNewSiteButton()
+                .enterSiteName(" ")
+                .enterHL7SiteName(hl7SiteName)
+                .enterPacsCallingAETitle(pacsCallingAETitle)
+                .enterMdtKeywords(mdtKeywords)
+                .checkActiveCheckbox()
+                .checkEnableTwoFactorAuthenticationCheckbox()
+                .assertVisibilityOfSpacesOnlySiteNameMessage();
+
+        new P03_SitesAdminPage(driver)
+                .clickOnCloseButton()
+                .clickOnAddNewSiteButton()
+                .enterSiteName(siteName)
+                .enterHL7SiteName(" ")
+                .enterPacsCallingAETitle(pacsCallingAETitle)
+                .enterMdtKeywords(mdtKeywords)
+                .checkActiveCheckbox()
+                .checkEnableTwoFactorAuthenticationCheckbox()
+                .assertVisibilityOfSpacesOnlyHL7SiteNameMessage();
+
+        new P03_SitesAdminPage(driver)
+                .clickOnCloseButton()
+                .clickOnAddNewSiteButton()
+                .enterSiteName(siteName)
+                .enterHL7SiteName(hl7SiteName)
+                .enterPacsCallingAETitle(" ")
+                .enterMdtKeywords(mdtKeywords)
+                .checkActiveCheckbox()
+                .checkEnableTwoFactorAuthenticationCheckbox()
+        //  .assertVisibilityOfSpacesOnlyPacsCallingAETitleMessage()
+        ;
     }
 
     @BeforeClass

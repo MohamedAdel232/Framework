@@ -3,6 +3,7 @@ package Pages;
 import Factories.DriverFactory;
 import Utilities.LogsUtils;
 import Utilities.PropertiesUtils;
+import Utilities.SoftAssertUtils;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
@@ -11,6 +12,7 @@ public class P01_LoginPage {
     private final By passwordTextFieldLocator = By.cssSelector("[formcontrolname=\"password\"]");
     private final By loginButtonLocator = By.id("btnlogin");
     private final By continueButtonLocator = By.cssSelector("[title=\"Continue\"]");
+    private final By invalidLoginMessageLocator = By.className("invalid-msg");
 
     private final DriverFactory driver;
 
@@ -69,6 +71,16 @@ public class P01_LoginPage {
         String expectedUrl = PropertiesUtils.getPropertyValue("AdminHomePageUrl");
         LogsUtils.info("Asserting login with valid admin credentials");
         driver.softAssertActionsUtils().assertPageUrl(expectedUrl, "Login with valid admin credentials failed");
+        return this;
+    }
+
+    @Step("Assert login with invalid credentials")
+    public P01_LoginPage assertLoginWithInValidCredentials() {
+        LogsUtils.info("Asserting login with invalid credentials");
+        SoftAssertUtils.softAssertTrue(
+                driver.elementUtils().verifyVisibilityOfElement(invalidLoginMessageLocator),
+                "Invalid login message is not displayed"
+        );
         return this;
     }
 }

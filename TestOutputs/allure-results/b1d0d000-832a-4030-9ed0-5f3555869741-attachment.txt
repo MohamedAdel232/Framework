@@ -1,0 +1,469 @@
+[DEBUG] - [11-06-2025 11:09:58] [main] [org.testng.TestNG] - suiteXmlPath: "C:\Users\mohamed.adel\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml"
+[INFO] - [11-06-2025 11:09:59] [main] [Listeners.TestNGListeners] - Test execution started
+[INFO] - [11-06-2025 11:09:59] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [11-06-2025 11:09:59] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [11-06-2025 11:09:59] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [11-06-2025 11:09:59] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [11-06-2025 11:09:59] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [11-06-2025 11:09:59] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [11-06-2025 11:09:59] [main] [Utilities.PropertiesUtils] - Loading properties file data
+[INFO] - [11-06-2025 11:09:59] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\allure-results
+[INFO] - [11-06-2025 11:09:59] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\allure-report
+[INFO] - [11-06-2025 11:09:59] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\Logs
+[INFO] - [11-06-2025 11:09:59] [main] [Utilities.FilesUtils] - Directory created: TestOutputs\Screenshots
+[INFO] - [11-06-2025 11:09:59] [main] [Utilities.FilesUtils] - Directory created: TestOutputs\ScreenRecordings
+[INFO] - [11-06-2025 11:09:59] [main] [org.testng.internal.Utils] - [TestNG] Running:
+  C:\Users\mohamed.adel\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml
+
+[INFO] - [11-06-2025 11:10:00] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-06-11_11-09-58.log
+[INFO] - [11-06-2025 11:10:02] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-06-11_11-09-58.log
+[DEBUG] - [11-06-2025 11:10:02] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewSite']['siteName']
+[DEBUG] - [11-06-2025 11:10:02] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewSite']['hl7SiteName']
+[DEBUG] - [11-06-2025 11:10:02] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewSite']['pacsCallingAETitle']
+[DEBUG] - [11-06-2025 11:10:02] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewSite']['mdtKeywords']
+[INFO] - [11-06-2025 11:10:03] [main] [Pages.P01_LoginPage] - Navigating to login page
+[INFO] - [11-06-2025 11:10:03] [main] [Utilities.BrowserUtils] - Navigating to URL: http://192.168.2.91/iCodeMDT/login
+[DEBUG] - [11-06-2025 11:10:03] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['powerAdminUsername']
+[INFO] - [11-06-2025 11:10:03] [main] [Pages.P01_LoginPage] - Entering username
+[INFO] - [11-06-2025 11:10:03] [main] [Utilities.ElementUtils] - Sending AutomationPowerAdmin to element: By.cssSelector: [formcontrolname="username"]
+[INFO] - [11-06-2025 11:10:03] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [11-06-2025 11:10:03] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [11-06-2025 11:10:04] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [11-06-2025 11:10:04] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [11-06-2025 11:10:04] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="username"]
+[DEBUG] - [11-06-2025 11:10:04] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['password']
+[INFO] - [11-06-2025 11:10:04] [main] [Pages.P01_LoginPage] - Entering password
+[INFO] - [11-06-2025 11:10:04] [main] [Utilities.ElementUtils] - Sending Automation1# to element: By.cssSelector: [formcontrolname="password"]
+[INFO] - [11-06-2025 11:10:04] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [11-06-2025 11:10:04] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [11-06-2025 11:10:04] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [11-06-2025 11:10:04] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [11-06-2025 11:10:04] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [11-06-2025 11:10:04] [main] [Pages.P01_LoginPage] - Clicking login button
+[INFO] - [11-06-2025 11:10:04] [main] [Utilities.ElementUtils] - Clicking on element: By.id: btnlogin
+[INFO] - [11-06-2025 11:10:04] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.id: btnlogin
+[INFO] - [11-06-2025 11:10:04] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: btnlogin
+[INFO] - [11-06-2025 11:10:04] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: btnlogin
+[INFO] - [11-06-2025 11:10:04] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.id: btnlogin
+[INFO] - [11-06-2025 11:10:04] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: btnlogin
+[INFO] - [11-06-2025 11:10:04] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: btnlogin
+[INFO] - [11-06-2025 11:10:04] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Continue"]
+[INFO] - [11-06-2025 11:10:04] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Continue"]
+[INFO] - [11-06-2025 11:10:04] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Continue"]
+[INFO] - [11-06-2025 11:10:04] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Continue"]
+[INFO] - [11-06-2025 11:10:09] [main] [Pages.P01_LoginPage] - No session to terminate
+[INFO] - [11-06-2025 11:10:09] [main] [Pages.P01_LoginPage] - Asserting login with valid admin credentials
+[INFO] - [11-06-2025 11:10:09] [main] [Utilities.BrowserUtils] - Current URL is: http://192.168.2.91/iCodeMDT/admin/users
+[INFO] - [11-06-2025 11:10:09] [main] [Utilities.SoftAssertActionsUtils] - Asserting page URL
+[INFO] - [11-06-2025 11:10:09] [main] [Utilities.SoftAssertActionsUtils] - Expected URL: http://192.168.2.91/iCodeMDT/admin/users
+[INFO] - [11-06-2025 11:10:09] [main] [Utilities.SoftAssertActionsUtils] - Actual URL: http://192.168.2.91/iCodeMDT/admin/users
+[INFO] - [11-06-2025 11:10:09] [main] [Utilities.WaitUtils] - Waiting for page to load with URL: http://192.168.2.91/iCodeMDT/admin/users
+[INFO] - [11-06-2025 11:10:09] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [11-06-2025 11:10:09] [main] [Pages.P02_UsersAdminPage] - Clicking on Sites button
+[INFO] - [11-06-2025 11:10:09] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [routerlink="/admin/sites"]
+[INFO] - [11-06-2025 11:10:09] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [routerlink="/admin/sites"]
+[INFO] - [11-06-2025 11:10:09] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [routerlink="/admin/sites"]
+[INFO] - [11-06-2025 11:10:09] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [routerlink="/admin/sites"]
+[INFO] - [11-06-2025 11:10:09] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [routerlink="/admin/sites"]
+[INFO] - [11-06-2025 11:10:09] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [routerlink="/admin/sites"]
+[INFO] - [11-06-2025 11:10:09] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [routerlink="/admin/sites"]
+[INFO] - [11-06-2025 11:10:10] [main] [Pages.P03_SitesAdminPage] - Clicking on Add New Site Button
+[INFO] - [11-06-2025 11:10:10] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Add new site"]
+[INFO] - [11-06-2025 11:10:10] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Add new site"]
+[INFO] - [11-06-2025 11:10:10] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Add new site"]
+[INFO] - [11-06-2025 11:10:10] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Add new site"]
+[INFO] - [11-06-2025 11:10:10] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Add new site"]
+[INFO] - [11-06-2025 11:10:10] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Add new site"]
+[INFO] - [11-06-2025 11:10:10] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Add new site"]
+[INFO] - [11-06-2025 11:10:10] [main] [Pages.P03_SitesAdminPage] - Entering Site Name: 
+[INFO] - [11-06-2025 11:10:10] [main] [Utilities.ElementUtils] - Sending  to element: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:10:10] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:10:10] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:10:10] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:10:10] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:10:10] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:10:10] [main] [Pages.P03_SitesAdminPage] - Entering HL7 Site Name: TestHL7Site
+[INFO] - [11-06-2025 11:10:10] [main] [Utilities.ElementUtils] - Sending TestHL7Site to element: By.cssSelector: [formcontrolname="hl7SiteName"]
+[INFO] - [11-06-2025 11:10:10] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="hl7SiteName"]
+[INFO] - [11-06-2025 11:10:10] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="hl7SiteName"]
+[INFO] - [11-06-2025 11:10:10] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="hl7SiteName"]
+[INFO] - [11-06-2025 11:10:10] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="hl7SiteName"]
+[INFO] - [11-06-2025 11:10:10] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="hl7SiteName"]
+[INFO] - [11-06-2025 11:10:10] [main] [Pages.P03_SitesAdminPage] - Entering PACS Calling AE Title: TestPACSCallingAETitle
+[INFO] - [11-06-2025 11:10:10] [main] [Utilities.ElementUtils] - Sending TestPACSCallingAETitle to element: By.cssSelector: [formcontrolname="callingAEtitle"]
+[INFO] - [11-06-2025 11:10:10] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="callingAEtitle"]
+[INFO] - [11-06-2025 11:10:10] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="callingAEtitle"]
+[INFO] - [11-06-2025 11:10:10] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="callingAEtitle"]
+[INFO] - [11-06-2025 11:10:10] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="callingAEtitle"]
+[INFO] - [11-06-2025 11:10:10] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="callingAEtitle"]
+[INFO] - [11-06-2025 11:10:11] [main] [Pages.P03_SitesAdminPage] - Entering MDT Keywords: TestKeywords
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.ElementUtils] - Sending TestKeywords to element: By.cssSelector: [formcontrolname="item"]
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="item"]
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="item"]
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="item"]
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="item"]
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="item"]
+[INFO] - [11-06-2025 11:10:11] [main] [Pages.P03_SitesAdminPage] - Checking Active Checkbox
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [formcontrolname="active"]
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [formcontrolname="active"]
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="active"]
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="active"]
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="active"]
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="active"]
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="active"]
+[INFO] - [11-06-2025 11:10:11] [main] [Pages.P03_SitesAdminPage] - Checking Enable Two Factor Authentication Checkbox
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [formcontrolname="enableTwoFactor"]
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [formcontrolname="enableTwoFactor"]
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="enableTwoFactor"]
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="enableTwoFactor"]
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="enableTwoFactor"]
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="enableTwoFactor"]
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="enableTwoFactor"]
+[INFO] - [11-06-2025 11:10:11] [main] [Pages.P03_SitesAdminPage] - Asserting visibility of Empty Site Name Message
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" Name is required "]
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" Name is required "]
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" Name is required "]
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" Name is required "]
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" Name is required "]
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" Name is required "]
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [11-06-2025 11:10:11] [main] [Pages.P03_SitesAdminPage] - Clicking on Close Button
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:10:11] [main] [Pages.P03_SitesAdminPage] - Clicking on Add New Site Button
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Add new site"]
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Add new site"]
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Add new site"]
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Add new site"]
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Add new site"]
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Add new site"]
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Add new site"]
+[INFO] - [11-06-2025 11:10:11] [main] [Pages.P03_SitesAdminPage] - Entering Site Name: TestSiteName
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.ElementUtils] - Sending TestSiteName to element: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:10:11] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:10:11] [main] [Pages.P03_SitesAdminPage] - Entering HL7 Site Name: 
+[INFO] - [11-06-2025 11:10:12] [main] [Utilities.ElementUtils] - Sending  to element: By.cssSelector: [formcontrolname="hl7SiteName"]
+[INFO] - [11-06-2025 11:10:12] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="hl7SiteName"]
+[INFO] - [11-06-2025 11:10:12] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="hl7SiteName"]
+[INFO] - [11-06-2025 11:10:12] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="hl7SiteName"]
+[INFO] - [11-06-2025 11:10:12] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="hl7SiteName"]
+[INFO] - [11-06-2025 11:10:12] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="hl7SiteName"]
+[INFO] - [11-06-2025 11:10:12] [main] [Pages.P03_SitesAdminPage] - Entering PACS Calling AE Title: TestPACSCallingAETitle
+[INFO] - [11-06-2025 11:10:12] [main] [Utilities.ElementUtils] - Sending TestPACSCallingAETitle to element: By.cssSelector: [formcontrolname="callingAEtitle"]
+[INFO] - [11-06-2025 11:10:12] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="callingAEtitle"]
+[INFO] - [11-06-2025 11:10:12] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="callingAEtitle"]
+[INFO] - [11-06-2025 11:10:12] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="callingAEtitle"]
+[INFO] - [11-06-2025 11:10:12] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="callingAEtitle"]
+[INFO] - [11-06-2025 11:10:12] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="callingAEtitle"]
+[INFO] - [11-06-2025 11:10:12] [main] [Pages.P03_SitesAdminPage] - Entering MDT Keywords: TestKeywords
+[INFO] - [11-06-2025 11:10:12] [main] [Utilities.ElementUtils] - Sending TestKeywords to element: By.cssSelector: [formcontrolname="item"]
+[INFO] - [11-06-2025 11:10:12] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="item"]
+[INFO] - [11-06-2025 11:10:12] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="item"]
+[INFO] - [11-06-2025 11:10:12] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="item"]
+[INFO] - [11-06-2025 11:10:12] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="item"]
+[INFO] - [11-06-2025 11:10:12] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="item"]
+[INFO] - [11-06-2025 11:10:12] [main] [Pages.P03_SitesAdminPage] - Checking Active Checkbox
+[INFO] - [11-06-2025 11:10:12] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [formcontrolname="active"]
+[INFO] - [11-06-2025 11:10:12] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [formcontrolname="active"]
+[INFO] - [11-06-2025 11:10:12] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="active"]
+[INFO] - [11-06-2025 11:10:12] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="active"]
+[INFO] - [11-06-2025 11:10:12] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="active"]
+[INFO] - [11-06-2025 11:10:12] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="active"]
+[INFO] - [11-06-2025 11:10:12] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="active"]
+[INFO] - [11-06-2025 11:10:12] [main] [Pages.P03_SitesAdminPage] - Checking Enable Two Factor Authentication Checkbox
+[INFO] - [11-06-2025 11:10:12] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [formcontrolname="enableTwoFactor"]
+[INFO] - [11-06-2025 11:10:12] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [formcontrolname="enableTwoFactor"]
+[INFO] - [11-06-2025 11:10:12] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="enableTwoFactor"]
+[INFO] - [11-06-2025 11:10:12] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="enableTwoFactor"]
+[INFO] - [11-06-2025 11:10:12] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="enableTwoFactor"]
+[INFO] - [11-06-2025 11:10:12] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="enableTwoFactor"]
+[INFO] - [11-06-2025 11:10:12] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="enableTwoFactor"]
+[INFO] - [11-06-2025 11:10:12] [main] [Pages.P03_SitesAdminPage] - Asserting visibility of Empty HL7 Site Name Message
+[INFO] - [11-06-2025 11:10:12] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" HL7 site name is required "]
+[INFO] - [11-06-2025 11:10:12] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" HL7 site name is required "]
+[INFO] - [11-06-2025 11:10:12] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" HL7 site name is required "]
+[INFO] - [11-06-2025 11:10:12] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" HL7 site name is required "]
+[INFO] - [11-06-2025 11:10:12] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" HL7 site name is required "]
+[INFO] - [11-06-2025 11:10:12] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" HL7 site name is required "]
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [11-06-2025 11:10:13] [main] [Pages.P03_SitesAdminPage] - Clicking on Close Button
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:10:13] [main] [Pages.P03_SitesAdminPage] - Clicking on Add New Site Button
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Add new site"]
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Add new site"]
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Add new site"]
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Add new site"]
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Add new site"]
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Add new site"]
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Add new site"]
+[INFO] - [11-06-2025 11:10:13] [main] [Pages.P03_SitesAdminPage] - Entering Site Name: TestSiteName
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.ElementUtils] - Sending TestSiteName to element: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:10:13] [main] [Pages.P03_SitesAdminPage] - Entering HL7 Site Name: TestHL7Site
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.ElementUtils] - Sending TestHL7Site to element: By.cssSelector: [formcontrolname="hl7SiteName"]
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="hl7SiteName"]
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="hl7SiteName"]
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="hl7SiteName"]
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="hl7SiteName"]
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="hl7SiteName"]
+[INFO] - [11-06-2025 11:10:13] [main] [Pages.P03_SitesAdminPage] - Entering PACS Calling AE Title: 
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.ElementUtils] - Sending  to element: By.cssSelector: [formcontrolname="callingAEtitle"]
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="callingAEtitle"]
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="callingAEtitle"]
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="callingAEtitle"]
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="callingAEtitle"]
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="callingAEtitle"]
+[INFO] - [11-06-2025 11:10:13] [main] [Pages.P03_SitesAdminPage] - Entering MDT Keywords: TestKeywords
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.ElementUtils] - Sending TestKeywords to element: By.cssSelector: [formcontrolname="item"]
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="item"]
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="item"]
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="item"]
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="item"]
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="item"]
+[INFO] - [11-06-2025 11:10:13] [main] [Pages.P03_SitesAdminPage] - Checking Active Checkbox
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [formcontrolname="active"]
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [formcontrolname="active"]
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="active"]
+[INFO] - [11-06-2025 11:10:13] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="active"]
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="active"]
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="active"]
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="active"]
+[INFO] - [11-06-2025 11:10:14] [main] [Pages.P03_SitesAdminPage] - Checking Enable Two Factor Authentication Checkbox
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [formcontrolname="enableTwoFactor"]
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [formcontrolname="enableTwoFactor"]
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="enableTwoFactor"]
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="enableTwoFactor"]
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="enableTwoFactor"]
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="enableTwoFactor"]
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="enableTwoFactor"]
+[INFO] - [11-06-2025 11:10:14] [main] [Pages.P03_SitesAdminPage] - Asserting visibility of Empty PACS Calling AE Title Message
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" AE Title is required "]
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" AE Title is required "]
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" AE Title is required "]
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" AE Title is required "]
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" AE Title is required "]
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" AE Title is required "]
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [11-06-2025 11:10:14] [main] [Pages.P03_SitesAdminPage] - Clicking on Close Button
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:10:14] [main] [Pages.P03_SitesAdminPage] - Clicking on Add New Site Button
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Add new site"]
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Add new site"]
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Add new site"]
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Add new site"]
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Add new site"]
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Add new site"]
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Add new site"]
+[INFO] - [11-06-2025 11:10:14] [main] [Pages.P03_SitesAdminPage] - Entering Site Name:  
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.ElementUtils] - Sending   to element: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:10:14] [main] [Pages.P03_SitesAdminPage] - Entering HL7 Site Name: TestHL7Site
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.ElementUtils] - Sending TestHL7Site to element: By.cssSelector: [formcontrolname="hl7SiteName"]
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="hl7SiteName"]
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="hl7SiteName"]
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="hl7SiteName"]
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="hl7SiteName"]
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="hl7SiteName"]
+[INFO] - [11-06-2025 11:10:14] [main] [Pages.P03_SitesAdminPage] - Entering PACS Calling AE Title: TestPACSCallingAETitle
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.ElementUtils] - Sending TestPACSCallingAETitle to element: By.cssSelector: [formcontrolname="callingAEtitle"]
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="callingAEtitle"]
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="callingAEtitle"]
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="callingAEtitle"]
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="callingAEtitle"]
+[INFO] - [11-06-2025 11:10:14] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="callingAEtitle"]
+[INFO] - [11-06-2025 11:10:15] [main] [Pages.P03_SitesAdminPage] - Entering MDT Keywords: TestKeywords
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.ElementUtils] - Sending TestKeywords to element: By.cssSelector: [formcontrolname="item"]
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="item"]
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="item"]
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="item"]
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="item"]
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="item"]
+[INFO] - [11-06-2025 11:10:15] [main] [Pages.P03_SitesAdminPage] - Checking Active Checkbox
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [formcontrolname="active"]
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [formcontrolname="active"]
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="active"]
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="active"]
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="active"]
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="active"]
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="active"]
+[INFO] - [11-06-2025 11:10:15] [main] [Pages.P03_SitesAdminPage] - Checking Enable Two Factor Authentication Checkbox
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [formcontrolname="enableTwoFactor"]
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [formcontrolname="enableTwoFactor"]
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="enableTwoFactor"]
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="enableTwoFactor"]
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="enableTwoFactor"]
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="enableTwoFactor"]
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="enableTwoFactor"]
+[INFO] - [11-06-2025 11:10:15] [main] [Pages.P03_SitesAdminPage] - Asserting visibility of Spaces Only Site Name Message
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" Name cannot contain white spaces "]
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" Name cannot contain white spaces "]
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" Name cannot contain white spaces "]
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" Name cannot contain white spaces "]
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" Name cannot contain white spaces "]
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" Name cannot contain white spaces "]
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [11-06-2025 11:10:15] [main] [Pages.P03_SitesAdminPage] - Clicking on Close Button
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:10:15] [main] [Pages.P03_SitesAdminPage] - Clicking on Add New Site Button
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Add new site"]
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Add new site"]
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Add new site"]
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Add new site"]
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Add new site"]
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Add new site"]
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Add new site"]
+[INFO] - [11-06-2025 11:10:15] [main] [Pages.P03_SitesAdminPage] - Entering Site Name: TestSiteName
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.ElementUtils] - Sending TestSiteName to element: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:10:15] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:10:16] [main] [Pages.P03_SitesAdminPage] - Entering HL7 Site Name:  
+[INFO] - [11-06-2025 11:10:16] [main] [Utilities.ElementUtils] - Sending   to element: By.cssSelector: [formcontrolname="hl7SiteName"]
+[INFO] - [11-06-2025 11:10:16] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="hl7SiteName"]
+[INFO] - [11-06-2025 11:10:16] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="hl7SiteName"]
+[INFO] - [11-06-2025 11:10:16] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="hl7SiteName"]
+[INFO] - [11-06-2025 11:10:16] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="hl7SiteName"]
+[INFO] - [11-06-2025 11:10:16] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="hl7SiteName"]
+[INFO] - [11-06-2025 11:10:16] [main] [Pages.P03_SitesAdminPage] - Entering PACS Calling AE Title: TestPACSCallingAETitle
+[INFO] - [11-06-2025 11:10:16] [main] [Utilities.ElementUtils] - Sending TestPACSCallingAETitle to element: By.cssSelector: [formcontrolname="callingAEtitle"]
+[INFO] - [11-06-2025 11:10:16] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="callingAEtitle"]
+[INFO] - [11-06-2025 11:10:16] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="callingAEtitle"]
+[INFO] - [11-06-2025 11:10:16] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="callingAEtitle"]
+[INFO] - [11-06-2025 11:10:16] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="callingAEtitle"]
+[INFO] - [11-06-2025 11:10:16] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="callingAEtitle"]
+[INFO] - [11-06-2025 11:10:16] [main] [Pages.P03_SitesAdminPage] - Entering MDT Keywords: TestKeywords
+[INFO] - [11-06-2025 11:10:16] [main] [Utilities.ElementUtils] - Sending TestKeywords to element: By.cssSelector: [formcontrolname="item"]
+[INFO] - [11-06-2025 11:10:16] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="item"]
+[INFO] - [11-06-2025 11:10:16] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="item"]
+[INFO] - [11-06-2025 11:10:16] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="item"]
+[INFO] - [11-06-2025 11:10:16] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="item"]
+[INFO] - [11-06-2025 11:10:16] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="item"]
+[INFO] - [11-06-2025 11:10:16] [main] [Pages.P03_SitesAdminPage] - Checking Active Checkbox
+[INFO] - [11-06-2025 11:10:16] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [formcontrolname="active"]
+[INFO] - [11-06-2025 11:10:16] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [formcontrolname="active"]
+[INFO] - [11-06-2025 11:10:16] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="active"]
+[INFO] - [11-06-2025 11:10:16] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="active"]
+[INFO] - [11-06-2025 11:10:16] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="active"]
+[INFO] - [11-06-2025 11:10:16] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="active"]
+[INFO] - [11-06-2025 11:10:16] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="active"]
+[INFO] - [11-06-2025 11:10:16] [main] [Pages.P03_SitesAdminPage] - Checking Enable Two Factor Authentication Checkbox
+[INFO] - [11-06-2025 11:10:16] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [formcontrolname="enableTwoFactor"]
+[INFO] - [11-06-2025 11:10:16] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [formcontrolname="enableTwoFactor"]
+[INFO] - [11-06-2025 11:10:16] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="enableTwoFactor"]
+[INFO] - [11-06-2025 11:10:16] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="enableTwoFactor"]
+[INFO] - [11-06-2025 11:10:16] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="enableTwoFactor"]
+[INFO] - [11-06-2025 11:10:16] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="enableTwoFactor"]
+[INFO] - [11-06-2025 11:10:16] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="enableTwoFactor"]
+[INFO] - [11-06-2025 11:10:16] [main] [Pages.P03_SitesAdminPage] - Asserting visibility of Spaces Only HL7 Site Name Message
+[INFO] - [11-06-2025 11:10:16] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" HL7 site name cannot contain white spaces only "]
+[INFO] - [11-06-2025 11:10:16] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" HL7 site name cannot contain white spaces only "]
+[INFO] - [11-06-2025 11:10:16] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" HL7 site name cannot contain white spaces only "]
+[INFO] - [11-06-2025 11:10:16] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" HL7 site name cannot contain white spaces only "]
+[INFO] - [11-06-2025 11:10:16] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" HL7 site name cannot contain white spaces only "]
+[INFO] - [11-06-2025 11:10:16] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" HL7 site name cannot contain white spaces only "]
+[INFO] - [11-06-2025 11:10:17] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [11-06-2025 11:10:17] [main] [Pages.P03_SitesAdminPage] - Clicking on Close Button
+[INFO] - [11-06-2025 11:10:17] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:10:17] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:10:17] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:10:17] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:10:17] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:10:17] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:10:17] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Close"]
+[INFO] - [11-06-2025 11:10:17] [main] [Pages.P03_SitesAdminPage] - Clicking on Add New Site Button
+[INFO] - [11-06-2025 11:10:17] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Add new site"]
+[INFO] - [11-06-2025 11:10:17] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Add new site"]
+[INFO] - [11-06-2025 11:10:17] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Add new site"]
+[INFO] - [11-06-2025 11:10:17] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Add new site"]
+[INFO] - [11-06-2025 11:10:17] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Add new site"]
+[INFO] - [11-06-2025 11:10:17] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Add new site"]
+[INFO] - [11-06-2025 11:10:17] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Add new site"]
+[INFO] - [11-06-2025 11:10:17] [main] [Pages.P03_SitesAdminPage] - Entering Site Name: TestSiteName
+[INFO] - [11-06-2025 11:10:17] [main] [Utilities.ElementUtils] - Sending TestSiteName to element: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:10:17] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:10:17] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:10:17] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:10:17] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:10:17] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [11-06-2025 11:10:17] [main] [Pages.P03_SitesAdminPage] - Entering HL7 Site Name: TestHL7Site
+[INFO] - [11-06-2025 11:10:17] [main] [Utilities.ElementUtils] - Sending TestHL7Site to element: By.cssSelector: [formcontrolname="hl7SiteName"]
+[INFO] - [11-06-2025 11:10:17] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="hl7SiteName"]
+[INFO] - [11-06-2025 11:10:17] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="hl7SiteName"]
+[INFO] - [11-06-2025 11:10:17] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="hl7SiteName"]
+[INFO] - [11-06-2025 11:10:17] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="hl7SiteName"]
+[INFO] - [11-06-2025 11:10:17] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="hl7SiteName"]
+[INFO] - [11-06-2025 11:10:17] [main] [Pages.P03_SitesAdminPage] - Entering PACS Calling AE Title:  
+[INFO] - [11-06-2025 11:10:17] [main] [Utilities.ElementUtils] - Sending   to element: By.cssSelector: [formcontrolname="callingAEtitle"]
+[INFO] - [11-06-2025 11:10:17] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="callingAEtitle"]
+[INFO] - [11-06-2025 11:10:17] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="callingAEtitle"]
+[INFO] - [11-06-2025 11:10:17] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="callingAEtitle"]
+[INFO] - [11-06-2025 11:10:17] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="callingAEtitle"]
+[INFO] - [11-06-2025 11:10:17] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="callingAEtitle"]
+[INFO] - [11-06-2025 11:10:18] [main] [Pages.P03_SitesAdminPage] - Entering MDT Keywords: TestKeywords
+[INFO] - [11-06-2025 11:10:18] [main] [Utilities.ElementUtils] - Sending TestKeywords to element: By.cssSelector: [formcontrolname="item"]
+[INFO] - [11-06-2025 11:10:18] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="item"]
+[INFO] - [11-06-2025 11:10:18] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="item"]
+[INFO] - [11-06-2025 11:10:18] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="item"]
+[INFO] - [11-06-2025 11:10:18] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="item"]
+[INFO] - [11-06-2025 11:10:18] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="item"]
+[INFO] - [11-06-2025 11:10:18] [main] [Pages.P03_SitesAdminPage] - Checking Active Checkbox
+[INFO] - [11-06-2025 11:10:18] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [formcontrolname="active"]
+[INFO] - [11-06-2025 11:10:18] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [formcontrolname="active"]
+[INFO] - [11-06-2025 11:10:18] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="active"]
+[INFO] - [11-06-2025 11:10:18] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="active"]
+[INFO] - [11-06-2025 11:10:18] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="active"]
+[INFO] - [11-06-2025 11:10:18] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="active"]
+[INFO] - [11-06-2025 11:10:18] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="active"]
+[INFO] - [11-06-2025 11:10:18] [main] [Pages.P03_SitesAdminPage] - Checking Enable Two Factor Authentication Checkbox
+[INFO] - [11-06-2025 11:10:18] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [formcontrolname="enableTwoFactor"]
+[INFO] - [11-06-2025 11:10:18] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [formcontrolname="enableTwoFactor"]
+[INFO] - [11-06-2025 11:10:18] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="enableTwoFactor"]
+[INFO] - [11-06-2025 11:10:18] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="enableTwoFactor"]
+[INFO] - [11-06-2025 11:10:18] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="enableTwoFactor"]
+[INFO] - [11-06-2025 11:10:18] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="enableTwoFactor"]
+[INFO] - [11-06-2025 11:10:18] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="enableTwoFactor"]
+[INFO] - [11-06-2025 11:10:18] [main] [Utilities.ScreenRecorderUtils] - Recording stopped
+[ERROR] - [11-06-2025 11:10:18] [main] [Utilities.ScreenRecorderUtils] - Error stopping screen recording: Cannot invoke "org.monte.screenrecorder.ScreenRecorder.stop()" because "Utilities.ScreenRecorderUtils.screenRecorder" is null
+[INFO] - [11-06-2025 11:10:18] [main] [Utilities.ScreenshotsUtils] - Screenshot taken: TestOutputs\Screenshots\passed-invalidSitesTC-2025-06-11_11-10-18.png
+[INFO] - [11-06-2025 11:10:18] [main] [Utilities.AllureUtils] - Screenshot attached to Allure report: TestOutputs\Screenshots\passed-invalidSitesTC-2025-06-11_11-10-18.png
+[INFO] - [11-06-2025 11:10:18] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-06-11_11-09-58.log
+[INFO] - [11-06-2025 11:10:18] [main] [Listeners.TestNGListeners] - Test invalidSitesTC passed
+[INFO] - [11-06-2025 11:10:18] [main] [Utilities.BrowserUtils] - Quitting the browser
+[INFO] - [11-06-2025 11:10:19] [main] [Factories.DriverFactory] - Removing driver
