@@ -1,0 +1,8 @@
+{
+  "addNewActiveDirectory": {
+    "name": "TestActiveDirectoryName",
+    "url": "TestUrl.com",
+    "invalidUrl": "TestUrl",
+    "site": "TestSite"
+  }
+} 

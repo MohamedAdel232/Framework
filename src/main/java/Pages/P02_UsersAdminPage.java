@@ -11,6 +11,7 @@ public class P02_UsersAdminPage {
     private final By specialtiesButtonLocator = By.cssSelector("[routerlink=\"/admin/specialties\"]");
     private final By configurationsButtonLocator = By.xpath("//span[.=\"Configurations\"] /..");
     private final By pacsServersButtonLocator = By.cssSelector("[routerlink=\"/admin/pacsservers\"]");
+    private final By activeDirectoriesButtonLocator = By.cssSelector("[routerlink=\"/admin/activedirectories\"]");
 
     private final DriverFactory driver;
 
@@ -51,5 +52,12 @@ public class P02_UsersAdminPage {
         LogsUtils.info("Clicking on PACS Servers button");
         driver.elementUtils().clickOnElement(pacsServersButtonLocator);
         return new P06_PACSServersAdminPage(driver);
+    }
+
+    @Step("Click on Active Directories button")
+    public P07_ActiveDirectoriesAdminPage clickOnActiveDirectoriesButton() {
+        LogsUtils.info("Clicking on Active Directories button");
+        driver.elementUtils().clickOnElement(activeDirectoriesButtonLocator);
+        return new P07_ActiveDirectoriesAdminPage(driver);
     }
 }

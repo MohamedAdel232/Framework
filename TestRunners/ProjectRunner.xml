@@ -12,6 +12,7 @@
             <class name="Tests.TC04_GroupsAdminTest"/>
             <class name="Tests.TC05_SpecialtiesAdminTest"/>
             <class name="Tests.TC06_PACSServersAdminTest"/>
+            <class name="Tests.TC07_ActiveDirectoriesAdminTest"/>
         </classes>
     </test>
 </suite>
