@@ -66,6 +66,7 @@ public class TC06_PACSServersAdminTest {
     public void invalidPacsServersTC() {
         String pacsServerName = pacsServersTestData.getJsonData("addNewPACSServer.name") + "-" + TimestampUtils.getTimestamp();
         String ipAddress = pacsServersTestData.getJsonData("addNewPACSServer.idAddress");
+        String invalidIPAddress = pacsServersTestData.getJsonData("addNewPACSServer.invalidIPAddress");
         String aeTitle = pacsServersTestData.getJsonData("addNewPACSServer.AETitle");
         String port = pacsServersTestData.getJsonData("addNewPACSServer.port");
         String issuerOfPatientID = pacsServersTestData.getJsonData("addNewPACSServer.issuerOfPatientID");
@@ -186,6 +187,18 @@ public class TC06_PACSServersAdminTest {
                 .selectSite()
                 .clickOnActiveCheckbox()
                 .assertVisibilityOfSpacesOnlyIssuerOfPatientIDFieldMessage();
+
+        new P06_PACSServersAdminPage(driver)
+                .clickOnCancelButton()
+                .clickOnAddButton()
+                .enterName(pacsServerName)
+                .enterIPAddress(invalidIPAddress)
+                .enterAETitle(aeTitle)
+                .enterPort(port)
+                .enterIssuerOfPatientId(issuerOfPatientID)
+                .selectSite()
+                .clickOnActiveCheckbox()
+                .assertVisibilityOfInvalidIPAddressMessage();
     }
 
     @BeforeClass

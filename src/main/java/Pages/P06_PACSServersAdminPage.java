@@ -37,6 +37,8 @@ public class P06_PACSServersAdminPage {
     private final By spacesOnlyAETitleFieldMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" AE title cannot contain spaces \"]");
     private final By spacesOnlyIssuerOfPatientIDFieldMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" Issuer of patient ID cannot contain spaces \"]");
 
+    private final By invalidIPAddressMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" Invalid IP address \"]");
+
     private final DriverFactory driver;
 
     public P06_PACSServersAdminPage(DriverFactory driver) {
@@ -266,6 +268,15 @@ public class P06_PACSServersAdminPage {
         SoftAssertUtils.softAssertTrue(
                 driver.elementUtils().verifyVisibilityOfElement(spacesOnlyIssuerOfPatientIDFieldMessageLocator),
                 "Spaces only issuer of patient ID field message not visible"
+        );
+    }
+
+    @Step("Assert visibility of invalid IP address message")
+    public void assertVisibilityOfInvalidIPAddressMessage() {
+        LogsUtils.info("Asserting visibility of invalid IP address message");
+        SoftAssertUtils.softAssertTrue(
+                driver.elementUtils().verifyVisibilityOfElement(invalidIPAddressMessageLocator),
+                "Invalid IP address message not visible"
         );
     }
 }
