@@ -25,12 +25,16 @@ public class P08_WebConferencingToolsAdminPage {
     private final By webConferencingToolEditedMessageLocator = By.xpath("//p [.=\"Web Conferencing Tool Updated Successfully\"]");
     private final By webConferencingToolDeletedMessageLocator = By.xpath("//p [.=\"Selected web conferencing tool has been deleted successfully\"]");
 
-    private final By emptyTypeMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" Type is required \"]");
     private final By emptyNameMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" Name is required \"]");
     private final By emptyApplicationIdMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" Application ID is required \"]");
     private final By emptyDirectoryIdMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" Directory ID is required \"]");
     private final By emptyClientSecretMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" Client Secret is required \"]");
     private final By emptySiteMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" Please select at least one site \"]");
+
+    private final By spacesOnlyNameMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" Name can't contain only white space \"]");
+    private final By spacesOnlyApplicationIdMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" Application ID can't contain only white space \"]");
+    private final By spacesOnlyDirectoryIdMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" Directory ID can't contain only white space \"]");
+    private final By spacesOnlyClientSecretMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" Client Secret can't contain only white space \"]");
 
     private final DriverFactory driver;
 
@@ -190,15 +194,6 @@ public class P08_WebConferencingToolsAdminPage {
         );
     }
 
-    @Step("Assert visibility of Empty Type Message")
-    public void assertVisibilityOfEmptyTypeMessage() {
-        LogsUtils.info("Asserting visibility of Empty Type Message");
-        SoftAssertUtils.softAssertTrue(
-                driver.elementUtils().verifyVisibilityOfElement(emptyTypeMessageLocator),
-                "Empty type message not visible"
-        );
-    }
-
     @Step("Assert visibility of Empty Name Message")
     public void assertVisibilityOfEmptyNameMessage() {
         LogsUtils.info("Asserting visibility of Empty Name Message");
@@ -241,6 +236,42 @@ public class P08_WebConferencingToolsAdminPage {
         SoftAssertUtils.softAssertTrue(
                 driver.elementUtils().verifyVisibilityOfElement(emptySiteMessageLocator),
                 "Empty site message not visible"
+        );
+    }
+
+    @Step("Assert visibility of Spaces Only Name Message")
+    public void assertVisibilityOfSpacesOnlyNameMessage() {
+        LogsUtils.info("Asserting visibility of Spaces Only Name Message");
+        SoftAssertUtils.softAssertTrue(
+                driver.elementUtils().verifyVisibilityOfElement(spacesOnlyNameMessageLocator),
+                "Spaces only name message not visible"
+        );
+    }
+
+    @Step("Assert visibility of Spaces Only Application ID Message")
+    public void assertVisibilityOfSpacesOnlyApplicationIdMessage() {
+        LogsUtils.info("Asserting visibility of Spaces Only Application ID Message");
+        SoftAssertUtils.softAssertTrue(
+                driver.elementUtils().verifyVisibilityOfElement(spacesOnlyApplicationIdMessageLocator),
+                "Spaces only application ID message not visible"
+        );
+    }
+
+    @Step("Assert visibility of Spaces Only Directory ID Message")
+    public void assertVisibilityOfSpacesOnlyDirectoryIdMessage() {
+        LogsUtils.info("Asserting visibility of Spaces Only Directory ID Message");
+        SoftAssertUtils.softAssertTrue(
+                driver.elementUtils().verifyVisibilityOfElement(spacesOnlyDirectoryIdMessageLocator),
+                "Spaces only directory ID message not visible"
+        );
+    }
+
+    @Step("Assert visibility of Spaces Only Client Secret Message")
+    public void assertVisibilityOfSpacesOnlyClientSecretMessage() {
+        LogsUtils.info("Asserting visibility of Spaces Only Client Secret Message");
+        SoftAssertUtils.softAssertTrue(
+                driver.elementUtils().verifyVisibilityOfElement(spacesOnlyClientSecretMessageLocator),
+                "Spaces only client secret message not visible"
         );
     }
 } 

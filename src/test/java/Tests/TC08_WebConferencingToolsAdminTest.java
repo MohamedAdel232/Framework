@@ -135,6 +135,54 @@ public class TC08_WebConferencingToolsAdminTest {
                 .enterClientSecret(clientSecret)
                 .checkActiveCheckbox()
                 .assertVisibilityOfEmptySiteMessage();
+
+        new P08_WebConferencingToolsAdminPage(driver)
+                .clickOnCloseButton()
+                .clickOnAddNewWebConferencingToolButton()
+                .selectType()
+                .enterWebConferencingToolName(" ")
+                .enterApplicationId(applicationID)
+                .enterDirectoryId(directoryID)
+                .enterClientSecret(clientSecret)
+                .selectSite()
+                .checkActiveCheckbox()
+                .assertVisibilityOfSpacesOnlyNameMessage();
+
+        new P08_WebConferencingToolsAdminPage(driver)
+                .clickOnCloseButton()
+                .clickOnAddNewWebConferencingToolButton()
+                .selectType()
+                .enterWebConferencingToolName(name)
+                .enterApplicationId(" ")
+                .enterDirectoryId(directoryID)
+                .enterClientSecret(clientSecret)
+                .selectSite()
+                .checkActiveCheckbox()
+                .assertVisibilityOfSpacesOnlyApplicationIdMessage();
+
+        new P08_WebConferencingToolsAdminPage(driver)
+                .clickOnCloseButton()
+                .clickOnAddNewWebConferencingToolButton()
+                .selectType()
+                .enterWebConferencingToolName(name)
+                .enterApplicationId(applicationID)
+                .enterDirectoryId(" ")
+                .enterClientSecret(clientSecret)
+                .selectSite()
+                .checkActiveCheckbox()
+                .assertVisibilityOfSpacesOnlyDirectoryIdMessage();
+
+        new P08_WebConferencingToolsAdminPage(driver)
+                .clickOnCloseButton()
+                .clickOnAddNewWebConferencingToolButton()
+                .selectType()
+                .enterWebConferencingToolName(name)
+                .enterApplicationId(applicationID)
+                .enterDirectoryId(directoryID)
+                .enterClientSecret(" ")
+                .selectSite()
+                .checkActiveCheckbox()
+                .assertVisibilityOfSpacesOnlyClientSecretMessage();
     }
 
     @BeforeClass
