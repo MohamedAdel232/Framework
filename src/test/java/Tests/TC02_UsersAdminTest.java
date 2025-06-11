@@ -13,7 +13,12 @@ public class TC02_UsersAdminTest {
     JsonUtils userTestData;
 
     @Test
-    public void usersTC() {
+    public void validUsersTC() {
+
+    }
+
+    @Test
+    public void invalidUsersTC() {
 
     }
 

@@ -7,8 +7,8 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
 public class P01_LoginPage {
-    private final By usernameFieldLocator = By.cssSelector("[formcontrolname=\"username\"]");
-    private final By passwordFieldLocator = By.cssSelector("[formcontrolname=\"password\"]");
+    private final By usernameTextFieldLocator = By.cssSelector("[formcontrolname=\"username\"]");
+    private final By passwordTextFieldLocator = By.cssSelector("[formcontrolname=\"password\"]");
     private final By loginButtonLocator = By.id("btnlogin");
     private final By continueButtonLocator = By.cssSelector("[title=\"Continue\"]");
 
@@ -38,14 +38,14 @@ public class P01_LoginPage {
     @Step("Enter username")
     public P01_LoginPage enterUsername(String username) {
         LogsUtils.info("Entering username");
-        driver.elementUtils().sendDataToElement(usernameFieldLocator, username);
+        driver.elementUtils().sendDataToElement(usernameTextFieldLocator, username);
         return this;
     }
 
     @Step("Enter password")
     public P01_LoginPage enterPassword(String password) {
         LogsUtils.info("Entering password");
-        driver.elementUtils().sendDataToElement(passwordFieldLocator, password);
+        driver.elementUtils().sendDataToElement(passwordTextFieldLocator, password);
         return this;
     }
 

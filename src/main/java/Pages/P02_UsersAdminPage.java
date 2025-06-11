@@ -12,6 +12,7 @@ public class P02_UsersAdminPage {
     private final By configurationsButtonLocator = By.xpath("//span[.=\"Configurations\"] /..");
     private final By pacsServersButtonLocator = By.cssSelector("[routerlink=\"/admin/pacsservers\"]");
     private final By activeDirectoriesButtonLocator = By.cssSelector("[routerlink=\"/admin/activedirectories\"]");
+    private final By webConferencingToolsButtonLocator = By.cssSelector("[routerlink=\"/admin/webconferencingtools\"]");
 
     private final DriverFactory driver;
 
@@ -59,5 +60,12 @@ public class P02_UsersAdminPage {
         LogsUtils.info("Clicking on Active Directories button");
         driver.elementUtils().clickOnElement(activeDirectoriesButtonLocator);
         return new P07_ActiveDirectoriesAdminPage(driver);
+    }
+
+    @Step("Click on Web Conferencing Tools button")
+    public P08_WebConferencingToolsAdminPage clickOnWebConferencingToolsButton() {
+        LogsUtils.info("Clicking on Web Conferencing Tools button");
+        driver.elementUtils().clickOnElement(webConferencingToolsButtonLocator);
+        return new P08_WebConferencingToolsAdminPage(driver);
     }
 }
