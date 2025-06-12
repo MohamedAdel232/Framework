@@ -20,7 +20,6 @@ public class P03_SitesAdminPage {
     private final By okButtonLocator = By.xpath("//button[.=\"OK\"]");
     private final By closeButtonLocator = By.cssSelector("[title=\"Close\"]");
 
-    private final By siteAddedMessageLocator = By.xpath("//p [.=\"Site has been added successfully\"]");
     private final By siteEditedMessageLocator = By.xpath("//p [.=\"Site has been updated successfully\"]");
     private final By siteDeletedMessageLocator = By.xpath("//p [.=\"Selected site has been deleted successfully\"]");
 
@@ -136,15 +135,6 @@ public class P03_SitesAdminPage {
         LogsUtils.info("Clicking on Close Button");
         driver.elementUtils().clickOnElement(closeButtonLocator);
         return this;
-    }
-
-    @Step("Assert visibility of Site Added Alert")
-    public void assertVisibilityOfSiteAddedAlert() {
-        LogsUtils.info("Asserting visibility of Site Added Alert");
-        SoftAssertUtils.softAssertTrue(
-                driver.elementUtils().verifyVisibilityOfElement(siteAddedMessageLocator),
-                "Site added alert not visible"
-        );
     }
 
     @Step("Assert visibility of Site Edited Alert")

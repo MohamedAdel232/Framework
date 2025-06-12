@@ -21,7 +21,6 @@ public class P08_WebConferencingToolsAdminPage {
     private final By okButtonLocator = By.xpath("//button[.=\"OK\"]");
     private final By closeButtonLocator = By.cssSelector("[title=\"Close\"]");
 
-    private final By webConferencingToolAddedMessageLocator = By.xpath("//p [.=\"Web conferencing tool has been added successfully\"]");
     private final By webConferencingToolEditedMessageLocator = By.xpath("//p [.=\"Web Conferencing Tool Updated Successfully\"]");
     private final By webConferencingToolDeletedMessageLocator = By.xpath("//p [.=\"Selected web conferencing tool has been deleted successfully\"]");
 
@@ -165,15 +164,6 @@ public class P08_WebConferencingToolsAdminPage {
         LogsUtils.info("Clicking on Close Button");
         driver.elementUtils().clickOnElement(closeButtonLocator);
         return this;
-    }
-
-    @Step("Assert visibility of Web Conferencing Tool Added Alert")
-    public void assertVisibilityOfWebConferencingToolAddedAlert() {
-        LogsUtils.info("Asserting visibility of Web Conferencing Tool Added Alert");
-        SoftAssertUtils.softAssertTrue(
-                driver.elementUtils().verifyVisibilityOfElement(webConferencingToolAddedMessageLocator),
-                "Web conferencing tool added alert not visible"
-        );
     }
 
     @Step("Assert visibility of Web Conferencing Tool Edited Alert")

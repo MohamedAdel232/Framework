@@ -37,12 +37,9 @@ public class TC07_ActiveDirectoriesAdminTest {
                 .enterUrl(url)
                 .selectSite()
                 .checkActiveCheckbox()
-                .clickOnSaveButton()
-        //.assertVisibilityOfActiveDirectoryAddedAlert()
-        ;
+                .clickOnSaveButton();
 
         new P07_ActiveDirectoriesAdminPage(driver)
-//                .clickOnOkButton()
                 .searchActiveDirectoryByName(name)
                 .clickOnEditButton(name)
                 .clickOnSaveButton()

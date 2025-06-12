@@ -16,7 +16,6 @@ public class P05_SpecialtiesAdminPage {
     private final By okButtonLocator = By.xpath("//button[.=\"OK\"]");
     private final By closeButtonLocator = By.cssSelector("[title=\"Close\"]");
 
-    private final By specialtyAddedMessageLocator = By.xpath("//p [.=\"Specialty has been added successfully\"]");
     private final By specialtyEditedMessageLocator = By.xpath("//p [.=\"Selected specialty has been updated successfully\"]");
     private final By specialtyDeletedMessageLocator = By.xpath("//p [.=\"Selected specialty has been deleted successfully\"]");
 
@@ -110,15 +109,6 @@ public class P05_SpecialtiesAdminPage {
         LogsUtils.info("Clicking on Close Button");
         driver.elementUtils().clickOnElement(closeButtonLocator);
         return this;
-    }
-
-    @Step("Assert visibility of Specialty Added Alert")
-    public void assertVisibilityOfSpecialtyAddedAlert() {
-        LogsUtils.info("Asserting visibility of Specialty Added Alert");
-        SoftAssertUtils.softAssertTrue(
-                driver.elementUtils().verifyVisibilityOfElement(specialtyAddedMessageLocator),
-                "Specialty added alert not visible"
-        );
     }
 
     @Step("Assert visibility of Specialty Edited Alert")

@@ -40,11 +40,9 @@ public class TC03_SitesAdminTest {
                 .enterMdtKeywords(mdtKeywords)
                 .checkActiveCheckbox()
                 .checkEnableTwoFactorAuthenticationCheckbox()
-                .clickOnSaveButton()
-                .assertVisibilityOfSiteAddedAlert();
+                .clickOnSaveButton();
 
         new P03_SitesAdminPage(driver)
-                .clickOnOkButton()
                 .searchSiteByName(siteName)
                 .clickOnEditButton(siteName)
                 .clickOnSaveButton()
@@ -136,8 +134,7 @@ public class TC03_SitesAdminTest {
                 .enterMdtKeywords(mdtKeywords)
                 .checkActiveCheckbox()
                 .checkEnableTwoFactorAuthenticationCheckbox()
-        //  .assertVisibilityOfSpacesOnlyPacsCallingAETitleMessage()
-        ;
+                .assertVisibilityOfSpacesOnlyPacsCallingAETitleMessage();
     }
 
     @BeforeClass

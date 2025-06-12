@@ -18,7 +18,6 @@ public class P07_ActiveDirectoriesAdminPage {
     private final By okButtonLocator = By.xpath("//button[.=\"OK\"]");
     private final By closeButtonLocator = By.cssSelector("[title=\"Close\"]");
 
-    private final By activeDirectoryAddedMessageLocator = By.xpath("//p [.=\"Active directory has been added successfully\"]");
     private final By activeDirectoryEditedMessageLocator = By.xpath("//p [.=\"Active directory has been updated successfully\"]");
     private final By activeDirectoryDeletedMessageLocator = By.xpath("//p [.=\"Selected active directory has been deleted successfully\"]");
 
@@ -127,15 +126,6 @@ public class P07_ActiveDirectoriesAdminPage {
         LogsUtils.info("Clicking on Close Button");
         driver.elementUtils().clickOnElement(closeButtonLocator);
         return this;
-    }
-
-    @Step("Assert visibility of Active Directory Added Alert")
-    public void assertVisibilityOfActiveDirectoryAddedAlert() {
-        LogsUtils.info("Asserting visibility of Active Directory Added Alert");
-        SoftAssertUtils.softAssertTrue(
-                driver.elementUtils().verifyVisibilityOfElement(activeDirectoryAddedMessageLocator),
-                "Active directory added alert not visible"
-        );
     }
 
     @Step("Assert visibility of Active Directory Edited Alert")

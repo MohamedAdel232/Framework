@@ -16,7 +16,6 @@ public class P04_GroupsAdminPage {
     private final By okButtonLocator = By.xpath("//button[.=\"OK\"]");
     private final By closeButtonLocator = By.cssSelector("[title=\"Close\"]");
 
-    private final By groupAddedMessageLocator = By.xpath("//p [.=\"Group has been added successfully\"]");
     private final By groupEditedMessageLocator = By.xpath("//p [.=\"Group has been updated successfully\"]");
     private final By groupDeletedMessageLocator = By.xpath("//p [.=\"Selected Group has been deleted successfully\"]");
 
@@ -111,15 +110,6 @@ public class P04_GroupsAdminPage {
         LogsUtils.info("Clicking on Close Button");
         driver.elementUtils().clickOnElement(closeButtonLocator);
         return this;
-    }
-
-    @Step("Assert visibility of Group Added Alert")
-    public void assertVisibilityOfGroupAddedAlert() {
-        LogsUtils.info("Asserting visibility of Group Added Alert");
-        SoftAssertUtils.softAssertTrue(
-                driver.elementUtils().verifyVisibilityOfElement(groupAddedMessageLocator),
-                "Group added alert not visible"
-        );
     }
 
     @Step("Assert visibility of Group Edited Alert")

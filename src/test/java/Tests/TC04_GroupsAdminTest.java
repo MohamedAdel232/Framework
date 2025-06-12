@@ -33,12 +33,9 @@ public class TC04_GroupsAdminTest {
                 .clickOnAddNewGroupButton()
                 .enterGroupName(groupName)
                 .selectSite()
-                .clickOnSaveButton()
-        //        .assertVisibilityOfGroupAddedAlert()
-        ;
+                .clickOnSaveButton();
 
         new P04_GroupsAdminPage(driver)
-                //.clickOnOkButton()
                 .searchGroupByName(groupName)
                 .clickOnEditButton(groupName)
                 .clickOnSaveButton()

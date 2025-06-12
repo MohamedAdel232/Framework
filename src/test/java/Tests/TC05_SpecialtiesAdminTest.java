@@ -34,12 +34,9 @@ public class TC05_SpecialtiesAdminTest {
                 .clickOnAddNewSpecialtyButton()
                 .enterSpecialtyName(specialtyName)
                 .selectSite()
-                .clickOnSaveButton()
-        //        .assertVisibilityOfSpecialtyAddedAlert()
-        ;
+                .clickOnSaveButton();
 
         new P05_SpecialtiesAdminPage(driver)
-                //      .clickOnOkButton()
                 .searchSpecialtyByName(specialtyName)
                 .clickOnEditButton(specialtyName)
                 .clickOnSaveButton()

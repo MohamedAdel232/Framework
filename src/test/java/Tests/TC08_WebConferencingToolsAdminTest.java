@@ -42,12 +42,9 @@ public class TC08_WebConferencingToolsAdminTest {
                 .enterClientSecret(clientSecret)
                 .selectSite()
                 .checkActiveCheckbox()
-                .clickOnSaveButton()
-        // .assertVisibilityOfWebConferencingToolAddedAlert()
-        ;
+                .clickOnSaveButton();
 
         new P08_WebConferencingToolsAdminPage(driver)
-                //.clickOnOkButton()
                 .searchWebConferencingToolByName(name)
                 .clickOnEditButton(name)
                 .clickOnSaveButton()

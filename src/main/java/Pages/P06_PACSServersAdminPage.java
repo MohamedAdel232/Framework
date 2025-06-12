@@ -22,7 +22,6 @@ public class P06_PACSServersAdminPage {
     private final By cancelButtonLocator = By.cssSelector("[title=\"Close\"]");
     private final By pacsServerNameSearchFieldLocator = By.cssSelector("input[aria-label=\"Name Filter\"]");
 
-    private final By pacsServerAddedMessageLocator = By.xpath("//p [.=\"PACS server has been added successfully\"]");
     private final By pacsServerEditedMessageLocator = By.xpath("//p [.=\"PACS server has been edited successfully\"]");
     private final By pacsServerDeletedMessageLocator = By.xpath("//p [.=\"Selected PACS server has been deleted successfully\"]");
 
@@ -38,7 +37,7 @@ public class P06_PACSServersAdminPage {
     private final By spacesOnlyIssuerOfPatientIDFieldMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" Issuer of patient ID cannot contain spaces \"]");
 
     private final By invalidIPAddressMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" Invalid IP address \"]");
-    private final By invalidPortNoMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" Port must not be less than one degit  \"]");
+    private final By invalidPortNoMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" Port no. should be greater than 0  \"]");
 
 
     private final DriverFactory driver;
@@ -163,15 +162,6 @@ public class P06_PACSServersAdminPage {
         LogsUtils.info("Clicking on OK Button");
         driver.elementUtils().clickOnElement(okButtonLocator);
         return this;
-    }
-
-    @Step("Assert visibility of PACS Server Added Alert")
-    public void assertVisibilityOfPacsServerAddedAlert() {
-        LogsUtils.info("Asserting visibility of PACS Server Added Alert");
-        SoftAssertUtils.softAssertTrue(
-                driver.elementUtils().verifyVisibilityOfElement(pacsServerAddedMessageLocator),
-                "PACS Server added alert not visible"
-        );
     }
 
     @Step("Assert visibility of PACS Server Edited Alert")

@@ -41,12 +41,9 @@ public class TC09_HL7NodesAdminTest {
                 .enterDescription(description)
                 .selectSite()
                 .checkActiveCheckbox()
-                .clickOnSaveButton()
-        //.assertVisibilityOfHL7NodeAddedAlert()
-        ;
+                .clickOnSaveButton();
 
         new P09_HL7NodesAdminPage(driver)
-                //   .clickOnOkButton()
                 .searchHL7NodeByName(name)
                 .clickOnEditButton(name)
                 .clickOnSaveButton()

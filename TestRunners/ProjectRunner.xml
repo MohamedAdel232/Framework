@@ -15,6 +15,7 @@
             <class name="Tests.TC07_ActiveDirectoriesAdminTest"/>
             <class name="Tests.TC08_WebConferencingToolsAdminTest"/>
             <class name="Tests.TC09_HL7NodesAdminTest"/>
+            <class name="Tests.TC10_PACSViewersAdminTest"/>
         </classes>
     </test>
 </suite>

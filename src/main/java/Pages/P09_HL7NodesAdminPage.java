@@ -21,7 +21,6 @@ public class P09_HL7NodesAdminPage {
     private final By okButtonLocator = By.xpath("//button[.=\"OK\"]");
     private final By closeButtonLocator = By.cssSelector("[title=\"Close\"]");
 
-    private final By hl7NodeAddedMessageLocator = By.xpath("//p [.=\"HL7 node has been added successfully\"]");
     private final By hl7NodeEditedMessageLocator = By.xpath("//p [.=\"HL7 node has been updated successfully\"]");
 
     private final By emptyNameMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" Name is required \"]");
@@ -152,15 +151,6 @@ public class P09_HL7NodesAdminPage {
         return this;
     }
 
-    @Step("Assert visibility of HL7 Node Added Alert")
-    public void assertVisibilityOfHL7NodeAddedAlert() {
-        LogsUtils.info("Asserting visibility of HL7 Node Added Alert");
-        SoftAssertUtils.softAssertTrue(
-                driver.elementUtils().verifyVisibilityOfElement(hl7NodeAddedMessageLocator),
-                "HL7 node added alert not visible"
-        );
-    }
-
     @Step("Assert visibility of HL7 Node Edited Alert")
     public void assertVisibilityOfHL7NodeEditedAlert() {
         LogsUtils.info("Asserting visibility of HL7 Node Edited Alert");
@@ -173,7 +163,7 @@ public class P09_HL7NodesAdminPage {
     @Step("Assert visibility of HL7 Node Deleted Alert")
     public void assertVisibilityOfHL7NodeDeletedAlert(String name) {
         LogsUtils.info("Asserting visibility of HL7 Node Deleted Alert");
-        By hl7NodeDeletedMessageLocator = By.xpath("//p [.=\"" + name + "\" node has been deleted successfully\"]");
+        By hl7NodeDeletedMessageLocator = By.xpath("//p [.='\"" + name + "\" node has been deleted successfully']");
 
         SoftAssertUtils.softAssertTrue(
                 driver.elementUtils().verifyVisibilityOfElement(hl7NodeDeletedMessageLocator),

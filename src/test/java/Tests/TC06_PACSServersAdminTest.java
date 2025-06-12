@@ -43,12 +43,9 @@ public class TC06_PACSServersAdminTest {
                 .enterIssuerOfPatientId(issuerOfPatientID)
                 .selectSite()
                 .clickOnActiveCheckbox()
-                .clickOnSaveButton()
-        //        .assertVisibilityOfPacsServerAddedAlert()
-        ;
+                .clickOnSaveButton();
 
         new P06_PACSServersAdminPage(driver)
-                //.clickOnOkButton()
                 .searchForPacsServer(pacsServerName)
                 .clickOnEditButton(pacsServerName)
                 .clickOnSaveButton()

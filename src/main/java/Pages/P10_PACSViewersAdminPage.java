@@ -45,7 +45,6 @@ public class P10_PACSViewersAdminPage {
     private final By invalidViewerURLMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" Invalid URL \"]");
     private final By invalidWebSocketFileMessageLocator = By.xpath("//p [.=\"Please upload a valid file ,JS only (.js)\"]");
 
-
     private final DriverFactory driver;
 
     public P10_PACSViewersAdminPage(DriverFactory driver) {
