@@ -1,0 +1,16 @@
+{
+  "addNewPACSViewer": {
+    "name": "TestName",
+    "urlType": "URL",
+    "viewerURL": "https://TestURL.com",
+    "invalidViewURL": "TestURL",
+    "webSocketType": "WebSocket",
+    "getMethod": "GET",
+    "postMethod": "POST",
+    "parameterKey": "TestParameterKey",
+    "site": "TestSite",
+    "pacsServers": "TestPACSServers",
+    "WebSocketFilePath": "src/test/resources/TestData/Test.js",
+    "invalidWebSocketFilePath": "TestRunners/ProjectRunner.xml"
+  }
+}

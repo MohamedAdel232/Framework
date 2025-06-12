@@ -38,6 +38,8 @@ public class P06_PACSServersAdminPage {
     private final By spacesOnlyIssuerOfPatientIDFieldMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" Issuer of patient ID cannot contain spaces \"]");
 
     private final By invalidIPAddressMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" Invalid IP address \"]");
+    private final By invalidPortNoMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" Port must not be less than one degit  \"]");
+
 
     private final DriverFactory driver;
 
@@ -277,6 +279,15 @@ public class P06_PACSServersAdminPage {
         SoftAssertUtils.softAssertTrue(
                 driver.elementUtils().verifyVisibilityOfElement(invalidIPAddressMessageLocator),
                 "Invalid IP address message not visible"
+        );
+    }
+
+    @Step("Assert visibility of Invalid Port No Message")
+    public void assertVisibilityOfInvalidPortNoMessage() {
+        LogsUtils.info("Asserting visibility of Invalid Port No Message");
+        SoftAssertUtils.softAssertTrue(
+                driver.elementUtils().verifyVisibilityOfElement(invalidPortNoMessageLocator),
+                "Invalid port no message not visible"
         );
     }
 }

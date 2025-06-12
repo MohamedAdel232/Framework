@@ -30,7 +30,7 @@ public class P03_SitesAdminPage {
 
     private final By spacesOnlySiteNameMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" Name cannot contain white spaces \"]");
     private final By spacesOnlyHL7SiteNameMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" HL7 site name cannot contain white spaces only \"]");
-    private final By spacesOnlyPacsCallingAETitleMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" PACS calling AE title cannot contain white spaces only \"]");
+    private final By spacesOnlyPacsCallingAETitleMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" PACS Calling AE Title cannot contain white spaces only \"]");
 
     private final DriverFactory driver;
 

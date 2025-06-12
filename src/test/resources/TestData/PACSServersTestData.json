@@ -5,6 +5,7 @@
     "invalidIPAddress": "0000",
     "AETitle": "TestAETitle",
     "port": "50",
+    "invalidPort": "0",
     "issuerOfPatientID": "TestIssuer",
     "site": "Default Site"
   }

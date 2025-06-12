@@ -1,0 +1,11 @@
+{
+  "addNewHL7Node": {
+    "name": "TestName",
+    "idAddress": "0.0.0.0",
+    "invalidIPAddress": "0000",
+    "port": "50",
+    "invalidPort": "0",
+    "description": "Test Description",
+    "site": "Default Site"
+  }
+}

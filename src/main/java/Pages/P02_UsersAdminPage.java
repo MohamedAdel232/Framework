@@ -13,6 +13,9 @@ public class P02_UsersAdminPage {
     private final By pacsServersButtonLocator = By.cssSelector("[routerlink=\"/admin/pacsservers\"]");
     private final By activeDirectoriesButtonLocator = By.cssSelector("[routerlink=\"/admin/activedirectories\"]");
     private final By webConferencingToolsButtonLocator = By.cssSelector("[routerlink=\"/admin/webconferencingtools\"]");
+    private final By hl7ConfigurationsButtonLocator = By.xpath("//span[.=\"HL7 Configurations\"] /..");
+    private final By hl7NodesButtonLocator = By.cssSelector("[routerlink=\"/admin/hl7nodes\"]");
+    private final By pacsViewersButtonLocator = By.cssSelector("[routerlink=\"/admin/pacsviewers\"]");
 
     private final DriverFactory driver;
 
@@ -67,5 +70,27 @@ public class P02_UsersAdminPage {
         LogsUtils.info("Clicking on Web Conferencing Tools button");
         driver.elementUtils().clickOnElement(webConferencingToolsButtonLocator);
         return new P08_WebConferencingToolsAdminPage(driver);
+    }
+
+    @Step("Click on HL7 Configurations button")
+    public P02_UsersAdminPage clickOnHL7ConfigurationsButton() {
+        LogsUtils.info("Clicking on HL7 Configurations button");
+        driver.elementUtils().clickOnElement(hl7ConfigurationsButtonLocator);
+        return new P02_UsersAdminPage(driver);
+    }
+
+    @Step("Click on HL7 Nodes button")
+    public P09_HL7NodesAdminPage clickOnHL7NodesButton() {
+        LogsUtils.info("Clicking on HL7 Nodes button");
+        driver.elementUtils().clickOnElement(hl7NodesButtonLocator);
+        return new P09_HL7NodesAdminPage(driver);
+    }
+
+    @Step("Click on PACS Viewers button")
+    public P10_PACSViewersAdminPage clickOnPACSViewersButton() {
+        LogsUtils.info("Clicking on PACS Viewers button");
+        driver.elementUtils().clickOnElement(pacsViewersButtonLocator);
+        return new P10_PACSViewersAdminPage(driver);
+
     }
 }
