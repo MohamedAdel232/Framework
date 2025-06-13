@@ -16,6 +16,7 @@
             <class name="Tests.TC08_WebConferencingToolsAdminTest"/>
             <class name="Tests.TC09_HL7NodesAdminTest"/>
             <class name="Tests.TC10_PACSViewersAdminTest"/>
+            <class name="Tests.TC11_ThirdPartyApplicationAdminTest"/>
         </classes>
     </test>
 </suite>

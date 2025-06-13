@@ -16,6 +16,7 @@ public class P02_UsersAdminPage {
     private final By hl7ConfigurationsButtonLocator = By.xpath("//span[.=\"HL7 Configurations\"] /..");
     private final By hl7NodesButtonLocator = By.cssSelector("[routerlink=\"/admin/hl7nodes\"]");
     private final By pacsViewersButtonLocator = By.cssSelector("[routerlink=\"/admin/pacsviewers\"]");
+    private final By thirdPartyApplicationsButtonLocator = By.cssSelector("[routerlink=\"/admin/3rdpartyapplications\"]");
 
     private final DriverFactory driver;
 
@@ -91,6 +92,14 @@ public class P02_UsersAdminPage {
         LogsUtils.info("Clicking on PACS Viewers button");
         driver.elementUtils().clickOnElement(pacsViewersButtonLocator);
         return new P10_PACSViewersAdminPage(driver);
+
+    }
+
+    @Step("Click on Third Party Applications button")
+    public P11_ThirdPartyApplicationsAdminPage clickOnThirdPartyApplicationsButton() {
+        LogsUtils.info("Clicking on PACS Viewers button");
+        driver.elementUtils().clickOnElement(thirdPartyApplicationsButtonLocator);
+        return new P11_ThirdPartyApplicationsAdminPage(driver);
 
     }
 }

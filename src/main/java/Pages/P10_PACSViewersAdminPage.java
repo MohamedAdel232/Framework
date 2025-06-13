@@ -51,7 +51,7 @@ public class P10_PACSViewersAdminPage {
         this.driver = driver;
     }
 
-    @Step("Click on Sites Button")
+    @Step("Click on Add New PACS Viewers Button")
     public P10_PACSViewersAdminPage clickOnAddNewPACSViewersButon() {
         LogsUtils.info("Clicking on Add New PACS Viewers Button");
         driver.elementUtils().clickOnElement(addNewPACSViewersButtonLocator);

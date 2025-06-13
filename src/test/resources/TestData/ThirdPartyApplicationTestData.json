@@ -1,0 +1,15 @@
+{
+  "addNewThirdPartyApplication": {
+    "name": "TestName",
+    "url": "https://test.com",
+    "invalidUrl": "test",
+    "tooltip": "Test Tooltip",
+    "getMethod": "GET",
+    "postMethod": "POST",
+    "constantValue": "Constant",
+    "variableValue": "Variable",
+    "key": "testKey",
+    "value": "testValue",
+    "site": "Default Site"
+  }
+} 
