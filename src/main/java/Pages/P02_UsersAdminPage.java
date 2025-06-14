@@ -17,6 +17,7 @@ public class P02_UsersAdminPage {
     private final By hl7NodesButtonLocator = By.cssSelector("[routerlink=\"/admin/hl7nodes\"]");
     private final By pacsViewersButtonLocator = By.cssSelector("[routerlink=\"/admin/pacsviewers\"]");
     private final By thirdPartyApplicationsButtonLocator = By.cssSelector("[routerlink=\"/admin/3rdpartyapplications\"]");
+    private final By destinationsButtonLocator = By.cssSelector("[routerlink=\"/admin/destinations\"]");
 
     private final DriverFactory driver;
 
@@ -97,9 +98,15 @@ public class P02_UsersAdminPage {
 
     @Step("Click on Third Party Applications button")
     public P11_ThirdPartyApplicationsAdminPage clickOnThirdPartyApplicationsButton() {
-        LogsUtils.info("Clicking on PACS Viewers button");
+        LogsUtils.info("Clicking on Third Party Application button");
         driver.elementUtils().clickOnElement(thirdPartyApplicationsButtonLocator);
         return new P11_ThirdPartyApplicationsAdminPage(driver);
+    }
 
+    @Step("Click on Destinations button")
+    public P12_DestinationsAdminPage clickOnDestinationsButton() {
+        LogsUtils.info("Clicking on Destinations button");
+        driver.elementUtils().clickOnElement(destinationsButtonLocator);
+        return new P12_DestinationsAdminPage(driver);
     }
 }

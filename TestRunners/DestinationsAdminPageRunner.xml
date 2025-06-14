@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Destinations Admin Page Runner">
+    <listeners>
+        <listener class-name="Listeners.TestNGListeners"/>
+    </listeners>
+    <test name="Destinations Admin Page Runner on Chrome">
+        <parameter name="browser" value="Chrome"/>
+        <classes>
+            <class name="Tests.TC12_DestinationsAdminTest"/>
+        </classes>
+    </test>
+</suite>

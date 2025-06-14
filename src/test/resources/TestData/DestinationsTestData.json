@@ -1,0 +1,16 @@
+{
+  "addNewDestination": {
+    "name": "TestDestinationName",
+    "pacsType": "PACS",
+    "dicomMode": "DICOM",
+    "hl7Mode": "HL7",
+    "site": "Default Site",
+    "ipAddress": "0.0.0.0",
+    "invalidIPAddress": "0",
+    "aeTitle": "testAETitle",
+    "portNo": "50",
+    "invalidPortNo": "Test",
+    "lessThanZeroPortNo": "0",
+    "hl7OutboundProfile": "TestHL7OutboundProfile"
+  }
+}

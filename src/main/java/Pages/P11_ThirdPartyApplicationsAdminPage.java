@@ -52,7 +52,7 @@ public class P11_ThirdPartyApplicationsAdminPage {
 
     @Step("Click on Add New Third Party Application Button")
     public P11_ThirdPartyApplicationsAdminPage clickOnAddNewThirdPartyApplicationButon() {
-        LogsUtils.info("Clicking on Add New Third Party Allication Button");
+        LogsUtils.info("Clicking on Add New Third Party Application Button");
         driver.elementUtils().clickOnElement(addNewThirdPartyApplicationButtonLocator);
         return this;
     }
