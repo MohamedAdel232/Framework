@@ -17,6 +17,8 @@ public class EdgeFactory extends AbstractDriver implements WebDriverOptions<Edge
         edgeOptions.addArguments("--disable-infobars");
         edgeOptions.addArguments("--disable-notifications");
         edgeOptions.addArguments("--remote-allow-origins=*");
+        edgeOptions.addArguments("--disable-save-password-bubble");
+        edgeOptions.addArguments("--guest");
         Map<String, Object> edgePrefs = Map.of(
                 "profile.default_content_setting_values.notifications", 2,
                 "credential_enable_service", false,

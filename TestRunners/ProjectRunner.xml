@@ -18,6 +18,7 @@
             <class name="Tests.TC10_PACSViewersAdminTest"/>
             <class name="Tests.TC11_ThirdPartyApplicationAdminTest"/>
             <class name="Tests.TC12_DestinationsAdminTest"/>
+            <class name="Tests.TC13_EmailServersAdminTest"/>
         </classes>
     </test>
 </suite>

@@ -18,6 +18,8 @@ public class P02_UsersAdminPage {
     private final By pacsViewersButtonLocator = By.cssSelector("[routerlink=\"/admin/pacsviewers\"]");
     private final By thirdPartyApplicationsButtonLocator = By.cssSelector("[routerlink=\"/admin/3rdpartyapplications\"]");
     private final By destinationsButtonLocator = By.cssSelector("[routerlink=\"/admin/destinations\"]");
+    private final By emailSettingsButtonLocator = By.xpath("//span[.=\"Email Settings\"] /..");
+    private final By emailServersButtonLocator = By.cssSelector("[routerlink=\"/admin/emailservers\"]");
 
     private final DriverFactory driver;
 
@@ -108,5 +110,19 @@ public class P02_UsersAdminPage {
         LogsUtils.info("Clicking on Destinations button");
         driver.elementUtils().clickOnElement(destinationsButtonLocator);
         return new P12_DestinationsAdminPage(driver);
+    }
+
+    @Step("Click on Email Settings button")
+    public P02_UsersAdminPage clickOnEmailSettingsButton() {
+        LogsUtils.info("Clicking on Email Settings button");
+        driver.elementUtils().clickOnElement(emailSettingsButtonLocator);
+        return new P02_UsersAdminPage(driver);
+    }
+
+    @Step("Click on Email Servers button")
+    public P13_EmailServersAdminPage clickOnEmailServersButton() {
+        LogsUtils.info("Clicking on Email Servers button");
+        driver.elementUtils().clickOnElement(emailServersButtonLocator);
+        return new P13_EmailServersAdminPage(driver);
     }
 }

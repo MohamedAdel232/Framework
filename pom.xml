@@ -27,7 +27,7 @@
 
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>TestRunners/ProjectRunner.xml</suiteXmlFile>
+                        <suiteXmlFile>TestRunners/LoginPageRunner.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/1.9.24/aspectjweaver-1.9.24.jar"

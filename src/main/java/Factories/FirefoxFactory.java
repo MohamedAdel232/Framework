@@ -15,6 +15,8 @@ public class FirefoxFactory extends AbstractDriver implements WebDriverOptions<F
         firefoxOptions.addArguments("--disable-infobars");
         firefoxOptions.addArguments("--disable-notifications");
         firefoxOptions.addArguments("--remote-allow-origins=*");
+        firefoxOptions.addArguments("--disable-save-password-bubble");
+        firefoxOptions.addArguments("--guest");
         firefoxOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
         firefoxOptions.setAcceptInsecureCerts(true);
         if (!PropertiesUtils.getPropertyValue("executionType").equalsIgnoreCase("local")) {

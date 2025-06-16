@@ -13,7 +13,7 @@ public class AllureUtils {
     // C:\Users\Mohamed\scoop\apps\allure\2.32.0\bin
     // C:\Users\Mohamed\scoop\apps\allure\2.32.2\bin
     static String allurePath = userHome + File.separator + "scoop" + File.separator + "apps"
-            + File.separator + "allure" + File.separator + "2.32.2" + File.separator
+            + File.separator + "allure" + File.separator + "2.34.0" + File.separator
             + "bin" + File.separator + "allure";
 
     private AllureUtils() {

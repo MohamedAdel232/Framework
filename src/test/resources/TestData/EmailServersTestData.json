@@ -1,0 +1,17 @@
+{
+  "addNewEmailServer": {
+    "name": "TestEmailServerName",
+    "relayType": "Relay",
+    "smtpType": "SMTP",
+    "site": "Default Site",
+    "emailServer": "TestEmailServer",
+    "senderEmail": "Test@mail.com",
+    "invalidSenderEmail": "Test",
+    "senderName": "TestName",
+    "smtpServer": "TestSMTPServer",
+    "smtpPortNo": "50",
+    "lessThanZeroSMTPPortNo": "0",
+    "smtpUsername": "TestUsername",
+    "smtpPassword": "TestPassword"
+  }
+}
