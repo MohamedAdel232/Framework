@@ -18,7 +18,7 @@ public class TC05_SpecialtiesAdminTest {
 
     @Test
     public void validSpecialtiesTC() {
-        String specialtyName = specialtiesTestData.getJsonData("addNewSpecialty.specialtyName") + TimestampUtils.getTimestamp();
+        String specialtyName = specialtiesTestData.getJsonData("addNewSpecialty.specialtyName") + "-" + TimestampUtils.getTimestamp();
 
         new P01_LoginPage(driver)
                 .navigateToLoginPage(PropertiesUtils.getPropertyValue("LoginPageUrl"))
@@ -51,7 +51,7 @@ public class TC05_SpecialtiesAdminTest {
 
     @Test
     public void invalidSpecialtiesTC() {
-        String specialtyName = specialtiesTestData.getJsonData("addNewSpecialty.specialtyName") + TimestampUtils.getTimestamp();
+        String specialtyName = specialtiesTestData.getJsonData("addNewSpecialty.specialtyName") + "-" + TimestampUtils.getTimestamp();
 
         new P01_LoginPage(driver)
                 .navigateToLoginPage(PropertiesUtils.getPropertyValue("LoginPageUrl"))

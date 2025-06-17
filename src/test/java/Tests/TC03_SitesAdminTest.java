@@ -18,7 +18,7 @@ public class TC03_SitesAdminTest {
 
     @Test
     public void validSitesTC() {
-        String siteName = sitesTestData.getJsonData("addNewSite.siteName") + TimestampUtils.getTimestamp();
+        String siteName = sitesTestData.getJsonData("addNewSite.siteName") + "-" + TimestampUtils.getTimestamp();
         String hl7SiteName = sitesTestData.getJsonData("addNewSite.hl7SiteName");
         String pacsCallingAETitle = sitesTestData.getJsonData("addNewSite.pacsCallingAETitle");
         String mdtKeywords = sitesTestData.getJsonData("addNewSite.mdtKeywords");
@@ -57,7 +57,7 @@ public class TC03_SitesAdminTest {
 
     @Test
     public void invalidSitesTC() {
-        String siteName = sitesTestData.getJsonData("addNewSite.siteName");
+        String siteName = sitesTestData.getJsonData("addNewSite.siteName") + "-" + TimestampUtils.getTimestamp();
         String hl7SiteName = sitesTestData.getJsonData("addNewSite.hl7SiteName");
         String pacsCallingAETitle = sitesTestData.getJsonData("addNewSite.pacsCallingAETitle");
         String mdtKeywords = sitesTestData.getJsonData("addNewSite.mdtKeywords");

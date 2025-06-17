@@ -18,7 +18,7 @@ public class TC10_PACSViewersAdminTest {
 
     @Test
     public void validPACSViewersTC() {
-        String name = pacsViewersTestData.getJsonData("addNewPACSViewer.name") + TimestampUtils.getTimestamp();
+        String name = pacsViewersTestData.getJsonData("addNewPACSViewer.name") + "-" + TimestampUtils.getTimestamp();
         String urlType = pacsViewersTestData.getJsonData("addNewPACSViewer.urlType");
         String webSocketType = pacsViewersTestData.getJsonData("addNewPACSViewer.webSocketType");
         String viewerURL = pacsViewersTestData.getJsonData("addNewPACSViewer.viewerURL");
@@ -114,7 +114,7 @@ public class TC10_PACSViewersAdminTest {
 
     @Test
     public void invalidPACSViewersTC() {
-        String name = pacsViewersTestData.getJsonData("addNewPACSViewer.name") + TimestampUtils.getTimestamp();
+        String name = pacsViewersTestData.getJsonData("addNewPACSViewer.name") + "-" + TimestampUtils.getTimestamp();
         String urlType = pacsViewersTestData.getJsonData("addNewPACSViewer.urlType");
         String webSocketType = pacsViewersTestData.getJsonData("addNewPACSViewer.webSocketType");
         String viewerURL = pacsViewersTestData.getJsonData("addNewPACSViewer.viewerURL");

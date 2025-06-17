@@ -18,7 +18,7 @@ public class TC09_HL7NodesAdminTest {
 
     @Test
     public void validHL7NodesTC() {
-        String name = hl7NodesTestData.getJsonData("addNewHL7Node.name") + TimestampUtils.getTimestamp();
+        String name = hl7NodesTestData.getJsonData("addNewHL7Node.name") + "-" + TimestampUtils.getTimestamp();
         String ipAddress = hl7NodesTestData.getJsonData("addNewHL7Node.idAddress");
         String portNo = hl7NodesTestData.getJsonData("addNewHL7Node.port");
         String description = hl7NodesTestData.getJsonData("addNewHL7Node.description");
@@ -58,7 +58,7 @@ public class TC09_HL7NodesAdminTest {
 
     @Test
     public void invalidHL7NodesTC() {
-        String name = hl7NodesTestData.getJsonData("addNewHL7Node.name") + TimestampUtils.getTimestamp();
+        String name = hl7NodesTestData.getJsonData("addNewHL7Node.name") + "-" + TimestampUtils.getTimestamp();
         String ipAddress = hl7NodesTestData.getJsonData("addNewHL7Node.idAddress");
         String invalidIPAddress = hl7NodesTestData.getJsonData("addNewHL7Node.invalidIPAddress");
         String portNo = hl7NodesTestData.getJsonData("addNewHL7Node.port");

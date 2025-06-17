@@ -18,7 +18,7 @@ public class TC12_DestinationsAdminTest {
 
     @Test
     public void validDestinationsTC() {
-        String name = destinationTestData.getJsonData("addNewDestination.name") + TimestampUtils.getTimestamp();
+        String name = destinationTestData.getJsonData("addNewDestination.name") + "-" + TimestampUtils.getTimestamp();
         String pacsType = destinationTestData.getJsonData("addNewDestination.pacsType");
         String dicomMode = destinationTestData.getJsonData("addNewDestination.dicomMode");
         String ipAddress = destinationTestData.getJsonData("addNewDestination.ipAddress");
@@ -62,7 +62,7 @@ public class TC12_DestinationsAdminTest {
 
     @Test
     public void invalidDestinationsTC() {
-        String name = destinationTestData.getJsonData("addNewDestination.name") + TimestampUtils.getTimestamp();
+        String name = destinationTestData.getJsonData("addNewDestination.name") + "-" + TimestampUtils.getTimestamp();
         String pacsType = destinationTestData.getJsonData("addNewDestination.pacsType");
         String dicomMode = destinationTestData.getJsonData("addNewDestination.dicomMode");
         String hl7Mode = destinationTestData.getJsonData("addNewDestination.hl7Mode");

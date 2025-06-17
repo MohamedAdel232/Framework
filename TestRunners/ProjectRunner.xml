@@ -19,6 +19,7 @@
             <class name="Tests.TC11_ThirdPartyApplicationAdminTest"/>
             <class name="Tests.TC12_DestinationsAdminTest"/>
             <class name="Tests.TC13_EmailServersAdminTest"/>
+            <class name="Tests.TC14_EmailTemplateManagerAdminTest"/>
         </classes>
     </test>
 </suite>

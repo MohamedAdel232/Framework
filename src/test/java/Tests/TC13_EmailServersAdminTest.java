@@ -18,7 +18,7 @@ public class TC13_EmailServersAdminTest {
 
     @Test
     public void validEmailServersTC() {
-        String name = emailServersTestData.getJsonData("addNewEmailServer.name") + TimestampUtils.getTimestamp();
+        String name = emailServersTestData.getJsonData("addNewEmailServer.name") + "-" + TimestampUtils.getTimestamp();
         String relayType = emailServersTestData.getJsonData("addNewEmailServer.relayType");
         String smtpType = emailServersTestData.getJsonData("addNewEmailServer.smtpType");
         String emailServer = emailServersTestData.getJsonData("addNewEmailServer.emailServer");
@@ -28,7 +28,6 @@ public class TC13_EmailServersAdminTest {
         String smtpPortNo = emailServersTestData.getJsonData("addNewEmailServer.smtpPortNo");
         String smtpUsername = emailServersTestData.getJsonData("addNewEmailServer.smtpUsername");
         String smtpPassword = emailServersTestData.getJsonData("addNewEmailServer.smtpPassword");
-
 
         new P01_LoginPage(driver)
                 .navigateToLoginPage(PropertiesUtils.getPropertyValue("LoginPageUrl"))
@@ -97,7 +96,7 @@ public class TC13_EmailServersAdminTest {
 
     @Test
     public void invalidEmailServersTC() {
-        String name = emailServersTestData.getJsonData("addNewEmailServer.name") + TimestampUtils.getTimestamp();
+        String name = emailServersTestData.getJsonData("addNewEmailServer.name") + "-" + TimestampUtils.getTimestamp();
         String relayType = emailServersTestData.getJsonData("addNewEmailServer.relayType");
         String smtpType = emailServersTestData.getJsonData("addNewEmailServer.smtpType");
         String emailServer = emailServersTestData.getJsonData("addNewEmailServer.emailServer");
@@ -109,7 +108,6 @@ public class TC13_EmailServersAdminTest {
         String lessThanZeroSMTPPortNo = emailServersTestData.getJsonData("addNewEmailServer.lessThanZeroSMTPPortNo");
         String smtpUsername = emailServersTestData.getJsonData("addNewEmailServer.smtpUsername");
         String smtpPassword = emailServersTestData.getJsonData("addNewEmailServer.smtpPassword");
-
 
         new P01_LoginPage(driver)
                 .navigateToLoginPage(PropertiesUtils.getPropertyValue("LoginPageUrl"))
@@ -318,21 +316,21 @@ public class TC13_EmailServersAdminTest {
                 .selectSite()
                 .assertVisibilityOfInvalidSenderEmailMessage();
 
-//        new P13_EmailServersAdminPage(driver)
-//                .clickOnCloseButton()
-//                .clickOnAddNewEmailServerButton()
-//                .enterName(name)
-//                .selectType(smtpType)
-//                .enterSMTPServer(smtpServer)
-//                .enterSMTPPortNo(lessThanZeroSMTPPortNo)
-//                .enterSMTPUsername(smtpUsername)
-//                .enterSMTPPassword(smtpPassword)
-//                .clickOnEnableSSLCheckbox()
-//                .clickOnEnableLDAPAuthCheckbox()
-//                .enterSenderEmail(senderEmail)
-//                .enterSenderName(senderName)
-//                .selectSite()
-//                .assertVisibilityOfLessThanZeroPortNoMessage();
+        new P13_EmailServersAdminPage(driver)
+                .clickOnCloseButton()
+                .clickOnAddNewEmailServerButton()
+                .enterName(name)
+                .selectType(smtpType)
+                .enterSMTPServer(smtpServer)
+                .enterSMTPPortNo(lessThanZeroSMTPPortNo)
+                .enterSMTPUsername(smtpUsername)
+                .enterSMTPPassword(smtpPassword)
+                .clickOnEnableSSLCheckbox()
+                .clickOnEnableLDAPAuthCheckbox()
+                .enterSenderEmail(senderEmail)
+                .enterSenderName(senderName)
+                .selectSite()
+                .assertVisibilityOfLessThanZeroPortNoMessage();
     }
 
     @BeforeClass

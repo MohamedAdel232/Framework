@@ -18,7 +18,7 @@ public class TC07_ActiveDirectoriesAdminTest {
 
     @Test
     public void validActiveDirectoriesTC() {
-        String name = activeDirectoriesTestData.getJsonData("addNewActiveDirectory.name") + TimestampUtils.getTimestamp();
+        String name = activeDirectoriesTestData.getJsonData("addNewActiveDirectory.name") + "-" + TimestampUtils.getTimestamp();
         String url = activeDirectoriesTestData.getJsonData("addNewActiveDirectory.url");
 
         new P01_LoginPage(driver)
@@ -54,7 +54,7 @@ public class TC07_ActiveDirectoriesAdminTest {
 
     @Test
     public void invalidActiveDirectoriesTC() {
-        String name = activeDirectoriesTestData.getJsonData("addNewActiveDirectory.name") + TimestampUtils.getTimestamp();
+        String name = activeDirectoriesTestData.getJsonData("addNewActiveDirectory.name") + "-" + TimestampUtils.getTimestamp();
         String url = activeDirectoriesTestData.getJsonData("addNewActiveDirectory.url");
         String invalidUrl = activeDirectoriesTestData.getJsonData("addNewActiveDirectory.invalidUrl");
 

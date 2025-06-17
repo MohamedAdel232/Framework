@@ -18,7 +18,7 @@ public class TC04_GroupsAdminTest {
 
     @Test
     public void validGroupsTC() {
-        String groupName = groupsTestData.getJsonData("addNewGroup.groupName") + TimestampUtils.getTimestamp();
+        String groupName = groupsTestData.getJsonData("addNewGroup.groupName") + "-" + TimestampUtils.getTimestamp();
 
         new P01_LoginPage(driver)
                 .navigateToLoginPage(PropertiesUtils.getPropertyValue("LoginPageUrl"))
@@ -50,7 +50,7 @@ public class TC04_GroupsAdminTest {
 
     @Test
     public void invalidGroupsTC() {
-        String groupName = groupsTestData.getJsonData("addNewGroup.groupName") + TimestampUtils.getTimestamp();
+        String groupName = groupsTestData.getJsonData("addNewGroup.groupName") + "-" + TimestampUtils.getTimestamp();
 
         new P01_LoginPage(driver)
                 .navigateToLoginPage(PropertiesUtils.getPropertyValue("LoginPageUrl"))

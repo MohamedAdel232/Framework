@@ -18,7 +18,7 @@ public class TC08_WebConferencingToolsAdminTest {
 
     @Test
     public void validWebConferencingToolsTC() {
-        String name = webConferencingToolsTestData.getJsonData("addNewWebConferencingTool.webConferencingToolName") + TimestampUtils.getTimestamp();
+        String name = webConferencingToolsTestData.getJsonData("addNewWebConferencingTool.webConferencingToolName") + "-" + TimestampUtils.getTimestamp();
         String applicationID = webConferencingToolsTestData.getJsonData("addNewWebConferencingTool.applicationID");
         String directoryID = webConferencingToolsTestData.getJsonData("addNewWebConferencingTool.directoryID");
         String clientSecret = webConferencingToolsTestData.getJsonData("addNewWebConferencingTool.clientSecret");
@@ -59,7 +59,7 @@ public class TC08_WebConferencingToolsAdminTest {
 
     @Test
     public void invalidWebConferencingToolsTC() {
-        String name = webConferencingToolsTestData.getJsonData("addNewWebConferencingTool.webConferencingToolName") + TimestampUtils.getTimestamp();
+        String name = webConferencingToolsTestData.getJsonData("addNewWebConferencingTool.webConferencingToolName") + "-" + TimestampUtils.getTimestamp();
         String applicationID = webConferencingToolsTestData.getJsonData("addNewWebConferencingTool.applicationID");
         String directoryID = webConferencingToolsTestData.getJsonData("addNewWebConferencingTool.directoryID");
         String clientSecret = webConferencingToolsTestData.getJsonData("addNewWebConferencingTool.clientSecret");

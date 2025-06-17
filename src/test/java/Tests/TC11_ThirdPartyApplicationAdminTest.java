@@ -18,7 +18,7 @@ public class TC11_ThirdPartyApplicationAdminTest {
 
     @Test
     public void validThirdPartyApplicationTC() {
-        String name = thirdPartApplicationTestData.getJsonData("addNewThirdPartyApplication.name") + TimestampUtils.getTimestamp();
+        String name = thirdPartApplicationTestData.getJsonData("addNewThirdPartyApplication.name") + "-" + TimestampUtils.getTimestamp();
         String url = thirdPartApplicationTestData.getJsonData("addNewThirdPartyApplication.url");
         String tooltip = thirdPartApplicationTestData.getJsonData("addNewThirdPartyApplication.tooltip");
         String getMethod = thirdPartApplicationTestData.getJsonData("addNewThirdPartyApplication.getMethod");
@@ -108,7 +108,7 @@ public class TC11_ThirdPartyApplicationAdminTest {
 
     @Test
     public void invalidHL7NodesTC() {
-        String name = thirdPartApplicationTestData.getJsonData("addNewThirdPartyApplication.name") + TimestampUtils.getTimestamp();
+        String name = thirdPartApplicationTestData.getJsonData("addNewThirdPartyApplication.name") + "-" + TimestampUtils.getTimestamp();
         String url = thirdPartApplicationTestData.getJsonData("addNewThirdPartyApplication.url");
         String invalidUrl = thirdPartApplicationTestData.getJsonData("addNewThirdPartyApplication.invalidUrl");
         String tooltip = thirdPartApplicationTestData.getJsonData("addNewThirdPartyApplication.tooltip");

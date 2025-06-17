@@ -1,0 +1,9 @@
+{
+  "addNewEmailTemplateManager": {
+    "name": "TestEmailTemplateManager",
+    "type": "Activate Account",
+    "site": "Default Site",
+    "subject": "Test Subject",
+    "body": "Test Body"
+  }
+}
