@@ -1,5 +1,26 @@
 {
   "addNewUsers": {
-    "powerAdmin": "Power Admin"
+    "powerAdmin": "Power Admin",
+    "powerUser": "PowerUser",
+    "admin": "Admin",
+    "user": "User",
+    "username": "TestUsername",
+    "fullName": "TestFullName",
+    "password": "Test1#",
+    "confirmPassword": "Test1#",
+    "email": "TestEmail@mail.com",
+    "site": "Default Site",
+    "pacsUsername": "TestPACSUsername",
+    "risUserID": "TestRISUserID",
+    "MSTeamsID": "Test",
+    "group": "TestGroup",
+    "lessThanThreeCharacterUsername": "AB",
+    "noSpacesUsername": "Test Username",
+    "invalidPassword": "Test",
+    "passwordMismatch": "Test",
+    "noSpacesEmail": "Test Email@mail.com",
+    "invalidEmail": "TestEmail",
+    "noSpacesPACSUsername": "Test PACS Username",
+    "noSpacesRISUserID": "Test RIS User ID"
   }
 }

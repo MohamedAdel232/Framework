@@ -7,7 +7,7 @@
         <parameter name="browser" value="Chrome"/>
         <classes>
             <class name="Tests.TC01_LoginTest"/>
-            <!-- <class name="Tests.TC02_UsersAdminTest"/> -->
+            <class name="Tests.TC02_UsersAdminTest"/>
             <class name="Tests.TC03_SitesAdminTest"/>
             <class name="Tests.TC04_GroupsAdminTest"/>
             <class name="Tests.TC05_SpecialtiesAdminTest"/>

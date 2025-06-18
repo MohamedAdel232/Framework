@@ -169,7 +169,7 @@ public class P14_EmailTemplateManagerAdminPage {
 
     @Step("Assert visibility of Email Template Manager Deleted Alert")
     public void assertVisibilityOfEmailTemplateManagerDeletedAlert() {
-        LogsUtils.info("Asserting visibility of Email Server Deleted Alert");
+        LogsUtils.info("Asserting visibility of Email Template Manager Deleted Alert");
         SoftAssertUtils.softAssertTrue(
                 driver.elementUtils().verifyVisibilityOfElement(emailTemplateManagerDeletedMessageLocator),
                 "Email Template Manager deleted alert not visible"
