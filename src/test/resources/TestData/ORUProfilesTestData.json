@@ -1,0 +1,30 @@
+{
+  "addNewORUProfiles": {
+    "name": "TestName",
+    "site": "Default Site",
+    "preliminary": "TestPreliminary",
+    "oruFinal": "TestFinal",
+    "addendum": "TestAddendum",
+    "risSendingApp": "TestRisSendingApp",
+    "sendingFacility": "Sending Facility",
+    "assignedPatientLocation": "Assigned Patient Location",
+    "sendingApplication": "Sending Application",
+    "risPatientID": "RIS Patient ID",
+    "hospitalPatientID": "Hospital Patient ID",
+    "nationalPatientID": "National Patient ID",
+    "patientFirstName": "Patient First Name",
+    "patientLastName": "Patient Last Name",
+    "birthDate": "Birth Date",
+    "gender": "Gender",
+    "accessionNumber": "Accession No.",
+    "reportingPhysicianFirstName": "Reporting Physician First Name",
+    "reportingPhysicianLastName": "Reporting Physician Last Name",
+    "reportText": "Report Text",
+    "reportValueType": "Report Value Type",
+    "segment": "MSH",
+    "fieldNo": "1",
+    "repeat": "1",
+    "component": "1",
+    "subComponent": "1"
+  }
+}

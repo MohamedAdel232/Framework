@@ -148,27 +148,27 @@ public class TC14_EmailTemplateManagerAdminTest {
                 .enterBody(body)
                 .assertVisibilityOfSpacesOnlyNameMessage();
 
-//        new P14_EmailTemplateManagerAdminPage(driver)
-//                .clickOnBackButton()
-//                .clickOnAddNewEmailTemplateManagerButton()
-//                .enterName(name)
-//                .selectType()
-//                .selectSite()
-//                .clickOnActiveCheckbox()
-//                .enterSubject(" ")
-//                .enterBody(body)
-//                .assertVisibilityOfSpacesOnlySubjectMessage();
+        new P14_EmailTemplateManagerAdminPage(driver)
+                .clickOnBackButton()
+                .clickOnAddNewEmailTemplateManagerButton()
+                .enterName(name)
+                .selectType()
+                .selectSite()
+                .clickOnActiveCheckbox()
+                .enterSubject(" ")
+                .enterBody(body)
+                .assertVisibilityOfSpacesOnlySubjectMessage();
 
-//        new P14_EmailTemplateManagerAdminPage(driver)
-//                .clickOnBackButton()
-//                .clickOnAddNewEmailTemplateManagerButton()
-//                .enterName(name)
-//                .selectType()
-//                .selectSite()
-//                .clickOnActiveCheckbox()
-//                .enterBody(" ")
-//                .enterSubject(subject)
-//                .assertVisibilityOfSpacesOnlyBodyMessage();
+        new P14_EmailTemplateManagerAdminPage(driver)
+                .clickOnBackButton()
+                .clickOnAddNewEmailTemplateManagerButton()
+                .enterName(name)
+                .selectType()
+                .selectSite()
+                .clickOnActiveCheckbox()
+                .enterBody(" ")
+                .enterSubject(subject)
+                .assertVisibilityOfSpacesOnlyBodyMessage();
     }
 
     @BeforeClass

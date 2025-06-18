@@ -21,6 +21,7 @@ public class P02_UsersAdminPage {
     private final By emailSettingsButtonLocator = By.xpath("//span[.=\"Email Settings\"] /..");
     private final By emailServersButtonLocator = By.cssSelector("[routerlink=\"/admin/emailservers\"]");
     private final By emailTemplateManagerButtonLocator = By.cssSelector("[routerlink=\"/admin/emailtemplates\"]");
+    private final By oruProfilesButtonLocator = By.cssSelector("[routerlink=\"/admin/oruprofiles\"]");
 
     private final DriverFactory driver;
 
@@ -132,5 +133,12 @@ public class P02_UsersAdminPage {
         LogsUtils.info("Clicking on Email Template Manager button");
         driver.elementUtils().clickOnElement(emailTemplateManagerButtonLocator);
         return new P14_EmailTemplateManagerAdminPage(driver);
+    }
+
+    @Step("Click on ORU Profiles button")
+    public P15_ORUProfilesAdminPage clickOnORUProfilesButton() {
+        LogsUtils.info("Clicking on ORU Profiles button");
+        driver.elementUtils().clickOnElement(oruProfilesButtonLocator);
+        return new P15_ORUProfilesAdminPage(driver);
     }
 }

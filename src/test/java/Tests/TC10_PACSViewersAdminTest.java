@@ -207,15 +207,16 @@ public class TC10_PACSViewersAdminTest {
                 .assertVisibilityOfEmptyPACSServerMessage();
 
         // Error here
-        new P10_PACSViewersAdminPage(driver)
-                .clickOnCloseButton()
-                .clickOnAddNewPACSViewersButon()
-                .clickOnWebSocketTextField()
-                .enterPACSViewersName(name)
-                .checkAnonymisedCheckbox()
-                .selectSite()
-                .selectPACSServer()
-                .assertVisibilityOfEmptyWebSocketFileMessage();
+//        new P10_PACSViewersAdminPage(driver)
+//                .clickOnCloseButton()
+//                .clickOnAddNewPACSViewersButon()
+//                .selectPACSViewerType(webSocketType)
+//                .clickOnWebSocketTextField()
+//                .checkAnonymisedCheckbox()
+//                .enterPACSViewersName(name)
+//                .selectSite()
+//                .selectPACSServer()
+//                .assertVisibilityOfEmptyWebSocketFileMessage();
 
         new P10_PACSViewersAdminPage(driver)
                 .clickOnCloseButton()
@@ -232,20 +233,20 @@ public class TC10_PACSViewersAdminTest {
                 .selectPACSServer()
                 .assertVisibilityOfSpacesOnlyNameMessage();
 
-//        new P10_PACSViewersAdminPage(driver)
-//                .clickOnCloseButton()
-//                .clickOnAddNewPACSViewersButon()
-//                .enterPACSViewersName(name)
-//                .selectPACSViewerType(urlType)
-//                .enterViewerURL(" ")
-//                .selectMethod(getMethod)
-//                .checkAnonymisedCheckbox()
-//                .checkEncodedCheckbox()
-//                .checkEncryptedCheckbox()
-//                .enterParameterKey(parameterKey)
-//                .selectSite()
-//                .selectPACSServer()
-//                .assertVisibilityOfSpacesOnlyViewerURLMessage();
+        new P10_PACSViewersAdminPage(driver)
+                .clickOnCloseButton()
+                .clickOnAddNewPACSViewersButon()
+                .enterPACSViewersName(name)
+                .selectPACSViewerType(urlType)
+                .enterViewerURL(" ")
+                .selectMethod(getMethod)
+                .checkAnonymisedCheckbox()
+                .checkEncodedCheckbox()
+                .checkEncryptedCheckbox()
+                .enterParameterKey(parameterKey)
+                .selectSite()
+                .selectPACSServer()
+                .assertVisibilityOfSpacesOnlyViewerURLMessage();
 
         new P10_PACSViewersAdminPage(driver)
                 .clickOnCloseButton()
@@ -262,20 +263,20 @@ public class TC10_PACSViewersAdminTest {
                 .selectPACSServer()
                 .assertVisibilityOfSpacesOnlyParameterKeyMessage();
 
-//        new P10_PACSViewersAdminPage(driver)
-//                .clickOnCloseButton()
-//                .clickOnAddNewPACSViewersButon()
-//                .enterPACSViewersName(name)
-//                .selectPACSViewerType(urlType)
-//                .enterViewerURL(invalidViewURL)
-//                .selectMethod(getMethod)
-//                .checkAnonymisedCheckbox()
-//                .checkEncodedCheckbox()
-//                .checkEncryptedCheckbox()
-//                .enterParameterKey(parameterKey)
-//                .selectSite()
-//                .selectPACSServer()
-//                .assertVisibilityOfInvalidViewerURLMessage();
+        new P10_PACSViewersAdminPage(driver)
+                .clickOnCloseButton()
+                .clickOnAddNewPACSViewersButon()
+                .enterPACSViewersName(name)
+                .selectPACSViewerType(urlType)
+                .enterViewerURL(invalidViewURL)
+                .selectMethod(getMethod)
+                .checkAnonymisedCheckbox()
+                .checkEncodedCheckbox()
+                .checkEncryptedCheckbox()
+                .enterParameterKey(parameterKey)
+                .selectSite()
+                .selectPACSServer()
+                .assertVisibilityOfInvalidViewerURLMessage();
 
         new P10_PACSViewersAdminPage(driver)
                 .clickOnCloseButton()

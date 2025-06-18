@@ -20,6 +20,7 @@
             <class name="Tests.TC12_DestinationsAdminTest"/>
             <class name="Tests.TC13_EmailServersAdminTest"/>
             <class name="Tests.TC14_EmailTemplateManagerAdminTest"/>
+            <class name="Tests.TC15_ORUProfilesAdminTest"/>
         </classes>
     </test>
 </suite>

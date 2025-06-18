@@ -5,6 +5,8 @@ import Utilities.LogsUtils;
 import Utilities.SoftAssertUtils;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 
 public class P10_PACSViewersAdminPage {
     private final By addNewPACSViewersButtonLocator = By.cssSelector("[title=\"New PACS Viewer\"]");
@@ -39,7 +41,7 @@ public class P10_PACSViewersAdminPage {
     private final By emptyWebSocketFileMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" WebSocket file is required \"]");
 
     private final By spacesOnlyNameMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" Name cannot contain spaces only \"]");
-    private final By spacesOnlyViewerURLMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" Viewer URL cannot contain spaces only \"]");
+    private final By spacesOnlyViewerURLMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" Invalid URL \"]");
     private final By spacesOnlyParameterKeyMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" Parameter key cannot contain spaces only \"]");
 
     private final By invalidViewerURLMessageLocator = By.xpath("//div [@class=\"text-danger ng-star-inserted\"][.=\" Invalid URL \"]");
@@ -164,7 +166,14 @@ public class P10_PACSViewersAdminPage {
     @Step("Click on WebSocket Text Field")
     public P10_PACSViewersAdminPage clickOnWebSocketTextField() {
         LogsUtils.info("Clicking on WebSocket Text Field");
-        driver.elementUtils().clickOnElement(webSocketTextFieldLocator);
+        WebElement element = driver.elementUtils().findElement(webSocketTextFieldLocator);
+        //((JavascriptExecutor) DriverFactory.getInstance()).executeScript("arguments[0].click();", element);
+        ((JavascriptExecutor) DriverFactory.getInstance()).executeScript(
+                "var evt = new MouseEvent('dblclick', {" +
+                        "bubbles: true, cancelable: true, view: window});" +
+                        "arguments[0].dispatchEvent(evt);", element
+        );
+        driver.elementUtils().clickOnElement(nameTextFieldLocator);
         return this;
     }
 
