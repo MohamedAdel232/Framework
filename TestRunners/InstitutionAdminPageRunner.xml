@@ -1,12 +1,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Groups Admin Page Runner">
+<suite name="Institution Admin Page Runner">
     <listeners>
         <listener class-name="Listeners.TestNGListeners"/>
     </listeners>
-    <test name="Groups Admin Page Runner on Chrome">
+    <test name="Institution Admin Page Runner on Chrome">
         <parameter name="browser" value="Chrome"/>
         <classes>
-            <class name="Tests.TC04_GroupsAdminTest"/>
+            <class name="Tests.TC03_InstitutionsAdminTest"/>
         </classes>
     </test>
 </suite>

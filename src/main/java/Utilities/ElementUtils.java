@@ -1,5 +1,6 @@
 package Utilities;
 
+import Factories.DriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -38,6 +39,15 @@ public class ElementUtils {
         findElement(locator).click();
     }
 
+    public void clickOnElementWithJavaScript(By locator) {
+        LogsUtils.info("Clicking on element:", locator.toString());
+        scrollToElement(locator);
+        WebElement element = driver.findElement(locator);
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].click();", element);
+    }
+
+
     public void sendDataToElement(By locator, String data) {
         LogsUtils.info("Sending", data, "to element:", locator.toString());
         waitUtils.waitForElementToBeVisible(locator);
@@ -66,10 +76,15 @@ public class ElementUtils {
     }
 
     public boolean verifyVisibilityOfElement(By locator) {
-        LogsUtils.info("Verifying Visibility of Element:", locator.toString());
-        waitUtils.waitForElementToBeVisible(locator);
-        scrollToElement(locator);
-        return findElement(locator).isDisplayed();
+        try {
+            LogsUtils.info("Verifying Visibility of Element:", locator.toString());
+            waitUtils.waitForElementToBeVisible(locator);
+            scrollToElement(locator);
+            return findElement(locator).isDisplayed();
+        } catch (Exception e) {
+            LogsUtils.warn("Element:",locator.toString(), "is not visible or not found");
+            return false;
+        }
     }
 
     public void uploadFile(By locator, String filePath) {

@@ -1,9 +1,0 @@
-{
-  "addNewWebConferencingTool": {
-    "webConferencingToolName": "TestWebConferencingToolName",
-    "applicationID": "TestApplicationID",
-    "directoryID": "TestDirectoryID",
-    "clientSecret": "TestClientSecret",
-    "site": "TestSite"
-  }
-}

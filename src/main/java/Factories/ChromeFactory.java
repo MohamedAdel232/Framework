@@ -19,6 +19,7 @@ public class ChromeFactory extends AbstractDriver implements WebDriverOptions<Ch
         chromeOptions.addArguments("--remote-allow-origins=*");
         chromeOptions.addArguments("--disable-save-password-bubble");
         chromeOptions.addArguments("--guest");
+        chromeOptions.setAcceptInsecureCerts(true);
         Map<String, Object> chromePrefs = Map.of(
                 "profile.default_content_setting_values.notifications", 2,
                 "credential_enable_service", false,

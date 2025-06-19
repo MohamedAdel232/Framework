@@ -1,0 +1,105 @@
+[DEBUG] - [19-06-2025 21:00:10] [main] [org.testng.TestNG] - suiteXmlPath: "C:\Users\mohamed.adel.OFFICE\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml"
+[INFO] - [19-06-2025 21:00:11] [main] [Listeners.TestNGListeners] - Test execution started
+[INFO] - [19-06-2025 21:00:11] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [19-06-2025 21:00:11] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [19-06-2025 21:00:11] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [19-06-2025 21:00:11] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [19-06-2025 21:00:11] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [19-06-2025 21:00:11] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [19-06-2025 21:00:11] [main] [Utilities.PropertiesUtils] - Loading properties file data
+[INFO] - [19-06-2025 21:00:11] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\allure-results
+[INFO] - [19-06-2025 21:00:11] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\allure-report
+[INFO] - [19-06-2025 21:00:11] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\Logs
+[INFO] - [19-06-2025 21:00:11] [main] [Utilities.FilesUtils] - Directory created: TestOutputs\Screenshots
+[INFO] - [19-06-2025 21:00:11] [main] [Utilities.FilesUtils] - Directory created: TestOutputs\ScreenRecordings
+[INFO] - [19-06-2025 21:00:11] [main] [org.testng.internal.Utils] - [TestNG] Running:
+  C:\Users\mohamed.adel.OFFICE\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml
+
+[INFO] - [19-06-2025 21:00:11] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-06-19_21-00-09.log
+[INFO] - [19-06-2025 21:00:12] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-06-19_21-00-09.log
+[INFO] - [19-06-2025 21:00:13] [main] [Pages.P01_LoginPage] - Navigating to login page
+[INFO] - [19-06-2025 21:00:13] [main] [Utilities.BrowserUtils] - Navigating to URL: https://192.168.2.90/paip/login
+[DEBUG] - [19-06-2025 21:00:26] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['powerAdminUsername']
+[INFO] - [19-06-2025 21:00:26] [main] [Pages.P01_LoginPage] - Entering username
+[INFO] - [19-06-2025 21:00:26] [main] [Utilities.ElementUtils] - Sending AutomationPowerAdmin@mail.com to element: By.cssSelector: [formcontrolname="username"]
+[INFO] - [19-06-2025 21:00:26] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [19-06-2025 21:00:26] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [19-06-2025 21:00:26] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [19-06-2025 21:00:26] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [19-06-2025 21:00:26] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="username"]
+[DEBUG] - [19-06-2025 21:00:27] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['password']
+[INFO] - [19-06-2025 21:00:27] [main] [Pages.P01_LoginPage] - Entering password
+[INFO] - [19-06-2025 21:00:27] [main] [Utilities.ElementUtils] - Sending Automation1# to element: By.cssSelector: [formcontrolname="password"]
+[INFO] - [19-06-2025 21:00:27] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [19-06-2025 21:00:27] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [19-06-2025 21:00:27] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [19-06-2025 21:00:27] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [19-06-2025 21:00:27] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [19-06-2025 21:00:27] [main] [Pages.P01_LoginPage] - Clicking login button
+[INFO] - [19-06-2025 21:00:27] [main] [Utilities.ElementUtils] - Clicking on element: By.id: btnlogin
+[INFO] - [19-06-2025 21:00:27] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.id: btnlogin
+[INFO] - [19-06-2025 21:00:27] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: btnlogin
+[INFO] - [19-06-2025 21:00:27] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: btnlogin
+[INFO] - [19-06-2025 21:00:27] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.id: btnlogin
+[INFO] - [19-06-2025 21:00:27] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: btnlogin
+[INFO] - [19-06-2025 21:00:27] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: btnlogin
+[INFO] - [19-06-2025 21:00:27] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Continue"]
+[INFO] - [19-06-2025 21:00:27] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Continue"]
+[INFO] - [19-06-2025 21:00:27] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Continue"]
+[INFO] - [19-06-2025 21:00:27] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Continue"]
+[INFO] - [19-06-2025 21:00:33] [main] [Pages.P01_LoginPage] - No session to terminate
+[INFO] - [19-06-2025 21:00:33] [main] [Pages.P01_LoginPage] - Asserting login with valid admin credentials
+[INFO] - [19-06-2025 21:00:33] [main] [Utilities.BrowserUtils] - Current URL is: https://192.168.2.90/paip/admin/users
+[INFO] - [19-06-2025 21:00:33] [main] [Utilities.SoftAssertActionsUtils] - Asserting page URL
+[INFO] - [19-06-2025 21:00:33] [main] [Utilities.SoftAssertActionsUtils] - Expected URL: https://192.168.2.90/paip/admin/users
+[INFO] - [19-06-2025 21:00:33] [main] [Utilities.SoftAssertActionsUtils] - Actual URL: https://192.168.2.90/paip/admin/users
+[INFO] - [19-06-2025 21:00:33] [main] [Utilities.WaitUtils] - Waiting for page to load with URL: https://192.168.2.90/paip/admin/users
+[INFO] - [19-06-2025 21:00:33] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [19-06-2025 21:00:33] [main] [Pages.P02_UsersAdminPage] - Clicking on Institution Button
+[INFO] - [19-06-2025 21:00:33] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [routerlink="/admin/institutions"]
+[INFO] - [19-06-2025 21:00:33] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [routerlink="/admin/institutions"]
+[INFO] - [19-06-2025 21:00:33] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [routerlink="/admin/institutions"]
+[INFO] - [19-06-2025 21:00:33] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [routerlink="/admin/institutions"]
+[INFO] - [19-06-2025 21:00:33] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [routerlink="/admin/institutions"]
+[INFO] - [19-06-2025 21:00:33] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [routerlink="/admin/institutions"]
+[INFO] - [19-06-2025 21:00:33] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [routerlink="/admin/institutions"]
+[INFO] - [19-06-2025 21:00:33] [main] [Pages.P03_InstitutionsAdminPage] - Clicking on Add Button
+[INFO] - [19-06-2025 21:00:33] [main] [Utilities.ElementUtils] - Clicking on element: By.id: addNewInstitution
+[INFO] - [19-06-2025 21:00:33] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.id: addNewInstitution
+[INFO] - [19-06-2025 21:00:33] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: addNewInstitution
+[INFO] - [19-06-2025 21:00:33] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: addNewInstitution
+[INFO] - [19-06-2025 21:00:34] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.id: addNewInstitution
+[INFO] - [19-06-2025 21:00:34] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: addNewInstitution
+[INFO] - [19-06-2025 21:00:34] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: addNewInstitution
+[INFO] - [19-06-2025 21:00:34] [main] [Pages.P03_InstitutionsAdminPage] - Entering Name:  
+[INFO] - [19-06-2025 21:00:34] [main] [Utilities.ElementUtils] - Sending   to element: By.cssSelector: [formcontrolname="name"]
+[INFO] - [19-06-2025 21:00:34] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [19-06-2025 21:00:34] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [19-06-2025 21:00:34] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [19-06-2025 21:00:34] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [19-06-2025 21:00:34] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [19-06-2025 21:00:34] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [formcontrolname="name"]
+[INFO] - [19-06-2025 21:00:34] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [19-06-2025 21:00:34] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [19-06-2025 21:00:34] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [19-06-2025 21:00:34] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [19-06-2025 21:00:34] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [19-06-2025 21:00:34] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [19-06-2025 21:00:34] [main] [Pages.P03_InstitutionsAdminPage] - Clicking on Active Checkbox
+[INFO] - [19-06-2025 21:00:34] [main] [Utilities.ElementUtils] - Clicking on element: By.id: active
+[INFO] - [19-06-2025 21:00:34] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.id: active
+[INFO] - [19-06-2025 21:00:34] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: active
+[INFO] - [19-06-2025 21:00:34] [main] [Pages.P03_InstitutionsAdminPage] - Asserting Visibility Of Name Cannot Contain White Spaces Message
+[INFO] - [19-06-2025 21:00:34] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" Name cannot contain white spaces "]
+[INFO] - [19-06-2025 21:00:34] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" Name cannot contain white spaces "]
+[INFO] - [19-06-2025 21:00:34] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" Name cannot contain white spaces "]
+[WARN] - [19-06-2025 21:00:39] [main] [Utilities.ElementUtils] - Element: By.xpath: //div [@class="text-danger ng-star-inserted"][.=" Name cannot contain white spaces "] is not visible or not found
+[INFO] - [19-06-2025 21:00:39] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [19-06-2025 21:00:39] [main] [Utilities.ScreenRecorderUtils] - Recording stopped
+[ERROR] - [19-06-2025 21:00:39] [main] [Utilities.ScreenRecorderUtils] - Error stopping screen recording: Cannot invoke "org.monte.screenrecorder.ScreenRecorder.stop()" because "Utilities.ScreenRecorderUtils.screenRecorder" is null
+[INFO] - [19-06-2025 21:00:40] [main] [Utilities.ScreenshotsUtils] - Screenshot taken: TestOutputs\Screenshots\failed-invalidInstitutionTC-2025-06-19_21-00-40.png
+[INFO] - [19-06-2025 21:00:40] [main] [Utilities.AllureUtils] - Screenshot attached to Allure report: TestOutputs\Screenshots\failed-invalidInstitutionTC-2025-06-19_21-00-40.png
+[INFO] - [19-06-2025 21:00:40] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-06-19_21-00-09.log
+[INFO] - [19-06-2025 21:00:40] [main] [Listeners.TestNGListeners] - Test invalidInstitutionTC failed
+[INFO] - [19-06-2025 21:00:40] [main] [Utilities.BrowserUtils] - Quitting the browser
+[INFO] - [19-06-2025 21:00:41] [main] [Factories.DriverFactory] - Removing driver

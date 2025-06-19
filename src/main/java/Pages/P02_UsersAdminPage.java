@@ -9,6 +9,8 @@ import java.awt.*;
 import java.util.List;
 
 public class P02_UsersAdminPage {
+    private final By institutionsButtonLocator = By.cssSelector("[routerlink=\"/admin/institutions\"]");
+
     private final By sitesButtonLocator = By.cssSelector("[routerlink=\"/admin/sites\"]");
     private final By groupsButtonLocator = By.cssSelector("[routerlink=\"/admin/groups\"]");
     private final By specialtiesButtonLocator = By.cssSelector("[routerlink=\"/admin/specialties\"]");
@@ -85,6 +87,13 @@ public class P02_UsersAdminPage {
 
     public P02_UsersAdminPage(DriverFactory driver) {
         this.driver = driver;
+    }
+
+    @Step("Click on Institution Button")
+    public P03_InstitutionsAdminPage clickOnInstitutionButton() {
+        LogsUtils.info("Clicking on Institution Button");
+        driver.elementUtils().clickOnElement(institutionsButtonLocator);
+        return new P03_InstitutionsAdminPage(driver);
     }
 
     @Step("Click on Sites button")

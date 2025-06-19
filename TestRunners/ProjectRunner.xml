@@ -7,20 +7,9 @@
         <parameter name="browser" value="Chrome"/>
         <classes>
             <class name="Tests.TC01_LoginTest"/>
-            <class name="Tests.TC02_UsersAdminTest"/>
-            <class name="Tests.TC03_SitesAdminTest"/>
-            <class name="Tests.TC04_GroupsAdminTest"/>
-            <class name="Tests.TC05_SpecialtiesAdminTest"/>
-            <class name="Tests.TC06_PACSServersAdminTest"/>
-            <class name="Tests.TC07_ActiveDirectoriesAdminTest"/>
-            <class name="Tests.TC08_WebConferencingToolsAdminTest"/>
-            <class name="Tests.TC09_HL7NodesAdminTest"/>
-            <class name="Tests.TC10_PACSViewersAdminTest"/>
-            <class name="Tests.TC11_ThirdPartyApplicationAdminTest"/>
-            <class name="Tests.TC12_DestinationsAdminTest"/>
-            <class name="Tests.TC13_EmailServersAdminTest"/>
-            <class name="Tests.TC14_EmailTemplateManagerAdminTest"/>
-            <class name="Tests.TC15_ORUProfilesAdminTest"/>
+            <!--            <class name="Tests.TC02_UsersAdminTest"/>-->
+            <class name="Tests.TC03_InstitutionsAdminTest"/>
+
         </classes>
     </test>
 </suite>

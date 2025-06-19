@@ -1,6 +1,6 @@
 {
   "validLoginCredentials": {
-    "powerAdminUsername": "AutomationPowerAdmin",
+    "powerAdminUsername": "AutomationPowerAdmin@mail.com",
     "password": "Automation1#"
   },
   "invalidLoginCredentials": {
