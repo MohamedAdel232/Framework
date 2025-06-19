@@ -9,6 +9,8 @@ import Utilities.PropertiesUtils;
 import Utilities.TimestampUtils;
 import org.testng.annotations.*;
 
+import java.awt.*;
+
 @Listeners(TestNGListeners.class)
 public class TC02_UsersAdminTest {
     DriverFactory driver;
@@ -502,6 +504,24 @@ public class TC02_UsersAdminTest {
                 .clickOnActiveCheckbox()
                 .clickOnRegionalAccessCheckbox()
                 .assertVisibilityOfEmptyGroupMessage();
+    }
+
+    @Test
+    public void exportingUsersTC() throws InterruptedException, AWTException {
+        new P01_LoginPage(driver)
+                .navigateToLoginPage(PropertiesUtils.getPropertyValue("LoginPageUrl"))
+                .enterUsername(loginTestData.getJsonData("validLoginCredentials.powerAdminUsername"))
+                .enterPassword(loginTestData.getJsonData("validLoginCredentials.password"))
+                .clickLoginButton()
+                .terminateSession()
+                .assertLoginWithValidAdminCredentials();
+
+        int numberOfFilesBeforeExport = new P02_UsersAdminPage(driver).getNumberOfFilesInDownloadsDirectory();
+        new P02_UsersAdminPage(driver).clickOnExportButton();
+        int numberOfFilesAfterExport = new P02_UsersAdminPage(driver).getNumberOfFilesInDownloadsDirectory();
+
+        new P02_UsersAdminPage(driver)
+                .assertExportingUsers(numberOfFilesBeforeExport, numberOfFilesAfterExport);
     }
 
     @BeforeClass

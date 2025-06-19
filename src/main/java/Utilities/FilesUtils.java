@@ -84,4 +84,12 @@ public class FilesUtils {
             LogsUtils.error("Failed to rename file: " + e.getMessage());
         }
     }
+
+    public static int getNumberOfFilesInDirectory(String directoryPath) {
+        return new File(directoryPath).list().length;
+    }
+
+    public static String getDownloadsDirectoryPath() {
+        return PropertiesUtils.getPropertyValue("user.home") + File.separator + "Downloads";
+    }
 }

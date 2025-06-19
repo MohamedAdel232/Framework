@@ -1,12 +1,11 @@
 package Pages;
 
 import Factories.DriverFactory;
-import Utilities.DataBaseUtils;
-import Utilities.LogsUtils;
-import Utilities.SoftAssertUtils;
+import Utilities.*;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
+import java.awt.*;
 import java.util.List;
 
 public class P02_UsersAdminPage {
@@ -47,6 +46,7 @@ public class P02_UsersAdminPage {
     private final By usernameSearchFieldLocator = By.cssSelector("input[aria-label=\"Username Filter\"]");
     private final By yesButtonLocator = By.xpath("//button[.=\"Yes\"]");
     private final By okButtonLocator = By.xpath("//button[.=\"OK\"]");
+    private final By exportButtonLocator = By.cssSelector("[title=\"Export users to CSV file\"]");
 
     private final By userEditedMessageLocator = By.xpath("//p [.=\"User has been updated successfully\"]");
     private final By userDeletedMessageLocator = By.xpath("//p [.=\"Selected user has been deleted successfully\"]");
@@ -393,6 +393,22 @@ public class P02_UsersAdminPage {
         return sites.getFirst().getFirst().toString();
     }
 
+    @Step("Click on Export Button")
+    public P02_UsersAdminPage clickOnExportButton() throws AWTException, InterruptedException {
+        LogsUtils.info("Clicking on Export Button");
+        driver.elementUtils().clickOnElement(exportButtonLocator);
+        Thread.sleep(500);
+        RobotUtils.clickOnEnterButton();
+        return this;
+    }
+
+    @Step("Get number of files before Export")
+    public int getNumberOfFilesInDownloadsDirectory() {
+        LogsUtils.info("Getting number of files before Export");
+        String downloadsDirectoryPath = FilesUtils.getDownloadsDirectoryPath();
+        return FilesUtils.getNumberOfFilesInDirectory(downloadsDirectoryPath);
+    }
+
     @Step("Assert visibility of User Edited Alert")
     public void assertVisibilityOfUserEditedAlert() {
         LogsUtils.info("Asserting visibility of User Edited Alert");
@@ -588,6 +604,18 @@ public class P02_UsersAdminPage {
         SoftAssertUtils.softAssertTrue(
                 driver.elementUtils().verifyVisibilityOfElement(emptyGroupMessageLocator),
                 "Empty Group message not visible"
+        );
+    }
+
+    @Step("Assert Exporting Users")
+    public void assertExportingUsers(int numberOfFilesBeforeExporting, int numberOfFilesAfterExporting) {
+        LogsUtils.info("Assert Exporting Users");
+        LogsUtils.info("Number of Files Before Exporting", String.valueOf(numberOfFilesBeforeExporting));
+        LogsUtils.info("Number of Files After Exporting", String.valueOf(numberOfFilesAfterExporting));
+        SoftAssertUtils.softAssertNotEquals(
+                numberOfFilesBeforeExporting,
+                numberOfFilesAfterExporting,
+                "Failed to Export Users"
         );
     }
 }
