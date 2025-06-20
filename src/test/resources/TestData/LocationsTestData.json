@@ -1,0 +1,23 @@
+{
+  "addNewLocation": {
+    "name": "TestName",
+    "hl7LocationName": "TestHL7LocationName",
+    "accessionNoPrefix": "TestAccessionNoPrefix",
+    "anonymizedAccessionNoPrefix": "TestAnonymizedAccessionNoPrefix",
+    "anonymizedPatientNamePrefix": "TestAnonymizedPatientNamePrefix",
+    "anonymizedPatientIdPrefix": "TestAnonymizedPatientIdPrefix",
+    "studyAutoDelete": "1",
+    "queryInterval": "1",
+    "invalidQueryInterval": "0",
+    "queryTimeout": "1",
+    "invalidQueryTimeout": "0",
+    "matchImageCount": "2",
+    "invalidMatchImageCount": "0",
+    "institution": "AI"
+  },
+  "messages": {
+    "locationAddedMessage": "Location has been Added successfully",
+    "locationEditedMessage": "Location has been Updated successfully",
+    "locationDeletedMessage": "The selected location has been deleted successfully"
+  }
+}

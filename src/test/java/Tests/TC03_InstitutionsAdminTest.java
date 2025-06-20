@@ -17,7 +17,7 @@ public class TC03_InstitutionsAdminTest {
     JsonUtils institutionsTestData;
 
     @Test
-    public void validInstitutionTC() {
+    public void validInstitutionsTC() {
         String name = institutionsTestData.getJsonData("addNewInstitution.name") + "-" + TimestampUtils.getTimestamp();
         String expectedInstitutionAddedMessage = institutionsTestData.getJsonData("messages.institutionAddedMessage");
         String expectedInstitutionEditedMessage = institutionsTestData.getJsonData("messages.institutionEditedMessage");
@@ -35,7 +35,7 @@ public class TC03_InstitutionsAdminTest {
                 .clickOnInstitutionButton()
                 .clickOnAddButton()
                 .enterName(name)
-                .clickOnActiveCheckbox()
+                .checkActiveCheckbox()
                 .clickOnSaveButton()
                 .assertInstitutionAddedMessage(expectedInstitutionAddedMessage);
 
@@ -55,7 +55,7 @@ public class TC03_InstitutionsAdminTest {
     }
 
     @Test
-    public void invalidInstitutionTC() {
+    public void invalidInstitutionsTC() {
         new P01_LoginPage(driver)
                 .navigateToLoginPage(PropertiesUtils.getPropertyValue("LoginPageUrl"))
                 .enterUsername(loginTestData.getJsonData("validLoginCredentials.powerAdminUsername"))
@@ -68,21 +68,21 @@ public class TC03_InstitutionsAdminTest {
                 .clickOnInstitutionButton()
                 .clickOnAddButton()
                 .enterName("")
-                .clickOnActiveCheckbox()
+                .checkActiveCheckbox()
                 .assertVisibilityOfNameIsRequiredMessage();
 
         new P03_InstitutionsAdminPage(driver)
                 .clickOnCloseButton()
                 .clickOnAddButton()
                 .enterName(" ")
-                .clickOnActiveCheckbox()
+                .checkActiveCheckbox()
                 .assertVisibilityOfNameCannotContainWhiteSpacesMessage();
     }
 
     @BeforeClass
     public void beforeClass() {
         loginTestData = new JsonUtils("LoginTestData");
-        institutionsTestData = new JsonUtils("InstitutionTestData");
+        institutionsTestData = new JsonUtils("InstitutionsTestData");
     }
 
     @BeforeMethod

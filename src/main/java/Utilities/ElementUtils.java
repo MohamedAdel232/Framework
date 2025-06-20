@@ -1,6 +1,5 @@
 package Utilities;
 
-import Factories.DriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -39,7 +38,7 @@ public class ElementUtils {
         findElement(locator).click();
     }
 
-    public void clickOnElementWithJavaScript(By locator) {
+    public void clickOnElementJS(By locator) {
         LogsUtils.info("Clicking on element:", locator.toString());
         scrollToElement(locator);
         WebElement element = driver.findElement(locator);
@@ -82,7 +81,7 @@ public class ElementUtils {
             scrollToElement(locator);
             return findElement(locator).isDisplayed();
         } catch (Exception e) {
-            LogsUtils.warn("Element:",locator.toString(), "is not visible or not found");
+            LogsUtils.error("Element:", locator.toString(), "is not visible or not found");
             return false;
         }
     }
@@ -106,5 +105,39 @@ public class ElementUtils {
         LogsUtils.info("Double clicking on element:", locator.toString());
         Actions actions = new Actions(driver);
         actions.doubleClick(findElement(locator));
+    }
+
+    public void checkCheckbox(By locator) {
+        LogsUtils.info("Checking checkbox with locator:", locator.toString());
+        WebElement checkbox = findElement(locator);
+        if (!checkbox.isSelected()) {
+            checkbox.click();
+        }
+    }
+
+    public void checkCheckboxJS(By locator) {
+        LogsUtils.info("Checking checkbox with locator:", locator.toString());
+        WebElement checkbox = findElement(locator);
+        if (!checkbox.isSelected()) {
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("arguments[0].click();", checkbox);
+        }
+    }
+
+    public void uncheckCheckbox(By locator) {
+        LogsUtils.info("Unchecking checkbox with locator:", locator.toString());
+        WebElement checkbox = findElement(locator);
+        if (checkbox.isSelected()) {
+            checkbox.click();
+        }
+    }
+
+    public void uncheckCheckboxJS(By locator) {
+        LogsUtils.info("Unchecking checkbox with locator:", locator.toString());
+        WebElement checkbox = findElement(locator);
+        if (checkbox.isSelected()) {
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("arguments[0].click();", checkbox);
+        }
     }
 }

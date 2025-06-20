@@ -42,14 +42,20 @@ public class P03_InstitutionsAdminPage {
     public P03_InstitutionsAdminPage enterName(String name) {
         LogsUtils.info("Entering Name:", name);
         driver.elementUtils().sendDataToElement(nameTextFieldLocator, name);
-        driver.elementUtils().clickOnElement(nameTextFieldLocator);
         return this;
     }
 
-    @Step("Click on Active Checkbox")
-    public P03_InstitutionsAdminPage clickOnActiveCheckbox() {
-        LogsUtils.info("Clicking on Active Checkbox");
-        driver.elementUtils().clickOnElementWithJavaScript(activeCheckboxLocator);
+    @Step("Check Active Checkbox")
+    public P03_InstitutionsAdminPage checkActiveCheckbox() {
+        LogsUtils.info("Check Active Checkbox");
+        driver.elementUtils().checkCheckboxJS(activeCheckboxLocator);
+        return this;
+    }
+
+    @Step("Uncheck Active Checkbox")
+    public P03_InstitutionsAdminPage uncheckActiveCheckbox() {
+        LogsUtils.info("Uncheck Active Checkbox");
+        driver.elementUtils().uncheckCheckboxJS(activeCheckboxLocator);
         return this;
     }
 

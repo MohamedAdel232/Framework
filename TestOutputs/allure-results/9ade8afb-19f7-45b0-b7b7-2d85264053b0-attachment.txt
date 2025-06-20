@@ -1,0 +1,18 @@
+[DEBUG] - [20-06-2025 18:52:51] [main] [org.testng.TestNG] - suiteXmlPath: "D:\PAIP\TestRunners\ProjectRunner.xml"
+[INFO] - [20-06-2025 18:52:52] [main] [Listeners.TestNGListeners] - Test execution started
+[INFO] - [20-06-2025 18:52:52] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [20-06-2025 18:52:52] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [20-06-2025 18:52:52] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [20-06-2025 18:52:52] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [20-06-2025 18:52:52] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [20-06-2025 18:52:52] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [20-06-2025 18:52:52] [main] [Utilities.PropertiesUtils] - Loading properties file data
+[INFO] - [20-06-2025 18:52:52] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\allure-results
+[INFO] - [20-06-2025 18:52:52] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\allure-report
+[INFO] - [20-06-2025 18:52:52] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\Logs
+[INFO] - [20-06-2025 18:52:52] [main] [Utilities.FilesUtils] - Directory created: TestOutputs\Screenshots
+[INFO] - [20-06-2025 18:52:52] [main] [Utilities.FilesUtils] - Directory created: TestOutputs\ScreenRecordings
+[INFO] - [20-06-2025 18:52:52] [main] [org.testng.internal.Utils] - [TestNG] Running:
+  D:\PAIP\TestRunners\ProjectRunner.xml
+
+[INFO] - [20-06-2025 18:52:52] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-06-20_18-52-50.log
