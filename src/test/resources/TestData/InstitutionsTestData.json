@@ -2,9 +2,9 @@
   "addNewInstitution": {
     "name": "TestName"
   },
-  "messages":{
-    "institutionAddedMessage": "Entered institution has been added successfully",
-    "institutionEditedMessage": "Updated successfully",
-    "institutionDeletedMessage": "The selected institution has been deleted successfully"
+  "messages": {
+    "expectedInstitutionAddedMessage": "Entered institution has been added successfully",
+    "expectedInstitutionEditedMessage": "Updated successfully",
+    "expectedInstitutionDeletedMessage": "The selected institution has been deleted successfully"
   }
 }

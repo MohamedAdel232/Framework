@@ -1,26 +1,26 @@
 {
   "addNewUsers": {
-    "powerAdmin": "Power Admin",
-    "powerUser": "PowerUser",
-    "admin": "Admin",
-    "user": "User",
     "username": "TestUsername",
     "fullName": "TestFullName",
-    "password": "Test1#",
-    "confirmPassword": "Test1#",
+    "password": "123456",
+    "confirmPassword": "123456",
+    "powerAdminUserType": "Power Admin",
+    "siteAdminUserType": "Site Admin",
     "email": "TestEmail@mail.com",
-    "site": "Default Site",
-    "pacsUsername": "TestPACSUsername",
-    "risUserID": "TestRISUserID",
-    "MSTeamsID": "Test",
-    "group": "TestGroup",
-    "lessThanThreeCharacterUsername": "AB",
-    "noSpacesUsername": "Test Username",
-    "invalidPassword": "Test",
-    "passwordMismatch": "Test",
-    "noSpacesEmail": "Test Email@mail.com",
-    "invalidEmail": "TestEmail",
-    "noSpacesPACSUsername": "Test PACS Username",
-    "noSpacesRISUserID": "Test RIS User ID"
+    "institution": "Institution 1",
+    "location": "Location1.Institution1",
+    "usernameMustBeAtLeast3Characters": "AB",
+    "usernameCannotContainSpaces": "Test Username",
+    "usernameMustBeLessThanOrEquals50Characters": "ThisUsernameIsWayTooLongAndExceedsTheFiftyCharacterLimit",
+    "usernameCannotContainBackslashForwardSlashOrAmpersand": "\\/&",
+    "passwordMustBeAtLeast6Characters": "12345",
+    "passwordMustBeLessThanOrEquals32Characters": "ThisPasswordIsWayTooLongAndExceedsTheThirtyTwoCharacterLimit",
+    "passwordsMustMatch": "654321",
+    "invalidEmail": "TestEmail"
+  },
+  "messages": {
+    "expectedUserAddedMessage": "Entered user has been added successfully",
+    "expectedUserEditedMessage": "Selected user has been edited successfully.",
+    "expectedUserDeletedMessage": "Selected user has been deleted successfully."
   }
 }

@@ -19,9 +19,9 @@ public class TC03_InstitutionsAdminTest {
     @Test
     public void validInstitutionsTC() {
         String name = institutionsTestData.getJsonData("addNewInstitution.name") + "-" + TimestampUtils.getTimestamp();
-        String expectedInstitutionAddedMessage = institutionsTestData.getJsonData("messages.institutionAddedMessage");
-        String expectedInstitutionEditedMessage = institutionsTestData.getJsonData("messages.institutionEditedMessage");
-        String expectedInstitutionDeletedMessage = institutionsTestData.getJsonData("messages.institutionDeletedMessage");
+        String expectedInstitutionAddedMessage = institutionsTestData.getJsonData("messages.expectedInstitutionAddedMessage");
+        String expectedInstitutionEditedMessage = institutionsTestData.getJsonData("messages.expectedInstitutionEditedMessage");
+        String expectedInstitutionDeletedMessage = institutionsTestData.getJsonData("messages.expectedInstitutionDeletedMessage");
 
         new P01_LoginPage(driver)
                 .navigateToLoginPage(PropertiesUtils.getPropertyValue("LoginPageUrl"))

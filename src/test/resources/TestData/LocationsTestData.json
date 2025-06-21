@@ -16,8 +16,8 @@
     "institution": "AI"
   },
   "messages": {
-    "locationAddedMessage": "Location has been Added successfully",
-    "locationEditedMessage": "Location has been Updated successfully",
-    "locationDeletedMessage": "The selected location has been deleted successfully"
+    "expectedLocationAddedMessage": "Location has been Added successfully",
+    "expectedLocationEditedMessage": "Location has been Updated successfully",
+    "expectedLocationDeletedMessage": "The selected location has been deleted successfully"
   }
 }

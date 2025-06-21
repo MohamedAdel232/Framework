@@ -132,7 +132,6 @@ public class P04_LocationsAdminPage {
     public P04_LocationsAdminPage selectInstitution(String institution) {
         LogsUtils.info("Selecting Institution:", institution);
         driver.elementUtils().clickOnElement(institutionDropdownLocator);
-        // //li[.=" AI "]
         By institutionOptionLocator = By.xpath("//li[.=\" " + institution + " \"]");
         driver.elementUtils().clickOnElement(institutionOptionLocator);
         return this;

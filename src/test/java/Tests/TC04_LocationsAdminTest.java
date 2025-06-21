@@ -29,9 +29,9 @@ public class TC04_LocationsAdminTest {
         String queryTimeout = locationsTestData.getJsonData("addNewLocation.queryTimeout");
         String matchImageCount = locationsTestData.getJsonData("addNewLocation.matchImageCount");
         String institution = locationsTestData.getJsonData("addNewLocation.institution");
-        String expectedLocationAddedMessage = locationsTestData.getJsonData("messages.locationAddedMessage");
-        String expectedLocationEditedMessage = locationsTestData.getJsonData("messages.locationEditedMessage");
-        String expectedLocationDeletedMessage = locationsTestData.getJsonData("messages.locationDeletedMessage");
+        String expectedLocationAddedMessage = locationsTestData.getJsonData("messages.expectedLocationAddedMessage");
+        String expectedLocationEditedMessage = locationsTestData.getJsonData("messages.expectedLocationEditedMessage");
+        String expectedLocationDeletedMessage = locationsTestData.getJsonData("messages.expectedLocationDeletedMessage");
 
         new P01_LoginPage(driver)
                 .navigateToLoginPage(PropertiesUtils.getPropertyValue("LoginPageUrl"))
