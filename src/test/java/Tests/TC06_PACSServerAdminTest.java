@@ -73,7 +73,7 @@ public class TC06_PACSServerAdminTest {
         String aeTitle = pacsServerTestData.getJsonData("addNewPACSServer.aeTitle");
         String port = pacsServerTestData.getJsonData("addNewPACSServer.port");
         String issuerOfPatientId = pacsServerTestData.getJsonData("addNewPACSServer.issuerOfPatientId");
-        String institution = pacsServerTestData.getJsonData("addNewPACSServer.institution");
+        String institution = new P05_DICOMNodesAdminPage(driver).getInstitutionWithLocations();
         String ipCannotContainWhiteSpaces = pacsServerTestData.getJsonData("addNewPACSServer.ipCannotContainWhiteSpaces");
         String invalidIP = pacsServerTestData.getJsonData("addNewPACSServer.invalidIP");
         String portCannotContainWhiteSpaces = pacsServerTestData.getJsonData("addNewPACSServer.portCannotContainWhiteSpaces");

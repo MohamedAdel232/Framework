@@ -15,6 +15,7 @@ public class P02_UsersAdminPage {
     private final By dicomNodesButtonLocator = By.cssSelector("[routerlink=\"/admin/dicomnodes\"]");
     private final By pacsServerButtonLocator = By.cssSelector("[routerlink=\"/admin/pacsservers\"]");
     private final By dicomDestinationsButtonLocator = By.cssSelector("[routerlink=\"/admin/dicomdestinations\"]");
+    private final By dicomOriginsButtonLocator = By.cssSelector("[routerlink=\"/admin/dicomorigins\"]");
 
     private final By addButtonLocator = By.id("addNewUser");
     private final By usernameFieldLocator = By.cssSelector("[formcontrolname=\"userName\"]");
@@ -109,6 +110,13 @@ public class P02_UsersAdminPage {
         LogsUtils.info("Clicking on DICOM Destinations Button");
         driver.elementUtils().clickOnElement(dicomDestinationsButtonLocator);
         return new P07_DICOMDestinationsAdminPage(driver);
+    }
+
+    @Step("Click on DICOM Origins Button")
+    public P08_DICOMOriginsAdminPage clickOnDICOMOriginsButton() {
+        LogsUtils.info("Clicking on DICOM Origins Button");
+        driver.elementUtils().clickOnElement(dicomOriginsButtonLocator);
+        return new P08_DICOMOriginsAdminPage(driver);
     }
 
     @Step("Click on Add Button")
