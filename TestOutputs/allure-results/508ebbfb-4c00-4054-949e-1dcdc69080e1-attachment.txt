@@ -1,0 +1,822 @@
+[DEBUG] - [23-06-2025 14:21:30] [main] [org.testng.TestNG] - suiteXmlPath: "C:\Users\mohamed.adel.OFFICE\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml"
+[INFO] - [23-06-2025 14:21:31] [main] [Listeners.TestNGListeners] - Test execution started
+[INFO] - [23-06-2025 14:21:31] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [23-06-2025 14:21:31] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [23-06-2025 14:21:31] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [23-06-2025 14:21:31] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [23-06-2025 14:21:31] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [23-06-2025 14:21:31] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [23-06-2025 14:21:31] [main] [Utilities.PropertiesUtils] - Loading properties file data
+[INFO] - [23-06-2025 14:21:31] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\allure-results
+[INFO] - [23-06-2025 14:21:31] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\allure-report
+[INFO] - [23-06-2025 14:21:31] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\Logs
+[INFO] - [23-06-2025 14:21:31] [main] [Utilities.FilesUtils] - Directory created: TestOutputs\Screenshots
+[INFO] - [23-06-2025 14:21:31] [main] [Utilities.FilesUtils] - Directory created: TestOutputs\ScreenRecordings
+[INFO] - [23-06-2025 14:21:31] [main] [org.testng.internal.Utils] - [TestNG] Running:
+  C:\Users\mohamed.adel.OFFICE\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml
+
+[INFO] - [23-06-2025 14:21:31] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-06-23_14-21-30.log
+[INFO] - [23-06-2025 14:21:34] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-06-23_14-21-30.log
+[DEBUG] - [23-06-2025 14:21:34] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewDICOMDestination']['name']
+[DEBUG] - [23-06-2025 14:21:34] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewDICOMDestination']['ip']
+[DEBUG] - [23-06-2025 14:21:34] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewDICOMDestination']['aeTitle']
+[DEBUG] - [23-06-2025 14:21:34] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewDICOMDestination']['port']
+[DEBUG] - [23-06-2025 14:21:34] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewDICOMDestination']['ipCannotContainWhiteSpaces']
+[DEBUG] - [23-06-2025 14:21:34] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewDICOMDestination']['invalidIP']
+[DEBUG] - [23-06-2025 14:21:34] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewDICOMDestination']['portCannotContainWhiteSpaces']
+[DEBUG] - [23-06-2025 14:21:34] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewDICOMDestination']['portMustBeBetween1And65535']
+[DEBUG] - [23-06-2025 14:21:34] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['addNewDICOMDestination']['invalidPort']
+[INFO] - [23-06-2025 14:21:34] [main] [Pages.P01_LoginPage] - Navigating to login page
+[INFO] - [23-06-2025 14:21:34] [main] [Utilities.BrowserUtils] - Navigating to URL: https://192.168.2.90/paip/login
+[DEBUG] - [23-06-2025 14:21:50] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['powerAdminUsername']
+[INFO] - [23-06-2025 14:21:50] [main] [Pages.P01_LoginPage] - Entering username
+[INFO] - [23-06-2025 14:21:50] [main] [Utilities.ElementUtils] - Sending AutomationPowerAdmin@mail.com to element: By.cssSelector: [formcontrolname="username"]
+[INFO] - [23-06-2025 14:21:50] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [23-06-2025 14:21:50] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [23-06-2025 14:21:50] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [23-06-2025 14:21:50] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="username"]
+[INFO] - [23-06-2025 14:21:50] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="username"]
+[DEBUG] - [23-06-2025 14:21:50] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['password']
+[INFO] - [23-06-2025 14:21:50] [main] [Pages.P01_LoginPage] - Entering password
+[INFO] - [23-06-2025 14:21:50] [main] [Utilities.ElementUtils] - Sending Automation1# to element: By.cssSelector: [formcontrolname="password"]
+[INFO] - [23-06-2025 14:21:50] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [23-06-2025 14:21:50] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [23-06-2025 14:21:50] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [23-06-2025 14:21:50] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [23-06-2025 14:21:50] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="password"]
+[INFO] - [23-06-2025 14:21:51] [main] [Pages.P01_LoginPage] - Clicking login button
+[INFO] - [23-06-2025 14:21:51] [main] [Utilities.ElementUtils] - Clicking on element: By.id: btnlogin
+[INFO] - [23-06-2025 14:21:51] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.id: btnlogin
+[INFO] - [23-06-2025 14:21:51] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: btnlogin
+[INFO] - [23-06-2025 14:21:51] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: btnlogin
+[INFO] - [23-06-2025 14:21:51] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.id: btnlogin
+[INFO] - [23-06-2025 14:21:51] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: btnlogin
+[INFO] - [23-06-2025 14:21:51] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: btnlogin
+[INFO] - [23-06-2025 14:21:51] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Continue"]
+[INFO] - [23-06-2025 14:21:51] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Continue"]
+[INFO] - [23-06-2025 14:21:51] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Continue"]
+[INFO] - [23-06-2025 14:21:51] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Continue"]
+[INFO] - [23-06-2025 14:21:56] [main] [Pages.P01_LoginPage] - No session to terminate
+[INFO] - [23-06-2025 14:21:56] [main] [Pages.P01_LoginPage] - Asserting login with valid admin credentials
+[INFO] - [23-06-2025 14:21:56] [main] [Utilities.BrowserUtils] - Current URL is: https://192.168.2.90/paip/admin/users
+[INFO] - [23-06-2025 14:21:56] [main] [Utilities.SoftAssertActionsUtils] - Asserting page URL
+[INFO] - [23-06-2025 14:21:56] [main] [Utilities.SoftAssertActionsUtils] - Expected URL: https://192.168.2.90/paip/admin/users
+[INFO] - [23-06-2025 14:21:56] [main] [Utilities.SoftAssertActionsUtils] - Actual URL: https://192.168.2.90/paip/admin/users
+[INFO] - [23-06-2025 14:21:56] [main] [Utilities.WaitUtils] - Waiting for page to load with URL: https://192.168.2.90/paip/admin/users
+[INFO] - [23-06-2025 14:21:56] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [23-06-2025 14:21:56] [main] [Pages.P02_UsersAdminPage] - Clicking on DICOM Button
+[INFO] - [23-06-2025 14:21:56] [main] [Utilities.ElementUtils] - Clicking on element: By.xpath: //span[.="DICOM"]/..
+[INFO] - [23-06-2025 14:21:56] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.xpath: //span[.="DICOM"]/..
+[INFO] - [23-06-2025 14:21:56] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //span[.="DICOM"]/..
+[INFO] - [23-06-2025 14:21:56] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //span[.="DICOM"]/..
+[INFO] - [23-06-2025 14:21:56] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //span[.="DICOM"]/..
+[INFO] - [23-06-2025 14:21:56] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[.="DICOM"]/..
+[INFO] - [23-06-2025 14:21:56] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //span[.="DICOM"]/..
+[INFO] - [23-06-2025 14:21:56] [main] [Pages.P02_UsersAdminPage] - Clicking on DICOM Destinations Button
+[INFO] - [23-06-2025 14:21:56] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [routerlink="/admin/dicomdestinations"]
+[INFO] - [23-06-2025 14:21:56] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [routerlink="/admin/dicomdestinations"]
+[INFO] - [23-06-2025 14:21:56] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [routerlink="/admin/dicomdestinations"]
+[INFO] - [23-06-2025 14:21:56] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [routerlink="/admin/dicomdestinations"]
+[INFO] - [23-06-2025 14:21:57] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [routerlink="/admin/dicomdestinations"]
+[INFO] - [23-06-2025 14:21:57] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [routerlink="/admin/dicomdestinations"]
+[INFO] - [23-06-2025 14:21:57] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [routerlink="/admin/dicomdestinations"]
+[INFO] - [23-06-2025 14:21:57] [main] [Pages.P07_DICOMDestinationsAdminPage] - Clicking on Add Button
+[INFO] - [23-06-2025 14:21:57] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:21:57] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:21:57] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:21:57] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:21:57] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:21:57] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:21:57] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:21:57] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering Name: 
+[INFO] - [23-06-2025 14:21:57] [main] [Utilities.ElementUtils] - Sending  to element: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:21:57] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:21:57] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:21:57] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:21:57] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:21:57] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:21:57] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering IP: 0.0.0.0
+[INFO] - [23-06-2025 14:21:57] [main] [Utilities.ElementUtils] - Sending 0.0.0.0 to element: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:21:57] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:21:57] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:21:57] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:21:57] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:21:57] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:21:57] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering AE Title: TESTAETitle
+[INFO] - [23-06-2025 14:21:57] [main] [Utilities.ElementUtils] - Sending TESTAETitle to element: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:21:57] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:21:57] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:21:57] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:21:57] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:21:57] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:21:58] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering Port: 50
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.ElementUtils] - Sending 50 to element: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:21:58] [main] [Pages.P07_DICOMDestinationsAdminPage] - Check AI Checkbox
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.ElementUtils] - Checking checkbox with locator: By.id: ai
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: ai
+[INFO] - [23-06-2025 14:21:58] [main] [Pages.P07_DICOMDestinationsAdminPage] - Check Active Checkbox
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.ElementUtils] - Checking checkbox with locator: By.id: active
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: active
+[INFO] - [23-06-2025 14:21:58] [main] [Pages.P07_DICOMDestinationsAdminPage] - Asserting Visibility Of Name Is Required Message
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' Name is required ']
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' Name is required ']
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' Name is required ']
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' Name is required ']
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' Name is required ']
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' Name is required ']
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [23-06-2025 14:21:58] [main] [Pages.P07_DICOMDestinationsAdminPage] - Clicking on Close Button
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:21:58] [main] [Pages.P07_DICOMDestinationsAdminPage] - Clicking on Add Button
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:21:58] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering Name:  
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.ElementUtils] - Sending   to element: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:21:58] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering IP: 0.0.0.0
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.ElementUtils] - Sending 0.0.0.0 to element: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:21:58] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering AE Title: TESTAETitle
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.ElementUtils] - Sending TESTAETitle to element: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:21:58] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:21:59] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:21:59] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering Port: 50
+[INFO] - [23-06-2025 14:21:59] [main] [Utilities.ElementUtils] - Sending 50 to element: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:21:59] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:21:59] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:21:59] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:21:59] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:21:59] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:21:59] [main] [Pages.P07_DICOMDestinationsAdminPage] - Check AI Checkbox
+[INFO] - [23-06-2025 14:21:59] [main] [Utilities.ElementUtils] - Checking checkbox with locator: By.id: ai
+[INFO] - [23-06-2025 14:21:59] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: ai
+[INFO] - [23-06-2025 14:21:59] [main] [Pages.P07_DICOMDestinationsAdminPage] - Check Active Checkbox
+[INFO] - [23-06-2025 14:21:59] [main] [Utilities.ElementUtils] - Checking checkbox with locator: By.id: active
+[INFO] - [23-06-2025 14:21:59] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: active
+[INFO] - [23-06-2025 14:21:59] [main] [Pages.P07_DICOMDestinationsAdminPage] - Asserting Visibility Of Name Cannot Contain White Spaces Only Message
+[INFO] - [23-06-2025 14:21:59] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' Name cannot contain white spaces only ']
+[INFO] - [23-06-2025 14:21:59] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' Name cannot contain white spaces only ']
+[INFO] - [23-06-2025 14:21:59] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' Name cannot contain white spaces only ']
+[ERROR] - [23-06-2025 14:22:04] [main] [Utilities.ElementUtils] - Element: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' Name cannot contain white spaces only '] is not visible or not found
+[INFO] - [23-06-2025 14:22:04] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [23-06-2025 14:22:04] [main] [Pages.P07_DICOMDestinationsAdminPage] - Clicking on Close Button
+[INFO] - [23-06-2025 14:22:04] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:04] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:04] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:04] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:04] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:04] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:04] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:04] [main] [Pages.P07_DICOMDestinationsAdminPage] - Clicking on Add Button
+[INFO] - [23-06-2025 14:22:04] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:04] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:04] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:04] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:04] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:04] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:04] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:04] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering Name: TestDICOMDestination-2025-06-23_14-21-34
+[INFO] - [23-06-2025 14:22:04] [main] [Utilities.ElementUtils] - Sending TestDICOMDestination-2025-06-23_14-21-34 to element: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:04] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:04] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:04] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:04] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:04] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:05] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering IP: 
+[INFO] - [23-06-2025 14:22:05] [main] [Utilities.ElementUtils] - Sending  to element: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:05] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:05] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:05] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:05] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:05] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:05] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering AE Title: TESTAETitle
+[INFO] - [23-06-2025 14:22:05] [main] [Utilities.ElementUtils] - Sending TESTAETitle to element: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:05] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:05] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:05] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:05] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:05] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:05] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering Port: 50
+[INFO] - [23-06-2025 14:22:05] [main] [Utilities.ElementUtils] - Sending 50 to element: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:05] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:05] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:05] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:05] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:05] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:05] [main] [Pages.P07_DICOMDestinationsAdminPage] - Check AI Checkbox
+[INFO] - [23-06-2025 14:22:05] [main] [Utilities.ElementUtils] - Checking checkbox with locator: By.id: ai
+[INFO] - [23-06-2025 14:22:05] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: ai
+[INFO] - [23-06-2025 14:22:05] [main] [Pages.P07_DICOMDestinationsAdminPage] - Check Active Checkbox
+[INFO] - [23-06-2025 14:22:05] [main] [Utilities.ElementUtils] - Checking checkbox with locator: By.id: active
+[INFO] - [23-06-2025 14:22:05] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: active
+[INFO] - [23-06-2025 14:22:05] [main] [Pages.P07_DICOMDestinationsAdminPage] - Asserting Visibility Of IP Is Required Message
+[INFO] - [23-06-2025 14:22:05] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' IP address is required ']
+[INFO] - [23-06-2025 14:22:05] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' IP address is required ']
+[INFO] - [23-06-2025 14:22:05] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' IP address is required ']
+[ERROR] - [23-06-2025 14:22:10] [main] [Utilities.ElementUtils] - Element: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' IP address is required '] is not visible or not found
+[INFO] - [23-06-2025 14:22:10] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [23-06-2025 14:22:10] [main] [Pages.P07_DICOMDestinationsAdminPage] - Clicking on Close Button
+[INFO] - [23-06-2025 14:22:10] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:10] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:10] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:10] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:10] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:10] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:10] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:11] [main] [Pages.P07_DICOMDestinationsAdminPage] - Clicking on Add Button
+[INFO] - [23-06-2025 14:22:11] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:11] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:11] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:11] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:11] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:11] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:11] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:11] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering Name: TestDICOMDestination-2025-06-23_14-21-34
+[INFO] - [23-06-2025 14:22:11] [main] [Utilities.ElementUtils] - Sending TestDICOMDestination-2025-06-23_14-21-34 to element: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:11] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:11] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:11] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:11] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:11] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:11] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering IP: Test IP
+[INFO] - [23-06-2025 14:22:11] [main] [Utilities.ElementUtils] - Sending Test IP to element: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:11] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:11] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:11] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:11] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:11] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:11] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering AE Title: TESTAETitle
+[INFO] - [23-06-2025 14:22:11] [main] [Utilities.ElementUtils] - Sending TESTAETitle to element: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:11] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:11] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:11] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:11] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:11] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:11] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering Port: 50
+[INFO] - [23-06-2025 14:22:11] [main] [Utilities.ElementUtils] - Sending 50 to element: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:11] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:11] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:11] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:11] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:11] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:11] [main] [Pages.P07_DICOMDestinationsAdminPage] - Check AI Checkbox
+[INFO] - [23-06-2025 14:22:11] [main] [Utilities.ElementUtils] - Checking checkbox with locator: By.id: ai
+[INFO] - [23-06-2025 14:22:11] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: ai
+[INFO] - [23-06-2025 14:22:11] [main] [Pages.P07_DICOMDestinationsAdminPage] - Check Active Checkbox
+[INFO] - [23-06-2025 14:22:11] [main] [Utilities.ElementUtils] - Checking checkbox with locator: By.id: active
+[INFO] - [23-06-2025 14:22:11] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: active
+[INFO] - [23-06-2025 14:22:11] [main] [Pages.P07_DICOMDestinationsAdminPage] - Asserting Visibility Of IP Cannot Contain White Spaces Message
+[INFO] - [23-06-2025 14:22:11] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' IP cannot contain white spaces ']
+[INFO] - [23-06-2025 14:22:11] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' IP cannot contain white spaces ']
+[INFO] - [23-06-2025 14:22:11] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' IP cannot contain white spaces ']
+[ERROR] - [23-06-2025 14:22:17] [main] [Utilities.ElementUtils] - Element: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' IP cannot contain white spaces '] is not visible or not found
+[INFO] - [23-06-2025 14:22:17] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [23-06-2025 14:22:17] [main] [Pages.P07_DICOMDestinationsAdminPage] - Clicking on Close Button
+[INFO] - [23-06-2025 14:22:17] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:17] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:17] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:17] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:17] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:17] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:17] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:17] [main] [Pages.P07_DICOMDestinationsAdminPage] - Clicking on Add Button
+[INFO] - [23-06-2025 14:22:17] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:17] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:17] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:17] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:17] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:17] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:17] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:17] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering Name: TestDICOMDestination-2025-06-23_14-21-34
+[INFO] - [23-06-2025 14:22:17] [main] [Utilities.ElementUtils] - Sending TestDICOMDestination-2025-06-23_14-21-34 to element: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:17] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:17] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:17] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:17] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:17] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:17] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering IP:  
+[INFO] - [23-06-2025 14:22:17] [main] [Utilities.ElementUtils] - Sending   to element: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:17] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:17] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:17] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:17] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:17] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:17] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering AE Title: TESTAETitle
+[INFO] - [23-06-2025 14:22:17] [main] [Utilities.ElementUtils] - Sending TESTAETitle to element: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:17] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:17] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:17] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:17] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:17] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:18] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering Port: 50
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.ElementUtils] - Sending 50 to element: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:18] [main] [Pages.P07_DICOMDestinationsAdminPage] - Check AI Checkbox
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.ElementUtils] - Checking checkbox with locator: By.id: ai
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: ai
+[INFO] - [23-06-2025 14:22:18] [main] [Pages.P07_DICOMDestinationsAdminPage] - Check Active Checkbox
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.ElementUtils] - Checking checkbox with locator: By.id: active
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: active
+[INFO] - [23-06-2025 14:22:18] [main] [Pages.P07_DICOMDestinationsAdminPage] - Asserting Visibility Of IP Cannot Contain White Spaces Message
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' IP cannot contain white spaces ']
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' IP cannot contain white spaces ']
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' IP cannot contain white spaces ']
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' IP cannot contain white spaces ']
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' IP cannot contain white spaces ']
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.ElementUtils] - Finding element with locator: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' IP cannot contain white spaces ']
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [23-06-2025 14:22:18] [main] [Pages.P07_DICOMDestinationsAdminPage] - Clicking on Close Button
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:18] [main] [Pages.P07_DICOMDestinationsAdminPage] - Clicking on Add Button
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:18] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering Name: TestDICOMDestination-2025-06-23_14-21-34
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.ElementUtils] - Sending TestDICOMDestination-2025-06-23_14-21-34 to element: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:18] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering IP: 0.0.0
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.ElementUtils] - Sending 0.0.0 to element: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:18] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:19] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering AE Title: TESTAETitle
+[INFO] - [23-06-2025 14:22:19] [main] [Utilities.ElementUtils] - Sending TESTAETitle to element: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:19] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:19] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:19] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:19] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:19] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:19] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering Port: 50
+[INFO] - [23-06-2025 14:22:19] [main] [Utilities.ElementUtils] - Sending 50 to element: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:19] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:19] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:19] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:19] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:19] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:19] [main] [Pages.P07_DICOMDestinationsAdminPage] - Check AI Checkbox
+[INFO] - [23-06-2025 14:22:19] [main] [Utilities.ElementUtils] - Checking checkbox with locator: By.id: ai
+[INFO] - [23-06-2025 14:22:19] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: ai
+[INFO] - [23-06-2025 14:22:19] [main] [Pages.P07_DICOMDestinationsAdminPage] - Check Active Checkbox
+[INFO] - [23-06-2025 14:22:19] [main] [Utilities.ElementUtils] - Checking checkbox with locator: By.id: active
+[INFO] - [23-06-2025 14:22:19] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: active
+[INFO] - [23-06-2025 14:22:19] [main] [Pages.P07_DICOMDestinationsAdminPage] - Asserting Visibility Of Invalid IP Message
+[INFO] - [23-06-2025 14:22:19] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' Invalid IP address ']
+[INFO] - [23-06-2025 14:22:19] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' Invalid IP address ']
+[INFO] - [23-06-2025 14:22:19] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' Invalid IP address ']
+[ERROR] - [23-06-2025 14:22:24] [main] [Utilities.ElementUtils] - Element: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' Invalid IP address '] is not visible or not found
+[INFO] - [23-06-2025 14:22:24] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [23-06-2025 14:22:24] [main] [Pages.P07_DICOMDestinationsAdminPage] - Clicking on Close Button
+[INFO] - [23-06-2025 14:22:24] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:24] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:24] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:24] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:24] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:24] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:24] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:24] [main] [Pages.P07_DICOMDestinationsAdminPage] - Clicking on Add Button
+[INFO] - [23-06-2025 14:22:24] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:24] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:24] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:24] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:24] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:24] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:24] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:24] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering Name: TestDICOMDestination-2025-06-23_14-21-34
+[INFO] - [23-06-2025 14:22:24] [main] [Utilities.ElementUtils] - Sending TestDICOMDestination-2025-06-23_14-21-34 to element: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:24] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:24] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:24] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:24] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:24] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:25] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering IP: 0.0.0.0
+[INFO] - [23-06-2025 14:22:25] [main] [Utilities.ElementUtils] - Sending 0.0.0.0 to element: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:25] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:25] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:25] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:25] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:25] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:25] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering AE Title: 
+[INFO] - [23-06-2025 14:22:25] [main] [Utilities.ElementUtils] - Sending  to element: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:25] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:25] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:25] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:25] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:25] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:25] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering Port: 50
+[INFO] - [23-06-2025 14:22:25] [main] [Utilities.ElementUtils] - Sending 50 to element: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:25] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:25] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:25] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:25] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:25] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:25] [main] [Pages.P07_DICOMDestinationsAdminPage] - Check AI Checkbox
+[INFO] - [23-06-2025 14:22:25] [main] [Utilities.ElementUtils] - Checking checkbox with locator: By.id: ai
+[INFO] - [23-06-2025 14:22:25] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: ai
+[INFO] - [23-06-2025 14:22:25] [main] [Pages.P07_DICOMDestinationsAdminPage] - Check Active Checkbox
+[INFO] - [23-06-2025 14:22:25] [main] [Utilities.ElementUtils] - Checking checkbox with locator: By.id: active
+[INFO] - [23-06-2025 14:22:25] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: active
+[INFO] - [23-06-2025 14:22:25] [main] [Pages.P07_DICOMDestinationsAdminPage] - Asserting Visibility Of AE Title Is Required Message
+[INFO] - [23-06-2025 14:22:25] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' AE title is required ']
+[INFO] - [23-06-2025 14:22:25] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' AE title is required ']
+[INFO] - [23-06-2025 14:22:25] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' AE title is required ']
+[ERROR] - [23-06-2025 14:22:30] [main] [Utilities.ElementUtils] - Element: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' AE title is required '] is not visible or not found
+[INFO] - [23-06-2025 14:22:30] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [23-06-2025 14:22:30] [main] [Pages.P07_DICOMDestinationsAdminPage] - Clicking on Close Button
+[INFO] - [23-06-2025 14:22:30] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:30] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:30] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:30] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:30] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:30] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:30] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:30] [main] [Pages.P07_DICOMDestinationsAdminPage] - Clicking on Add Button
+[INFO] - [23-06-2025 14:22:30] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:30] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:30] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:30] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:30] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:30] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:30] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:31] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering Name: TestDICOMDestination-2025-06-23_14-21-34
+[INFO] - [23-06-2025 14:22:31] [main] [Utilities.ElementUtils] - Sending TestDICOMDestination-2025-06-23_14-21-34 to element: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:31] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:31] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:31] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:31] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:31] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:31] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering IP: 0.0.0.0
+[INFO] - [23-06-2025 14:22:31] [main] [Utilities.ElementUtils] - Sending 0.0.0.0 to element: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:31] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:31] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:31] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:31] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:31] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:31] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering AE Title:  
+[INFO] - [23-06-2025 14:22:31] [main] [Utilities.ElementUtils] - Sending   to element: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:31] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:31] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:31] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:31] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:31] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:31] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering Port: 50
+[INFO] - [23-06-2025 14:22:31] [main] [Utilities.ElementUtils] - Sending 50 to element: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:31] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:31] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:31] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:31] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:31] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:31] [main] [Pages.P07_DICOMDestinationsAdminPage] - Check AI Checkbox
+[INFO] - [23-06-2025 14:22:31] [main] [Utilities.ElementUtils] - Checking checkbox with locator: By.id: ai
+[INFO] - [23-06-2025 14:22:31] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: ai
+[INFO] - [23-06-2025 14:22:31] [main] [Pages.P07_DICOMDestinationsAdminPage] - Check Active Checkbox
+[INFO] - [23-06-2025 14:22:31] [main] [Utilities.ElementUtils] - Checking checkbox with locator: By.id: active
+[INFO] - [23-06-2025 14:22:31] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: active
+[INFO] - [23-06-2025 14:22:31] [main] [Pages.P07_DICOMDestinationsAdminPage] - Asserting Visibility Of AE Title Cannot Contain White Spaces Message
+[INFO] - [23-06-2025 14:22:31] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' AE title cannot contain spaces ']
+[INFO] - [23-06-2025 14:22:31] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' AE title cannot contain spaces ']
+[INFO] - [23-06-2025 14:22:31] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' AE title cannot contain spaces ']
+[ERROR] - [23-06-2025 14:22:37] [main] [Utilities.ElementUtils] - Element: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' AE title cannot contain spaces '] is not visible or not found
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [23-06-2025 14:22:37] [main] [Pages.P07_DICOMDestinationsAdminPage] - Clicking on Close Button
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:37] [main] [Pages.P07_DICOMDestinationsAdminPage] - Clicking on Add Button
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:37] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering Name: TestDICOMDestination-2025-06-23_14-21-34
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.ElementUtils] - Sending TestDICOMDestination-2025-06-23_14-21-34 to element: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:37] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering IP: 0.0.0.0
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.ElementUtils] - Sending 0.0.0.0 to element: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:37] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering AE Title: TESTAETitle
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.ElementUtils] - Sending TESTAETitle to element: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:37] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering Port: 
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.ElementUtils] - Sending  to element: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:37] [main] [Pages.P07_DICOMDestinationsAdminPage] - Check AI Checkbox
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.ElementUtils] - Checking checkbox with locator: By.id: ai
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: ai
+[INFO] - [23-06-2025 14:22:37] [main] [Pages.P07_DICOMDestinationsAdminPage] - Check Active Checkbox
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.ElementUtils] - Checking checkbox with locator: By.id: active
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: active
+[INFO] - [23-06-2025 14:22:37] [main] [Pages.P07_DICOMDestinationsAdminPage] - Asserting Visibility Of Port Is Required Message
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' Port no. is required ']
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' Port no. is required ']
+[INFO] - [23-06-2025 14:22:37] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' Port no. is required ']
+[ERROR] - [23-06-2025 14:22:43] [main] [Utilities.ElementUtils] - Element: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' Port no. is required '] is not visible or not found
+[INFO] - [23-06-2025 14:22:43] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [23-06-2025 14:22:43] [main] [Pages.P07_DICOMDestinationsAdminPage] - Clicking on Close Button
+[INFO] - [23-06-2025 14:22:43] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:43] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:43] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:43] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:43] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:43] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:43] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:43] [main] [Pages.P07_DICOMDestinationsAdminPage] - Clicking on Add Button
+[INFO] - [23-06-2025 14:22:43] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:43] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:43] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:43] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:43] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:43] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:43] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:43] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering Name: TestDICOMDestination-2025-06-23_14-21-34
+[INFO] - [23-06-2025 14:22:43] [main] [Utilities.ElementUtils] - Sending TestDICOMDestination-2025-06-23_14-21-34 to element: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:43] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:43] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:43] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:43] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:43] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:43] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering IP: 0.0.0.0
+[INFO] - [23-06-2025 14:22:43] [main] [Utilities.ElementUtils] - Sending 0.0.0.0 to element: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:43] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:43] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:43] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:43] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:43] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:44] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering AE Title: TESTAETitle
+[INFO] - [23-06-2025 14:22:44] [main] [Utilities.ElementUtils] - Sending TESTAETitle to element: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:44] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:44] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:44] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:44] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:44] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:44] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering Port: Test Port
+[INFO] - [23-06-2025 14:22:44] [main] [Utilities.ElementUtils] - Sending Test Port to element: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:44] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:44] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:44] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:44] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:44] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:44] [main] [Pages.P07_DICOMDestinationsAdminPage] - Check AI Checkbox
+[INFO] - [23-06-2025 14:22:44] [main] [Utilities.ElementUtils] - Checking checkbox with locator: By.id: ai
+[INFO] - [23-06-2025 14:22:44] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: ai
+[INFO] - [23-06-2025 14:22:44] [main] [Pages.P07_DICOMDestinationsAdminPage] - Check Active Checkbox
+[INFO] - [23-06-2025 14:22:44] [main] [Utilities.ElementUtils] - Checking checkbox with locator: By.id: active
+[INFO] - [23-06-2025 14:22:44] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: active
+[INFO] - [23-06-2025 14:22:44] [main] [Pages.P07_DICOMDestinationsAdminPage] - Asserting Visibility Of Port Cannot Contain White Spaces Message
+[INFO] - [23-06-2025 14:22:44] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' Port cannot contain white spaces ']
+[INFO] - [23-06-2025 14:22:44] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' Port cannot contain white spaces ']
+[INFO] - [23-06-2025 14:22:44] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' Port cannot contain white spaces ']
+[ERROR] - [23-06-2025 14:22:49] [main] [Utilities.ElementUtils] - Element: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' Port cannot contain white spaces '] is not visible or not found
+[INFO] - [23-06-2025 14:22:49] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [23-06-2025 14:22:49] [main] [Pages.P07_DICOMDestinationsAdminPage] - Clicking on Close Button
+[INFO] - [23-06-2025 14:22:49] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:49] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:49] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:49] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:49] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:49] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:49] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:49] [main] [Pages.P07_DICOMDestinationsAdminPage] - Clicking on Add Button
+[INFO] - [23-06-2025 14:22:49] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:49] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:49] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:49] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:49] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:49] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:49] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:49] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering Name: TestDICOMDestination-2025-06-23_14-21-34
+[INFO] - [23-06-2025 14:22:49] [main] [Utilities.ElementUtils] - Sending TestDICOMDestination-2025-06-23_14-21-34 to element: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:49] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:49] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:49] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:49] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:49] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:50] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering IP: 0.0.0.0
+[INFO] - [23-06-2025 14:22:50] [main] [Utilities.ElementUtils] - Sending 0.0.0.0 to element: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:50] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:50] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:50] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:50] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:50] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:50] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering AE Title: TESTAETitle
+[INFO] - [23-06-2025 14:22:50] [main] [Utilities.ElementUtils] - Sending TESTAETitle to element: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:50] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:50] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:50] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:50] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:50] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:50] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering Port: InvalidPort
+[INFO] - [23-06-2025 14:22:50] [main] [Utilities.ElementUtils] - Sending InvalidPort to element: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:50] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:50] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:50] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:50] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:50] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:50] [main] [Pages.P07_DICOMDestinationsAdminPage] - Check AI Checkbox
+[INFO] - [23-06-2025 14:22:50] [main] [Utilities.ElementUtils] - Checking checkbox with locator: By.id: ai
+[INFO] - [23-06-2025 14:22:50] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: ai
+[INFO] - [23-06-2025 14:22:50] [main] [Pages.P07_DICOMDestinationsAdminPage] - Check Active Checkbox
+[INFO] - [23-06-2025 14:22:50] [main] [Utilities.ElementUtils] - Checking checkbox with locator: By.id: active
+[INFO] - [23-06-2025 14:22:50] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: active
+[INFO] - [23-06-2025 14:22:50] [main] [Pages.P07_DICOMDestinationsAdminPage] - Asserting Visibility Of Invalid Port Message
+[INFO] - [23-06-2025 14:22:50] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' Invalid Port ']
+[INFO] - [23-06-2025 14:22:50] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' Invalid Port ']
+[INFO] - [23-06-2025 14:22:50] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' Invalid Port ']
+[ERROR] - [23-06-2025 14:22:55] [main] [Utilities.ElementUtils] - Element: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' Invalid Port '] is not visible or not found
+[INFO] - [23-06-2025 14:22:55] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [23-06-2025 14:22:55] [main] [Pages.P07_DICOMDestinationsAdminPage] - Clicking on Close Button
+[INFO] - [23-06-2025 14:22:55] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:55] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:55] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:55] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:56] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:56] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:56] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:22:56] [main] [Pages.P07_DICOMDestinationsAdminPage] - Clicking on Add Button
+[INFO] - [23-06-2025 14:22:56] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:56] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:56] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:56] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:56] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:56] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:56] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:22:56] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering Name: TestDICOMDestination-2025-06-23_14-21-34
+[INFO] - [23-06-2025 14:22:56] [main] [Utilities.ElementUtils] - Sending TestDICOMDestination-2025-06-23_14-21-34 to element: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:56] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:56] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:56] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:56] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:56] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:22:56] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering IP: 0.0.0.0
+[INFO] - [23-06-2025 14:22:56] [main] [Utilities.ElementUtils] - Sending 0.0.0.0 to element: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:56] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:56] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:56] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:56] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:56] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:22:56] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering AE Title: TESTAETitle
+[INFO] - [23-06-2025 14:22:56] [main] [Utilities.ElementUtils] - Sending TESTAETitle to element: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:56] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:56] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:56] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:56] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:56] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:22:56] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering Port: 99999
+[INFO] - [23-06-2025 14:22:56] [main] [Utilities.ElementUtils] - Sending 99999 to element: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:56] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:56] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:56] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:56] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:56] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:22:56] [main] [Pages.P07_DICOMDestinationsAdminPage] - Check AI Checkbox
+[INFO] - [23-06-2025 14:22:56] [main] [Utilities.ElementUtils] - Checking checkbox with locator: By.id: ai
+[INFO] - [23-06-2025 14:22:56] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: ai
+[INFO] - [23-06-2025 14:22:56] [main] [Pages.P07_DICOMDestinationsAdminPage] - Check Active Checkbox
+[INFO] - [23-06-2025 14:22:56] [main] [Utilities.ElementUtils] - Checking checkbox with locator: By.id: active
+[INFO] - [23-06-2025 14:22:56] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: active
+[INFO] - [23-06-2025 14:22:56] [main] [Pages.P07_DICOMDestinationsAdminPage] - Asserting Visibility Of Port Must Be Between 1 And 65535 Message
+[INFO] - [23-06-2025 14:22:56] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' Port must be between 1 and 65535 ']
+[INFO] - [23-06-2025 14:22:56] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' Port must be between 1 and 65535 ']
+[INFO] - [23-06-2025 14:22:56] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' Port must be between 1 and 65535 ']
+[ERROR] - [23-06-2025 14:23:02] [main] [Utilities.ElementUtils] - Element: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' Port must be between 1 and 65535 '] is not visible or not found
+[INFO] - [23-06-2025 14:23:02] [main] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [23-06-2025 14:23:02] [main] [Pages.P07_DICOMDestinationsAdminPage] - Clicking on Close Button
+[INFO] - [23-06-2025 14:23:02] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:23:02] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:23:02] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:23:02] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:23:02] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:23:02] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:23:02] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="Close"]
+[INFO] - [23-06-2025 14:23:02] [main] [Pages.P07_DICOMDestinationsAdminPage] - Clicking on Add Button
+[INFO] - [23-06-2025 14:23:02] [main] [Utilities.ElementUtils] - Clicking on element: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:23:02] [main] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:23:02] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:23:02] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:23:02] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:23:02] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:23:02] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [title="New DICOM Destination"]
+[INFO] - [23-06-2025 14:23:02] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering Name: TestDICOMDestination-2025-06-23_14-21-34
+[INFO] - [23-06-2025 14:23:02] [main] [Utilities.ElementUtils] - Sending TestDICOMDestination-2025-06-23_14-21-34 to element: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:23:02] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:23:02] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:23:02] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:23:02] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:23:02] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="name"]
+[INFO] - [23-06-2025 14:23:02] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering IP: 0.0.0.0
+[INFO] - [23-06-2025 14:23:02] [main] [Utilities.ElementUtils] - Sending 0.0.0.0 to element: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:23:02] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:23:02] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:23:02] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:23:02] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:23:02] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="ipAddress"]
+[INFO] - [23-06-2025 14:23:02] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering AE Title: TESTAETitle
+[INFO] - [23-06-2025 14:23:02] [main] [Utilities.ElementUtils] - Sending TESTAETitle to element: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:23:02] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:23:02] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:23:02] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:23:02] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:23:02] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="aeTitle"]
+[INFO] - [23-06-2025 14:23:03] [main] [Pages.P07_DICOMDestinationsAdminPage] - Entering Port: 99999
+[INFO] - [23-06-2025 14:23:03] [main] [Utilities.ElementUtils] - Sending 99999 to element: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:23:03] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:23:03] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:23:03] [main] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:23:03] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:23:03] [main] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [formcontrolname="portNo"]
+[INFO] - [23-06-2025 14:23:03] [main] [Pages.P07_DICOMDestinationsAdminPage] - Check AI Checkbox
+[INFO] - [23-06-2025 14:23:03] [main] [Utilities.ElementUtils] - Checking checkbox with locator: By.id: ai
+[INFO] - [23-06-2025 14:23:03] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: ai
+[INFO] - [23-06-2025 14:23:03] [main] [Pages.P07_DICOMDestinationsAdminPage] - Check Active Checkbox
+[INFO] - [23-06-2025 14:23:03] [main] [Utilities.ElementUtils] - Checking checkbox with locator: By.id: active
+[INFO] - [23-06-2025 14:23:03] [main] [Utilities.ElementUtils] - Finding element with locator: By.id: active
+[INFO] - [23-06-2025 14:23:03] [main] [Pages.P07_DICOMDestinationsAdminPage] - Asserting Visibility Of Port Must Not Be Less Than One Message
+[INFO] - [23-06-2025 14:23:03] [main] [Utilities.ElementUtils] - Verifying Visibility of Element: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' Port no. must not be less than one ']
+[INFO] - [23-06-2025 14:23:03] [main] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' Port no. must not be less than one ']
+[INFO] - [23-06-2025 14:23:03] [main] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' Port no. must not be less than one ']
+[ERROR] - [23-06-2025 14:23:08] [main] [Utilities.ElementUtils] - Element: By.xpath: //div [@class='text-danger ng-star-inserted'][.=' Port no. must not be less than one '] is not visible or not found
+[INFO] - [23-06-2025 14:23:08] [main] [Utilities.SoftAssertUtils] - Asserting true
+[ERROR] - [23-06-2025 14:23:08] [main] [Utilities.SoftAssertUtils] - Custom Soft Assertion Failed: Custom Soft Assertion
+	Name Cannot Contain White Spaces Only Message is not Displayed expected [true] but found [false],
+	IP Is Required Message is not Displayed expected [true] but found [false],
+	IP Cannot Contain White Spaces Message is not Displayed expected [true] but found [false],
+	Invalid IP Message is not Displayed expected [true] but found [false],
+	AE Title Is Required Message is not Displayed expected [true] but found [false],
+	AE Title Cannot Contain White Spaces Message is not Displayed expected [true] but found [false],
+	Port Is Required Message is not Displayed expected [true] but found [false],
+	Port Cannot Contain White Spaces Message is not Displayed expected [true] but found [false],
+	Invalid Port Message is not Displayed expected [true] but found [false],
+	Port Must Be Between 1 And 65535 Message is not Displayed expected [true] but found [false],
+	Port Must Not Be Less Than One Message is not Displayed expected [true] but found [false]
+[INFO] - [23-06-2025 14:23:08] [main] [Utilities.ScreenRecorderUtils] - Recording stopped
+[ERROR] - [23-06-2025 14:23:08] [main] [Utilities.ScreenRecorderUtils] - Error stopping screen recording: Cannot invoke "org.monte.screenrecorder.ScreenRecorder.stop()" because "Utilities.ScreenRecorderUtils.screenRecorder" is null
+[INFO] - [23-06-2025 14:23:08] [main] [Utilities.ScreenshotsUtils] - Screenshot taken: TestOutputs\Screenshots\failed-invalidDICOMDestinationsTC-2025-06-23_14-23-08.png
+[INFO] - [23-06-2025 14:23:08] [main] [Utilities.AllureUtils] - Screenshot attached to Allure report: TestOutputs\Screenshots\failed-invalidDICOMDestinationsTC-2025-06-23_14-23-08.png

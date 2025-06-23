@@ -1,0 +1,18 @@
+{
+  "addNewDICOMDestination": {
+    "name": "TestDICOMDestination",
+    "ip": "0.0.0.0",
+    "aeTitle": "TESTAETitle",
+    "port": "50",
+    "ipCannotContainWhiteSpaces": "Test IP",
+    "invalidIP": "0.0.0",
+    "portCannotContainWhiteSpaces": "Test Port",
+    "portMustBeBetween1And65535": "99999",
+    "invalidPort": "InvalidPort"
+  },
+  "messages": {
+    "expectedDICOMDestinationAddedMessage": "Added successfully",
+    "expectedDICOMDestinationEditedMessage": "Updated successfully",
+    "expectedDICOMDestinationDeletedMessage": "The selected DICOM destination has been deleted successfully"
+  }
+} 
