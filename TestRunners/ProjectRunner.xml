@@ -11,6 +11,7 @@
             <class name="Tests.TC03_InstitutionsAdminTest"/>
             <class name="Tests.TC04_LocationsAdminTest"/>
             <class name="Tests.TC05_DICOMNodesAdminTest"/>
+            <class name="Tests.TC06_PACSServerAdminTest"/>
         </classes>
     </test>
 </suite>
