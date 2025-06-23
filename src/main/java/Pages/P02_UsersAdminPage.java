@@ -11,6 +11,8 @@ import java.util.List;
 public class P02_UsersAdminPage {
     private final By institutionsButtonLocator = By.cssSelector("[routerlink=\"/admin/institutions\"]");
     private final By locationsButtonLocator = By.cssSelector("[routerlink=\"/admin/locations\"]");
+    private final By dicomButtonLocation = By.xpath("//span[.=\"DICOM\"]/..");
+    private final By dicomNodesButtonLocator = By.cssSelector("[routerlink=\"/admin/dicomnodes\"]");
 
     private final By addButtonLocator = By.id("addNewUser");
     private final By usernameFieldLocator = By.cssSelector("[formcontrolname=\"userName\"]");
@@ -77,6 +79,20 @@ public class P02_UsersAdminPage {
         LogsUtils.info("Clicking on Location Button");
         driver.elementUtils().clickOnElement(locationsButtonLocator);
         return new P04_LocationsAdminPage(driver);
+    }
+
+    @Step("Click on DICOM Button")
+    public P02_UsersAdminPage clickOnDICOMButton() {
+        LogsUtils.info("Clicking on DICOM Button");
+        driver.elementUtils().clickOnElement(dicomButtonLocation);
+        return this;
+    }
+
+    @Step("Click on DICOM Nodes Button")
+    public P05_DICOMNodesAdminPage clickOnDICOMNodesButton() {
+        LogsUtils.info("Clicking on DICOM Nodes Button");
+        driver.elementUtils().clickOnElement(dicomNodesButtonLocator);
+        return new P05_DICOMNodesAdminPage(driver);
     }
 
     @Step("Click on Add Button")
@@ -148,7 +164,7 @@ public class P02_UsersAdminPage {
 
     @Step("Click On Institution Dropdown")
     public P02_UsersAdminPage clickOnInstitutionDropdown() {
-        LogsUtils.info("Click On Institution Dropdown");
+        LogsUtils.info("Clicking On Institution Dropdown");
         driver.elementUtils().clickOnElement(institutionDropdownLocator);
         return this;
     }
@@ -164,7 +180,7 @@ public class P02_UsersAdminPage {
 
     @Step("Click On Location Dropdown")
     public P02_UsersAdminPage clickOnLocationDropdown() {
-        LogsUtils.info("Click On Location Dropdown");
+        LogsUtils.info("Clicking On Location Dropdown");
         driver.elementUtils().clickOnElement(locationDropdownLocator);
         return this;
     }
