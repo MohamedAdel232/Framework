@@ -1,0 +1,20 @@
+{
+  "addNewHL7Node": {
+    "name": "TestHL7Node",
+    "ip": "0.0.0.0",
+    "port": "50",
+    "institution": "TestInstitution",
+    "location": "TestLocation",
+    "ipCannotContainWhiteSpaces": "Test IP",
+    "invalidIP": "0.0.0",
+    "portCannotContainWhiteSpaces": "Test Port",
+    "portMustBeBetween1And65535": "99999",
+    "invalidPort": "InvalidPort",
+    "description": "Test HL7 Node Description"
+  },
+  "messages": {
+    "expectedHL7NodeAddedMessage": "HL7 node has been added successfully.",
+    "expectedHL7NodeEditedMessage": "Updated successfully",
+    "expectedHL7NodeDeletedMessage": "Deleted successfully"
+  }
+} 

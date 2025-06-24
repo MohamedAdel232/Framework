@@ -1,0 +1,18 @@
+[DEBUG] - [24-06-2025 09:09:21] [main] [org.testng.TestNG] - suiteXmlPath: "C:\Users\mohamed.adel.OFFICE\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml"
+[INFO] - [24-06-2025 09:09:22] [main] [Listeners.TestNGListeners] - Test execution started
+[INFO] - [24-06-2025 09:09:22] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [24-06-2025 09:09:22] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [24-06-2025 09:09:22] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [24-06-2025 09:09:22] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [24-06-2025 09:09:22] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [24-06-2025 09:09:22] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [24-06-2025 09:09:22] [main] [Utilities.PropertiesUtils] - Loading properties file data
+[INFO] - [24-06-2025 09:09:23] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\allure-results
+[INFO] - [24-06-2025 09:09:23] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\allure-report
+[INFO] - [24-06-2025 09:09:23] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\Logs
+[INFO] - [24-06-2025 09:09:23] [main] [Utilities.FilesUtils] - Directory created: TestOutputs\Screenshots
+[INFO] - [24-06-2025 09:09:23] [main] [Utilities.FilesUtils] - Directory created: TestOutputs\ScreenRecordings
+[INFO] - [24-06-2025 09:09:23] [main] [org.testng.internal.Utils] - [TestNG] Running:
+  C:\Users\mohamed.adel.OFFICE\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml
+
+[INFO] - [24-06-2025 09:09:23] [main] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-06-24_09-09-21.log

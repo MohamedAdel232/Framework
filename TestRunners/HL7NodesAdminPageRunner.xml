@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="HL7 Nodes Admin Page Runner">
+    <listeners>
+        <listener class-name="Listeners.TestNGListeners"/>
+    </listeners>
+    <test name="HL7 Nodes Admin Page Runner on Chrome">
+        <parameter name="browser" value="Chrome"/>
+        <classes>
+            <class name="Tests.TC09_HL7NodesAdminTest"/>
+        </classes>
+    </test>
+</suite>

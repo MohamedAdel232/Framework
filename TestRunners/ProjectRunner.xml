@@ -14,6 +14,7 @@
             <class name="Tests.TC06_PACSServerAdminTest"/>
             <class name="Tests.TC07_DICOMDestinationsAdminTest"/>
             <class name="Tests.TC08_DICOMOriginsAdminTest"/>
+            <class name="Tests.TC09_HL7NodesAdminTest"/>
         </classes>
     </test>
 </suite>
