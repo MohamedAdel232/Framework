@@ -18,6 +18,8 @@ public class P02_UsersAdminPage {
     private final By dicomOriginsButtonLocator = By.cssSelector("[routerlink=\"/admin/dicomorigins\"]");
     private final By hl7ConfigurationButtonLocator = By.xpath("//span[.=\"HL7 Configuration\"]/..");
     private final By hl7NodesButtonLocator = By.cssSelector("[routerlink=\"/admin/hl7nodes\"]");
+    private final By configurationsButtonLocator = By.xpath("//span[.=\"Configurations\"]/..");
+    private final By activeDirectoriesButtonLocator = By.cssSelector("[routerlink=\"/admin/activedirectories\"]");
 
     private final By addButtonLocator = By.id("addNewUser");
     private final By usernameFieldLocator = By.cssSelector("[formcontrolname=\"userName\"]");
@@ -133,6 +135,20 @@ public class P02_UsersAdminPage {
         LogsUtils.info("Clicking on HL7 Nodes Button");
         driver.elementUtils().clickOnElement(hl7NodesButtonLocator);
         return new P09_HL7NodesAdminPage(driver);
+    }
+
+    @Step("Click on Configurations Button")
+    public P02_UsersAdminPage clickOnConfigurationsButton() {
+        LogsUtils.info("Clicking on Configurations Button");
+        driver.elementUtils().clickOnElement(configurationsButtonLocator);
+        return this;
+    }
+
+    @Step("Click on Active Directories Button")
+    public P10_ActiveDirectoriesAdminPage clickOnActiveDirectoriesButton() {
+        LogsUtils.info("Clicking on Active Directories Button");
+        driver.elementUtils().clickOnElement(activeDirectoriesButtonLocator);
+        return new P10_ActiveDirectoriesAdminPage(driver);
     }
 
     @Step("Click on Add Button")

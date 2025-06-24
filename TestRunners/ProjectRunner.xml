@@ -15,6 +15,7 @@
             <class name="Tests.TC07_DICOMDestinationsAdminTest"/>
             <class name="Tests.TC08_DICOMOriginsAdminTest"/>
             <class name="Tests.TC09_HL7NodesAdminTest"/>
+            <class name="Tests.TC10_ActiveDirectoriesAdminTest"/>
         </classes>
     </test>
 </suite>
