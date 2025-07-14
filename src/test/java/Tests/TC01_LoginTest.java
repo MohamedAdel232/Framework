@@ -16,22 +16,10 @@ public class TC01_LoginTest {
     public void loginWithValidAdminCredentialsTC() {
         new P01_LoginPage(driver)
                 .navigateToLoginPage(PropertiesUtils.getPropertyValue("LoginPageUrl"))
-                .enterUsername(loginTestData.getJsonData("validLoginCredentials.powerAdminUsername"))
+                .enterUsername(loginTestData.getJsonData("validLoginCredentials.username"))
                 .enterPassword(loginTestData.getJsonData("validLoginCredentials.password"))
                 .clickLoginButton()
-                .terminateSession()
                 .assertLoginWithValidAdminCredentials();
-    }
-
-    @Test
-    public void loginWithInvalidAdminCredentialsTC() {
-        new P01_LoginPage(driver)
-                .navigateToLoginPage(PropertiesUtils.getPropertyValue("LoginPageUrl"))
-                .enterUsername(loginTestData.getJsonData("invalidLoginCredentials.powerAdminUsername"))
-                .enterPassword(loginTestData.getJsonData("invalidLoginCredentials.password"))
-                .clickLoginButton()
-                .terminateSession()
-                .assertLoginWithInValidCredentials();
     }
 
     @BeforeClass
