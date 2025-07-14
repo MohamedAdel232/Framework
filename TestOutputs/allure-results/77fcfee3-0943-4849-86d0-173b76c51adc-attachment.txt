@@ -1,0 +1,222 @@
+[DEBUG] - [14-07-2025 14:56:17] [main] [org.testng.TestNG] - suiteXmlPath: "TestOutputs/target/DockerResources/ProjectRunner.xml"
+[INFO] - [14-07-2025 14:56:18] [main] [Listeners.TestNGListeners] - Test execution started
+[INFO] - [14-07-2025 14:56:18] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [14-07-2025 14:56:18] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [14-07-2025 14:56:18] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [14-07-2025 14:56:18] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [14-07-2025 14:56:18] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [14-07-2025 14:56:18] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [14-07-2025 14:56:18] [main] [Utilities.PropertiesUtils] - Loading properties file data
+[INFO] - [14-07-2025 14:56:18] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\allure-results
+[INFO] - [14-07-2025 14:56:18] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\allure-report
+[INFO] - [14-07-2025 14:56:18] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\Logs
+[INFO] - [14-07-2025 14:56:18] [main] [Utilities.FilesUtils] - Directory created: TestOutputs\Screenshots
+[INFO] - [14-07-2025 14:56:18] [main] [Utilities.FilesUtils] - Directory created: TestOutputs\ScreenRecordings
+[INFO] - [14-07-2025 14:56:18] [main] [org.testng.internal.Utils] - [TestNG] Running:
+  D:\Framework\TestOutputs\target\DockerResources\ProjectRunner.xml
+
+[INFO] - [14-07-2025 14:56:18] [TestNG-tests-1] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-07-14_14-56-17.log
+[INFO] - [14-07-2025 14:56:18] [TestNG-tests-2] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-07-14_14-56-17.log
+[DEBUG] - [14-07-2025 14:56:18] [TestNG-tests-1] [Tests.TC01_LoginTest] - Chrome
+[DEBUG] - [14-07-2025 14:56:18] [TestNG-tests-2] [Tests.TC01_LoginTest] - Edge
+[INFO] - [14-07-2025 14:56:18] [TestNG-tests-1] [Factories.ChromeFactory] - Starting Chrome
+[INFO] - [14-07-2025 14:56:18] [TestNG-tests-2] [Factories.EdgeFactory] - Starting Edge
+[INFO] - [14-07-2025 14:56:20] [TestNG-tests-1] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-07-14_14-56-17.log
+[INFO] - [14-07-2025 14:56:20] [TestNG-tests-2] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-07-14_14-56-17.log
+[INFO] - [14-07-2025 14:56:20] [TestNG-tests-1] [Pages.P01_LoginPage] - Navigating to login page
+[INFO] - [14-07-2025 14:56:20] [TestNG-tests-2] [Pages.P01_LoginPage] - Navigating to login page
+[INFO] - [14-07-2025 14:56:20] [TestNG-tests-1] [Utilities.BrowserUtils] - Navigating to URL: https://www.saucedemo.com/
+[INFO] - [14-07-2025 14:56:20] [TestNG-tests-2] [Utilities.BrowserUtils] - Navigating to URL: https://www.saucedemo.com/
+[DEBUG] - [14-07-2025 14:56:22] [TestNG-tests-2] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['username']
+[DEBUG] - [14-07-2025 14:56:22] [TestNG-tests-1] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['username']
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-2] [Pages.P01_LoginPage] - Entering username
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-1] [Pages.P01_LoginPage] - Entering username
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-2] [Utilities.ElementUtils] - Sending standard_user to element: By.id: user-name
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-1] [Utilities.ElementUtils] - Sending standard_user to element: By.id: user-name
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-2] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: user-name
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-1] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: user-name
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-1] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: user-name
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-2] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: user-name
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-1] [Utilities.ElementUtils] - Scrolling to element with locator: By.id: user-name
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-2] [Utilities.ElementUtils] - Scrolling to element with locator: By.id: user-name
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-1] [Utilities.ElementUtils] - Finding element with locator: By.id: user-name
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-2] [Utilities.ElementUtils] - Finding element with locator: By.id: user-name
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-2] [Utilities.ElementUtils] - Finding element with locator: By.id: user-name
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-1] [Utilities.ElementUtils] - Finding element with locator: By.id: user-name
+[DEBUG] - [14-07-2025 14:56:22] [TestNG-tests-2] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['password']
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-2] [Pages.P01_LoginPage] - Entering password
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-2] [Utilities.ElementUtils] - Sending secret_sauce to element: By.id: password
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-2] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: password
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-2] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: password
+[DEBUG] - [14-07-2025 14:56:22] [TestNG-tests-1] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['password']
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-1] [Pages.P01_LoginPage] - Entering password
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-1] [Utilities.ElementUtils] - Sending secret_sauce to element: By.id: password
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-1] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: password
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-1] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: password
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-2] [Utilities.ElementUtils] - Scrolling to element with locator: By.id: password
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-2] [Utilities.ElementUtils] - Finding element with locator: By.id: password
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-1] [Utilities.ElementUtils] - Scrolling to element with locator: By.id: password
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-1] [Utilities.ElementUtils] - Finding element with locator: By.id: password
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-2] [Utilities.ElementUtils] - Finding element with locator: By.id: password
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-1] [Utilities.ElementUtils] - Finding element with locator: By.id: password
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-1] [Pages.P01_LoginPage] - Clicking login button
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-1] [Utilities.ElementUtils] - Clicking on element: By.id: login-button
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-1] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.id: login-button
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-1] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: login-button
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-1] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: login-button
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-2] [Pages.P01_LoginPage] - Clicking login button
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-2] [Utilities.ElementUtils] - Clicking on element: By.id: login-button
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-2] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.id: login-button
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-2] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: login-button
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-2] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: login-button
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-1] [Utilities.ElementUtils] - Scrolling to element with locator: By.id: login-button
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-1] [Utilities.ElementUtils] - Finding element with locator: By.id: login-button
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-2] [Utilities.ElementUtils] - Scrolling to element with locator: By.id: login-button
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-2] [Utilities.ElementUtils] - Finding element with locator: By.id: login-button
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-1] [Utilities.ElementUtils] - Finding element with locator: By.id: login-button
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-2] [Utilities.ElementUtils] - Finding element with locator: By.id: login-button
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-1] [Pages.P01_LoginPage] - Asserting login with valid credentials
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-2] [Pages.P01_LoginPage] - Asserting login with valid credentials
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-1] [Utilities.BrowserUtils] - Current URL is: https://www.saucedemo.com/inventory.html
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-2] [Utilities.BrowserUtils] - Current URL is: https://www.saucedemo.com/inventory.html
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-1] [Utilities.SoftAssertActionsUtils] - Asserting page URL
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-1] [Utilities.SoftAssertActionsUtils] - Expected URL: https://www.saucedemo.com/inventory.html
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-1] [Utilities.SoftAssertActionsUtils] - Actual URL: https://www.saucedemo.com/inventory.html
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-1] [Utilities.WaitUtils] - Waiting for page to load with URL: https://www.saucedemo.com/inventory.html
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-2] [Utilities.SoftAssertActionsUtils] - Asserting page URL
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-2] [Utilities.SoftAssertActionsUtils] - Expected URL: https://www.saucedemo.com/inventory.html
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-2] [Utilities.SoftAssertActionsUtils] - Actual URL: https://www.saucedemo.com/inventory.html
+[INFO] - [14-07-2025 14:56:22] [TestNG-tests-2] [Utilities.WaitUtils] - Waiting for page to load with URL: https://www.saucedemo.com/inventory.html
+[INFO] - [14-07-2025 14:56:23] [TestNG-tests-1] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [14-07-2025 14:56:23] [TestNG-tests-1] [Utilities.ScreenRecorderUtils] - Recording stopped
+[ERROR] - [14-07-2025 14:56:23] [TestNG-tests-1] [Utilities.ScreenRecorderUtils] - Error stopping screen recording: Cannot invoke "org.monte.screenrecorder.ScreenRecorder.stop()" because "Utilities.ScreenRecorderUtils.screenRecorder" is null
+[INFO] - [14-07-2025 14:56:23] [TestNG-tests-2] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [14-07-2025 14:56:23] [TestNG-tests-2] [Utilities.ScreenRecorderUtils] - Recording stopped
+[ERROR] - [14-07-2025 14:56:23] [TestNG-tests-2] [Utilities.ScreenRecorderUtils] - Error stopping screen recording: Cannot invoke "org.monte.screenrecorder.ScreenRecorder.stop()" because "Utilities.ScreenRecorderUtils.screenRecorder" is null
+[INFO] - [14-07-2025 14:56:23] [TestNG-tests-1] [Utilities.ScreenshotsUtils] - Screenshot taken: TestOutputs\Screenshots\passed-loginWithValidAdminCredentialsTC-2025-07-14_14-56-23.png
+[ERROR] - [14-07-2025 14:56:23] [TestNG-tests-2] [Utilities.ScreenshotsUtils] - Failed to take screenshot: TestOutputs\Screenshots\passed-loginWithValidAdminCredentialsTC-2025-07-14_14-56-23.png
+[INFO] - [14-07-2025 14:56:23] [TestNG-tests-1] [Utilities.AllureUtils] - Screenshot attached to Allure report: TestOutputs\Screenshots\passed-loginWithValidAdminCredentialsTC-2025-07-14_14-56-23.png
+[INFO] - [14-07-2025 14:56:23] [TestNG-tests-2] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-07-14_14-56-17.log
+[INFO] - [14-07-2025 14:56:23] [TestNG-tests-1] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-07-14_14-56-17.log
+[INFO] - [14-07-2025 14:56:23] [TestNG-tests-2] [Listeners.TestNGListeners] - Test loginWithValidAdminCredentialsTC passed
+[INFO] - [14-07-2025 14:56:23] [TestNG-tests-1] [Listeners.TestNGListeners] - Test loginWithValidAdminCredentialsTC passed
+[INFO] - [14-07-2025 14:56:23] [TestNG-tests-1] [Utilities.BrowserUtils] - Quitting the browser
+[INFO] - [14-07-2025 14:56:23] [TestNG-tests-2] [Utilities.BrowserUtils] - Quitting the browser
+[INFO] - [14-07-2025 14:56:23] [TestNG-tests-2] [Factories.DriverFactory] - Removing driver
+[INFO] - [14-07-2025 14:56:23] [TestNG-tests-2] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-07-14_14-56-17.log
+[INFO] - [14-07-2025 14:56:23] [TestNG-tests-2] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-07-14_14-56-17.log
+[DEBUG] - [14-07-2025 14:56:23] [TestNG-tests-2] [Tests.TC02_ProductsPage] - Edge
+[INFO] - [14-07-2025 14:56:23] [TestNG-tests-2] [Factories.EdgeFactory] - Starting Edge
+[INFO] - [14-07-2025 14:56:23] [TestNG-tests-1] [Factories.DriverFactory] - Removing driver
+[INFO] - [14-07-2025 14:56:23] [TestNG-tests-1] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-07-14_14-56-17.log
+[INFO] - [14-07-2025 14:56:23] [TestNG-tests-1] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-07-14_14-56-17.log
+[DEBUG] - [14-07-2025 14:56:23] [TestNG-tests-1] [Tests.TC02_ProductsPage] - Chrome
+[INFO] - [14-07-2025 14:56:23] [TestNG-tests-1] [Factories.ChromeFactory] - Starting Chrome
+[INFO] - [14-07-2025 14:56:25] [TestNG-tests-2] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-07-14_14-56-17.log
+[INFO] - [14-07-2025 14:56:25] [TestNG-tests-2] [Pages.P01_LoginPage] - Navigating to login page
+[INFO] - [14-07-2025 14:56:25] [TestNG-tests-2] [Utilities.BrowserUtils] - Navigating to URL: https://www.saucedemo.com/
+[INFO] - [14-07-2025 14:56:25] [TestNG-tests-1] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-07-14_14-56-17.log
+[INFO] - [14-07-2025 14:56:25] [TestNG-tests-1] [Pages.P01_LoginPage] - Navigating to login page
+[INFO] - [14-07-2025 14:56:25] [TestNG-tests-1] [Utilities.BrowserUtils] - Navigating to URL: https://www.saucedemo.com/
+[DEBUG] - [14-07-2025 14:56:26] [TestNG-tests-2] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['username']
+[INFO] - [14-07-2025 14:56:26] [TestNG-tests-2] [Pages.P01_LoginPage] - Entering username
+[INFO] - [14-07-2025 14:56:26] [TestNG-tests-2] [Utilities.ElementUtils] - Sending standard_user to element: By.id: user-name
+[INFO] - [14-07-2025 14:56:26] [TestNG-tests-2] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: user-name
+[INFO] - [14-07-2025 14:56:26] [TestNG-tests-2] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: user-name
+[INFO] - [14-07-2025 14:56:26] [TestNG-tests-2] [Utilities.ElementUtils] - Scrolling to element with locator: By.id: user-name
+[INFO] - [14-07-2025 14:56:26] [TestNG-tests-2] [Utilities.ElementUtils] - Finding element with locator: By.id: user-name
+[INFO] - [14-07-2025 14:56:26] [TestNG-tests-2] [Utilities.ElementUtils] - Finding element with locator: By.id: user-name
+[DEBUG] - [14-07-2025 14:56:26] [TestNG-tests-1] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['username']
+[INFO] - [14-07-2025 14:56:26] [TestNG-tests-1] [Pages.P01_LoginPage] - Entering username
+[INFO] - [14-07-2025 14:56:26] [TestNG-tests-1] [Utilities.ElementUtils] - Sending standard_user to element: By.id: user-name
+[INFO] - [14-07-2025 14:56:26] [TestNG-tests-1] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: user-name
+[INFO] - [14-07-2025 14:56:26] [TestNG-tests-1] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: user-name
+[DEBUG] - [14-07-2025 14:56:26] [TestNG-tests-2] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['password']
+[INFO] - [14-07-2025 14:56:26] [TestNG-tests-2] [Pages.P01_LoginPage] - Entering password
+[INFO] - [14-07-2025 14:56:26] [TestNG-tests-2] [Utilities.ElementUtils] - Sending secret_sauce to element: By.id: password
+[INFO] - [14-07-2025 14:56:26] [TestNG-tests-2] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: password
+[INFO] - [14-07-2025 14:56:26] [TestNG-tests-2] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: password
+[INFO] - [14-07-2025 14:56:26] [TestNG-tests-1] [Utilities.ElementUtils] - Scrolling to element with locator: By.id: user-name
+[INFO] - [14-07-2025 14:56:26] [TestNG-tests-1] [Utilities.ElementUtils] - Finding element with locator: By.id: user-name
+[INFO] - [14-07-2025 14:56:26] [TestNG-tests-2] [Utilities.ElementUtils] - Scrolling to element with locator: By.id: password
+[INFO] - [14-07-2025 14:56:26] [TestNG-tests-2] [Utilities.ElementUtils] - Finding element with locator: By.id: password
+[INFO] - [14-07-2025 14:56:26] [TestNG-tests-1] [Utilities.ElementUtils] - Finding element with locator: By.id: user-name
+[INFO] - [14-07-2025 14:56:26] [TestNG-tests-2] [Utilities.ElementUtils] - Finding element with locator: By.id: password
+[INFO] - [14-07-2025 14:56:26] [TestNG-tests-2] [Pages.P01_LoginPage] - Clicking login button
+[INFO] - [14-07-2025 14:56:26] [TestNG-tests-2] [Utilities.ElementUtils] - Clicking on element: By.id: login-button
+[INFO] - [14-07-2025 14:56:26] [TestNG-tests-2] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.id: login-button
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-2] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: login-button
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-2] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: login-button
+[DEBUG] - [14-07-2025 14:56:27] [TestNG-tests-1] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['password']
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-1] [Pages.P01_LoginPage] - Entering password
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-1] [Utilities.ElementUtils] - Sending secret_sauce to element: By.id: password
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-1] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: password
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-1] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: password
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-1] [Utilities.ElementUtils] - Scrolling to element with locator: By.id: password
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-1] [Utilities.ElementUtils] - Finding element with locator: By.id: password
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-2] [Utilities.ElementUtils] - Scrolling to element with locator: By.id: login-button
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-2] [Utilities.ElementUtils] - Finding element with locator: By.id: login-button
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-1] [Utilities.ElementUtils] - Finding element with locator: By.id: password
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-2] [Utilities.ElementUtils] - Finding element with locator: By.id: login-button
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-1] [Pages.P01_LoginPage] - Clicking login button
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-1] [Utilities.ElementUtils] - Clicking on element: By.id: login-button
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-1] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.id: login-button
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-1] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: login-button
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-1] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: login-button
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-1] [Utilities.ElementUtils] - Scrolling to element with locator: By.id: login-button
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-1] [Utilities.ElementUtils] - Finding element with locator: By.id: login-button
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-1] [Utilities.ElementUtils] - Finding element with locator: By.id: login-button
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-2] [Pages.P01_LoginPage] - Asserting login with valid credentials
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-2] [Utilities.BrowserUtils] - Current URL is: https://www.saucedemo.com/inventory.html
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-2] [Utilities.SoftAssertActionsUtils] - Asserting page URL
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-2] [Utilities.SoftAssertActionsUtils] - Expected URL: https://www.saucedemo.com/inventory.html
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-2] [Utilities.SoftAssertActionsUtils] - Actual URL: https://www.saucedemo.com/inventory.html
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-2] [Utilities.WaitUtils] - Waiting for page to load with URL: https://www.saucedemo.com/inventory.html
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-2] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-2] [Pages.P02_ProductsPage] - Clicking on Sauce Labs Backpack Add to Cart button
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-2] [Utilities.ElementUtils] - Clicking on element: By.id: add-to-cart-sauce-labs-backpack
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-2] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.id: add-to-cart-sauce-labs-backpack
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-2] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: add-to-cart-sauce-labs-backpack
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-2] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: add-to-cart-sauce-labs-backpack
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-2] [Utilities.ElementUtils] - Scrolling to element with locator: By.id: add-to-cart-sauce-labs-backpack
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-2] [Utilities.ElementUtils] - Finding element with locator: By.id: add-to-cart-sauce-labs-backpack
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-2] [Utilities.ElementUtils] - Finding element with locator: By.id: add-to-cart-sauce-labs-backpack
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-1] [Pages.P01_LoginPage] - Asserting login with valid credentials
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-1] [Utilities.BrowserUtils] - Current URL is: https://www.saucedemo.com/inventory.html
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-1] [Utilities.SoftAssertActionsUtils] - Asserting page URL
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-1] [Utilities.SoftAssertActionsUtils] - Expected URL: https://www.saucedemo.com/inventory.html
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-1] [Utilities.SoftAssertActionsUtils] - Actual URL: https://www.saucedemo.com/inventory.html
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-1] [Utilities.WaitUtils] - Waiting for page to load with URL: https://www.saucedemo.com/inventory.html
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-1] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-1] [Pages.P02_ProductsPage] - Clicking on Sauce Labs Backpack Add to Cart button
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-1] [Utilities.ElementUtils] - Clicking on element: By.id: add-to-cart-sauce-labs-backpack
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-1] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.id: add-to-cart-sauce-labs-backpack
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-1] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: add-to-cart-sauce-labs-backpack
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-1] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: add-to-cart-sauce-labs-backpack
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-2] [Pages.P02_ProductsPage] - Asserting number of items in cart
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-2] [Pages.P02_ProductsPage] - Getting number of items in cart
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-2] [Utilities.ElementUtils] - Getting data from element: By.cssSelector: [data-test="shopping-cart-badge"]
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-2] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [data-test="shopping-cart-badge"]
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-2] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [data-test="shopping-cart-badge"]
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-1] [Utilities.ElementUtils] - Scrolling to element with locator: By.id: add-to-cart-sauce-labs-backpack
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-1] [Utilities.ElementUtils] - Finding element with locator: By.id: add-to-cart-sauce-labs-backpack
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-2] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [data-test="shopping-cart-badge"]
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-2] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [data-test="shopping-cart-badge"]
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-1] [Utilities.ElementUtils] - Finding element with locator: By.id: add-to-cart-sauce-labs-backpack
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-2] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [data-test="shopping-cart-badge"]
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-2] [Utilities.SoftAssertUtils] - Asserting equals
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-2] [Utilities.ScreenRecorderUtils] - Recording stopped
+[ERROR] - [14-07-2025 14:56:27] [TestNG-tests-2] [Utilities.ScreenRecorderUtils] - Error stopping screen recording: Cannot invoke "org.monte.screenrecorder.ScreenRecorder.stop()" because "Utilities.ScreenRecorderUtils.screenRecorder" is null
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-1] [Pages.P02_ProductsPage] - Asserting number of items in cart
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-1] [Pages.P02_ProductsPage] - Getting number of items in cart
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-1] [Utilities.ElementUtils] - Getting data from element: By.cssSelector: [data-test="shopping-cart-badge"]
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-1] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.cssSelector: [data-test="shopping-cart-badge"]
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-1] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.cssSelector: [data-test="shopping-cart-badge"]
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-1] [Utilities.ElementUtils] - Scrolling to element with locator: By.cssSelector: [data-test="shopping-cart-badge"]
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-1] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [data-test="shopping-cart-badge"]
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-1] [Utilities.ElementUtils] - Finding element with locator: By.cssSelector: [data-test="shopping-cart-badge"]
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-1] [Utilities.SoftAssertUtils] - Asserting equals
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-1] [Utilities.ScreenRecorderUtils] - Recording stopped
+[ERROR] - [14-07-2025 14:56:27] [TestNG-tests-1] [Utilities.ScreenRecorderUtils] - Error stopping screen recording: Cannot invoke "org.monte.screenrecorder.ScreenRecorder.stop()" because "Utilities.ScreenRecorderUtils.screenRecorder" is null
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-2] [Utilities.ScreenshotsUtils] - Screenshot taken: TestOutputs\Screenshots\passed-addProductsToCart-2025-07-14_14-56-27.png
+[INFO] - [14-07-2025 14:56:27] [TestNG-tests-2] [Utilities.AllureUtils] - Screenshot attached to Allure report: TestOutputs\Screenshots\passed-addProductsToCart-2025-07-14_14-56-27.png
