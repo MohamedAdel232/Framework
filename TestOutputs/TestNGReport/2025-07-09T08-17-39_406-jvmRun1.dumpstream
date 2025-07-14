@@ -1,0 +1,6 @@
+# Created at 2025-07-09T08:18:09.398
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'clean does not exist'.
+
+# Created at 2025-07-09T08:18:09.496
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'Report successfully generated to TestOutputs\allure-report'.
+

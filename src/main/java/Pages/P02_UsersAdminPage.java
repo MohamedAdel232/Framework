@@ -20,6 +20,7 @@ public class P02_UsersAdminPage {
     private final By hl7NodesButtonLocator = By.cssSelector("[routerlink=\"/admin/hl7nodes\"]");
     private final By configurationsButtonLocator = By.xpath("//span[.=\"Configurations\"]/..");
     private final By activeDirectoriesButtonLocator = By.cssSelector("[routerlink=\"/admin/activedirectories\"]");
+    private final By ormProfilesButtonLocator = By.cssSelector("[routerlink=\"/admin/ormprofiles\"]");
 
     private final By addButtonLocator = By.id("addNewUser");
     private final By usernameFieldLocator = By.cssSelector("[formcontrolname=\"userName\"]");
@@ -150,6 +151,13 @@ public class P02_UsersAdminPage {
         driver.elementUtils().clickOnElement(activeDirectoriesButtonLocator);
         return new P10_ActiveDirectoriesAdminPage(driver);
     }
+
+//    @Step("Click on ORM Profiles Button")
+//    public P11_ORMProfilesAdminPage clickOnORMProfilesButton() {
+//        LogsUtils.info("Clicking on ORM Profiles Button");
+//        driver.elementUtils().clickOnElement(ormProfilesButtonLocator);
+//        return new P11_ORMProfilesAdminPage(driver);
+//    }
 
     @Step("Click on Add Button")
     public P02_UsersAdminPage clickOnAddButton() {

@@ -104,7 +104,7 @@ public class ElementUtils {
     public void doubleClickOnElement(By locator) {
         LogsUtils.info("Double clicking on element:", locator.toString());
         Actions actions = new Actions(driver);
-        actions.doubleClick(findElement(locator));
+        actions.doubleClick(findElement(locator)).perform();
     }
 
     public void checkCheckbox(By locator) {

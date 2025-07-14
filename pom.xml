@@ -29,6 +29,7 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>TestRunners/LoginPageRunner.xml</suiteXmlFile>
                     </suiteXmlFiles>
+                    <reportsDirectory>TestOutputs/TestNGReport</reportsDirectory>
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/1.9.24/aspectjweaver-1.9.24.jar"
                     </argLine>
