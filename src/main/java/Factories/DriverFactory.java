@@ -13,6 +13,11 @@ public class DriverFactory {
         setDriver(driver);
     }
 
+    public DriverFactory(String browser, String platformName, String gridUrl) {
+        WebDriver driver = RemoteDriverFactory.startDriver(browser, platformName, gridUrl);
+        setDriver(driver);
+    }
+
     public static void removeDriver() {
         LogsUtils.info("Removing driver");
         driverThreadLocal.remove();

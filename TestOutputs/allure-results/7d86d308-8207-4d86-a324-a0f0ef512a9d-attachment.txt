@@ -1,0 +1,17 @@
+[DEBUG] - [14-07-2025 13:37:57] [main] [org.testng.TestNG] - suiteXmlPath: "D:\Framework\TestRunners\LoginPageRunner.xml"
+[INFO] - [14-07-2025 13:37:58] [main] [Listeners.TestNGListeners] - Test execution started
+[INFO] - [14-07-2025 13:37:58] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [14-07-2025 13:37:58] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [14-07-2025 13:37:58] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [14-07-2025 13:37:58] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [14-07-2025 13:37:58] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [14-07-2025 13:37:58] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [14-07-2025 13:37:58] [main] [Utilities.PropertiesUtils] - Loading properties file data
+[INFO] - [14-07-2025 13:37:58] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\allure-results
+[INFO] - [14-07-2025 13:37:58] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\allure-report
+[INFO] - [14-07-2025 13:37:58] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\Logs
+[INFO] - [14-07-2025 13:37:58] [main] [Utilities.FilesUtils] - Directory created: TestOutputs\Screenshots
+[INFO] - [14-07-2025 13:37:58] [main] [Utilities.FilesUtils] - Directory created: TestOutputs\ScreenRecordings
+[INFO] - [14-07-2025 13:37:58] [main] [org.testng.internal.Utils] - [TestNG] Running:
+  D:\Framework\TestRunners\LoginPageRunner.xml
+

@@ -1,5 +1,6 @@
 package Factories;
 
+import Utilities.LogsUtils;
 import Utilities.PropertiesUtils;
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
@@ -36,6 +37,7 @@ public class EdgeFactory extends AbstractDriver implements WebDriverOptions<Edge
 
     @Override
     public WebDriver startDriver() {
+        LogsUtils.info("Starting Edge");
         return new EdgeDriver(getOptions());
     }
 }

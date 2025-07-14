@@ -4,6 +4,7 @@ import Factories.DriverFactory;
 import Listeners.TestNGListeners;
 import Pages.P01_LoginPage;
 import Utilities.JsonUtils;
+import Utilities.LogsUtils;
 import Utilities.PropertiesUtils;
 import org.testng.annotations.*;
 
@@ -27,9 +28,16 @@ public class TC01_LoginTest {
         loginTestData = new JsonUtils("LoginTestData");
     }
 
+    @Parameters({"browser", "platformName"})
     @BeforeMethod
-    public void beforeMethod() {
-        driver = new DriverFactory(PropertiesUtils.getPropertyValue("browser"));
+    public void beforeMethod(@Optional("Chrome") String browser, @Optional("Windows") String platformName) {
+        LogsUtils.debug(browser);
+        if (PropertiesUtils.getPropertyValue("executionType").equalsIgnoreCase("RemoteGrid")) {
+            driver = new DriverFactory(browser, platformName
+                    , PropertiesUtils.getPropertyValue("GridUrl"));
+        } else {
+            driver = new DriverFactory(browser);
+        }
     }
 
     @AfterMethod

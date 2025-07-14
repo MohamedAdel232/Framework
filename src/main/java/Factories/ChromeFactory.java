@@ -1,5 +1,6 @@
 package Factories;
 
+import Utilities.LogsUtils;
 import Utilities.PropertiesUtils;
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
@@ -37,6 +38,7 @@ public class ChromeFactory extends AbstractDriver implements WebDriverOptions<Ch
 
     @Override
     public WebDriver startDriver() {
+        LogsUtils.info("Starting Chrome");
         return new ChromeDriver(getOptions());
     }
 }

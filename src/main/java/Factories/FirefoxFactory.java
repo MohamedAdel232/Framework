@@ -1,5 +1,6 @@
 package Factories;
 
+import Utilities.LogsUtils;
 import Utilities.PropertiesUtils;
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
@@ -27,6 +28,7 @@ public class FirefoxFactory extends AbstractDriver implements WebDriverOptions<F
 
     @Override
     public WebDriver startDriver() {
+        LogsUtils.info("Starting Firefox");
         return new FirefoxDriver(getOptions());
     }
 }

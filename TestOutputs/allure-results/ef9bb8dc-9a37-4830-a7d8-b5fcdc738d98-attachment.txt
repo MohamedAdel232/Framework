@@ -1,0 +1,68 @@
+[DEBUG] - [14-07-2025 13:37:57] [main] [org.testng.TestNG] - suiteXmlPath: "D:\Framework\TestRunners\LoginPageRunner.xml"
+[INFO] - [14-07-2025 13:37:58] [main] [Listeners.TestNGListeners] - Test execution started
+[INFO] - [14-07-2025 13:37:58] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [14-07-2025 13:37:58] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [14-07-2025 13:37:58] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [14-07-2025 13:37:58] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [14-07-2025 13:37:58] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [14-07-2025 13:37:58] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [14-07-2025 13:37:58] [main] [Utilities.PropertiesUtils] - Loading properties file data
+[INFO] - [14-07-2025 13:37:58] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\allure-results
+[INFO] - [14-07-2025 13:37:58] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\allure-report
+[INFO] - [14-07-2025 13:37:58] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\Logs
+[INFO] - [14-07-2025 13:37:58] [main] [Utilities.FilesUtils] - Directory created: TestOutputs\Screenshots
+[INFO] - [14-07-2025 13:37:58] [main] [Utilities.FilesUtils] - Directory created: TestOutputs\ScreenRecordings
+[INFO] - [14-07-2025 13:37:58] [main] [org.testng.internal.Utils] - [TestNG] Running:
+  D:\Framework\TestRunners\LoginPageRunner.xml
+
+[INFO] - [14-07-2025 13:37:58] [TestNG-tests-2] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-07-14_13-37-56.log
+[INFO] - [14-07-2025 13:37:58] [TestNG-tests-1] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-07-14_13-37-56.log
+[DEBUG] - [14-07-2025 13:37:58] [TestNG-tests-2] [Tests.TC01_LoginTest] - Edge
+[DEBUG] - [14-07-2025 13:37:58] [TestNG-tests-1] [Tests.TC01_LoginTest] - Chrome
+[INFO] - [14-07-2025 13:37:58] [TestNG-tests-2] [Factories.RemoteDriverFactory] - Starting remote driver for browser: Edge on platform: Windows
+[INFO] - [14-07-2025 13:37:58] [TestNG-tests-1] [Factories.RemoteDriverFactory] - Starting remote driver for browser: Chrome on platform: Windows
+[INFO] - [14-07-2025 13:38:01] [TestNG-tests-2] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-07-14_13-37-56.log
+[INFO] - [14-07-2025 13:38:02] [TestNG-tests-2] [Pages.P01_LoginPage] - Navigating to login page
+[INFO] - [14-07-2025 13:38:02] [TestNG-tests-2] [Utilities.BrowserUtils] - Navigating to URL: https://www.saucedemo.com/
+[INFO] - [14-07-2025 13:38:04] [TestNG-tests-1] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-07-14_13-37-56.log
+[INFO] - [14-07-2025 13:38:04] [TestNG-tests-1] [Pages.P01_LoginPage] - Navigating to login page
+[INFO] - [14-07-2025 13:38:04] [TestNG-tests-1] [Utilities.BrowserUtils] - Navigating to URL: https://www.saucedemo.com/
+[DEBUG] - [14-07-2025 13:38:04] [TestNG-tests-2] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['username']
+[INFO] - [14-07-2025 13:38:04] [TestNG-tests-2] [Pages.P01_LoginPage] - Entering username
+[INFO] - [14-07-2025 13:38:04] [TestNG-tests-2] [Utilities.ElementUtils] - Sending standard_user to element: By.id: user-name
+[INFO] - [14-07-2025 13:38:04] [TestNG-tests-2] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: user-name
+[INFO] - [14-07-2025 13:38:04] [TestNG-tests-2] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: user-name
+[INFO] - [14-07-2025 13:38:04] [TestNG-tests-2] [Utilities.ElementUtils] - Scrolling to element with locator: By.id: user-name
+[INFO] - [14-07-2025 13:38:04] [TestNG-tests-2] [Utilities.ElementUtils] - Finding element with locator: By.id: user-name
+[INFO] - [14-07-2025 13:38:04] [TestNG-tests-2] [Utilities.ElementUtils] - Finding element with locator: By.id: user-name
+[DEBUG] - [14-07-2025 13:38:04] [TestNG-tests-2] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validLoginCredentials']['password']
+[INFO] - [14-07-2025 13:38:04] [TestNG-tests-2] [Pages.P01_LoginPage] - Entering password
+[INFO] - [14-07-2025 13:38:04] [TestNG-tests-2] [Utilities.ElementUtils] - Sending secret_sauce to element: By.id: password
+[INFO] - [14-07-2025 13:38:04] [TestNG-tests-2] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: password
+[INFO] - [14-07-2025 13:38:04] [TestNG-tests-2] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: password
+[INFO] - [14-07-2025 13:38:04] [TestNG-tests-2] [Utilities.ElementUtils] - Scrolling to element with locator: By.id: password
+[INFO] - [14-07-2025 13:38:04] [TestNG-tests-2] [Utilities.ElementUtils] - Finding element with locator: By.id: password
+[INFO] - [14-07-2025 13:38:04] [TestNG-tests-2] [Utilities.ElementUtils] - Finding element with locator: By.id: password
+[INFO] - [14-07-2025 13:38:04] [TestNG-tests-2] [Pages.P01_LoginPage] - Clicking login button
+[INFO] - [14-07-2025 13:38:04] [TestNG-tests-2] [Utilities.ElementUtils] - Clicking on element: By.id: login-button
+[INFO] - [14-07-2025 13:38:04] [TestNG-tests-2] [Utilities.WaitUtils] - Waiting for element to be clickable with locator: By.id: login-button
+[INFO] - [14-07-2025 13:38:04] [TestNG-tests-2] [Utilities.WaitUtils] - Waiting for element to be visible with locator: By.id: login-button
+[INFO] - [14-07-2025 13:38:04] [TestNG-tests-2] [Utilities.WaitUtils] - Waiting for element to be present with locator: By.id: login-button
+[INFO] - [14-07-2025 13:38:05] [TestNG-tests-2] [Utilities.ElementUtils] - Scrolling to element with locator: By.id: login-button
+[INFO] - [14-07-2025 13:38:05] [TestNG-tests-2] [Utilities.ElementUtils] - Finding element with locator: By.id: login-button
+[INFO] - [14-07-2025 13:38:05] [TestNG-tests-2] [Utilities.ElementUtils] - Finding element with locator: By.id: login-button
+[INFO] - [14-07-2025 13:38:05] [TestNG-tests-2] [Pages.P01_LoginPage] - Asserting login with valid admin credentials
+[INFO] - [14-07-2025 13:38:05] [TestNG-tests-2] [Utilities.BrowserUtils] - Current URL is: https://www.saucedemo.com/inventory.html
+[INFO] - [14-07-2025 13:38:05] [TestNG-tests-2] [Utilities.SoftAssertActionsUtils] - Asserting page URL
+[INFO] - [14-07-2025 13:38:05] [TestNG-tests-2] [Utilities.SoftAssertActionsUtils] - Expected URL: https://www.saucedemo.com/inventory.html
+[INFO] - [14-07-2025 13:38:05] [TestNG-tests-2] [Utilities.SoftAssertActionsUtils] - Actual URL: https://www.saucedemo.com/inventory.html
+[INFO] - [14-07-2025 13:38:05] [TestNG-tests-2] [Utilities.WaitUtils] - Waiting for page to load with URL: https://www.saucedemo.com/inventory.html
+[INFO] - [14-07-2025 13:38:05] [TestNG-tests-2] [Utilities.SoftAssertUtils] - Asserting true
+[INFO] - [14-07-2025 13:38:05] [TestNG-tests-2] [Utilities.ScreenRecorderUtils] - Recording stopped
+[ERROR] - [14-07-2025 13:38:05] [TestNG-tests-2] [Utilities.ScreenRecorderUtils] - Error stopping screen recording: Cannot invoke "org.monte.screenrecorder.ScreenRecorder.stop()" because "Utilities.ScreenRecorderUtils.screenRecorder" is null
+[INFO] - [14-07-2025 13:38:05] [TestNG-tests-2] [Utilities.ScreenshotsUtils] - Screenshot taken: TestOutputs\Screenshots\passed-loginWithValidAdminCredentialsTC-2025-07-14_13-38-05.png
+[INFO] - [14-07-2025 13:38:05] [TestNG-tests-2] [Utilities.AllureUtils] - Screenshot attached to Allure report: TestOutputs\Screenshots\passed-loginWithValidAdminCredentialsTC-2025-07-14_13-38-05.png
+[INFO] - [14-07-2025 13:38:05] [TestNG-tests-2] [Utilities.AllureUtils] - Log file attached to Allure report: TestOutputs\Logs\log_2025-07-14_13-37-56.log
+[INFO] - [14-07-2025 13:38:05] [TestNG-tests-2] [Listeners.TestNGListeners] - Test loginWithValidAdminCredentialsTC passed
+[INFO] - [14-07-2025 13:38:05] [TestNG-tests-2] [Utilities.BrowserUtils] - Quitting the browser
+[INFO] - [14-07-2025 13:38:05] [TestNG-tests-2] [Factories.DriverFactory] - Removing driver

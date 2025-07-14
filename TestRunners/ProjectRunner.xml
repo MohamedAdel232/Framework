@@ -1,10 +1,20 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Full Project Runner">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Project Runner" parallel="tests" thread-count="2">
     <listeners>
         <listener class-name="Listeners.TestNGListeners"/>
     </listeners>
-    <test name="Full Project Runner on Chrome">
+
+    <test name="Project Runner on Windows Chrome">
         <parameter name="browser" value="Chrome"/>
+        <parameter name="platformName" value="Windows"/>
+        <classes>
+            <class name="Tests.TC01_LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="Project Runner on Windows Edge">
+        <parameter name="browser" value="Edge"/>
+        <parameter name="platformName" value="Windows"/>
         <classes>
             <class name="Tests.TC01_LoginTest"/>
         </classes>
