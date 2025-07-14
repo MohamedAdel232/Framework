@@ -3,7 +3,6 @@ package Pages;
 import Factories.DriverFactory;
 import Utilities.LogsUtils;
 import Utilities.PropertiesUtils;
-import Utilities.SoftAssertUtils;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
@@ -51,14 +50,6 @@ public class P01_LoginPage {
         String expectedUrl = PropertiesUtils.getPropertyValue("HomePageUrl");
         LogsUtils.info("Asserting login with valid credentials");
         driver.softAssertActionsUtils().assertPageUrl(expectedUrl, "Login with valid credentials failed");
-        return this;
-    }
-
-    @Step("Assert login with valid admin credentials")
-    public P01_LoginPage assertLoginWithValidAdminCredentials() {
-        String expectedUrl = PropertiesUtils.getPropertyValue("HomePageUrl");
-        LogsUtils.info("Asserting login with valid admin credentials");
-        driver.softAssertActionsUtils().assertPageUrl(expectedUrl, "Login with valid admin credentials failed");
         return this;
     }
 }

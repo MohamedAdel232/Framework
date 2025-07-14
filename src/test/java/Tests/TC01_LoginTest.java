@@ -20,7 +20,7 @@ public class TC01_LoginTest {
                 .enterUsername(loginTestData.getJsonData("validLoginCredentials.username"))
                 .enterPassword(loginTestData.getJsonData("validLoginCredentials.password"))
                 .clickLoginButton()
-                .assertLoginWithValidAdminCredentials();
+                .assertLoginWithValidCredentials();
     }
 
     @BeforeClass
