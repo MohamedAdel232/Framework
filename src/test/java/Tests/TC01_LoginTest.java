@@ -14,13 +14,14 @@ public class TC01_LoginTest {
     JsonUtils loginTestData;
 
     @Test
-    public void loginWithValidAdminCredentialsTC() {
+    public void loginWithValidAdminCredentialsTC() throws InterruptedException {
         new P01_LoginPage(driver)
                 .navigateToLoginPage(PropertiesUtils.getPropertyValue("LoginPageUrl"))
                 .enterUsername(loginTestData.getJsonData("validLoginCredentials.username"))
                 .enterPassword(loginTestData.getJsonData("validLoginCredentials.password"))
                 .clickLoginButton()
                 .assertLoginWithValidCredentials();
+        Thread.sleep(5000);
     }
 
     @BeforeClass

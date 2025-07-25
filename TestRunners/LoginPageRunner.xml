@@ -5,15 +5,15 @@
     </listeners>
 
     <test name="Login Page Runner on Windows Chrome">
-        <parameter name="browser" value="Chrome"/>
+        <parameter name="browser" value= "Chrome"/>
         <parameter name="platformName" value="Windows"/>
         <classes>
             <class name="Tests.TC01_LoginTest"/>
         </classes>
     </test>
 
-    <test name="Login Page Runner on Windows Edge">
-        <parameter name="browser" value="Edge"/>
+    <test name="Login Page Runner on Windows Firefox">
+        <parameter name="browser" value="Firefox"/>
         <parameter name="platformName" value="Windows"/>
         <classes>
             <class name="Tests.TC01_LoginTest"/>

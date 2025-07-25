@@ -1,0 +1,17 @@
+[DEBUG] - [21-07-2025 20:34:23] [main] [org.testng.TestNG] - suiteXmlPath: "TestOutputs/target/DockerResources/ProjectRunner.xml"
+[INFO] - [21-07-2025 20:34:25] [main] [Listeners.TestNGListeners] - Test execution started
+[INFO] - [21-07-2025 20:34:25] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [21-07-2025 20:34:25] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [21-07-2025 20:34:25] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [21-07-2025 20:34:25] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [21-07-2025 20:34:25] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [21-07-2025 20:34:25] [main] [Utilities.PropertiesUtils] - Properties file loaded successfully
+[INFO] - [21-07-2025 20:34:25] [main] [Utilities.PropertiesUtils] - Loading properties file data
+[INFO] - [21-07-2025 20:34:25] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\allure-results
+[INFO] - [21-07-2025 20:34:25] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\allure-report
+[INFO] - [21-07-2025 20:34:25] [main] [Utilities.FilesUtils] - Directory already exists: TestOutputs\Logs
+[INFO] - [21-07-2025 20:34:25] [main] [Utilities.FilesUtils] - Directory created: TestOutputs\Screenshots
+[INFO] - [21-07-2025 20:34:25] [main] [Utilities.FilesUtils] - Directory created: TestOutputs\ScreenRecordings
+[INFO] - [21-07-2025 20:34:25] [main] [org.testng.internal.Utils] - [TestNG] Running:
+  D:\Automation Course\Docker\Framework\TestOutputs\target\DockerResources\ProjectRunner.xml
+

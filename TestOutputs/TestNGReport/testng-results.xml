@@ -1,41 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-09T08:17:43 EEST" name="Login Page Runner" finished-at="2025-07-09T08:18:04 EEST" duration-ms="20749">
+  <suite started-at="2025-07-21T19:41:46 EEST" name="Project Runner" finished-at="2025-07-21T19:42:16 EEST" duration-ms="29830">
     <groups>
     </groups>
-    <test started-at="2025-07-09T08:17:43 EEST" name="Login Page Runner on Chrome" finished-at="2025-07-09T08:18:04 EEST" duration-ms="20749">
-      <class name="Tests.TC01_LoginTest">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Tests.TC01_LoginTest@315105f]" started-at="2025-07-09T08:17:43 EEST" name="beforeClass" finished-at="2025-07-09T08:17:43 EEST" duration-ms="49" status="PASS">
+    <test started-at="2025-07-21T19:41:46 EEST" name="Project Runner on Windows Chrome" finished-at="2025-07-21T19:42:01 EEST" duration-ms="15185">
+      <class name="Tests.TC02_ProductsPage">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Tests.TC02_ProductsPage@558b4942]" started-at="2025-07-21T19:41:57 EEST" name="beforeClass" finished-at="2025-07-21T19:41:57 EEST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Tests.TC01_LoginTest@315105f]" started-at="2025-07-09T08:17:43 EEST" name="beforeMethod" finished-at="2025-07-09T08:17:45 EEST" duration-ms="2053" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String,java.lang.String)[pri:0, instance:Tests.TC02_ProductsPage@558b4942]" started-at="2025-07-21T19:41:57 EEST" name="beforeMethod" finished-at="2025-07-21T19:41:58 EEST" duration-ms="672" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Linux]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="loginWithInvalidAdminCredentialsTC()[pri:0, instance:Tests.TC01_LoginTest@315105f]" started-at="2025-07-09T08:17:46 EEST" name="loginWithInvalidAdminCredentialsTC" finished-at="2025-07-09T08:17:53 EEST" duration-ms="7577" status="PASS">
+        <test-method signature="addProductsToCart()[pri:0, instance:Tests.TC02_ProductsPage@558b4942]" started-at="2025-07-21T19:41:58 EEST" name="addProductsToCart" finished-at="2025-07-21T19:42:01 EEST" duration-ms="3189" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithInvalidAdminCredentialsTC -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Tests.TC01_LoginTest@315105f]" started-at="2025-07-09T08:17:53 EEST" name="afterMethod" finished-at="2025-07-09T08:17:54 EEST" duration-ms="388" status="PASS">
+        </test-method> <!-- addProductsToCart -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Tests.TC02_ProductsPage@558b4942]" started-at="2025-07-21T19:42:01 EEST" name="afterMethod" finished-at="2025-07-21T19:42:01 EEST" duration-ms="251" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Tests.TC01_LoginTest@315105f]" started-at="2025-07-09T08:17:54 EEST" name="beforeMethod" finished-at="2025-07-09T08:17:55 EEST" duration-ms="1332" status="PASS">
+      </class> <!-- Tests.TC02_ProductsPage -->
+      <class name="Tests.TC01_LoginTest">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Tests.TC01_LoginTest@250a9031]" started-at="2025-07-21T19:41:46 EEST" name="beforeClass" finished-at="2025-07-21T19:41:46 EEST" duration-ms="43" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String,java.lang.String)[pri:0, instance:Tests.TC01_LoginTest@250a9031]" started-at="2025-07-21T19:41:46 EEST" name="beforeMethod" finished-at="2025-07-21T19:41:47 EEST" duration-ms="1295" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Linux]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="loginWithValidAdminCredentialsTC()[pri:0, instance:Tests.TC01_LoginTest@315105f]" started-at="2025-07-09T08:17:55 EEST" name="loginWithValidAdminCredentialsTC" finished-at="2025-07-09T08:18:03 EEST" duration-ms="8134" status="PASS">
+        <test-method signature="loginWithValidAdminCredentialsTC()[pri:0, instance:Tests.TC01_LoginTest@250a9031]" started-at="2025-07-21T19:41:48 EEST" name="loginWithValidAdminCredentialsTC" finished-at="2025-07-21T19:41:57 EEST" duration-ms="9005" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidAdminCredentialsTC -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Tests.TC01_LoginTest@315105f]" started-at="2025-07-09T08:18:04 EEST" name="afterMethod" finished-at="2025-07-09T08:18:04 EEST" duration-ms="307" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Tests.TC01_LoginTest@250a9031]" started-at="2025-07-21T19:41:57 EEST" name="afterMethod" finished-at="2025-07-21T19:41:57 EEST" duration-ms="223" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- Tests.TC01_LoginTest -->
-    </test> <!-- Login Page Runner on Chrome -->
-  </suite> <!-- Login Page Runner -->
+    </test> <!-- Project Runner on Windows Chrome -->
+    <test started-at="2025-07-21T19:41:46 EEST" name="Project Runner on Windows Firefox" finished-at="2025-07-21T19:42:16 EEST" duration-ms="29830">
+      <class name="Tests.TC02_ProductsPage">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Tests.TC02_ProductsPage@4debbf0]" started-at="2025-07-21T19:42:05 EEST" name="beforeClass" finished-at="2025-07-21T19:42:05 EEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String,java.lang.String)[pri:0, instance:Tests.TC02_ProductsPage@4debbf0]" started-at="2025-07-21T19:42:05 EEST" name="beforeMethod" finished-at="2025-07-21T19:42:08 EEST" duration-ms="3468" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Linux]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="addProductsToCart()[pri:0, instance:Tests.TC02_ProductsPage@4debbf0]" started-at="2025-07-21T19:42:08 EEST" name="addProductsToCart" finished-at="2025-07-21T19:42:13 EEST" duration-ms="4775" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProductsToCart -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Tests.TC02_ProductsPage@4debbf0]" started-at="2025-07-21T19:42:13 EEST" name="afterMethod" finished-at="2025-07-21T19:42:16 EEST" duration-ms="2665" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- Tests.TC02_ProductsPage -->
+      <class name="Tests.TC01_LoginTest">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Tests.TC01_LoginTest@1faf386c]" started-at="2025-07-21T19:41:46 EEST" name="beforeClass" finished-at="2025-07-21T19:41:46 EEST" duration-ms="43" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String,java.lang.String)[pri:0, instance:Tests.TC01_LoginTest@1faf386c]" started-at="2025-07-21T19:41:46 EEST" name="beforeMethod" finished-at="2025-07-21T19:41:53 EEST" duration-ms="6379" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Linux]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginWithValidAdminCredentialsTC()[pri:0, instance:Tests.TC01_LoginTest@1faf386c]" started-at="2025-07-21T19:41:53 EEST" name="loginWithValidAdminCredentialsTC" finished-at="2025-07-21T19:42:03 EEST" duration-ms="10484" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidAdminCredentialsTC -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Tests.TC01_LoginTest@1faf386c]" started-at="2025-07-21T19:42:03 EEST" name="afterMethod" finished-at="2025-07-21T19:42:05 EEST" duration-ms="1713" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- Tests.TC01_LoginTest -->
+    </test> <!-- Project Runner on Windows Firefox -->
+  </suite> <!-- Project Runner -->
 </testng-results>

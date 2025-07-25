@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Login Page Runner]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Listeners.TestNGListeners"/>
+  </listeners>
+  <test thread-count="2" parallel="tests" name="Login Page Runner on Windows Edge(failed)">
+    <parameter name="browser" value="Edge"/>
+    <parameter name="platformName" value="Windows"/>
+    <classes>
+      <class name="Tests.TC01_LoginTest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeClass"/>
+          <include name="loginWithValidAdminCredentialsTC"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- Tests.TC01_LoginTest -->
+    </classes>
+  </test> <!-- Login Page Runner on Windows Edge(failed) -->
+  <test thread-count="2" parallel="tests" name="Login Page Runner on Windows Chrome(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="platformName" value="Windows"/>
+    <classes>
+      <class name="Tests.TC01_LoginTest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeClass"/>
+          <include name="loginWithValidAdminCredentialsTC"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- Tests.TC01_LoginTest -->
+    </classes>
+  </test> <!-- Login Page Runner on Windows Chrome(failed) -->
+</suite> <!-- Failed suite [Login Page Runner] -->

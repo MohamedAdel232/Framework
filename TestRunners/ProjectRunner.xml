@@ -6,16 +6,16 @@
 
     <test name="Project Runner on Windows Chrome">
         <parameter name="browser" value="Chrome"/>
-        <parameter name="platformName" value="Windows"/>
+        <parameter name="platformName" value="Linux"/>
         <classes>
             <class name="Tests.TC01_LoginTest"/>
             <class name="Tests.TC02_ProductsPage"/>
         </classes>
     </test>
 
-    <test name="Project Runner on Windows Edge">
-        <parameter name="browser" value="Edge"/>
-        <parameter name="platformName" value="Windows"/>
+    <test name="Project Runner on Windows Firefox">
+        <parameter name="browser" value="Firefox"/>
+        <parameter name="platformName" value="Linux"/>
         <classes>
             <class name="Tests.TC01_LoginTest"/>
             <class name="Tests.TC02_ProductsPage"/>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Project Runner]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="Listeners.TestNGListeners"/>
+  </listeners>
+  <test thread-count="2" parallel="tests" name="Project Runner on Windows Chrome(failed)" verbose="0">
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="platformName" value="Linux"/>
+    <classes>
+      <class name="Tests.TC01_LoginTest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeClass"/>
+          <include name="loginWithValidAdminCredentialsTC"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- Tests.TC01_LoginTest -->
+      <class name="Tests.TC02_ProductsPage">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="addProductsToCart"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- Tests.TC02_ProductsPage -->
+    </classes>
+  </test> <!-- Project Runner on Windows Chrome(failed) -->
+  <test thread-count="2" parallel="tests" name="Project Runner on Windows Firefox(failed)" verbose="0">
+    <parameter name="browser" value="Firefox"/>
+    <parameter name="platformName" value="Linux"/>
+    <classes>
+      <class name="Tests.TC02_ProductsPage">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="addProductsToCart"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- Tests.TC02_ProductsPage -->
+    </classes>
+  </test> <!-- Project Runner on Windows Firefox(failed) -->
+</suite> <!-- Failed suite [Project Runner] -->
